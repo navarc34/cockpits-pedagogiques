@@ -21,17 +21,32 @@ footer{color:var(--soft);font-size:11px;padding:30px 0 48px}.error{color:var(--r
 @media(max-width:950px){.layout{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:500px){.kpi,.panel{padding:13px}.kpi b{font-size:23px}}
 @media print{.tools,.back{display:none}body{background:white!important}.layout{grid-template-columns:1fr}.glass{box-shadow:none;backdrop-filter:none}}
+
+.planning{margin:22px 0}.planhead{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+.plan-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:14px 0}
+.plan-stat{padding:16px}.plan-stat b{display:block;font:600 25px Fraunces,Georgia,serif}
+.plan-stat span{font-size:12px;color:var(--soft)}
+.plan-table{width:100%;border-collapse:collapse;font-size:12px}
+.plan-table th,.plan-table td{text-align:left;padding:8px;border-bottom:1px solid var(--line)}
+.plan-table th{color:var(--soft)}.plan-note{font-size:12px;color:var(--soft)}
+@media(max-width:650px){.plan-grid{grid-template-columns:1fr}}
 </style></head><body><div class="wrap">
 <header class="hero"><a href="cours.html?id=fr" class="back">← Retour au français</a><p class="kicker">Sprint 1 · pilotage pédagogique</p>
 <h1>Trajectoire pédagogique</h1><p class="intro">Une aide à la décision fondée sur les jalons, les heures déclarées et des objectifs explicites. Les propositions sont à confirmer par l’enseignant : une échéance n’établit pas à elle seule la maîtrise des élèves.</p>
 <p class="meta" id="meta">Chargement des sources…</p></header>
 <div class="tools"><label for="day">Date d’analyse</label><input type="date" id="day" min="2026-09-01" max="2027-06-30"><button id="today" type="button">Aujourd’hui</button><button id="print" type="button">Imprimer</button></div>
-<div id="error" role="alert"></div><div class="kpis" id="kpis"></div><div class="layout">
+<div id="error" role="alert"></div><div class="kpis" id="kpis"></div>
+<section class="planning panel glass" aria-labelledby="planning-title">
+<div class="planhead"><h2 id="planning-title">Calendrier prévisionnel</h2><span class="tag">Hypothèse à confirmer</span></div>
+<p class="plan-note">Horaires hebdomadaires et alternance inférés des séances existantes. Vacances prises en compte ; jours fériés, reports et annulations non exhaustifs. Aucune absence de trace n'est assimilée à un cours non assuré.</p>
+<div class="plan-grid" id="planstats"></div><div id="plandetails"></div>
+</section><div class="layout">
 <main class="panel glass"><h2>Décisions à examiner</h2><p class="small" id="count"></p><div id="actions"></div>
 <div class="note">Une action est proposée parce qu’une échéance et une justification figurent dans les données. Il ne s’agit ni d’une décision automatique ni d’un diagnostic sur les élèves.</div></main>
 <aside><section class="panel glass"><h2>Objectifs et preuves</h2><div id="objectives"></div></section>
 <section class="panel glass" style="margin-top:17px"><h2>Fiabilité du diagnostic</h2><div id="quality"></div></section></aside></div>
 <footer>Prototype en lecture seule · aucune écriture dans Pronote ou GitHub · état des données affiché explicitement</footer></div>
+<script src="assets/trajectoire-calendar.js"></script>
 <script>
 'use strict';
 const $=s=>document.querySelector(s);
@@ -41,7 +56,33 @@ const date=d=>new Date(d+'T12:00:00'),days=(a,b)=>Math.round((date(b)-date(a))/8
 const fmt=d=>date(d).toLocaleDateString('fr-FR',{day:'numeric',month:'short',year:'numeric'});
 const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
 async function json(url){const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw Error(url+' : HTTP '+r.status);return r.json();}
-function render(d,c,day){
+
+function renderCalendar(d,day,config){
+ const cut=d.meta.arrete,cal=window.CockpitCalendar;
+ if(day<cut){
+   $('#planstats').innerHTML='<div class="plan-stat">— <span>Instantané historique indisponible</span></div>';
+   $('#plandetails').textContent='Le modèle actuel ne reconstitue pas les informations connues à une date passée.';
+   return;
+ }
+ const slots=cal.generate(config,d.vacances,config.debut,cut);
+ const result=cal.reconcile(slots,d.seances,cut);
+ const figures=[
+  ['Prévu théorique',result.prevu+' h','Depuis septembre, jusqu’à l’arrêté'],
+  ['Documenté dans Pronote',result.documente+' h','Publié ou distanciel dans la récurrence'],
+  ['À rapprocher',(result.aVerifier+result.sansTrace)+' créneaux','À vérifier : '+result.aVerifier+' · sans trace : '+result.sansTrace]
+ ];
+ $('#planstats').innerHTML=figures.map(x=>'<div class="glass plan-stat"><span>'+esc(x[0])+'</span><b>'+esc(x[1])+'</b><span>'+esc(x[2])+'</span></div>').join('');
+ const from=day>cut?day:new Date(Date.parse(day+'T12:00:00Z')+86400000).toISOString().slice(0,10);
+ const to=new Date(Date.parse(from+'T12:00:00Z')+13*86400000).toISOString().slice(0,10);
+ const next=cal.generate(config,d.vacances,from,to);
+ const w=config.objectifFenetre;
+ const windowSlots=cal.generate(config,d.vacances,w.debut,w.fin);
+ const table=next.length?'<table class="plan-table"><thead><tr><th>Date</th><th>Horaire</th><th>Créneau</th></tr></thead><tbody>'+next.map(s=>'<tr><td>'+esc(fmt(s.date))+'</td><td>'+esc(s.heure)+'</td><td>'+esc(s.libelle)+'</td></tr>').join('')+'</tbody></table>':'<p class="plan-note">Aucun créneau théorique sur les 14 jours à venir.</p>';
+ $('#plandetails').innerHTML='<p class="plan-note"><b>'+esc(w.libelle)+'</b> : '+windowSlots.reduce((n,x)=>n+x.hours,0)+' h théoriques avant validation des exceptions. '+result.horsModele.length+' séance(s) enregistrée(s) hors récurrence à examiner, sans présumer d’erreur.</p><h3>Créneaux théoriques · 14 jours</h3>'+table;
+}
+
+function render(d,c,day,calendar){
+ renderCalendar(d,day,calendar);
  const cutoff=d.meta.arrete,ago=days(cutoff,day),obj=c.fr.objectifs, historical=day<c.meta.dateReference, stale=day>cutoff;
  $('#meta').textContent='Français · '+d.meta.sourcePronote+' · arrêté au '+fmt(cutoff)+' · propositions du '+fmt(c.meta.dateReference);
  const nPub=d.seances.filter(s=>s.date<=cutoff&&s.statut==='publié').length;
@@ -53,13 +94,13 @@ function render(d,c,day){
  $('#actions').innerHTML=actions.map((a,i)=>'<article class="action"><small>'+esc(fmt(a.echeance))+' · '+esc(a.delta<0?'échéance passée de '+(-a.delta)+' j · réalisation non confirmée':a.delta===0?"aujourd’hui":"dans "+a.delta+" j")+'</small> <span class="tag">'+esc(a.etat)+' · '+esc(a.certitude)+'</span><h3>'+(i+1)+'. '+esc(a.titre)+'</h3><p>'+esc(a.justification)+'</p><small>Source : '+esc(a.source?.txt||a.jalonId)+(a.source?' · jalon retrouvé':' · jalon non confirmé')+' · <a href="cours.html?id=fr#timeline">Timeline</a></small></article>').join('')||'<p>Aucune proposition déclarée dans cette fenêtre.</p>';
  $('#objectives').innerHTML=obj.map(o=>{const confirmations=o.realisation.confirmees.length, suggestions=o.realisation.candidates.length, measured=confirmations>0,pct=measured?clamp(100*confirmations/o.cible,0,100):0;
  return '<div class="objective"><strong>'+esc(o.libelle)+'</strong><p>Échéance : '+esc(fmt(o.echeance))+'</p>'+(measured?'<b>'+confirmations+' / '+o.cible+'</b><div class="progress"><i style="width:'+pct+'%"></i></div>':'<span class="tag">Non mesuré</span>')+'<p>'+esc(o.methode)+'</p><small>Suggestions à vérifier : '+suggestions+' · Source : '+esc(o.source.document)+' / '+esc(o.source.reference)+' ('+esc(o.source.statut)+')</small></div>';}).join('');
- $('#quality').innerHTML='<div class="note"><b>Écart prévu / réalisé : indisponible.</b> Les créneaux prévisionnels quotidiens et leurs exceptions ne sont pas encore validés.</div>'+(historical?'<div class="note"><b>Historique non reconstructible :</b> les données ont été arrêtées après la date sélectionnée. Aucun compteur ni conseil rétroactif n’est présenté.</div>':'')+(stale?'<div class="note"><b>Données anciennes :</b> l’arrêté précède la date sélectionnée de '+ago+' jour(s). Les valeurs restent celles du '+fmt(cutoff)+'.</div>':'');
+ $('#quality').innerHTML='<div class="note"><b>Écart prévu / réalisé : non qualifiable.</b> Le calendrier reconstitué reste hypothétique ; des séances non publiées ou absentes de l’export peuvent avoir été assurées.</div>'+(historical?'<div class="note"><b>Historique non reconstructible :</b> les données ont été arrêtées après la date sélectionnée. Aucun compteur ni conseil rétroactif n’est présenté.</div>':'')+(stale?'<div class="note"><b>Données anciennes :</b> l’arrêté précède la date sélectionnée de '+ago+' jour(s). Les valeurs restent celles du '+fmt(cutoff)+'.</div>':'');
 }
 async function main(){
- const [d,c]=await Promise.all([json('data/fr.json'),json('data/pilotage.json')]);
- if(!Array.isArray(d.seances)||!Array.isArray(d.jalons)||!Array.isArray(c.fr?.actions)||!Array.isArray(c.fr?.objectifs))throw Error('Structure des données incompatible');
+ const [d,c,calendar]=await Promise.all([json('data/fr.json'),json('data/pilotage.json'),json('data/calendrier-pilotage.json')]);
+ if(!Array.isArray(d.seances)||!Array.isArray(d.jalons)||!Array.isArray(c.fr?.actions)||!Array.isArray(c.fr?.objectifs)||!calendar.fr||!window.CockpitCalendar)throw Error('Structure des données incompatible');
  const input=$('#day'),min='2026-09-01',max='2027-06-30';
- const select=x=>{const v=/^\d{4}-\d{2}-\d{2}$/.test(x||'')?x:today();input.value=v<min?min:v>max?max:v;render(d,c,input.value);};
+ const select=x=>{const v=/^\d{4}-\d{2}-\d{2}$/.test(x||'')?x:today();input.value=v<min?min:v>max?max:v;render(d,c,input.value,calendar.fr);};
  input.addEventListener('change',()=>select(input.value));$('#today').onclick=()=>select(today());$('#print').onclick=()=>window.print();
  select(new URLSearchParams(location.search).get('now')||today());
 }

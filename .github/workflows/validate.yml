@@ -25,3 +25,7 @@ jobs:
         run: python3 scripts/validate.py
       - name: Contrat de pilotage et tests de rejet
         run: python3 tests/test_pilotage.py
+      - name: Contrat du calendrier prévisionnel
+        run: python3 tests/test_calendrier.py
+      - name: Tests de récurrence et de rapprochement
+        run: node tests/test_calendrier.cjs
