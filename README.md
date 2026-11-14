@@ -1,19 +1,26 @@
-# Cockpits pédagogiques — 2026-2027
+# urfe-roadmap — Cockpits pédagogiques v2
 
-Pilotage de trois cours : priorités court / moyen / long terme, budget d'heures, calendrier, historique Pronote, progression, programme, grammaire, culture.
+Cockpit prof : pilotage des 3 cours (Français 1ère ST2S · Option latin LCA · Spécialité LLCA latin), année 2026-2027.
 
-## Architecture
-- `index.html` — cockpit général · `cours.html?id=fr|option|spe` — cockpit d'un cours (onglets, détail des séances en accordéon).
-- `data/*.json` — source de vérité, lue par `fetch()` ; les pages ne changent pas pour une mise à jour de contenu. Tout est statique, sans build.
-- `data/*.json › meta.arrete` : date d'arrêté des comptes. `budget.consomme` doit égaler la somme des heures des séances jusqu'à cette date (vérifié par `validate.py`).
-- `archive/v1/` — ancien chantier (non utilisé par les pages).
+## Architecture (v2)
 
-## Développement local
-`python3 -m http.server 5500`, puis http://127.0.0.1:5500 (le `file://` ne fonctionne pas : `fetch` est bloqué). `?now=AAAA-MM-JJ` simule une autre date du jour.
+- **`index.html`** — cockpit général : accès aux 3 cockpits de cours, priorités court / moyen / long terme (tous cours), budget d'heures (total / consommé / à venir), calendrier des dates importantes (vacances, conseils de classe, réunions parents-prof, échéances, événements type élection présidentielle).
+- **`cours.html?id=fr|option|spe`** — page de pilotage par cours (action dominante, signaux de trajectoire, alertes calculées) + page de synthèse (tableau de bord) + rubriques : priorités · Pronote détaillé (scroll vertical, vue résumée puis détail au clic) · timeline annuelle (scroll horizontal) · progression annuelle (établie ou en chantier, avec pistes) · éléments du programme vus / pas vus · grammaire vus / à voir · auteurs, textes, références culturelles, périodes.
+- **`data/*.json`** — source de vérité structurée, versionnée dans ce dépôt. Pour les **mises à jour de contenu**, l'IA ne pousse que du JSON ; les pages le lisent par `fetch`. Les évolutions fonctionnelles du produit peuvent modifier HTML/CSS/JS, sur branche dédiée et après contrôle.
 
-## Sécurité et confidentialité
-Le dépôt est public : aucune donnée nominative (personnes, établissement, classes, liens privés) dans `data/`.
-- Activer la garde locale : `git config core.hooksPath scripts/hooks` (lance `check_privacy.py` et `validate.py` avant chaque push).
-- La CI rejoue les deux scripts, mais elle s'exécute **après** le push : le hook est la vraie barrière.
-- Les termes interdits sont stockés sous forme d'empreintes (`scripts/privacy_hashes.txt`). Ajouter un terme : `python3 scripts/check_privacy.py --hash MOT`. Liste en clair facultative et ignorée par git : `scripts/privacy_local.txt`.
-- Les pages portent `noindex` : cela limite l'indexation, ce n'est pas un contrôle d'accès.
+## Données (`data/`)
+
+- `global.json` — priorités globales, budgets d'heures (agenda Google), calendrier.
+- `fr.json`, `option.json`, `spe.json` — par cours : séances (parsing des exports Pronote du 12/11/2026), jalons, progression, couverture du référentiel Pronote, grammaire, culture.
+
+Mise à jour : remplacer l'export Pronote parsé dans `data/{cours}.json` (clé `seances`) et recroiser la clé `programme` avec le référentiel.
+
+## Sources
+
+- Exports Pronote du 12/11/2026 (dossiers `____EDT_EXPORTS_PRONOTE` de chaque cours).
+- Créneaux de cours comptés dans l'agenda Google (base du budget d'heures).
+- Progressions annuelles / cadres de travail (Drive + Knowledge).
+
+## Vision dev-chatgpt
+
+La branche `dev-chatgpt` conserve le modèle statique/JSON-first mais ajoute une couche de **pilotage décisionnel** : briefing global, action dominante par cours, détection des jalons dépassés, des saisies Pronote à régulariser, couverture du référentiel et charge de langue restante. Aucun nouvel état métier n'est stocké : ces signaux sont dérivés à l'affichage des données existantes.
