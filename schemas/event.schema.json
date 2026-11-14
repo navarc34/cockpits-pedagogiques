@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/navarc34/urfe-roadmap/dev/schemas/event.schema.json",
+  "$id": "urn:cockpit:event-schema",
   "title": "Événement pédagogique v1.1 (cockpit prof)",
   "type": "object",
   "required": [
@@ -284,7 +284,7 @@
           "type": "string",
           "enum": [
             "agent",
-            "nicolas"
+            "professeur"
           ]
         },
         "decided_at": {
@@ -314,7 +314,7 @@
           "type": "string",
           "enum": [
             "agent",
-            "nicolas"
+            "professeur"
           ]
         },
         "observed_at": {

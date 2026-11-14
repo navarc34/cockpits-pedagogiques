@@ -19,11 +19,9 @@ DATA = ROOT / "data"
 errors = []
 warnings = []
 
-BANNED = [
-    r"Honor[eé] d['’]Urf[eé]", r"ST2S3", r"Duf[eê]tre", r"Durieux",
-    r"nicolas\.guillaume@ac-lyon\.fr", r"nguillaume", r"1LLCAL1", r"cv-aura", r"digipad\.app",
-    r"chat\.mistral", r"drive\.google"
-]
+# Confidentialité : vérifiée par scripts/check_privacy.py (empreintes SHA-256),
+# appelé par la CI avant ce script.
+BANNED = []
 COURSE_IDS = {"fr", "option", "spe"}
 
 def err(msg):

@@ -1,4 +1,4 @@
-# urfe-roadmap — Cockpits pédagogiques v2
+# Cockpits pédagogiques — v2
 
 Cockpit prof : pilotage des 3 cours (Français 1ère ST2S · Option latin LCA · Spécialité LLCA latin), année 2026-2027.
 
