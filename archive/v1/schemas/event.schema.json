@@ -1,0 +1,335 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "event.schema.json",
+  "title": "Événement pédagogique v1.1 (cockpit prof)",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "course",
+    "title",
+    "status",
+    "provenance"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "sequence",
+        "seance",
+        "explication_lineaire",
+        "lecture_oeuvre",
+        "evaluation",
+        "controle_lecture",
+        "devoir_maison",
+        "objectif",
+        "controle_rituel",
+        "seance_grammaire",
+        "traduction",
+        "reactivation",
+        "decision",
+        "evenement_classe",
+        "bac_blanc",
+        "inspection",
+        "date_lecture"
+      ]
+    },
+    "course": {
+      "type": "string",
+      "enum": [
+        "francais-1st2s",
+        "latin-option",
+        "latin-specialite"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 160
+    },
+    "sequence": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "prevu",
+        "planifie",
+        "en_cours",
+        "realise",
+        "deplace",
+        "annule"
+      ]
+    },
+    "validation_status": {
+      "type": "string",
+      "enum": [
+        "to_verify",
+        "verified",
+        "validated"
+      ]
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "presentiel",
+        "distanciel",
+        "visio"
+      ],
+      "description": "Modalité de la séance."
+    },
+    "planned_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "actual_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "duration_hours": {
+      "type": "number",
+      "minimum": 0
+    },
+    "summary": {
+      "type": "string",
+      "description": "Synthèse rédigée par l'agent (interprétation, jamais présentée comme un fait extrait)."
+    },
+    "full_text": {
+      "type": "string",
+      "description": "Contenu intégral du cahier de textes Pronote (fait extrait, source de vérité)."
+    },
+    "todo": {
+      "type": "string",
+      "description": "Travail donné pour une séance ultérieure."
+    },
+    "absent_count": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Nombre d'élèves absents (jamais de noms dans ce dépôt)."
+    },
+    "published": {
+      "type": "boolean",
+      "description": "Publication Pronote du contenu de séance."
+    },
+    "objectives": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Éléments de programme cochés dans Pronote."
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "provider",
+          "file_id",
+          "role"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "provider": {
+            "const": "google_drive"
+          },
+          "file_id": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "support",
+              "corrige",
+              "sujet",
+              "bilan",
+              "progression",
+              "reference",
+              "production_eleve"
+            ]
+          },
+          "title": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "role"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "path": {
+            "type": "string",
+            "pattern": "^assets/"
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "vignette",
+              "illustration",
+              "support",
+              "schema",
+              "apercu"
+            ]
+          },
+          "caption": {
+            "type": "string"
+          },
+          "credit": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "target"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "belongs_to",
+              "follows",
+              "prepares",
+              "reuses",
+              "assesses",
+              "reactivates",
+              "produces"
+            ]
+          },
+          "target": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "to_verify",
+            "verified"
+          ]
+        },
+        "priority": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "urgent"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "decision": {
+      "type": "object",
+      "required": [
+        "level",
+        "decision_status"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "level": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "decision_status": {
+          "type": "string",
+          "enum": [
+            "proposed",
+            "accepted",
+            "rejected",
+            "deferred"
+          ]
+        },
+        "rationale": {
+          "type": "string"
+        },
+        "decided_by": {
+          "type": "string",
+          "enum": [
+            "agent",
+            "enseignant"
+          ]
+        },
+        "decided_at": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "observed_by",
+        "observed_at"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "origin": {
+          "type": "string"
+        },
+        "observed_by": {
+          "type": "string",
+          "enum": [
+            "agent",
+            "enseignant"
+          ]
+        },
+        "observed_at": {
+          "type": "string",
+          "format": "date"
+        },
+        "confidence": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      }
+    }
+  }
+}

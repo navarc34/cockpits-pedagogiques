@@ -1,0 +1,1 @@
+Inter et Fraunces : SIL Open Font License 1.1 (https://openfontlicense.org). Fichiers issus des paquets npm @fontsource-variable/inter et @fontsource-variable/fraunces.

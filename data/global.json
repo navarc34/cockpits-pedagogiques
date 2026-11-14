@@ -1,0 +1,233 @@
+{
+  "meta": {
+    "annee": "2026-2027",
+    "lycee": "Lycée",
+    "maj": "13/11/2026",
+    "sources": {
+      "pronote": "Exports Pronote du 12/11/2026 (3 matières)",
+      "budget": "Créneaux de cours comptés dans l'agenda Google (année scolaire 2026-27)",
+      "progressions": "Progressions annuelles validées / cadres de travail (Drive + Knowledge)"
+    },
+    "arrete": "2026-11-13"
+  },
+  "courses": [
+    {
+      "id": "fr",
+      "nom": "Français — 1ʳᵉ ST2S",
+      "couleur": "#c2603f",
+      "href": "cours.html?id=fr",
+      "budget": {
+        "total": 99,
+        "consomme": 25,
+        "aVenir": 74,
+        "unite": "h"
+      },
+      "progressionStatut": "établie",
+      "resume": "S1 Graffigny à clôturer (EL2/EL3) → S2 Rimbaud dès le 23/11. BB1 le 03/12, inspection le 30/11.",
+      "prochainJalon": {
+        "date": "2026-11-16",
+        "txt": "DS contraction 2/2"
+      }
+    },
+    {
+      "id": "option",
+      "nom": "Option latin LCA (2nde + Tle)",
+      "couleur": "#3d6b78",
+      "href": "cours.html?id=option",
+      "budget": {
+        "total": 66,
+        "consomme": 17,
+        "aVenir": 49,
+        "unite": "h"
+      },
+      "progressionStatut": "en chantier",
+      "resume": "S1 « Observer le vivant » close le 06/11 → S2 « Imperium sine fine » (Énéide I, 274-295 + Auguste). CR#3 le 16/11.",
+      "prochainJalon": {
+        "date": "2026-11-16",
+        "txt": "Contrôle rituel #3 (Larentia ch. 1)"
+      }
+    },
+    {
+      "id": "spe",
+      "nom": "Spécialité LLCA latin — 1ʳᵉ",
+      "couleur": "#5b7150",
+      "href": "cours.html?id=spe",
+      "budget": {
+        "total": 134,
+        "consomme": 34,
+        "aVenir": 100,
+        "unite": "h"
+      },
+      "progressionStatut": "en chantier (cadre non figé)",
+      "resume": "OE1 « Gouverner » bouclée par l'essai du 06/11 → séquence Didon (Énéide IV) lancée le 09/11. CR#3 le 16/11.",
+      "prochainJalon": {
+        "date": "2026-11-16",
+        "txt": "Contrôle rituel #3 (Larentia ch. 1)"
+      }
+    }
+  ],
+  "prioritesGlobales": {
+    "court": [
+      {
+        "cours": "fr",
+        "txt": "Finir le DS contraction (16/11) et corriger les copies avant le BB1 du 03/12"
+      },
+      {
+        "cours": "fr, option, spe",
+        "txt": "Contrôles rituels #3 latin (16/11) : faire réviser via l'app de vocabulaire"
+      },
+      {
+        "cours": "fr",
+        "txt": "Contrôles de lecture Graffigny + cursive (proposition 20/11)"
+      },
+      {
+        "cours": "fr, option, spe",
+        "txt": "Saisir Pronote : créneaux passés non publiés (visio du 13/11, DS du 16/11…)"
+      },
+      {
+        "cours": "fr",
+        "txt": "Préparer la séance inspectée IA-IPR du 30/11 (grammaire : la négation)"
+      },
+      {
+        "cours": "spe",
+        "txt": "Dérouler la séquence Didon : colère de Didon / Énée quitte Carthage (Énéide IV)"
+      }
+    ],
+    "moyen": [
+      {
+        "cours": "fr",
+        "txt": "Lancer Rimbaud (23/11) et le rituel oral « 1 élève × 5 min » ; terminer la séquence avant Noël"
+      },
+      {
+        "cours": "fr",
+        "txt": "EL3 de Graffigny + séances restantes (genre épistolaire, mots du parcours, cibles de la critique)"
+      },
+      {
+        "cours": "option",
+        "txt": "Poursuivre « Imperium sine fine » : Virgile ↔ Auguste, consolidation des déclinaisons"
+      },
+      {
+        "cours": "spe",
+        "txt": "Refermer l'OE1 (restitution/correction de l'essai) ; langue : pronoms, parfait, subordinations"
+      },
+      {
+        "cours": "fr",
+        "txt": "BB n°1 (03/12) : contraction + essai — Copies corrigées avant les conseils de classe (07/12)"
+      }
+    ],
+    "long": [
+      {
+        "cours": "fr",
+        "txt": "12 EL minimum (3 par objet d'étude) et couverture des 4 objets d'étude EAF ; commentaire dès le BB2 (février)"
+      },
+      {
+        "cours": "option",
+        "txt": "Formaliser la roadmap annuelle multiniveau (3 OE par niveau dont Méditerranée) — collaboration à venir"
+      },
+      {
+        "cours": "spe",
+        "txt": "Tracer la trajectoire des 4 OE (cité → amour/Didon → justice → Méditerranée), l'Énéide en fil rouge (V-VIII puis IX-XII), les figures féminines"
+      },
+      {
+        "cours": "spe",
+        "txt": "Épreuve écrite de fin de 1ère (2 h) : sprint épreuve en mai-juin"
+      },
+      {
+        "cours": "fr",
+        "txt": "EAF : bacs blancs oraux (26/04-05/05), écrits puis oraux mi-juin"
+      }
+    ]
+  },
+  "calendrier": [
+    {
+      "date": "2026-11-23",
+      "fin": null,
+      "type": "jalon-cours",
+      "txt": "Lancement séquence Rimbaud (français)"
+    },
+    {
+      "date": "2026-11-30",
+      "fin": null,
+      "type": "inspection",
+      "txt": "Inspection IA-IPR (visite 1ST2S + entretien)"
+    },
+    {
+      "date": "2026-12-03",
+      "fin": null,
+      "type": "examen",
+      "txt": "Bac blanc n°1 de français (contraction + essai, 4 h)"
+    },
+    {
+      "date": "2026-12-07",
+      "fin": null,
+      "type": "conseil",
+      "txt": "Conseils de classe — 1er trimestre "
+    },
+    {
+      "date": "2026-12-19",
+      "fin": "2027-01-04",
+      "type": "vacances",
+      "txt": "Vacances de Noël"
+    },
+    {
+      "date": "2027-02-08",
+      "fin": "2027-02-12",
+      "type": "examen",
+      "txt": "Bac blanc n°2 (commentaire)"
+    },
+    {
+      "date": "2027-02-13",
+      "fin": "2027-03-01",
+      "type": "vacances",
+      "txt": "Vacances d'hiver"
+    },
+    {
+      "date": "2027-03-08",
+      "fin": null,
+      "type": "conseil",
+      "txt": "Conseils de classe — 2e trimestre "
+    },
+    {
+      "date": "2027-03-30",
+      "fin": "2027-04-02",
+      "type": "examen",
+      "txt": "Bac blanc n°3"
+    },
+    {
+      "date": "2027-04-10",
+      "fin": "2027-04-26",
+      "type": "vacances",
+      "txt": "Vacances de printemps"
+    },
+    {
+      "date": "2027-04-11",
+      "fin": null,
+      "type": "election",
+      "txt": "Élection présidentielle — 1er tour (date prévue)"
+    },
+    {
+      "date": "2027-04-26",
+      "fin": "2027-05-05",
+      "type": "examen",
+      "txt": "Bacs blancs oraux de français"
+    },
+    {
+      "date": "2027-04-25",
+      "fin": null,
+      "type": "election",
+      "txt": "Élection présidentielle — 2d tour (date prévue)"
+    },
+    {
+      "date": "2027-06-14",
+      "fin": null,
+      "type": "examen",
+      "txt": "EAF : écrits (mi-juin) puis oraux"
+    },
+    {
+      "date": null,
+      "fin": null,
+      "type": "a-confirmer",
+      "txt": "Réunions parents-professeurs : dates pas encore dans l'agenda (à confirmer / à ajouter)"
+    }
+  ]
+}

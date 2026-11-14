@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light dark">
+<title>Cockpit pédagogique · 2026-2027</title>
+<link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/cockpit.css">
+<style>
+.bar{height:9px;margin:6px 0 4px}
+.hm{margin:16px 0 4px}
+h1{font:600 clamp(32px,5vw,58px)/1.02 Fraunces,Georgia,serif;margin:12px 0 12px;letter-spacing:-.025em}
+h1 em{font-style:italic;color:var(--sea)}
+h2{font:600 25px Fraunces,serif;margin:0}
+section{margin-top:52px}
+.shead{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:16px}
+.hero{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;padding:48px 0 8px}
+.sub{color:var(--soft);max-width:620px;margin:0 0 22px}
+.stats{display:flex;gap:30px;flex-wrap:wrap}
+.stats b{display:block;font:600 30px Fraunces,serif}
+.stats span{font-size:12px;color:var(--soft)}
+.ring{width:190px;height:190px}
+.ring .trk{fill:none;stroke:var(--empty);stroke-width:11}
+.ring .arc{fill:none;stroke:var(--sea);stroke-width:11;stroke-linecap:round;transition:stroke-dasharray 1.2s cubic-bezier(.2,.8,.2,1)}
+.ring .tick{stroke:var(--terra);stroke-width:3;stroke-linecap:round}
+.ring text{fill:var(--ink);text-anchor:middle}
+.ringcap{text-align:center;font-size:11.5px;color:var(--soft);margin-top:4px}
+.week{display:grid;grid-template-columns:repeat(7,minmax(150px,1fr));gap:10px;overflow-x:auto;padding:4px 2px 14px;scroll-snap-type:x proximity}
+.day{scroll-snap-align:start;min-height:150px;padding:12px;border-radius:16px;border:1px solid var(--line);background:var(--card)}
+.day.td{border-color:var(--terra);box-shadow:0 0 0 3px var(--g1),var(--sh)}
+.day h4{margin:0 0 8px;font:700 11px Inter;letter-spacing:.1em;text-transform:uppercase;color:var(--soft)}
+.day.td h4{color:var(--terra)}
+.day h4 b{font:600 22px Fraunces,serif;color:var(--ink);letter-spacing:0;margin-right:6px}
+.ev{border-left:4px solid var(--c);border-radius:4px 10px 10px 4px;background:color-mix(in srgb,var(--c) 10%,transparent);padding:6px 9px;margin-top:6px;font-size:12px;line-height:1.35}
+.ev small{display:block;color:var(--soft);font-weight:700;font-size:10.5px}
+.ev.sa{border-style:dashed;border-left-style:solid;opacity:.85}
+.none{color:var(--soft);font-size:12px;opacity:.7}
+.alert{display:inline-flex;gap:8px;align-items:center;font-size:12px;font-weight:700;color:#fff;background:var(--red);border-radius:999px;padding:5px 13px}
+.courses{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:18px}
+.course{position:relative;display:block;text-decoration:none;padding:24px;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.course::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:var(--c)}
+.course:hover,.course:focus-visible{transform:translateY(-4px);box-shadow:0 22px 50px #22302d26;outline:none}
+.tag{display:inline-block;font:800 10.5px Inter;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--c);border-radius:999px;padding:4px 11px}
+.course h3{font:600 22px Fraunces,serif;margin:12px 0 6px}
+.course p{color:var(--soft);font-size:13px;margin:0 0 14px;min-height:40px}
+.nums{display:flex;justify-content:space-between;font-size:11px;color:var(--soft)}
+.nums b{color:var(--ink);font-size:13px}
+.next{margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);font-size:12.5px}
+.next b{font:600 13.5px Fraunces,serif}
+.prio{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+.pcol{padding:22px}
+.pcol h3{font:600 20px Fraunces,serif;margin:0 0 2px}
+.pcol .hint{font:800 10.5px Inter;letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px;color:var(--soft)}
+.pcol ul{list-style:none;margin:0;padding:0}
+.pcol li{display:flex;gap:9px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--line);font-size:13px}
+.pcol li:first-child{border:0}
+.who{flex:none;font:800 10.5px Inter;letter-spacing:.05em;text-transform:uppercase;color:#fff;border-radius:5px;padding:3px 7px;margin-top:2px}
+.cal{padding:6px 0;overflow:hidden}
+.cal div{display:grid;grid-template-columns:190px 150px 1fr;gap:12px;padding:11px 20px;border-top:1px solid var(--line);font-size:13px;align-items:center}
+.cal div:first-child{border:0}.cal div.past{opacity:.45}
+.cal b{font-weight:700}.cal span{font:700 10.5px Inter;letter-spacing:.05em;text-transform:uppercase;color:var(--soft)}
+.cal span:before{content:"";display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:7px;background:var(--k)}
+footer{margin:60px 0 40px;color:var(--soft);font-size:11.5px;border-top:1px solid var(--line);padding-top:16px}
+.up{animation:up .6s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i,0)*70ms)}
+@keyframes up{from{opacity:0;transform:translateY(14px)}}
+@media(max-width:820px){.hero{grid-template-columns:1fr}.ring{width:150px;height:150px}.cal div{grid-template-columns:1fr;gap:2px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <div class="up">
+    <div class="kicker" id="today"></div>
+    <h1>Piloter l'année, <em>cours par cours.</em></h1>
+    <p class="sub">Priorités, budget d'heures, semaine en cours et carte de l'année : tout le pilotage des trois cours, en un coup d'œil.</p>
+    <div class="stats" id="kpi"></div>
+  </div>
+  <div class="up" style="--i:2" id="ringbox"></div>
+</header>
+<section><div class="shead"><h2>Cette semaine</h2><small>les sept prochains jours, tous cours</small><span id="late"></span></div><div class="week" id="week"><p class="loading">Chargement…</p></div></section>
+<section><div class="shead"><h2>Les cockpits de cours</h2><small>chaque case = un jour de cours · cliquer pour entrer</small></div><div class="courses" id="courses"></div>
+  <div class="leg" style="margin-top:14px"><span><i style="background:var(--sea)"></i>publié</span><span><i style="background:color-mix(in srgb,var(--sea) 55%,var(--bg))"></i>distanciel</span><span><i style="background:var(--gold)"></i>non publié</span><span><i style="box-shadow:inset 0 0 0 1.5px var(--red)"></i>à saisir</span><span><i style="background:repeating-linear-gradient(45deg,var(--empty) 0 2px,transparent 2px 4px)"></i>vacances</span><span>trait noir = rythme attendu à ce jour</span></div></section>
+<section><div class="shead"><h2>Priorités, tous cours</h2><small>maintenant · ce trimestre · l'année</small></div><div class="prio" id="prio"></div></section>
+<section><div class="shead"><h2>Dates importantes</h2><small>vacances · conseils · échéances</small></div><div class="glass cal" id="cal"></div></section>
+<footer id="foot"></footer>
+</div>
+<script>
+const esc=s=>String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+const col=c=>/^#[0-9a-f]{3,8}$/i.test(c||'')?c:'#5f7280';
+const NOW=(()=>{const q=new URLSearchParams(location.search).get('now');return /^\d{4}-\d{2}-\d{2}$/.test(q||'')?q:new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Paris'}).format(new Date());})();
+async function load(u){const r=await fetch(u);if(!r.ok)throw new Error(u+' : HTTP '+r.status);return r.json();}
+const D=s=>new Date(s+'T12:00:00'),fl=(s,o)=>D(s).toLocaleDateString('fr-FR',o);
+const iso=t=>t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0');
+const add=(s,n)=>{const t=D(s);t.setDate(t.getDate()+n);return iso(t)};
+const $=s=>document.querySelector(s);
+const K={vacances:['#8a6d1f','Vacances'],conseil:['#7d5480','Conseil de classe'],examen:['#b03d38','Échéance'],inspection:['#7d5480','Inspection'],election:['#3d6b78','Élection'],'a-confirmer':['#5f7280','À confirmer']};
+function heat(cd){
+  const S0=D('2026-08-31'),by={},vac=cd.vacances||[];
+  (cd.seances||[]).forEach(s=>(by[s.date]=by[s.date]||[]).push(s));
+  let h='';
+  for(let w=0;w<44;w++)for(let r=0;r<5;r++){
+    const t=new Date(S0);t.setDate(S0.getDate()+w*7+r);const d=iso(t),se=by[d];
+    const st=se?(se.some(x=>x.statut==='à saisir')?'sa':se.some(x=>x.statut==='réalisé non publié')?'np':se.every(x=>x.statut==='distanciel')?'di':'ok'):'';
+    const c=[st,vac.some(x=>d>=x.debut&&d<=x.fin)?'v':'',d===NOW?'td':'',d>'2027-06-30'?'x':''].join(' ').trim();
+    h+=`<i class="${c}" title="${esc(fl(d,{day:'numeric',month:'short'})+(se?' · '+se.map(x=>x.titre||'non saisi').join(' / '):''))}"></i>`;
+  }
+  return `<div class="hm" aria-hidden="true">${h}</div>`;
+}
+async function main(){
+  const g=await load('data/global.json');
+  const cds=await Promise.all(g.courses.map(c=>load('data/'+String(c.id).replace(/\W/g,'')+'.json').catch(()=>({}))));
+  const col2={};g.courses.forEach(c=>col2[c.id]=col(c.couleur));
+  const tot=g.courses.reduce((a,c)=>a+c.budget.total,0),done=g.courses.reduce((a,c)=>a+c.budget.consomme,0),left=tot-done;
+  const a=D('2026-09-01'),b=D('2027-06-30'),el=Math.min(1,Math.max(0,(D(NOW)-a)/(b-a))),pc=done/tot;
+  const late=cds.reduce((n,d)=>n+(d.seances||[]).filter(s=>s.statut==='à saisir'&&s.date<=NOW).length,0);
+  $('#today').textContent=fl(NOW,{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+  $('#kpi').innerHTML=`<div><b>${done} h</b><span>consommées au ${g.meta.arrete?fl(g.meta.arrete,{day:'numeric',month:'short'}):esc(g.meta.maj)}</span></div><div><b>${left} h</b><span>à venir jusqu'en juin</span></div><div><b>${g.courses.length}</b><span>cockpits de cours</span></div>`;
+  const C=2*Math.PI*54,diff=Math.round((pc-el)*tot);
+  $('#ringbox').innerHTML=`<svg class="ring" viewBox="0 0 140 140" role="img" aria-label="${Math.round(pc*100)} % du budget consommé"><circle class="trk" cx="70" cy="70" r="54"/><circle class="arc" id="arc" cx="70" cy="70" r="54" transform="rotate(-90 70 70)" stroke-dasharray="0 ${C}"/><g transform="rotate(${el*360} 70 70)"><line class="tick" x1="70" y1="6" x2="70" y2="24"/></g><text x="70" y="76" font-family="Fraunces,serif" font-size="30" font-weight="600">${Math.round(pc*100)}%</text><text x="70" y="94" font-size="9.5" font-family="Inter">du budget d'heures</text></svg><div class="ringcap">${diff>=0?'en avance':'en retard'} de ${Math.abs(diff)} h sur le rythme de l'année</div>`;
+  requestAnimationFrame(()=>requestAnimationFrame(()=>$('#arc').setAttribute('stroke-dasharray',`${pc*C} ${C}`)));
+  if(late)$('#late').innerHTML=`<span class="alert">${late} créneau${late>1?'x':''} à saisir dans Pronote</span>`;
+  // semaine
+  let wk='';
+  for(let i=0;i<7;i++){
+    const d=add(NOW,i),ev=[];
+    g.courses.forEach((c,j)=>(cds[j].seances||[]).filter(s=>s.date===d).forEach(s=>ev.push({t:s.time||'',c:col2[c.id],n:s.titre||'Créneau non saisi',k:c.nom,sa:s.statut==='à saisir'})));
+    g.courses.forEach((c,j)=>(cds[j].jalons||[]).filter(x=>x.date===d).forEach(x=>ev.push({t:'',c:col2[c.id],n:x.txt,k:'Jalon · '+c.nom})));
+    (g.calendrier||[]).filter(x=>x.date===d&&!x.fin).forEach(x=>ev.push({t:'',c:(K[x.type]||K['a-confirmer'])[0],n:x.txt,k:(K[x.type]||K['a-confirmer'])[1]}));
+    ev.sort((p,q)=>p.t<q.t?-1:1);
+    wk+=`<div class="day up${i?'':' td'}" style="--i:${i}"><h4><b>${fl(d,{day:'numeric'})}</b>${fl(d,{weekday:'short',month:'short'})}</h4>${ev.map(e=>`<div class="ev${e.sa?' sa':''}" style="--c:${col(e.c)}"><small>${esc(e.t?e.t+' · ':'')}${esc(e.k)}</small>${esc(e.n)}</div>`).join('')||'<span class="none">—</span>'}</div>`;
+  }
+  $('#week').innerHTML=wk;
+  // cours
+  $('#courses').innerHTML=g.courses.map((c,j)=>{
+    const p=c.budget,cd=cds[j],pct=Math.round(p.consomme/p.total*100);
+    const nx=(cd.jalons||[]).filter(x=>x.date>=NOW&&x.etat==='à venir').sort((u,v)=>u.date<v.date?-1:1)[0]||c.prochainJalon;
+    return `<a class="course glass up" style="--c:${col2[c.id]};--i:${j}" href="${esc(c.href)}"><span class="tag">${esc(String(c.progressionStatut).startsWith('établie')?'progression établie':'progression en chantier')}</span><h3>${esc(c.nom)}</h3><p>${esc(c.resume)}</p>
+    <div class="bar"><i style="width:${pct}%"></i><u style="left:${(el*100).toFixed(1)}%"></u></div><div class="nums"><span>Consommé <b>${p.consomme} h</b></span><span>À venir <b>${p.aVenir} h</b></span><span>Total <b>${p.total} h</b></span></div>
+    ${heat(cd)}${nx?`<div class="next">Prochain jalon · <b>${esc(fl(nx.date,{weekday:'short',day:'numeric',month:'long'}))}</b> — ${esc(nx.txt)} →</div>`:''}</a>`;}).join('');
+  // priorités
+  const pc3=(t,h,k)=>`<div class="pcol glass up"><h3>${t}</h3><p class="hint">${h}</p><ul>${(g.prioritesGlobales[k]||[]).map(p=>`<li>${String(p.cours).split(',').map(w=>w.trim()).map(w=>`<span class="who" style="background:${col(col2[w]||'#5f7280')}">${esc(w==='spe'?'spé':w)}</span>`).join('')}<span>${esc(p.txt)}</span></li>`).join('')}</ul></div>`;
+  $('#prio').innerHTML=pc3('Court terme','2 prochaines semaines','court')+pc3('Moyen terme','ce trimestre','moyen')+pc3('Long terme','cap annuel','long');
+  // calendrier
+  $('#cal').innerHTML=[...g.calendrier].sort((u,v)=>(u.date||'9999')<(v.date||'9999')?-1:1).map(e=>{const k=K[e.type]||[col('#5f7280'),e.type];const end=e.fin||e.date||'9999';
+    return `<div class="${end<NOW?'past':''}"><b>${e.date?(e.fin?esc(fl(e.date,{day:'numeric',month:'short'})+' → '+fl(e.fin,{day:'numeric',month:'short'})):esc(fl(e.date,{weekday:'short',day:'numeric',month:'long'}))):'À confirmer'}</b><span style="--k:${k[0]}">${esc(k[1])}</span><em style="font-style:normal">${esc(e.txt)}</em></div>`;}).join('');
+  $('#foot').innerHTML='Sources — '+Object.entries(g.meta.sources).map(([k,v])=>`<b>${esc(k)}</b> : ${esc(v)}`).join(' · ')+' · Mis à jour le '+esc(g.meta.maj);
+  document.title='Cockpit pédagogique · '+g.meta.annee;
+}
+main().catch(e=>{console.error(e);document.querySelector('.wrap').insertAdjacentHTML('afterbegin','<p class="err">Impossible de charger les données ('+esc(e.message)+'). Ouvrez la page via un serveur HTTP (GitHub Pages ou Live Server), pas en file://.</p>');});
+</script>
+</body>
+</html>

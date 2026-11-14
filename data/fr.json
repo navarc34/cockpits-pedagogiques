@@ -1,0 +1,1084 @@
+{
+  "meta": {
+    "id": "fr",
+    "nom": "Français — 1ʳᵉ ST2S",
+    "classe": "33 élèves · EAF session 2027",
+    "creneaux": "lun. 11h-12h · ven. 10h-11h · 3e heure en alternance Q1/Q2 (lun. 15h-16h ou ven. 13h-14h)",
+    "rythme": "3 h/semaine",
+    "couleur": "#c2603f",
+    "sourcePronote": "Export Pronote du 12/11/2026 (dossier ____EDT_EXPORTS_PRONOTE du cours)",
+    "sourceBudget": "Créneaux de l'agenda Google, année scolaire 2026-27",
+    "arrete": "2026-11-13"
+  },
+  "budget": {
+    "total": 99,
+    "consomme": 25,
+    "aVenir": 74,
+    "unite": "h"
+  },
+  "priorites": {
+    "court": [
+      {
+        "txt": "Clôturer l'EL2 Graffigny (lettre 34) et annoncer l'EL3 — séance du 13/11 (visio, Q2 tutorat)",
+        "echeance": "13/11",
+        "fait": false
+      },
+      {
+        "txt": "Finir le DS de contraction (2e heure, lun. 16/11) puis corriger les copies avant le BB1",
+        "echeance": "16/11",
+        "fait": false
+      },
+      {
+        "txt": "Contrôles de lecture Graffigny + cursive (Ourika / Americanah) — proposition : ven. 20/11",
+        "echeance": "20/11",
+        "fait": false
+      },
+      {
+        "txt": "Saisir Pronote : 4 créneaux passés non publiés (13/11 visio, 16/11 DS, 20/11)",
+        "echeance": "fin nov.",
+        "fait": false
+      },
+      {
+        "txt": "Préparer la séance inspectée IA-IPR (30/11) : grammaire, piste « la négation » + documents à présenter",
+        "echeance": "30/11",
+        "fait": false
+      },
+      {
+        "txt": "Bac blanc n°1 : contraction + essai (4 h)",
+        "echeance": "03/12",
+        "fait": false
+      }
+    ],
+    "moyen": [
+      {
+        "txt": "Lancer la S2 Rimbaud (23/11) : 2 EL des Cahiers de Douai + 1 EL de parcours — cursive due au 30/11",
+        "echeance": "nov.-déc."
+      },
+      {
+        "txt": "Terminer Rimbaud avant les vacances de Noël (fenêtre courte : ~9 h de cours)",
+        "echeance": "avant 19/12"
+      },
+      {
+        "txt": "Lancer le rituel oral « 1 élève × 5 min » (remédiation feu rouge oral)",
+        "echeance": "23/11"
+      },
+      {
+        "txt": "Trouver et faire l'EL3 de Graffigny (texte du parcours — pistes : cours d'un collègue, NRP, éditions péda)",
+        "echeance": "T2"
+      },
+      {
+        "txt": "Séances Graffigny restantes : genre épistolaire, mots du parcours, cibles de la critique (séances prêtes Drive)",
+        "echeance": "T2"
+      },
+      {
+        "txt": "Grammaire en « classe maison » : la négation puis 2 notions à choisir",
+        "echeance": "T2-T3"
+      }
+    ],
+    "long": [
+      {
+        "txt": "12 explications linéaires minimum (3 par objet d'étude, dont la question de grammaire à l'oral)",
+        "echeance": "année"
+      },
+      {
+        "txt": "Couvrir les 4 objets d'étude : Graffigny → Rimbaud → Chrétien de Troyes → Musset",
+        "echeance": "année"
+      },
+      {
+        "txt": "Commentaire travaillé à partir du BB n°2 (8-12/02) ; BB n°3 (30/03-02/04)",
+        "echeance": "T2-T3"
+      },
+      {
+        "txt": "Bacs blancs oraux (26/04-05/05) puis EAF écrits et oraux (mi-juin)",
+        "echeance": "avr.-juin"
+      }
+    ]
+  },
+  "jalons": [
+    {
+      "date": "2026-09-28",
+      "type": "ds",
+      "txt": "DS n°1 : essai (2 h, sujet Lucie Azéma)",
+      "etat": "fait"
+    },
+    {
+      "date": "2026-10-02",
+      "type": "alerte",
+      "txt": "Début du distanciel (blocages) — contrôle Graffigny reporté ×2",
+      "etat": "fait"
+    },
+    {
+      "date": "2026-11-02",
+      "type": "retour",
+      "txt": "Reprise en présentiel",
+      "etat": "fait"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "ds",
+      "txt": "DS contraction 1/2 (2 h)",
+      "etat": "réalisé"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "cours",
+      "txt": "Clôture EL2 + annonce EL3 (visio)",
+      "etat": "réalisé"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "ds",
+      "txt": "DS contraction 2/2",
+      "etat": "à venir"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "controle",
+      "txt": "Contrôles de lecture Graffigny + cursive (proposition)",
+      "etat": "à venir"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "jalon",
+      "txt": "Lancement Rimbaud (S2) + rituel oral",
+      "etat": "à venir"
+    },
+    {
+      "date": "2026-11-30",
+      "type": "inspection",
+      "txt": "Inspection IA-IPR (11h-12h + entretien) — grammaire, la négation · cursive Rimbaud due",
+      "etat": "à venir"
+    },
+    {
+      "date": "2026-12-03",
+      "type": "bac-blanc",
+      "txt": "Bac blanc n°1 : contraction + essai (4 h)",
+      "etat": "à venir"
+    },
+    {
+      "date": "2026-12-07",
+      "type": "conseil",
+      "txt": "Conseils de classe 1er trimestre",
+      "etat": "à venir"
+    },
+    {
+      "date": "2026-12-19",
+      "type": "objectif",
+      "txt": "Objectif : Rimbaud terminé avant Noël",
+      "etat": "à venir"
+    },
+    {
+      "date": "2027-02-08",
+      "type": "bac-blanc",
+      "txt": "BB n°2 (8-12/02) : commentaire · lancement Chrétien de Troyes (S3)",
+      "etat": "à venir"
+    },
+    {
+      "date": "2027-03-30",
+      "type": "bac-blanc",
+      "txt": "BB n°3 (30/03-02/04) · lancement Musset (S4)",
+      "etat": "à venir"
+    },
+    {
+      "date": "2027-04-26",
+      "type": "bac-blanc",
+      "txt": "Bacs blancs oraux (26/04-05/05)",
+      "etat": "à venir"
+    },
+    {
+      "date": "2027-06-14",
+      "type": "eaf",
+      "txt": "EAF : écrits (mi-juin) puis oraux",
+      "etat": "à venir"
+    }
+  ],
+  "vacances": [
+    {
+      "debut": "2026-10-17",
+      "fin": "2026-11-02",
+      "txt": "Vacances de Toussaint"
+    },
+    {
+      "debut": "2026-12-19",
+      "fin": "2027-01-04",
+      "txt": "Vacances de Noël"
+    },
+    {
+      "debut": "2027-02-13",
+      "fin": "2027-03-01",
+      "txt": "Vacances d'hiver"
+    },
+    {
+      "debut": "2027-04-10",
+      "fin": "2027-04-26",
+      "txt": "Vacances de printemps"
+    }
+  ],
+  "progression": {
+    "statut": "établie",
+    "source": "Progression annuelle validée (Drive « PROGRESSION ANNUELLE ET PROGRAMME DE LECTURES OBLIGATOIRES »)",
+    "sequences": [
+      {
+        "no": "S1",
+        "titre": "Graffigny — Littérature d'idées",
+        "parcours": "« Un nouvel univers s'est offert à mes yeux »",
+        "oeuvre": "Lettres d'une Péruvienne (1747)",
+        "cursive": "Ourika (1823) OU Americanah (2013)",
+        "periode": "Sept.-nov. 2026",
+        "couleur": "#c2603f",
+        "etat": "en cours",
+        "detail": "EL1 (lettre I) faite · EL2 (lettre 34) à clôturer 13/11 · EL3 (parcours) à faire. Restent : genre épistolaire, mots du parcours, cibles de la critique."
+      },
+      {
+        "no": "S2",
+        "titre": "Rimbaud — Poésie",
+        "parcours": "« Émancipations créatrices »",
+        "oeuvre": "Cahiers de Douai (1871)",
+        "cursive": "Alcools (1913) OU Le Parti pris des choses (1942)",
+        "periode": "Nov. 2026-janv. 2027",
+        "couleur": "#3d6b78",
+        "etat": "à lancer 23/11",
+        "detail": "Cahiers de Douai à lire dès le 02/11 ; cursive due au 30/11. Objectif : terminer avant Noël (3 EL)."
+      },
+      {
+        "no": "S3",
+        "titre": "Chrétien de Troyes — Roman et récit",
+        "parcours": "« Héroïsme et amour »",
+        "oeuvre": "Le Chevalier de la charrette (éd. Aubailly)",
+        "cursive": "Le Chant d'Achille (2011) OU Atala (1801)",
+        "periode": "Janv.-mars 2027",
+        "couleur": "#5b7150",
+        "etat": "planifié",
+        "detail": "Traduction Aubailly à acheter · lectures 04/01 et 01/02 · BB2 commentaire (8-12/02)."
+      },
+      {
+        "no": "S4",
+        "titre": "Musset — Théâtre",
+        "parcours": "« Les jeux du cœur et de la parole »",
+        "oeuvre": "On ne badine pas avec l'amour (1834)",
+        "cursive": "L'École des femmes (1662) OU L'Invitation au château (1947)",
+        "periode": "Mars-juin 2027",
+        "couleur": "#7d5480",
+        "etat": "planifié",
+        "detail": "Lectures 01/03 et 05/04 · BB3 (30/03-02/04) · oraux 26/04-05/05 · EAF."
+      }
+    ],
+    "transversal": {
+      "titre": "Langue · écrit · oral",
+      "detail": "Grammaire (3 notions/an, la 1re = négation, classe inversée) ; contraction → essai (BB1) puis commentaire (BB2) ; rituel oral « 1 élève × 5 min » à lancer le 23/11 + présentation d'œuvre.",
+      "periode": "toute l'année",
+      "couleur": "#a5842e",
+      "etat": "en cours"
+    }
+  },
+  "grammaire": {
+    "vus": [
+      {
+        "titre": "Nature des mots, classes grammaticales et fonctions (rappels cycle 4 + exercices)",
+        "date": "11/09"
+      },
+      {
+        "titre": "Structure de la phrase et repérages syntaxiques pour l'EL (préparation EL1)",
+        "date": "14/09-18/09"
+      }
+    ],
+    "aVoir": [
+      {
+        "titre": "La négation — 1re notion de l'année, cible : séance inspectée du 30/11 (classe inversée)",
+        "echeance": "30/11"
+      },
+      {
+        "titre": "2 notions restantes à choisir parmi le programme (analyse syntaxique : propositions, subordonnées, interrogation…)",
+        "echeance": "T2-T3"
+      }
+    ]
+  },
+  "culture": {
+    "auteursTextes": [
+      {
+        "titre": "Montaigne, Essais, I, 31 « Sur les cannibales » (1580)",
+        "contexte": "intro littérature d'idées, Renaissance"
+      },
+      {
+        "titre": "Françoise de Graffigny, Lettres d'une Péruvienne, lettres I et 34 (1747)",
+        "contexte": "EL1 et EL2 — S1"
+      },
+      {
+        "titre": "Textes de contraction : J. Dausset ; A. Boudhiba « Le tourisme… » ; Carrière & Eco ; Santolaria « Éloge de la paresse » ; L. Azéma",
+        "contexte": "chaîne contraction → BB1"
+      }
+    ],
+    "referencesCulturelles": [
+      "Carte de Waldseemüller (1507) et représentation du monde à la Renaissance",
+      "Le Pérou inca : Cuzco, Temple du Soleil, Machu Picchu, quipus",
+      "« Françoise de Graffigny, féministe des Lumières » (Lumni)",
+      "Registres, figures de style, discours argumentatif (fiches méthode)",
+      "App d'entraînement à la contraction (GitHub Pages)"
+    ],
+    "periodes": [
+      {
+        "titre": "Renaissance (XVIe)",
+        "detail": "Montaigne, humanisme, rencontre de l'altérité"
+      },
+      {
+        "titre": "Lumières (XVIIIe)",
+        "detail": "contexte intellectuel, roman épistolaire, critique sociale, condition féminine"
+      }
+    ]
+  },
+  "seances": [
+    {
+      "date": "2026-09-04",
+      "time": "10:00",
+      "hours": 1,
+      "titre": "Cadrage de l'année : programme, œuvres et épreuves EAF",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Cadrage de l'année : programme, œuvres et épreuves EAFObjectifs :connaître le programme de l'année et les épreuves écrites/orales du bac ;planifier ses lectures (4 œuvres imposées + 4 cursives) ;se présenter (fiche projet de lecture/orientation)Déroulé :Distribution d'une fiche de présentation à remplir par chaque élève : projet d'orientation / professionnel, activités extra-scolaires, livres préférés, etcPrésentation de la progression annuellePrésentation des dates des bacs blancsPrésentation de l'organisation matérielle et du déroulement du travail pendant l'annéePrésentation des oeuvres imposés et des propositions de lectures cursives ( = lecture pesonnelle, sans étude approfondie en cours, et qui pourra être choisie pour être présentée à l'épreuve d'entretien du bac), associées à chaque parcours4 parcours : 1 oeuvre imposé + 1 lecture cursive = 8 oeuvres à lire en tout.Présentation du planning de lecture des oeuvresPrésentation des épreuves du baccalauréat, écrites et oralesBrève description de quelques oeuvres imposées et cursives progression_annuelle_ST2S_26_27v2.pdf ",
+      "resume": "Cadrage de l'année : programme, œuvres et épreuves EAFObjectifs :connaître le programme de l'année et les épreuves écrites/orales du bac ;planifier ses lectures (4 œuvres imposées + 4 cursives) ;se présenter (fiche projet de lecture/orientation)Déroulé :Distri",
+      "elements": [],
+      "afaire": [],
+      "absents": 1
+    },
+    {
+      "date": "2026-09-07",
+      "time": "11:00",
+      "hours": 1,
+      "titre": "Séquence 1 - Graffigny - Introduction à la littérature d'idée à travers un texte de Montaigne",
+      "statut": "publié",
+      "theme": "Littérature d'idées, argumentation",
+      "cat": "Devoir sur table DS ",
+      "contenu": "Séquence 1 - Graffigny - Introduction à la littérature d'idée à travers un texte de MontaigneObjectifs :première approche de la littérature d'idée à travers un texte de Montaignetravail écrit d'appropriation à partir de MontaigneDéroulé :Avant de commencer le cours, rappel de la traduction à acheter pour Le chevalier de charette de Chrétien de Troyes (que nous aborderons en séquence 3). La traduction doit être de Jean-Claude Aubailly.Discussion autour de la carte du monde de Waldseemüller, 1507 => le monde et sa représentation à la RenaissanceRencontrer l'altérité : qui est le barbare de l'autre ?Rappel étymologique sur le mot barbare, βάρϐαρος,en grec => ceux qui ne parlaient pas grec mais dont la langue résonnait comme \"bar bar\" pour les grecsRepères biographiques sur MontaigneLecture du texte en autonomie : Essais, « Sur les cannibales », I, 31, 1580.Lecture à haute voix élèvesRecherche des thèses du texte à deuxPartage des analyses en classe entière. Deux thèses se dégagentThèse 1 : il n’y a rien de barbare et de sauvage dans cette nation (l. 2-3)Thèse 2 : la nature est supérieure à la culture (analogie avec les fruits) => les fruits sauvages, comparés aux barbares, leurs vertues n'ont pas été \"abâtardies\" par les hommes soit disant développés, cultivésIntroduction de l'idée de renversement du regard => idée fondamentale dans les Lettres d'une Péruvienne de F. de GraffignyTravail de production d'un court écrit d'invention. CONSIGNE : Un camarade affirme : « Pour Montaigne, les peuples qu’on appelle sauvages sont moins civilisés que les Européens. ». Lui démontrer qu'il a tort en montrant les thèses réellement développées par Montaigne et les arguments utilisés. Citer le texte de Montaigne. Travail à terminer chez soi et à rendre pour la prochaine séance de cours.Distribution d'une fiche sur le discours argumentatif, qui sera complétée en cours à la prochaine séance. Elève_texte_Montaigne.pdf ",
+      "resume": "Séquence 1 - Graffigny - Introduction à la littérature d'idée à travers un texte de MontaigneObjectifs :première approche de la littérature d'idée à travers un texte de Montaignetravail écrit d'appropriation à partir de MontaigneDéroulé :Avant de commencer le ",
+      "elements": [
+        "Comprendre le sens littéral et le sens global d’un texte Littérature d’idées : Lettres d’une Péruvienne — « Un nouvel univers s’est offert à mes yeux »Mettre en relation des textes, des œuvres, des images ou des représentations Relever et analyser des éléments textuels et stylistiques précis Situer les œuvres, les auteurs et les textes dans leur contexte Utiliser des connecteurs et des expressions logiques"
+      ],
+      "afaire": [
+        "Pour le 11/09Production d'un court écrit d'invention (une demi page environ) à partir du texte de Montaigne, Essais, « Sur les cannibales », I, 31, 1580 CONSIGNE : Un camarade affirme : « Pour Montaigne, les peuples qu’on appelle sauvages sont moins civilisés que les Européens. ».Lui démontrer qu'il a tort en montrant les thèses réellement développées par Montaigne et les arguments utilisés. Citer le texte de Montaigne. Travail commené en cours, à terminer chez soi et à rendre pour la prochaine séance de cours."
+      ],
+      "absents": 1
+    },
+    {
+      "date": "2026-09-11",
+      "time": "10:00",
+      "hours": 1,
+      "titre": "Grammaire : nature des mots + Séq. 1 : discours argumentatif",
+      "statut": "publié",
+      "theme": "Littérature d'idées, argumentation",
+      "cat": "",
+      "contenu": "Grammaire : nature des mots + Séq. 1 : discours argumentatifObjectifs de la séance : mobiliser les connaissances grammaticales de cycle 4 sur la nature des motsconnaître les principales notions sur le discours argumentatifDéroulé :Grammaire : Travail sur la nature des mots avec exercices d'applicationDiscours argumentatif travail à partir de la fiche distribuée.Maîtriser les notions clés à mobiliser pour les analyses littéraires, les essais et les contractions de texteComprendre la différence entre argumentation directe et indirecte",
+      "resume": "Grammaire : nature des mots + Séq. 1 : discours argumentatifObjectifs de la séance : mobiliser les connaissances grammaticales de cycle 4 sur la nature des motsconnaître les principales notions sur le discours argumentatifDéroulé :Grammaire : Travail sur la na",
+      "elements": [
+        "Identifier les classes grammaticales et les fonctions syntaxiques L'argumentation : directe/indirecte (genres littéraires associés), actions argumentatives, types d'arguments,"
+      ],
+      "afaire": [],
+      "absents": 3
+    },
+    {
+      "date": "2026-09-11",
+      "time": "13:00",
+      "hours": 1,
+      "titre": "Séq. 1 - Graffigny : le contexte des Lumières",
+      "statut": "publié",
+      "theme": "Littérature d'idées, argumentation",
+      "cat": "",
+      "contenu": "Séq. 1 - Graffigny : le contexte des LumièresObjectifs : situer une œuvre dans son contexte historique et intellectuel ;caractériser le XVIIIe siècleDéroulé :poursuite du travail sur le discours argumentatif travail à partir de la fiche distribuée.Maîtriser les notions clés à mobiliser pour les analyses littéraires, les essais et les contractions de texteComprendre la différence entre argumentation directe et indirectedistribution d'une synthèse sur les principaux repères historiques et littéraires du XVIIIème siècletravail individuel de caractérisation de la période du XVIIIème par des adjectifsdistribution de la première lettre des Lettres d'une Péruvienne pour une lecture à la maison et un travail d'identification des mouvements du texte pour la prochaine séance.",
+      "resume": "Séq. 1 - Graffigny : le contexte des LumièresObjectifs : situer une œuvre dans son contexte historique et intellectuel ;caractériser le XVIIIe siècleDéroulé :poursuite du travail sur le discours argumentatif travail à partir de la fiche distribuée.Maîtriser le",
+      "elements": [
+        "L'argumentation : directe/indirecte (genres littéraires associés), actions argumentatives, types d'arguments, Littérature d’idées : Lettres d’une Péruvienne — « Un nouvel univers s’est offert à mes yeux »Mettre en relation des textes, des œuvres, des images ou des représentations Situer les œuvres, les auteurs et les textes dans leur contexte"
+      ],
+      "afaire": [
+        "Pour le 14/09Lettre 1 de Graffigny : identification des mouvements du texte ( = les parties qui semblent se dégager ). Nous poursuivrons ce travail en classe."
+      ],
+      "absents": 3
+    },
+    {
+      "date": "2026-09-14",
+      "time": "11:00",
+      "hours": 1,
+      "titre": "Séq. 1 - Graffigny : l'autrice et le contexte littéraire",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Séq. 1 - Graffigny : l'autrice et le contexte littéraireObjectifs :situer l'autrice et l'œuvre dans le contexte des Lumières ;s'approprier les règles de fonctionnement de la classeDéroulé :Début de cours : rappel des règles de fonctionnement de la classeCours sur le contexte historique et littéraire de Fr de GraffignyELEVE_Graffigny-intro_2p.pdf ",
+      "resume": "Séq. 1 - Graffigny : l'autrice et le contexte littéraireObjectifs :situer l'autrice et l'œuvre dans le contexte des Lumières ;s'approprier les règles de fonctionnement de la classeDéroulé :Début de cours : rappel des règles de fonctionnement de la classeContac",
+      "elements": [
+        "Littérature d’idées : Lettres d’une Péruvienne — « Un nouvel univers s’est offert à mes yeux »Mettre en relation des textes, des œuvres, des images ou des représentations Situer les œuvres, les auteurs et les textes dans leur contexte"
+      ],
+      "afaire": [],
+      "absents": 1
+    },
+    {
+      "date": "2026-09-14",
+      "time": "15:00",
+      "hours": 1,
+      "titre": "Méthodo EL + Séq. 1 — EL n°1 : la lettre I, mouvements du texte (l. 55-89) + Corrigé Montaigne",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Méthodo EL + Séq. 1 — EL n°1 : la lettre I, mouvements du texte (l. 55-89) + Corrigé MontaigneObjectifs déterminer les mouvements d'un texte et les titrer ;relier formes (procédés) et fond ;confronter son écrit aux attentes (restitution Montaigne) Travail sur la première lettretravail individuellecturedéterminer les mouvements ( c'est à dire des parties) qui se dégagent de l'extrait l55 à 89pour chacun des mouvements donner un titretravail collectifmise en commun des mouvements et des titrestravail individueltrouver pour chacun des mouvements au moins un procédé littéraire exploité par l'autrice au service du sens, autrement dit, faire le lien entre la forme et le fondRestitution du devoir sur Montaignecorrigé général à partir des bonnes choses et erreurs trouvées dans les copies",
+      "resume": "Méthodo EL + Séq. 1 — EL n°1 : la lettre I, mouvements du texte (l. 55-89) + Corrigé MontaigneObjectifs déterminer les mouvements d'un texte et les titrer ;relier formes (procédés) et fond ;confronter son écrit aux attentes (restitution Montaigne) Travail sur ",
+      "elements": [
+        "Comprendre le sens littéral et le sens global d’un texte EL : Identifier la composition, la progression et les mouvements d’un texte EL : Lire un texte à voix haute de manière fluide et expressiveFormuler une hypothèse d’interprétation ou un projet de lecture Littérature d’idées : Lettres d’une Péruvienne — « Un nouvel univers s’est offert à mes yeux »Relever et analyser des éléments textuels et stylistiques précis"
+      ],
+      "afaire": [
+        "Pour le 18/091) Relire le cours d'introduction sur F. de Graffigny, le contexte littéraire et intellectuel des Lumières, et l'introduction au roman épistolaire Les Lettres d'une Péruvienne (structure du roman = les parties, thèmes abordés, personnages principaux) 2) Travail sur la première lettreà partir de ce que nous avons commencé en cours, finir de déterminer les mouvements ( c'est à dire les parties) qui se dégagent de l'extrait l55 à 89pour chacun des mouvements essayer de donner un titretrouver pour chacun des mouvements au moins un procédé littéraire exploité par l'autrice au service du sens, autrement dit, faire le lien entre la forme et le fond. Exemple de procédés littéraires :usage de la première personne (\"Je\") : quel effet cela crée-t-il sur le lecteur par rapport à la troisième personne (\"Elle / il\") ?accumulation de mots pour créer un effet de répétitionchamps lexical exploité par l'autriceantithèse ( c'est à dire l'opposition entre deux notions)types de verbes utilisés. Par exemple y a-t-il des verbes d'action, et quels sont leurs effets sur le lecteur?...Nous ferons en cours un travail collectif de mise en commun des mouvements et des titres, et des procédés littéraires trouvés"
+      ],
+      "absents": 1
+    },
+    {
+      "date": "2026-09-18",
+      "time": "10:00",
+      "hours": 1,
+      "titre": "Méthodo : apprendre à rédiger une introduction + Séq. 1 — EL n°1 : rédiger l'introduction",
+      "statut": "publié",
+      "theme": "",
+      "cat": "Devoir sur table DS ",
+      "contenu": "Méthodo : apprendre à rédiger une introduction + Séq. 1 — EL n°1 : rédiger l'introductionObjectifs rédiger l'introduction d'une EL (auteur, œuvre, situation, mouvements, problématique) ;mobiliser le contexte pour éclairer l'extrait I. Présentation de documents sur le Pérou au temps des Incas : Cuzco, le Temple du Solei, le Machu Pichu, les quipos, la momie d'une jeune femmerappel du contexte historique de la colonisation espagnoleII. Travail collectif de mise en commun des mouvements et des titrestravail collectif sur les faits littéraires (figures de style, énonciation, temps verbaux, champs lexicaux, tonalités,...) qui caractérisent les mouvementscontextualisation de l'extrait dans l'oeuvreIII. Travail individuel : rédaction d'une introduction à partir de la méthodologie projetée au tableau INTRODUIRE UNE EXPLICATION LINÉAIRE Présenter : L'autrice : donner quelques éléments biographiques.L'œuvre : à quel genre littéraire appartient-elle ? De quoi parle-t-elle ? Quel est le contexte littéraire et intellectuel ? Situer l'extrait : où sommes-nous dans l'œuvre ? Que se passe-t-il juste avant l’extrait ? Que se passera-t-il après ? Annoncer les mouvements : c’est-à-dire les « parties » qui structurent la progression du texte. Donner une problématique : quelle question allons-nous poser au texte ? Qu’est-ce que l’autrice essaie de faire dire au texte ? Comment le fait-elle ? Une problématique commence souvent par « Dans cet extrait, nous nous demanderons comment l’autrice (ou l’auteur) décrit/raconte/critique/introduit … ». Recommandations pour le travail :Il faut écrire l’introduction sous la forme d’un paragraphe, rédigé (pas une liste avec des tirets par exemple).Pensez à votre lecteur : attention à l’orthographe, à la syntaxe (c’est-à-dire la construction des phrases) et à la ponctuation.Gardez quelques minutes pour vous relire.Soignez la présentation : nom, prénom, classe, titre. ",
+      "resume": "Méthodo : apprendre à rédiger une introduction + Séq. 1 — EL n°1 : rédiger l'introductionObjectifs rédiger l'introduction d'une EL (auteur, œuvre, situation, mouvements, problématique) ;mobiliser le contexte pour éclairer l'extrait I. Présentation de documents",
+      "elements": [
+        "Comprendre le sens littéral et le sens global d’un texte Construire une interprétation en reliant procédés, effets et sens EL : Rédiger l'introduction / le développement / la conclusionFormuler une hypothèse d’interprétation ou un projet de lecture Littérature d’idées : Lettres d’une Péruvienne — « Un nouvel univers s’est offert à mes yeux »Mobiliser le contexte et les connaissances littéraires pour éclairer un texte Relever et analyser des éléments textuels et stylistiques précis Situer les œuvres, les auteurs et les textes dans leur contexte"
+      ],
+      "afaire": [],
+      "absents": 2
+    },
+    {
+      "date": "2026-09-21",
+      "time": "11:00",
+      "hours": 1,
+      "titre": "Séq. 1 — EL n°1 : de la lettre I (l. 55-89) analyse mouvement par mouvement",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Séq. 1 — EL n°1 : de la lettre I (l. 55-89) analyse mouvement par mouvementObjectifs :passer du repérage d'un procédé à son interprétation ; conduire une EL suivant les mouvements ; mobiliser figures de style et tonalitésRetour très rapide sur le devoir consacré à Montaigne ; éléments de correction sur Pronote.Distribution d’une fiche sur les figures de style et d’une fiche sur les tonalités à ranger dans l'intercalaire méthologie du classeur/trieurReprise et achèvement de l’explication linéaire de la lettre I, l. 55 à 89.Travail en binômes, puis mise en commun collective, mouvement par mouvement.Pour chaque mouvement : repérer des citations, identifier des procédés ou faits littéraires, puis expliquer leurs effets et leur sens Le digipad a été mis à jour avec beaucoup de nouvelles ressources, en particuliers sur les Lettres d'une Péruvienne de F. de Graffigny. PROF_correction_devoir_Montaigne_7-09-26.pdf Digipad cours de français 1ère ST2S Registres Littéraires.pdf Figures De Style.pdf ",
+      "resume": "Séq. 1 — EL n°1 : de la lettre I (l. 55-89) analyse mouvement par mouvementObjectifs :passer du repérage d'un procédé à son interprétation ; conduire une EL suivant les mouvements ; mobiliser figures de style et tonalitésRetour très rapide sur le devoir consac",
+      "elements": [
+        "Comprendre le sens littéral et le sens global d’un texte Construire une interprétation en reliant procédés, effets et sens EL : Conduire une explication linéaire suivant les mouvements du texteEL : Identifier la composition, la progression et les mouvements d’un texte Formuler une hypothèse d’interprétation ou un projet de lecture Le récit : narration, focalisation, descriptionLes figures de style : de rapprochement, d'opposition, d'exagération, d'atténuation,Les registres : comique, satirique, ironique, lyrique, élégiaque, pathétique, tragique, ...Littérature d’idées : Lettres d’une Péruvienne — « Un nouvel univers s’est offert à mes yeux »Relever et analyser des éléments textuels et stylistiques précis"
+      ],
+      "afaire": [
+        "Pour le 25/09Lire la méthodologie de l'essai (en PJ) que nous allons travailler en cours avec des exercices d'application, en vue du DS du lundi 28/09.Poursuivre et finir dès que possible la lecture des Lettres d'une Péruvienne de F. de Graffigny en vue du contrôle de lecture du vendredi 02/10.Penser à mettrela page web du coursdans vos favoris car elle est régulièrement mise à jour avec de nouvelles ressources utiles pour votre année de préparation du bac français.Méthodologie_de_l_essai_nguillaume.pdf "
+      ],
+      "absents": 3
+    },
+    {
+      "date": "2026-09-25",
+      "time": "10:00",
+      "hours": 1,
+      "titre": "Méthodologie de l'essai",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Méthodologie de l'essaiObjectifs :introduction à la méthodologie de l’essai par la pratique, pour préparer le premier DS puis le bac blancanalyser un sujet et formuler une problématique ;construire un plan et un paragraphe argumentéDocuments :la fiche Méthodologie de l’essai, avec structure de l’introduction, développement, conclusion, plan et paragraphe argumenté ;la fiche Exercices d’entraînement, qui permet de travailler analyse du sujet, problématique, annonce du plan et surtout distinction argument/exemple.ELEVE_exos_essai_2.pdf ELEVE_Méthodologie_de_l_essai_nguillaume.pdf ",
+      "resume": "Méthodologie de l'essaiObjectifs :introduction à la méthodologie de l’essai par la pratique, pour préparer le premier DS puis le bac blancanalyser un sujet et formuler une problématique ;construire un plan et un paragraphe argumentéDocuments :la fiche Méthodol",
+      "elements": [
+        "Essai : Comprendre les enjeux de la question et formuler une réponse personnelleEssai : Construire et hiérarchiser des arguments pertinents Essai : Discuter, concéder, nuancer ou réfuter une opinionEssai : Mobiliser l’œuvre, le parcours, le texte de contraction et sa culture personnelle Essai : Organiser une réflexion progressive, nuancée et convaincante"
+      ],
+      "afaire": [],
+      "absents": 5
+    },
+    {
+      "date": "2026-09-25",
+      "time": "13:00",
+      "hours": 1,
+      "titre": "Méthodologie de l'essai : entraînement",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Méthodologie de l'essai : entraînementObjectifs :distinguer argument et exemple ;hiérarchiser des arguments ;rédiger un paragraphe argumenté en vue du DS ",
+      "resume": "Méthodologie de l'essai : entraînementObjectifs :distinguer argument et exemple ;hiérarchiser des arguments ;rédiger un paragraphe argumenté en vue du DS ",
+      "elements": [
+        "Essai : Comprendre les enjeux de la question et formuler une réponse personnelleEssai : Construire et hiérarchiser des arguments pertinents Essai : Discuter, concéder, nuancer ou réfuter une opinionEssai : Mobiliser l’œuvre, le parcours, le texte de contraction et sa culture personnelle Essai : Organiser une réflexion progressive, nuancée et convaincante"
+      ],
+      "afaire": [
+        "Pour le 28/09Se préparer pour le DS de rédaction d'un essairelire la méthodologie de l'essai (en PJ) que nous avons travaillée en cours avec ses exercices d'applicationlire le groupement de texte associé au parcours \"un nouvel univers s'est offert à mes yeux\" (ci-joint), qui constituera une banque d'exemples utiles à utiliser pour l'essaiSur la page web du cours vous trouverez un exemple d'essai entièrement rédigé, dans la colonne méthodologie ELEVE_Groupement_textes_1_pour_essai_1.pdf ELEVE_Méthodologie_de_l_essai_nguillaume.pdf "
+      ],
+      "absents": 4
+    },
+    {
+      "date": "2026-09-28",
+      "time": "11:00",
+      "hours": 1,
+      "titre": "DS n°1 : rédiger un essai (2 h)Rediger un essai : devoir surveillé (2h) d'entraînement au bac b",
+      "statut": "publié",
+      "theme": "",
+      "cat": "Devoir sur table DS ",
+      "contenu": "DS n°1 : rédiger un essai (2 h)Rediger un essai : devoir surveillé (2h) d'entraînement au bac blancELEVE_Sujet_DS.pdf ",
+      "resume": "DS n°1 : rédiger un essai (2 h)Rediger un essai : devoir surveillé (2h) d'entraînement au bac blancELEVE_Sujet_DS.pdf ",
+      "elements": [
+        "Essai : Comprendre les enjeux de la question et formuler une réponse personnelleEssai : Construire et hiérarchiser des arguments pertinents Essai : Mobiliser l’œuvre, le parcours, le texte de contraction et sa culture personnelle Essai : Organiser une réflexion progressive, nuancée et convaincante"
+      ],
+      "afaire": [],
+      "absents": 1
+    },
+    {
+      "date": "2026-09-28",
+      "time": "15:00",
+      "hours": 1,
+      "titre": "Rediger un essai : devoir surveillé (2h) d'entraînement au bac blanc du 5 novembreécrits_grille",
+      "statut": "publié",
+      "theme": "",
+      "cat": "Devoir sur table DS ",
+      "contenu": "Rediger un essai : devoir surveillé (2h) d'entraînement au bac blanc du 5 novembreécrits_grille-notation_voie_technologique.pdf ",
+      "resume": "Rediger un essai : devoir surveillé (2h) d'entraînement au bac blanc du 5 novembreécrits_grille-notation_voie_technologique.pdf ",
+      "elements": [
+        "Essai : Comprendre les enjeux de la question et formuler une réponse personnelleEssai : Construire et hiérarchiser des arguments pertinents Essai : Mobiliser l’œuvre, le parcours, le texte de contraction et sa culture personnelle Essai : Organiser une réflexion progressive, nuancée et convaincante"
+      ],
+      "afaire": [
+        "Pour le 09/10Essai"
+      ],
+      "absents": 0
+    },
+    {
+      "date": "2026-10-02",
+      "time": "10:00",
+      "hours": 1,
+      "titre": "travail en autonomie => introduction à la contraction de texteEn raison de la fermeture du lycé",
+      "statut": "distanciel",
+      "theme": "",
+      "cat": "",
+      "contenu": "[Distanciel] travail en autonomie => introduction à la contraction de texteEn raison de la fermeture du lycée aujourd'hui, le contrôle de lecture sur F. de Graffigny est repoussé à vendredi 9 octobre.Aujourd'hui voici le travail à faire :I) Travail en vue de la séance de lundi lors de laquelle nous travaillerons sur la méthode de la contraction de texte.Parmi les textes déjà distribués, relisez attentivement les textes de Montaigne et de Jean Dausset. Vous allez vous entraîner au travail préparatoire à toute contraction de texte. Pour chacun des deux textes, répondez brièvement aux questions suivantes :1. Situation du texte : Qui est l’auteur ? Dans quel contexte ?2. Thème : De quoi parle principalement le texte ? Répondez en quelques mots.3. Thèse : Quelle idée principale l’auteur ou celui qui parle cherche-t-il à défendre ? Formulez-la en une phrase.4. Énonciation : Qui parle? A qui ? Relevez les principaux pronoms personnels employés (je, nous, vous, ils…) et observez les temps verbaux dominants.5. Tonalité / attitude. Quel ton domine ? Par exemple : sérieux, polémique, ironique, indigné, explicatif, didactique…Justifiez votre réponse par un indice précis du texte.6. Organisation du texte. Découpez le texte en parties ou mouvements.7. Articulations du raisonnement. Surlignez les connecteurs ou expressions qui organisent le raisonnement (donc, pourtant, ainsi, d’abord, ensuite, enfin, mais, par conséquent…). Essayez d’indiquer ce qu’ils expriment : opposition, conséquence, addition, progression, etc. Consigne : ne pas rédiger de longues réponses. Privilégiez des relevés précis et des formulations courtes.(les textes sont joints au message, et disponibles aussi sur la page web du cours)II) Choix d'une oeuvre obligatoire à lire et connaître, associée au parcours \"Un nouvel univers s'est offert à mes yeux\".Si ce n'est pas déjà fait, choisir une des deux lectures cursives Claire de Duras, Ourika (1823) OU Chimamanda Ngozi Adichie, Americanah (2013), sur lesquelles il y aura un contrôle de lecture après les vacances de Toussaint. (chacun sera interrogé sur l'oeuvre qu'il ou elle aura lue).ELEVE_Groupement_textes_1_pour_essai_1.pdf ",
+      "resume": "[Distanciel] travail en autonomie => introduction à la contraction de texteEn raison de la fermeture du lycée aujourd'hui, le contrôle de lecture sur F. de Graffigny est repoussé à vendredi 9 octobre.Aujourd'hui voici le travail à faire :I) Travail en vue de l",
+      "elements": [
+        "Contraction : Repérer les articulations de l’argumentation Contraction : Reformuler les idées sans commenter ni altérer l’énonciation Contraction : Respecter l’ordre, l’équilibre argumentatif et les proportions du texte Contraction : Saisir la thèse et le mouvement général d’un texte argumentatif"
+      ],
+      "afaire": [
+        "Pour le 05/10Pour cette séance à distance, voici ce que je vous demande de faire en vue du prochain DS sur la contraction de texte, et du bac blanc du 5 novembre (qui je le rappelle portera sur la contraction + l'essai en 4H) :1) Lire la méthodologie sur la contraction (fichier joint)2) Une fois la méthodologie comprise, relisez l'exemple de la contraction du texte de Lucie Azéma (le texte du DS sur l'essai) afin de comprendre comment la méthode a été appliquée (fichier joint)3) Regarder la correction des exercices que je vous avais donnés à faire vendredi dernier sur les textes de Montaigne et de Dausset (fichier joint)4) Faire les exercices d'entraînement à la contraction de texte joints. N'hésitez pas à me contacter via pronote si vous avez des questions d'ici vendredi. Prenez le temps de bien faire ces exercices, nous en ferons d'autres au prochain cours : ils vous prépareront efficacement au DS de contraction du lundi 12 octobre. Je rappelle que ce vendredi, vous aurez un contrôle de lecture sur les Lettres d'une Péruvienne.Pour le 09/10Contrôle de lecture sur les Lettres d'une Péruvienne de Françoise de Graffigny"
+      ],
+      "absents": 0
+    },
+    {
+      "date": "2026-10-05",
+      "time": "11:00",
+      "hours": 1,
+      "titre": "méthode de la contraction de texte",
+      "statut": "distanciel",
+      "theme": "",
+      "cat": "",
+      "contenu": "[Distanciel] méthode de la contraction de texteObjectifs :comprendre les étapes de la méthode ;s'entraîner sur des exercices ciblés en vue du DS et du bac blancPour cette séance à distance, voici ce que je vous demande de faire en vue du prochain DS sur la contraction de texte, et du bac blanc #1 (qui je le rappelle portera sur la contraction + l'essai en 4H) :1) Lire la méthodologie sur la contraction (fichier joint)2) Une fois la méthodologie comprise, relisez l'exemple de la contraction du texte de Lucie Azéma (le texte du DS sur l'essai) afin de comprendre comment la méthode a été appliquée (fichier joint)3) Regarder la correction des exercices que je vous avais donnés à faire vendredi dernier sur les textes de Montaigne et de Dausset (fichier joint)4) Faire les exercices d'entraînement à la contraction de texte joints. N'hésitez pas à me contacter via pronote si vous avez des questions d'ici vendredi. Prenez le temps de bien faire ces exercices, nous en ferons d'autres au prochain cours : ils vous prépareront efficacement au DS de contraction du lundi 12 octobre. Je rappelle que ce vendredi, vous aurez un contrôle de lecture sur les Lettres d'une Péruvienne.ELEVE_Sujet_DS.pdf ELEVES_exos_contractions_entrainement.pdf ELEVES_méthodo_contraction_texte.pdf PROF_exos_contraction_corrigés.pdf ",
+      "resume": "[Distanciel] méthode de la contraction de texteObjectifs :comprendre les étapes de la méthode ;s'entraîner sur des exercices ciblés en vue du DS et du bac blancPour cette séance à distance, voici ce que je vous demande de faire en vue du prochain DS sur la con",
+      "elements": [
+        "Contraction : Repérer les articulations de l’argumentation Contraction : Distinguer les arguments, les exemples et les éléments implicites Contraction : Reformuler les idées sans commenter ni altérer l’énonciation Contraction : Respecter l’ordre, l’équilibre argumentatif et les proportions du texte Contraction : Respecter le nombre de mots et les règles de comptage Contraction : Saisir la thèse et le mouvement général d’un texte argumentatif"
+      ],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-10-09",
+      "time": "10:00",
+      "hours": 1,
+      "titre": "Seq1 - explication linéaire #2 - Lettre 34 (édition 1752) - F. de Graffigny",
+      "statut": "distanciel",
+      "theme": "",
+      "cat": "",
+      "contenu": "[Distanciel] Seq1 - explication linéaire #2 - Lettre 34 (édition 1752) - F. de GraffignyObjectifs de la séance :comprendre les mouvements d'un texte et le problématiser; repérer et nommer des procédés, et passer de la citation à l’interprétation ;relier le texte à une réflexion des Lumières sur la condition féminine. Tout d'abord quelques informations relatives à l'emploi du temps initialement prévu, qui doit être modifié compte tenu des fermetures successives du lycée ces derniers jours :- Le contrôle de lecture sur les Lettres d'une Péruvienne est reporté, soit à vendredi prochain, soit après les vacances : je vous le dirai lundi 12 octobre.- Le DS de contraction de texte (2H) prévu le lundi 12/10 est annulé. Ensuite, voici le travail à faire en autonomie à la place des cours initialement prévus ce vendredi 9 octobre. TRAVAIL A FAIRE VENDREDI 9 OCTOBRETravail sur l'explication linéaire n°2 qui porte sur la lettre 34 des Lettres d'une Péruvienne de F. de Graffigny (notez qu'il s'agit de la lettre 34 de l'édition de 1752, généralement en annexe des éditions que vous trouvez dans le commerce). L'extrait de la lettre 34 pour l'explication linéaire n°2 est fourni en pièce jointe. Voici le travail à faire :1. Quel aspect de la société française Zilia critique-t-elle dans cet extrait ? Qui est particulièrement concerné ?2. Dans quelle(s) autres lettre(s) Zilia évoque-t-elle la condition féminine ? Comment et à quelle occasion ce sujet est-il évoqué ?3. Quels sont les mouvements du texte ? (en donner trois)4. Donner un titre à chaque mouvement qui permette de le caractériser.5. Trouver un projet de lecture possible à l'extrait (= une problématique).6. Pour chaque mouvement, repérer un procédé littéraire (figure de style, procédé grammatical, usage du lexique) et en donner une interprétation.7. Lire l'article \"Françoise de Graffigny, féministe des Lumières\" sur Lumni . Expliquer en quelques phrases pourquoi on peut considérer que la lettre 34 que vous venez d'étudier défend la condition féminine au XVIIIe siècle.Lundi 12 octobre nous reprendrons ce travail en classe et cela donnera lieu à une interrogation orale. LECTURE DES OEUVRES : un petit peu tous les joursProfitez de ce week-end pour lire les œuvres. Si ce n'est pas déjà fait, il est impératif de finir la lecture des Lettres d'une Péruvienne. Comme je l'avais indiqué précédemment, vous devez aussi choisir et lire une des deux œuvres suivantes : Claire de Duras, Ourika (1823) ou Chimamanda Ngozi Adichie, Americanah (2013). Rappel : toutes les œuvres de l'année sont sur la fiche de programme annuel du cours distribuée en début d'année.J'espère que ces livres vous plairons ! PAGE WEB DU COURSN'oubliez pas que vous disposez d'une page web pour le cours de français () sur laquelle vous pouvez trouver de nombreuses ressources. En particulier, le programme de lectures annuelles pour votre année de 1ère. Je mets aussi sur cette page des liens vers des articles, des podcasts et des vidéos sur les œuvres. QUE FERONS-NOUS LUNDI 12 OCTOBRE ?Nous travaillerons sur les exercices d'entraînement à la contraction de texte donnés le 5 octobre : vous serez interrogés à l'oral au hasard sur ce travail. => l'objectif est de vous préparer au mieux à l'épreuve du bac blanc qui aura lieu après la Toussaint.Nous reprendrons le travail de ce vendredi 9 octobre sur la lettre 34 : vous serez interrogés à l'oral au hasard sur ce travail.Je vous rendrai vos copies du DS sur l'essai.Les interrogations à l'oral donneront lieu à une note comptée en bonus. Bon travail et bonne journée!.ELEVE_Graffigny_EL2 - lettre 34.pdf ",
+      "resume": "[Distanciel] Seq1 - explication linéaire #2 - Lettre 34 (édition 1752) - F. de GraffignyObjectifs de la séance :comprendre les mouvements d'un texte et le problématiser; repérer et nommer des procédés, et passer de la citation à l’interprétation ;relier le tex",
+      "elements": [
+        "Comprendre le sens littéral et le sens global d’un texte Construire une interprétation en reliant procédés, effets et sens EL : Conduire une explication linéaire suivant les mouvements du texteEL : Identifier la composition, la progression et les mouvements d’un texte EL : Lire un texte à voix haute de manière fluide et expressiveEL : Rédiger l'introduction / le développement / la conclusionFormuler une hypothèse d’interprétation ou un projet de lecture L'argumentation : directe/indirecte (genres littéraires associés), actions argumentatives, types d'arguments, Les figures de style : de rapprochement, d'opposition, d'exagération, d'atténuation,Littérature d’idées : Lettres d’une Péruvienne — « Un nouvel univers s’est offert à mes yeux »Mobiliser le contexte et les connaissances littéraires pour éclairer un texte Relever et analyser des éléments textuels et stylistiques précis Situer les œuvres, les auteurs et les textes dans leur contexte"
+      ],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-10-09",
+      "time": "13:00",
+      "hours": 1,
+      "titre": "Seq1 - explication linéaire #2 - Lettre 34 (édition 1752) - F. de GraffignyMême travail que lor",
+      "statut": "distanciel",
+      "theme": "",
+      "cat": "",
+      "contenu": "[Distanciel] Seq1 - explication linéaire #2 - Lettre 34 (édition 1752) - F. de GraffignyMême travail que lors de la première heure de cours. Je serai connecté en visio à 13H00 pour répondre à d'éventuelles questions : ",
+      "resume": "[Distanciel] Seq1 - explication linéaire #2 - Lettre 34 (édition 1752) - F. de GraffignyMême travail que lors de la première heure de cours. Je serai connecté en visio à 13H00 pour répondre à d'éventuelles questions : ",
+      "elements": [],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-10-12",
+      "time": "11:00",
+      "hours": 1,
+      "titre": "Séq. 1 - Travaux sur l'EL n°2 à rendre et approfondissement de l'œuvre",
+      "statut": "distanciel",
+      "theme": "",
+      "cat": "",
+      "contenu": "[Distanciel] Séq. 1 - Travaux sur l'EL n°2 à rendre et approfondissement de l'œuvreObjectifs de la séance :restituer le travail EL n°2 (dépôt espace élève) ;répondre au questionnaire de lecture sur l'œuvre intégrale ;rendre compte de sa lecture Pour les cours à distance du lundi 12 octobre, vous allez travailler en autonomie et rendre vos travaux dans l'espace élève (voir le travail à faire plus bas). Je serai connecté en visio à 11H00 pour répondre à d'éventuelles questions. Adresse de connexion de la visio :  TRAVAIL A FAIRE:Voici le travail à faire et qui sera à déposer dans l'espace élève : ces travaux seront notés en bonus (=> c'est à dire que seuls les points qui permettent d'améliorer la moyenne seront pris en compte). 1) Travail sur l'explication linéaire n°2 (lettre 34 des Lettres d'une Péruvienne)Déposer dans l'espace élève le travail demandé vendredi 9 octobre. Voici le rappel des questions posées :1. Quel aspect de la société française Zilia critique-t-elle dans cet extrait ? Qui est particulièrement concerné ?2. Dans quelle(s) autres lettre(s) Zilia évoque-t-elle la condition féminine ? Comment et à quelle occasion ce sujet est-il évoqué ?3. Quels sont les mouvements du texte ? (en donner trois)4. Donner un titre à chaque mouvement qui permette de le caractériser.5. Trouver un projet de lecture possible à l'extrait (= une problématique).6. Pour chaque mouvement, repérer un procédé littéraire (figure de style, procédé grammatical, usage du lexique) et en donner une interprétation.7. Lire l'article \"Françoise de Graffigny, féministe des Lumières\" sur Lumni . Expliquer en quelques phrases pourquoi on peut considérer que la lettre 34 que vous venez d'étudier défend la condition féminine au XVIIIe siècle.Ce travail constitue une excellente préparation à l'épreuve de l'oral d'explication linéaire.Entraînez-vous aussi à lire le texte à haute voix chez vous.2) Travail d'approfondissement sur Lettres d'une Péruvienne : Ce travail peut être rendu jusqu'au vendredi 16 octobre.Répondre aux questions du questionnaire joint et déposer le travail dans l'espace élève. La plupart des réponses n’ont pas besoin d’être trop longues. Quelques questions demandent cependant un peu de rédaction.Prenez le temps de faire ce travail d'analyse de l'oeuvre, c'est un excellent moyen de bien connaître le livre en vue du contrôle de lecture.Comment déposer un travail dans l'espace élève ? https://www.index-education.com/fr/tutoriels-video-pronote-1777-46-rendre-un-travail-sur-l-espace-eleves.php",
+      "resume": "[Distanciel] Séq. 1 - Travaux sur l'EL n°2 à rendre et approfondissement de l'œuvreObjectifs de la séance :restituer le travail EL n°2 (dépôt espace élève) ;répondre au questionnaire de lecture sur l'œuvre intégrale ;rendre compte de sa lecture Pour les cours ",
+      "elements": [
+        "Comprendre le sens littéral et le sens global d’un texte Construire une interprétation en reliant procédés, effets et sens EL : Conduire une explication linéaire suivant les mouvements du texteEL : Identifier la composition, la progression et les mouvements d’un texte EL : Rédiger l'introduction / le développement / la conclusionFormuler une hypothèse d’interprétation ou un projet de lecture L'argumentation : directe/indirecte (genres littéraires associés), actions argumentatives, types d'arguments, Les figures de style : de rapprochement, d'opposition, d'exagération, d'atténuation,Lire intégralement une œuvre et rendre compte de sa lecture Littérature d’idées : Lettres d’une Péruvienne — « Un nouvel univers s’est offert à mes yeux »Mettre en relation des textes, des œuvres, des images ou des représentations Mobiliser le contexte et les connaissances littéraires pour éclairer un texte Mobiliser les genres, registres, mouvements et notions littéraires Relever et analyser des éléments textuels et stylistiques précis Situer les œuvres, les auteurs et les textes dans leur contexte"
+      ],
+      "afaire": [
+        "Pour le 12/10Travail sur l'explication linéaire n°2 (lettre 34 des Lettres d'une Péruvienne)Déposer dans l'espace élève le travail demandé vendredi 9 octobre. (Comment déposer un travail dans l'espace élève ? https://www.index-education.com/fr/tutoriels-video-pronote-1777-46-rendre-un-travail-sur-l-espace-eleves.php) Voici le rappel des questions posées :1. Quel aspect de la société française Zilia critique-t-elle dans cet extrait ? Qui est particulièrement concerné ?2. Dans quelle(s) autres lettre(s) Zilia évoque-t-elle la condition féminine ? Comment et à quelle occasion ce sujet est-il évoqué ?3. Quels sont les mouvements du texte ? (en donner trois)4. Donner un titre à chaque mouvement qui permette de le caractériser.5. Trouver un projet de lecture possible à l'extrait (= une problématique).6. Pour chaque mouvement, repérer un procédé littéraire (figure de style, procédé grammatical, usage du lexique) et en donner une interprétation.7. Lire l'article \"Françoise de Graffigny, féministe des Lumières\" sur Lumni . Expliquer en quelques phrases pourquoi on peut considérer que la lettre 34 que vous venez d'étudier défend la condition féminine au XVIIIe siècle.Ce travail constitue une excellente préparation à l'épreuve de l'oral d'explication linéaire. Travail noté en bonus (=> c'est à dire que seuls les points qui permettent d'améliorer la moyenne seront pris en compte).Pour le 16/10Travail d'approfondissement sur Lettres d'une Péruvienne : ce travail peut être rendu jusqu'au vendredi 16 octobreRépondre aux questions du questionnaire joint et déposer le travail dans l'espace élève. La plupart des réponses n’ont pas besoin d’être trop longues. Quelques questions demandent cependant un peu de rédaction.Prenez le temps de faire ce travail d'analyse de l'oeuvre, c'est un excellent moyen de bien connaître le livre en vue du contrôle de lecture. Déposer dans l'espace élève le travail demandé jusqu'au vendredi 16 octobre. (Comment déposer un travail dans l'espace élève ? https://www.index-education.com/fr/tutoriels-video-pronote-1777-46-rendre-un-travail-sur-l-espace-eleves.php) Travail noté en bonus => c'est à dire que seuls les points qui permettent d'améliorer la moyenne seront pris en compte.ELEVE_questionnaire_graffigny.pdf "
+      ],
+      "absents": 0
+    },
+    {
+      "date": "2026-10-12",
+      "time": "15:00",
+      "hours": 1,
+      "titre": "Séq. 1 - Travaux sur l'EL n°2 à rendre et approfondissement de l'œuvreVoir travail de la premiè",
+      "statut": "distanciel",
+      "theme": "",
+      "cat": "",
+      "contenu": "[Distanciel] Séq. 1 - Travaux sur l'EL n°2 à rendre et approfondissement de l'œuvreVoir travail de la première heure.",
+      "resume": "[Distanciel] Séq. 1 - Travaux sur l'EL n°2 à rendre et approfondissement de l'œuvreVoir travail de la première heure.",
+      "elements": [],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-10-16",
+      "time": "10:00",
+      "hours": 1,
+      "titre": "Visio : correction des travaux à distance et travail pour les vacancesLien de connexion pour le",
+      "statut": "distanciel",
+      "theme": "",
+      "cat": "",
+      "contenu": "[Distanciel] Visio : correction des travaux à distance et travail pour les vacancesLien de connexion pour le cours en visio :  Reprise des travaux en autonomie :- 02/10 exos contraction à partir des textes de Dausset e Montaigne- 05/10 méthodo + exos contraction #2- 09/10 et 12/10 => corrigé EL2- 16/10 => corrigé questionnaire graffigny A la rentrée :- DS contraction 2H le 9 novembre- bac blanc contraction + essai le 3 décembrePour les vacances, un carnet de lecture, très léger, à compléter au fil de la lecture, :- informations sur l'autrice, le genre, la période- personnages et les événements importants- passages marquants- découvertes, surprises, incompréhensions ou émotions suscitées par l'œuvre.- Quels liens avec le parcours ? Pour F. de Graffigny le parcours proposé, comme vous le savez bien est : « Un nouvel univers s'est offert à mes yeux » ",
+      "resume": "[Distanciel] Visio : correction des travaux à distance et travail pour les vacancesLien de connexion pour le cours en visio :  Reprise des travaux en",
+      "elements": [],
+      "afaire": [
+        "Pour le 02/11TRAVAIL A FAIRE PENDANT LES VACANCESFinir de lire et ficher les Lettres d'une PéruvienneFinir de lire et ficher l'œuvre obligatoire en lecture cursive associée au parcours de F. de Graffigny : Ourika ou Americanah (voir programme de l'année joint) : il y aura un contrôle de lecture après les vacances.Apprendre les fiches sur les registres et les figures de style distribuées en cours (disponibles en pdf fiches jointes)Se procurer et commencer à lire Les cahiers de Douai de Rimbaud, que nous étudierons après Les Lettres d'une PéruvienneVidéo utile : comment faire une fiche de lecture ? https://www.lumni.fr/video/savoir-faire-des-fiches-de-lecturePage web du cours de français :  eleve_figures-de-style_9r9hfc8et5w.pdf eleve_registres-litteiraires_jvb9jbpf99l.pdf programme_français_ST2S_2026-27.pdf "
+      ],
+      "absents": 0
+    },
+    {
+      "date": "2026-11-02",
+      "time": "11:00",
+      "hours": 1,
+      "titre": "Cadrage sur les lectures obligatoires et cursives, retours sur le DS essai + méthodo contractio",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Cadrage sur les lectures obligatoires et cursives, retours sur le DS essai + méthodo contractionReprise après les vacances de la ToussaintObjectifs de la séance : faire le point sur les lectures obligatoires ; consolider la méthode de la contraction de texte en vue du DS du 9 novembre ; tirer les enseignements du DS sur l'essai.I. Lecture cursive : choix définitif de l'œuvre associée au parcours « Un nouvel univers s'est offert à mes yeux » : Ourika ou Americanah.Amorce : analyse d'une image de Zilia recevant la clé, mise en relation avec l'œuvre de Graffigny. II. Rappel des règles d'usage de l'IA : tout recours à une IA pour un travail personnel est interdit ; en cas de doute, la copie n'est pas notée.III. Contraction de texte : lecture commentée de la méthodologie de la contraction (fiche distribuée) ; correction collective des exercices d'entraînement donnés en distanciel le 5 octobre.IV. Retour sur le DS sur l'essai : correction générale, principales erreurs relevées et remédiations.ZILIA_image_amorce.jpg ",
+      "resume": "Cadrage sur les lectures obligatoires et cursives, retours sur le DS essai + méthodo contractionReprise après les vacances de la ToussaintObjectifs de la séance : faire le point sur les lectures obligatoires ; consolider la méthode de la contraction de texte e",
+      "elements": [
+        "Contraction : Repérer les articulations de l’argumentation Contraction : Reformuler les idées sans commenter ni altérer l’énonciation Contraction : Respecter le nombre de mots et les règles de comptage Contraction : Saisir la thèse et le mouvement général d’un texte argumentatif Lire intégralement une œuvre et rendre compte de sa lecture Mettre en relation des textes, des œuvres, des images ou des représentations"
+      ],
+      "afaire": [
+        "Pour le 06/11 I - Entraînement à la contraction de texte en vue du DS du lundi 9 novembre.1) Relire la méthodologie de la contraction2) ✨Reviser la méthodologie avec cette application : Réviser la contraction de texte — 1ère ST2S) S'entraîner avec les exercices suivants du livret d'exercices jointChapitre I : étape 4 => Ex 7Chapitre II : étape 1 => Ex 2Chapitre II : étape 2 => Ex 4Chapitre III : étape 1 => Ex 2Vous pouvez aussi relire les exercices corrigés donnés avant les vacances : regarder dans la colonne \"Méthodologie\" II - Françoise de Graffigny :venir avec le livre. Nous allons avancer sur l'explication linéaire n°2 (extrait de la lettre 34).ELEVE_H22_Exercices_contraction_chap_37_38_39.pdf ELEVES_méthodo_contraction_texte_v2.pdf Français 1ère ST2S : objectif bac français 🎓- Lycée "
+      ],
+      "absents": 23
+    },
+    {
+      "date": "2026-11-06",
+      "time": "10:00",
+      "hours": 1,
+      "titre": "Séq 1 - Graffigny, Correction du devoir sur l'EL2 et entraînement à la contraction de texte",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Séq 1 - Graffigny, Correction du devoir sur l'EL2 et entraînement à la contraction de texteObjectifs de la séance : clarifier les échéances et les lectures de l'année ; corriger le travail sur l'explication linéaire n°2 ; s'entraîner à la contraction de texte en vue du DS du 9 novembre.I. Point sur les lectures et les échéances : échanges sur les prochains contrôles (DS de contraction du 9 novembre, contrôle de lecture, bac blanc n°1 du 3 décembre) ; précisions sur les œuvres obligatoires et les lectures cursives ; choix définitif de la lecture cursive : Ourika de Claire de Duras et Americanah de Chimamanda Ngozi Adichie. Rappel sur l'épreuve orale du bac : la présentation du livre exige de connaître l'œuvre, son contexte socio-historique et son lien avec le parcours associé. Rappel des règles d'usage de l'IA : tout recours à une IA pour un travail personnel est interdit ; en cas de doute, la copie n'est pas notée.II. Correction collective des questions sur l'EL2 (lettre 34) : problématiques et découpages en mouvements, du repérage des procédés à l'interprétation.III. Contraction de texte : distribution de la méthodologie de la contraction ; présentation de l'application d'entraînement à la contraction (démonstration) ; entraînement sur deux textes — A. Boudhiba, « Le tourisme, une rencontre manquée ? » (énonciation, connecteurs logiques) puis J.-C. Carrière et U. Eco, N'espérez pas vous débarrasser des livres (identification de la thèse).IV. Contraction en temps limité (environ 35 minutes) : N. Santolaria, « Éloge de la paresse au bureau », Le Monde (2017) — application des étapes de la méthodologie, comptage des mots, adoption du point de vue de l'auteur (contracter sans commenter ni juger).V. Rendu des copies restantes du DS sur l'essai. (à partir d'un texte de Lucie Azéma) ELEVE_Graffigny_EL2 - lettre 34.pdf ELEVE_H22_Exercices_contraction_chap_37_38_39.pdf ELEVES_méthodo_contraction_texte_v2.pdf ",
+      "resume": "Séq 1 - Graffigny, Correction du devoir sur l'EL2 et entraînement à la contraction de texteObjectifs de la séance : clarifier les échéances et les lectures de l'année ; corriger le travail sur l'explication linéaire n°2 ; s'entraîner à la contraction de texte ",
+      "elements": [
+        "Contraction : Repérer les articulations de l’argumentation Contraction : Distinguer les arguments, les exemples et les éléments implicites Contraction : Reformuler les idées sans commenter ni altérer l’énonciation Contraction : Respecter l’ordre, l’équilibre argumentatif et les proportions du texte Contraction : Respecter le nombre de mots et les règles de comptage Contraction : Saisir la thèse et le mouvement général d’un texte argumentatif EL : Identifier la composition, la progression et les mouvements d’un texte Mobiliser le contexte et les connaissances littéraires pour éclairer un texte"
+      ],
+      "afaire": [
+        "Pour le 09/11I - Entraînement à la contraction de texte en vue du DS du lundi 9 novembre.1) Connaître parfaitement le document de méthodologie de la contraction2) ✨Reviser la méthodologie avec cette application : Réviser la contraction de texte — 1ère ST2S. Objectif : atteindre un score d'au moins 80%3) Faire ou refaire les exercices du livret d'exercices sur la contraction. ELEVE_H22_Exercices_contraction_chap_37_38_39.pdf ELEVES_méthodo_contraction_texte_v2.pdf Réviser la contraction de texte avec une app "
+      ],
+      "absents": 6
+    },
+    {
+      "date": "2026-11-06",
+      "time": "13:00",
+      "hours": 1,
+      "titre": "Entraînement à la contraction de texte",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Entraînement à la contraction de texteObjectifs de la séance : s'entraîner à la contraction de texte en vue du DS du 9 novembre.Contraction de texte : distribution de la méthodologie de la contraction ; présentation de l'application d'entraînement à la contraction (démonstration) ; entraînement sur deux textes — A. Boudhiba, « Le tourisme, une rencontre manquée ? » (énonciation, connecteurs logiques) puis J.-C. Carrière et U. Eco, N'espérez pas vous débarrasser des livres (identification de la thèse).Contraction en temps limité (environ 35 minutes) : N. Santolaria, « Éloge de la paresse au bureau », Le Monde (2017) — application des étapes de la méthodologie, comptage des mots, adoption du point de vue de l'auteur (contracter sans commenter ni juger).Rendu des copies restantes du DS sur l'essai. (à partir d'un texte de Lucie Azéma) ",
+      "resume": "Entraînement à la contraction de texteObjectifs de la séance : s'entraîner à la contraction de texte en vue du DS du 9 novembre.Contraction de texte : distribution de la méthodologie de la contraction ; présentation de l'application d'entraînement à la contrac",
+      "elements": [
+        "Contraction : Repérer les articulations de l’argumentation Contraction : Distinguer les arguments, les exemples et les éléments implicites Contraction : Reformuler les idées sans commenter ni altérer l’énonciation Contraction : Respecter l’ordre, l’équilibre argumentatif et les proportions du texte Contraction : Respecter le nombre de mots et les règles de comptage Contraction : Saisir la thèse et le mouvement général d’un texte argumentatif"
+      ],
+      "afaire": [],
+      "absents": 4
+    },
+    {
+      "date": "2026-11-09",
+      "time": "11:00",
+      "hours": 1,
+      "titre": "DS (2h) - Entraînement à la contraction de texte (1/2)Entraînement à la contraction de texte en",
+      "statut": "publié",
+      "theme": "",
+      "cat": "Devoir sur table DS ",
+      "contenu": "DS (2h) - Entraînement à la contraction de texte (1/2)Entraînement à la contraction de texte en vue du bac blanc #1 du 3 décembre",
+      "resume": "DS (2h) - Entraînement à la contraction de texte (1/2)Entraînement à la contraction de texte en vue du bac blanc #1 du 3 décembre",
+      "elements": [
+        "Contraction : Distinguer les arguments, les exemples et les éléments implicites Contraction : Reformuler les idées sans commenter ni altérer l’énonciation Contraction : Respecter l’ordre, l’équilibre argumentatif et les proportions du texte Contraction : Respecter le nombre de mots et les règles de comptage Contraction : Saisir la thèse et le mouvement général d’un texte argumentatif"
+      ],
+      "afaire": [
+        "Pour le 09/11I - Entraînement à la contraction de texte en vue du DS lundi 9/111) Connaître parfaitement le document de méthodologie de la contraction2) ✨Reviser la méthodologie avec cette application : Réviser la contraction de texte — 1ère ST2S. Objectif : atteindre un score d'au moins 80%3) Certains d'entre vous souhaitez avoir des exemples de contractions :- Vous pouvez analyser la correction de la contraction du texte sur l'éloge de la procrastination est jointe.- Vous pouvez également relire la contraction du texte de Lucie Azéma (sujet du DS sur l'essai) qui est un très bon exemple d'application de la méthode. Entraînez-vous à contracter le texte en appliquant la méthode avant de lire le corrigé !ELEVE_exemple_contraction_texte_Lucie_Azéma.pdf ELEVE_sujet_40mins_entrainement_contraction_Santolaria.pdf Français 1ère ST2S : objectif bac français 🎓- Lycée Réviser la contraction de texte avec une app ELEVES_méthodo_contraction_texte_v2.pdf ELEVE_eleve_correction_contraction_Santolaria_40_mins.pdf "
+      ],
+      "absents": 2
+    },
+    {
+      "date": "2026-11-09",
+      "time": "15:00",
+      "hours": 1,
+      "titre": "",
+      "statut": "à saisir",
+      "theme": "",
+      "cat": "",
+      "contenu": "",
+      "resume": "",
+      "elements": [],
+      "afaire": [
+        "Pour le 13/11Le DS de contraction sera terminé lors de notre prochaine séance en classe, lundi 16 novembre.Ce vendredi 13/11 nous ferons une séance en visio : voici le lien de connexion. Nous reviendrons sur l'entraînement à la contraction fait en classe sur le texte de Santolaria (éloge de la paresse ), puis nous finirons l'explication linéaire #2 de F. de Graffigny (lettre 34, voir pièce jointe).Travail à faire pour préparer l'explication linéaire de F. de Graffigny :pour chaque mouvement du texte, repérer au moins un des procédés littéraires ci-après en citant le textedonner une interprétation : que montre cette figure de style ou ce procédé grammatical ? Que dénonce Zilia à travers lui ?Mouvements et procédés :Mouvement 1 — Une éducation confiée à des incapables : le couvent (paragraphe 1et 2)Un parallélisme de construction avec opposition, dès les premières lignes ;Une antithèse entre le lieu de l'éducation et son but ;Un pronom indéfini sujet, récurrent dans toute la lettre ;Une métaphore de la contrainte, appliquée à la religion. Mouvement 2 — L'âme négligée : le renversement du regard (paragraphe 3)Une opposition de lexique qui installe la comparaison France / Pérou ;Le champ mélioratif du « respect pour soi-même » (dont une métaphore du tribunal) ;Le mot « barbares » : un renversement du regard européen.Mouvement 3 — Le corps seul cultivé : l'éducation du paraître (paragraphe 4)Une énumération en trois infinitifs (un rythme ternaire) ;Une antiphrase : l'« essentiel » de l'éducation ;Le verbe « borne » et la négation qui réduisent l'honneur d'une femme. Exemple avec deux citations et les procédés associés (quelle interprétation?): mouvement 1, n° 1 : \"Je ne sais… / Mais je sais…\" (parallélisme) ; mouvement 3, n° 1 : \"Régler les mouvements du corps, arranger ceux du visage, composer l'extérieur\" (ternaire).ELEVE_Graffigny_EL2 - lettre 34.pdf Figures De Style.pdf "
+      ],
+      "absents": 0
+    },
+    {
+      "date": "2026-11-13",
+      "time": "10:00",
+      "hours": 1,
+      "titre": "",
+      "statut": "à saisir",
+      "theme": "",
+      "cat": "",
+      "contenu": "",
+      "resume": "",
+      "elements": [],
+      "afaire": [
+        "Pour le 16/11I - Entraînement à la contraction de texte en vue du DS lundi 16/11 (2ème heure du DS du lundi 9/11)1) Connaître parfaitement le document de méthodologie de la contraction2) ✨Reviser la méthodologie avec cette application : Réviser la contraction de texte — 1ère ST2S. Objectif : atteindre un score d'au moins 80%3) Certains d'entre vous souhaitez avoir des exemples de contractions :- Vous pouvez analyser la correction de la contraction du texte sur l'éloge de la procrastination est jointe.- Vous pouvez également relire la contraction du texte de Lucie Azéma (sujet du DS sur l'essai) qui est un très bon exemple d'application de la méthode. Entraînez-vous à contracter le texte en appliquant la méthode avant de lire le corrigé !ELEVE_eleve_correction_contraction_Santolaria_40_mins.pdf ELEVE_exemple_contraction_texte_Lucie_Azéma.pdf ELEVE_sujet_40mins_entrainement_contraction_Santolaria.pdf ELEVES_méthodo_contraction_texte_v2.pdf Français 1ère ST2S : objectif bac français 🎓- Lycée Réviser la contraction de texte avec une app "
+      ],
+      "absents": 0
+    },
+    {
+      "date": "2026-11-16",
+      "time": "11:00",
+      "hours": 1,
+      "titre": "DS (2h) - Entraînement à la contraction de texte (2/2)",
+      "statut": "réalisé non publié",
+      "theme": "",
+      "cat": "Devoir sur table DS ",
+      "contenu": "DS (2h) - Entraînement à la contraction de texte (2/2)",
+      "resume": "DS (2h) - Entraînement à la contraction de texte (2/2)",
+      "elements": [],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-11-20",
+      "time": "10:00",
+      "hours": 1,
+      "titre": "",
+      "statut": "à saisir",
+      "theme": "",
+      "cat": "",
+      "contenu": "",
+      "resume": "",
+      "elements": [],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-11-20",
+      "time": "13:00",
+      "hours": 1,
+      "titre": "",
+      "statut": "à saisir",
+      "theme": "",
+      "cat": "",
+      "contenu": "",
+      "resume": "",
+      "elements": [],
+      "afaire": [],
+      "absents": 0
+    }
+  ],
+  "programme": [
+    {
+      "bloc": "1 - OBJETS D'ÉTUDE, PARCOURS / CONSTRUIRE L'AUTONOMIE DE LECTURE",
+      "items": [
+        {
+          "label": "Exprimer et justifier une appréciation personnelle sur une œuvre",
+          "n": 0
+        },
+        {
+          "label": "Lire intégralement une œuvre et rendre compte de sa lecture",
+          "n": 2
+        },
+        {
+          "label": "Tenir et enrichir un carnet de lecture",
+          "n": 0
+        },
+        {
+          "label": "Littérature d'idées : Lettres d'une Péruvienne — Un nouvel univers s'est offert à mes yeux",
+          "n": 0
+        },
+        {
+          "label": "Poésie : Cahier de Douai — Émancipations créatrices",
+          "n": 0
+        },
+        {
+          "label": "Roman et récit : Le Chevalier de la charrette — Héroïsme et amour",
+          "n": 0
+        },
+        {
+          "label": "Théâtre : On ne badine pas avec l'amour — Les jeux du cœur et de la parole",
+          "n": 0
+        }
+      ]
+    },
+    {
+      "bloc": "2 - LIRE, COMPRENDRE, ANALYSER ET INTERPRÉTER",
+      "items": [
+        {
+          "label": "Comprendre le sens littéral et le sens global d'un texte",
+          "n": 0
+        },
+        {
+          "label": "Construire une interprétation en reliant procédés, effets et sens",
+          "n": 4
+        },
+        {
+          "label": "Formuler une hypothèse d'interprétation ou un projet de lecture",
+          "n": 0
+        },
+        {
+          "label": "Mobiliser le contexte et les connaissances littéraires pour éclairer un texte",
+          "n": 4
+        },
+        {
+          "label": "Relever et analyser des éléments textuels et stylistiques précis",
+          "n": 6
+        }
+      ]
+    },
+    {
+      "bloc": "3 - MÉTHODO DES EXERCICES ÉCRITS DE L'EAF",
+      "items": [
+        {
+          "label": "Commentaire : Comprendre le sujet et les axes proposés",
+          "n": 0
+        },
+        {
+          "label": "Commentaire : Construire un plan cohérent répondant au projet de lecture",
+          "n": 0
+        },
+        {
+          "label": "Commentaire : Organiser une interprétation progressive et convaincante du texte",
+          "n": 0
+        },
+        {
+          "label": "Commentaire : Rédiger un paragraphe d'analyse étayé par des citations précises",
+          "n": 0
+        },
+        {
+          "label": "Contraction : Saisir la thèse et le mouvement général d'un texte argumentatif",
+          "n": 0
+        },
+        {
+          "label": "Contraction : Repérer les articulations de l'argumentation",
+          "n": 0
+        },
+        {
+          "label": "Contraction : Distinguer les arguments, les exemples et les éléments implicites",
+          "n": 4
+        },
+        {
+          "label": "Contraction : Reformuler les idées sans commenter ni altérer l'énonciation",
+          "n": 0
+        },
+        {
+          "label": "Contraction : Respecter l'ordre, l'équilibre argumentatif et les proportions du texte",
+          "n": 0
+        },
+        {
+          "label": "Contraction : Respecter le nombre de mots et les règles de comptage",
+          "n": 5
+        },
+        {
+          "label": "Essai : Comprendre les enjeux de la question et formuler une réponse personnelle",
+          "n": 4
+        },
+        {
+          "label": "Essai : Construire et hiérarchiser des arguments pertinents",
+          "n": 4
+        },
+        {
+          "label": "Essai : Mobiliser l'œuvre, le parcours, le texte de contraction et sa culture personnelle",
+          "n": 0
+        },
+        {
+          "label": "Essai : Organiser une réflexion progressive, nuancée et convaincante (correction : scission)",
+          "n": 0
+        },
+        {
+          "label": "Essai : Discuter, concéder, nuancer ou réfuter une opinion (correction : scission)",
+          "n": 0
+        }
+      ]
+    },
+    {
+      "bloc": "4 - MÉTHODO DES EXERCICES ORAUX DE L'EAF",
+      "items": [
+        {
+          "label": "EL : Lire un texte à voix haute de manière fluide et expressive",
+          "n": 2
+        },
+        {
+          "label": "EL : Identifier la composition, la progression et les mouvements d'un texte",
+          "n": 0
+        },
+        {
+          "label": "EL : Conduire une explication linéaire suivant les mouvements du texte",
+          "n": 3
+        },
+        {
+          "label": "EL : Rédiger l'introduction / le développement / la conclusion",
+          "n": 3
+        },
+        {
+          "label": "EL et Entretien : Présenter et situer précisément un extrait",
+          "n": 0
+        },
+        {
+          "label": "EL et Entretien : Mobiliser une connaissance précise de l'œuvre dans l'entretien",
+          "n": 0
+        },
+        {
+          "label": "EL et Entretien : Employer une langue orale claire, précise et adaptée",
+          "n": 0
+        },
+        {
+          "label": "EL et Entretien : Organiser son propos et respecter le temps imparti",
+          "n": 0
+        },
+        {
+          "label": "Entretien : Présenter une œuvre et justifier un choix personnel",
+          "n": 0
+        },
+        {
+          "label": "Écouter, répondre et faire progresser le dialogue avec l'examinateur",
+          "n": 0
+        },
+        {
+          "label": "Adresser son propos à l'auditeur et soutenir son attention",
+          "n": 0
+        }
+      ]
+    },
+    {
+      "bloc": "5 - OUTILS D'ANALYSE",
+      "items": [
+        {
+          "label": "L'argumentation : directe/indirecte (genres littéraires associés), actions argumentatives, types d'arguments",
+          "n": 4
+        },
+        {
+          "label": "L'autobiographie",
+          "n": 0
+        },
+        {
+          "label": "La poésie : versification, formes",
+          "n": 0
+        },
+        {
+          "label": "Le récit : narration, focalisation, description",
+          "n": 1
+        },
+        {
+          "label": "Le théâtre : vocabulaires, genres, règles",
+          "n": 0
+        },
+        {
+          "label": "Les figures de style : de rapprochement, d'opposition, d'exagération, d'atténuation",
+          "n": 3
+        },
+        {
+          "label": "Les registres : comique, satirique, ironique, lyrique, élégiaque, pathétique, tragique...",
+          "n": 0
+        }
+      ]
+    },
+    {
+      "bloc": "6 - GRAMMAIRE - ÉTUDIER LA LANGUE ET MAÎTRISER L'EXPRESSION",
+      "items": [
+        {
+          "label": "Identifier les classes grammaticales et les fonctions syntaxiques",
+          "n": 1
+        },
+        {
+          "label": "Délimiter les propositions et analyser leurs relations",
+          "n": 0
+        },
+        {
+          "label": "Analyser une proposition subordonnée conjonctive circonstancielle",
+          "n": 0
+        },
+        {
+          "label": "Analyser une proposition subordonnée relative",
+          "n": 0
+        },
+        {
+          "label": "Analyser l'expression de la négation",
+          "n": 0
+        },
+        {
+          "label": "Analyser l'expression de l'interrogation",
+          "n": 0
+        },
+        {
+          "label": "Formuler une réponse grammaticale brève, précise et rigoureuse",
+          "n": 0
+        }
+      ]
+    },
+    {
+      "bloc": "7 - CONSTRUIRE UNE CULTURE LITTÉRAIRE",
+      "items": [
+        {
+          "label": "Situer les œuvres, les auteurs et les textes dans leur contexte",
+          "n": 6
+        },
+        {
+          "label": "Mobiliser les genres, registres, mouvements et notions littéraires",
+          "n": 1
+        },
+        {
+          "label": "Mettre en relation des textes, des œuvres, des images ou des représentations",
+          "n": 5
+        }
+      ]
+    },
+    {
+      "bloc": "8 - LEXIQUE ET EXPRESSION",
+      "items": [
+        {
+          "label": "Définir un mot en contexte et vérifier son sens à l'aide du dictionnaire",
+          "n": 0
+        },
+        {
+          "label": "Identifier des synonymes et des antonymes",
+          "n": 0
+        },
+        {
+          "label": "Employer un lexique précis, riche et adapté",
+          "n": 0
+        },
+        {
+          "label": "Reformuler et enrichir son vocabulaire dans un écrit ou un oral",
+          "n": 0
+        },
+        {
+          "label": "Utiliser des connecteurs et des expressions logiques",
+          "n": 1
+        }
+      ]
+    },
+    {
+      "bloc": "Notes d'évaluation (31/10/2026)",
+      "items": [
+        {
+          "label": "Œuvres/parcours conformes à la progression annuelle 2026-27 (programme limitatif en vigueur) ; « Cahier de Douai » = libellé BO (l'ancienne version disait « Cahiers »).",
+          "n": 0
+        },
+        {
+          "label": "Les items grammaire s'inscrivent dans la règle des 3 notions/an et le champ de l'analyse syntaxique attendu à la question de grammaire de l'EL.",
+          "n": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+scripts/privacy_local.txt
+*.code-workspace
+*prive*
+____EDT_EXPORTS_PRONOTE/
+*.local.*
+.DS_Store
