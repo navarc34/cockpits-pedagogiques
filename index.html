@@ -112,15 +112,22 @@ function heat(cd){
 }
 async function main(){
   const g=await load('data/global.json');
-  const cds=await Promise.all(g.courses.map(c=>load('data/'+String(c.id).replace(/\W/g,'')+'.json').catch(()=>({}))));
+  const files=g.courses.map(c=>'data/'+String(c.id).replace(/\W/g,'')+'.json');
+  const settled=await Promise.allSettled(files.map(load));
+  const cds=settled.map(r=>r.status==='fulfilled'?r.value:{});
+  const failed=settled.map((r,j)=>r.status==='rejected'?files[j]+' ('+esc((r.reason&&r.reason.message)||'erreur')+')':null).filter(Boolean);
+  if(failed.length)document.querySelector('.wrap').insertAdjacentHTML('afterbegin','<p class="err">Fichier'+(failed.length>1?'s':'')+' de cours introuvable'+(failed.length>1?'s':'')+' — les blocs concernés (carte de l’année, séances, jalons) sont incomplets : '+failed.join(' · ')+'</p>');
   const col2={};g.courses.forEach(c=>col2[c.id]=col(c.couleur));
   const tot=g.courses.reduce((a,c)=>a+c.budget.total,0),done=g.courses.reduce((a,c)=>a+c.budget.consomme,0),left=tot-done;
-  const a=D('2026-09-01'),b=D('2027-06-30'),el=Math.min(1,Math.max(0,(D(NOW)-a)/(b-a))),pc=done/tot;
+  const prevuOf=d=>(d.seances||[]).filter(s=>s.date<=NOW).reduce((x,s)=>x+(s.hours||0),0);
+  const prevu=Math.round(cds.reduce((n,d)=>n+prevuOf(d),0));
+  const aSais=Math.round(cds.reduce((n,d)=>n+(d.seances||[]).filter(s=>s.statut==='à saisir'&&s.date<=NOW).reduce((x,s)=>x+(s.hours||0),0),0));
+  const el=Math.min(1,prevu/tot),pc=done/tot;
   const late=cds.reduce((n,d)=>n+(d.seances||[]).filter(s=>s.statut==='à saisir'&&s.date<=NOW).length,0);
   $('#today').textContent=fl(NOW,{weekday:'long',day:'numeric',month:'long',year:'numeric'});
   $('#kpi').innerHTML=`<div><b>${done} h</b><span>consommées au ${g.meta.arrete?fl(g.meta.arrete,{day:'numeric',month:'short'}):esc(g.meta.maj)}</span></div><div><b>${left} h</b><span>à venir jusqu'en juin</span></div><div><b>${g.courses.length}</b><span>cockpits de cours</span></div>`;
-  const C=2*Math.PI*54,diff=Math.round((pc-el)*tot);
-  $('#ringbox').innerHTML=`<svg class="ring" viewBox="0 0 140 140" role="img" aria-label="${Math.round(pc*100)} % du budget consommé"><circle class="trk" cx="70" cy="70" r="54"/><circle class="arc" id="arc" cx="70" cy="70" r="54" transform="rotate(-90 70 70)" stroke-dasharray="0 ${C}"/><g transform="rotate(${el*360} 70 70)"><line class="tick" x1="70" y1="6" x2="70" y2="24"/></g><text x="70" y="76" font-family="Fraunces,serif" font-size="30" font-weight="600">${Math.round(pc*100)}%</text><text x="70" y="94" font-size="9.5" font-family="Inter">du budget d'heures</text></svg><div class="ringcap">${diff>=0?'en avance':'en retard'} de ${Math.abs(diff)} h sur le rythme de l'année</div>`;
+  const C=2*Math.PI*54;
+  $('#ringbox').innerHTML=`<svg class="ring" viewBox="0 0 140 140" role="img" aria-label="${Math.round(pc*100)} % du budget consommé"><circle class="trk" cx="70" cy="70" r="54"/><circle class="arc" id="arc" cx="70" cy="70" r="54" transform="rotate(-90 70 70)" stroke-dasharray="0 ${C}"/><g transform="rotate(${el*360} 70 70)"><line class="tick" x1="70" y1="6" x2="70" y2="24"/></g><text x="70" y="76" font-family="Fraunces,serif" font-size="30" font-weight="600">${Math.round(pc*100)}%</text><text x="70" y="94" font-size="9.5" font-family="Inter">du budget d'heures</text></svg><div class="ringcap">${Math.round(el*100)} % du plan prévu à ce jour · ${prevu} h prévues, ${done} h saisies${aSais?` · <span style="color:var(--red)">${aSais} h à saisir</span>`:''}</div>`;
   requestAnimationFrame(()=>requestAnimationFrame(()=>$('#arc').setAttribute('stroke-dasharray',`${pc*C} ${C}`)));
   if(late)$('#late').innerHTML=`<span class="alert">${late} créneau${late>1?'x':''} à saisir dans Pronote</span>`;
   // semaine
@@ -136,10 +143,10 @@ async function main(){
   $('#week').innerHTML=wk;
   // cours
   $('#courses').innerHTML=g.courses.map((c,j)=>{
-    const p=c.budget,cd=cds[j],pct=Math.round(p.consomme/p.total*100);
+    const p=c.budget,cd=cds[j],pct=Math.round(p.consomme/p.total*100),elc=Math.min(1,prevuOf(cd)/p.total);
     const nx=(cd.jalons||[]).filter(x=>x.date>=NOW&&x.etat==='à venir').sort((u,v)=>u.date<v.date?-1:1)[0]||c.prochainJalon;
     return `<a class="course glass up" style="--c:${col2[c.id]};--i:${j}" href="${esc(c.href)}"><span class="tag">${esc(String(c.progressionStatut).startsWith('établie')?'progression établie':'progression en chantier')}</span><h3>${esc(c.nom)}</h3><p>${esc(c.resume)}</p>
-    <div class="bar"><i style="width:${pct}%"></i><u style="left:${(el*100).toFixed(1)}%"></u></div><div class="nums"><span>Consommé <b>${p.consomme} h</b></span><span>À venir <b>${p.aVenir} h</b></span><span>Total <b>${p.total} h</b></span></div>
+    <div class="bar"><i style="width:${pct}%"></i><u style="left:${(elc*100).toFixed(1)}%" title="${Math.round(elc*100)} % du plan prévu à ce jour"></u></div><div class="nums"><span>Consommé <b>${p.consomme} h</b></span><span>À venir <b>${p.aVenir} h</b></span><span>Total <b>${p.total} h</b></span></div>
     ${heat(cd)}${nx?`<div class="next">Prochain jalon · <b>${esc(fl(nx.date,{weekday:'short',day:'numeric',month:'long'}))}</b> — ${esc(nx.txt)} →</div>`:''}</a>`;}).join('');
   // priorités
   const pc3=(t,h,k)=>`<div class="pcol glass up"><h3>${t}</h3><p class="hint">${h}</p><ul>${(g.prioritesGlobales[k]||[]).map(p=>`<li>${String(p.cours).split(',').map(w=>w.trim()).map(w=>`<span class="who" style="background:${col(col2[w]||'#5f7280')}">${esc(w==='spe'?'spé':w)}</span>`).join('')}<span>${esc(p.txt)}</span></li>`).join('')}</ul></div>`;
