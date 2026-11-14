@@ -7,13 +7,12 @@
     "rythme": "4 h/semaine",
     "couleur": "#5b7150",
     "sourcePronote": "Export Pronote du 12/11/2026 (dossier ____EDT_EXPORTS_PRONOTE de la spécialité)",
-    "sourceBudget": "Créneaux de l'agenda Google, année scolaire 2026-27 (2 h par créneau)",
-    "arrete": "2026-11-13"
+    "sourceBudget": "Créneaux de l'agenda Google, année scolaire 2026-27 (2 h par créneau)"
   },
   "budget": {
     "total": 134,
-    "consomme": 34,
-    "aVenir": 100,
+    "consomme": 32,
+    "aVenir": 102,
     "unite": "h"
   },
   "priorites": {

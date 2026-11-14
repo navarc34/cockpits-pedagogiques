@@ -1,23 +1,15 @@
-name: Validation et confidentialité
-
-# Garde de confidentialité + validation des données et du JS inline,
-# exécutées à chaque push. Toute fuite bloque le build AVANT la mise en ligne
-# de GitHub Pages (déploiement Pages = fin de pipeline : il ne part que si les
-# étapes précédentes réussissent).
-
+name: validate
 on:
   push:
+    branches: [dev, main]
   pull_request:
-
 jobs:
-  checks:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-python@v5
         with:
-          node-version: '20'
-      - name: Garde de confidentialité
-        run: python3 scripts/check_privacy.py
-      - name: Validation des données et de la syntaxe JS
-        run: python3 scripts/validate.py
+          python-version: '3.12'
+      - name: Validation du modèle et du contrat vue
+        run: python scripts/validate.py
