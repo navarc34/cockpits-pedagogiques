@@ -33,3 +33,13 @@ Servir le dépôt via HTTP, ouvrir `trajectoire.html?now=2026-11-14`, puis teste
 - Les exclusions et confirmations déclarées dans `realisation` prévalent sur la règle automatique. Leur validation reste un acte humain et doit être saisie dans le JSON versionné.
 - `tests/test_preuves.cjs` protège le cutoff, la non-duplication, le fonctionnement des exclusions, le mode manuel et les regex invalides ; `tests/test_pilotage.py` vérifie la structure des règles.
 - Limite : une clé de séance `date+heure` peut entrer en collision pour des créneaux simultanés ou changer après déplacement. Pour une généralisation, prévoir de vrais IDs persistants dans les exports.
+
+## Sprint 1D — Cap annuel, projection et scénarios
+
+- `data/trajectoire.json` : plan de travail **brouillon**, entièrement illustratif. Les allocations totalisent les 74 heures du budget arrêté au 13 novembre, mais ne représentent pas un plan approuvé.
+- Six enveloppes : Graffigny, Rimbaud, Chrétien de Troyes, Musset, exercices transversaux et réserve. Leurs fenêtres sont des hypothèses de répartition, à confronter aux séquences et à l'emploi du temps.
+- `assets/trajectoire-projection.js` : vérification des invariants (budget total et arrêté), projection des capacités théoriques des fenêtres et simulations sans mutation ni persistance.
+- La capacité reconstruite à partir des récurrences peut différer du solde issu de l'agenda. Cette divergence est à vérifier et n'est **jamais** une preuve de retard.
+- `trajectoire.html` : le cap annuel est maintenant placé en haut. Le sélecteur de bloc et le curseur simulent une variation d'heures financée ou non par la réserve. Aucun scénario n'est écrit dans les JSON.
+- `schemas/trajectoire.schema.json`, `tests/test_trajectoire.py` et `tests/test_projection.cjs` valident budget, dates, doublons, calculs et immutabilité ; la CI exécute les tests.
+- Le passage d'un plan brouillon à un plan validé et son historique doivent résulter d'une décision explicite de l'enseignant et d'une nouvelle version des données.

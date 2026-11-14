@@ -39,12 +39,50 @@ footer{color:var(--soft);font-size:11px;padding:30px 0 48px}.error{color:var(--r
 .evidence code{font-size:10px;color:var(--soft);overflow-wrap:anywhere}
 .evidence .rule{font-size:11px;white-space:pre-wrap;overflow-wrap:anywhere;color:var(--soft);padding:9px;border-radius:8px;background:var(--empty)}
 .evidence .warn{font-size:11px;color:var(--soft)}
+
+.cap{margin:22px 0;padding:22px}
+.cap-lead{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.cap-legend{font-size:12px;color:var(--soft);max-width:850px}
+.cap-band{display:flex;width:100%;height:22px;border-radius:8px;overflow:hidden;gap:2px;margin:14px 0 12px}
+.cap-band span{min-width:1px;display:block}
+.cap-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.cap-block{padding:12px;border:1px solid var(--line);border-radius:10px}
+.cap-block strong{font-size:13px}.cap-block p{color:var(--soft);font-size:11px;margin:6px 0}
+.cap-note{font-size:12px;color:var(--soft);line-height:1.55}
+.cap-scenarios{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:15px}
+.cap-scenarios select,.cap-scenarios input{background:var(--card);border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:7px;font:inherit}
+.cap-scenarios input{width:min(310px,100%)}
+.cap-outcome{padding:12px;margin-top:10px;border:1px solid var(--line);border-radius:10px;font-size:13px}
+.cap-risk{font-size:12px;padding:10px 0;border-top:1px solid var(--line)}
+.cap-timeline{margin-top:18px;border-top:1px solid var(--line);padding-top:15px}
+.cap-timeline ol{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;padding:0;list-style:none}
+.cap-timeline li{padding:12px;border:1px solid var(--line);border-radius:9px;font-size:12px}
+.cap-timeline time{color:var(--soft);display:block;margin-bottom:6px}
+@media(max-width:800px){.cap-grid{grid-template-columns:repeat(2,1fr)}.cap-timeline ol{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.cap-grid,.cap-timeline ol{grid-template-columns:1fr}.cap{padding:14px}}
 </style></head><body><div class="wrap">
 <header class="hero"><a href="cours.html?id=fr" class="back">← Retour au français</a><p class="kicker">Sprint 1 · pilotage pédagogique</p>
 <h1>Trajectoire pédagogique</h1><p class="intro">Une aide à la décision fondée sur les jalons, les heures déclarées et des objectifs explicites. Les propositions sont à confirmer par l’enseignant : une échéance n’établit pas à elle seule la maîtrise des élèves.</p>
 <p class="meta" id="meta">Chargement des sources…</p></header>
 <div class="tools"><label for="day">Date d’analyse</label><input type="date" id="day" min="2026-09-01" max="2027-06-30"><button id="today" type="button">Aujourd’hui</button><button id="print" type="button">Imprimer</button></div>
-<div id="error" role="alert"></div><div class="kpis" id="kpis"></div>
+<div id="error" role="alert"></div>
+<section class="cap panel glass" id="cap" aria-labelledby="cap-title">
+<div class="cap-lead"><h2 id="cap-title">Le cap jusqu’aux épreuves</h2><span class="tag" id="cap-status">Brouillon à valider</span></div>
+<p class="cap-legend">Un plan annuel de travail, révisable lorsque les séances réellement assurées ou tes décisions évoluent. La référence reste inchangée pendant les simulations.</p>
+<div id="cap-summary" aria-live="polite"></div>
+<div id="cap-band" class="cap-band" aria-label="Répartition des heures restantes"></div>
+<div id="cap-grid" class="cap-grid"></div>
+<h3>Simuler une réallocation d'heures</h3>
+<div class="cap-scenarios">
+<label for="cap-target">Séquence</label><select id="cap-target"></select>
+<label for="cap-delta">Variation</label><input id="cap-delta" type="range" min="-6" max="10" value="0" step="1"><output id="cap-delta-value" for="cap-delta">0 h</output>
+<button type="button" id="cap-reset">Réinitialiser</button>
+</div>
+<div id="cap-outcome" class="cap-outcome" aria-live="polite"></div>
+<div id="cap-risks"></div>
+<div class="cap-timeline"><h3>Jalons de référence</h3><ol id="cap-milestones"></ol></div>
+<p class="cap-note">La capacité affichée par période est reconstruite sur un calendrier hypothétique. Les heures transversales partagent les créneaux des séquences : elles ne s’ajoutent pas aux capacités temporelles de celles-ci. Les simulations ne sont pas sauvegardées.</p>
+</section><div class="kpis" id="kpis"></div>
 <section class="planning panel glass" aria-labelledby="planning-title">
 <div class="planhead"><h2 id="planning-title">Calendrier prévisionnel</h2><span class="tag">Hypothèse à confirmer</span></div>
 <p class="plan-note">Horaires hebdomadaires et alternance inférés des séances existantes. Vacances prises en compte ; jours fériés, reports et annulations non exhaustifs. Aucune absence de trace n'est assimilée à un cours non assuré.</p>
@@ -57,6 +95,7 @@ footer{color:var(--soft);font-size:11px;padding:30px 0 48px}.error{color:var(--r
 <footer>Prototype en lecture seule · aucune écriture dans Pronote ou GitHub · état des données affiché explicitement</footer></div>
 <script src="assets/trajectoire-calendar.js"></script>
 <script src="assets/trajectoire-evidence.js"></script>
+<script src="assets/trajectoire-projection.js"></script>
 <script>
 'use strict';
 const $=s=>document.querySelector(s);
@@ -91,7 +130,48 @@ function renderCalendar(d,day,config){
  $('#plandetails').innerHTML='<p class="plan-note"><b>'+esc(w.libelle)+'</b> : '+windowSlots.reduce((n,x)=>n+x.hours,0)+' h théoriques avant validation des exceptions. '+result.horsModele.length+' séance(s) enregistrée(s) hors récurrence à examiner, sans présumer d’erreur.</p><h3>Créneaux théoriques · 14 jours</h3>'+table;
 }
 
-function render(d,c,day,calendar){
+
+const capColors={graffigny:"#c2603f",rimbaud:"#3d6b78",chretien:"#5b7150",musset:"#7d5480",transversal:"#a5842e",reserve:"#88929b"};
+function renderCap(model,d,calendar,day){
+ const cap=window.CockpitProjection;
+ const historical=day<model.meta.arrete;
+ $('#cap-status').textContent=model.meta.statut==="validée"?"Référence validée":"Brouillon à valider";
+ if(historical){
+  $('#cap-summary').textContent='Aucun instantané du cap disponible pour cette date : historique non reconstructible.';
+  $('#cap-band').innerHTML='';$('#cap-grid').innerHTML='';
+  $('#cap-outcome').textContent='Simulation indisponible avant la date de référence.';
+  $('#cap-risks').innerHTML='';$('#cap-milestones').innerHTML='';
+  $('#cap-target').disabled=true;$('#cap-delta').disabled=true;$('#cap-reset').disabled=true;
+  return;
+ }
+ $('#cap-target').disabled=false;$('#cap-delta').disabled=false;$('#cap-reset').disabled=false;
+ const projection=cap.projection(model,window.CockpitCalendar,calendar,d.vacances,day);
+ const blocks=model.reference.blocs,allocation=model.reference.budgetHeures;
+ const signed=x=>(x>0?'+':'')+x;
+ $('#cap-summary').innerHTML='<p class="cap-note"><b>Budget de référence : '+allocation+' h</b> · capacité reconstituée sur les créneaux restant après l’arrêté : '+projection.capaciteTheorique+' h · écart de sources : '+signed(projection.difference)+' h (à rapprocher de l’agenda, pas un retard).</p>';
+ $('#cap-band').innerHTML=blocks.map(b=>'<span style="width:'+Math.max(0,(100*b.heures/allocation))+'%;background:'+capColors[b.id]+'" title="'+esc(b.titre)+' : '+b.heures+' h"></span>').join('');
+ $('#cap-grid').innerHTML=projection.fenetres.map(b=>{
+  const span=b.type==='sequence'?'<p>Fenêtre : '+esc(fmt(b.debut))+' – '+esc(fmt(b.fin))+' · '+b.capaciteTheorique+' h théoriques</p>':'<p>Allocation transversale ou réserve ; ne pas additionner aux capacités des séquences.</p>';
+  return '<div class="cap-block"><strong>'+esc(b.titre)+'</strong><p>'+b.heures+' h proposées · '+esc(b.statut)+'</p>'+span+'</div>';
+ }).join('');
+ $('#cap-milestones').innerHTML=model.reference.jalons.map(j=>'<li><time>'+esc(fmt(j.date))+'</time>'+esc(j.libelle)+'</li>').join('');
+ const target=$('#cap-target');
+ if(!target.options.length)target.innerHTML=blocks.filter(b=>b.type!=="reserve").map(b=>'<option value="'+esc(b.id)+'">'+esc(b.titre)+'</option>').join('');
+ const draw=()=>{
+  const id=target.value,delta=Number($('#cap-delta').value);
+  const scenario=cap.scenario(model,id,delta);
+  $('#cap-delta-value').textContent=signed(delta)+' h';
+  const targetBlock=scenario.blocs.find(x=>x.id===id);
+  $('#cap-outcome').innerHTML='<b>'+esc(targetBlock.titre)+'</b> : '+targetBlock.heures+' h au lieu de '+blocks.find(x=>x.id===id).heures+' h. Réserve : '+scenario.solde+' h (référence : '+projection.reserve+' h).<p class="cap-note">'+esc(scenario.motif)+'</p>';
+  $('#cap-risks').innerHTML=(scenario.feasible?'<p class="cap-risk">Réallocation arithmétiquement possible. Les créneaux et objectifs doivent encore être confrontés au calendrier réel.</p>':'<p class="cap-risk"><b>Scénario non soutenable dans l’enveloppe proposée.</b> Choisir un autre bloc, réduire l’ajustement ou demander un arbitrage.</p>')+
+  (projection.difference!==0?'<p class="cap-risk">Le budget issu de l’agenda et la capacité issue de la récurrence ne coïncident pas : vérifier la source des heures avant tout engagement.</p>':'');
+ };
+ target.onchange=draw;$('#cap-delta').oninput=draw;$('#cap-reset').onclick=()=>{$('#cap-delta').value=0;draw();};
+ draw();
+}
+
+function render(d,c,day,calendar,model){
+ renderCap(model,d,calendar,day);
  renderCalendar(d,day,calendar);
  const cutoff=d.meta.arrete,ago=days(cutoff,day),obj=c.fr.objectifs, historical=day<c.meta.dateReference, stale=day>cutoff;
  $('#meta').textContent='Français · '+d.meta.sourcePronote+' · arrêté au '+fmt(cutoff)+' · propositions du '+fmt(c.meta.dateReference);
@@ -115,10 +195,11 @@ function render(d,c,day,calendar){
  $('#quality').innerHTML='<div class="note"><b>Écart prévu / réalisé : non qualifiable.</b> Le calendrier reconstitué reste hypothétique ; des séances non publiées ou absentes de l’export peuvent avoir été assurées.</div>'+(historical?'<div class="note"><b>Historique non reconstructible :</b> les données ont été arrêtées après la date sélectionnée. Aucun compteur ni conseil rétroactif n’est présenté.</div>':'')+(stale?'<div class="note"><b>Données anciennes :</b> l’arrêté précède la date sélectionnée de '+ago+' jour(s). Les valeurs restent celles du '+fmt(cutoff)+'.</div>':'');
 }
 async function main(){
- const [d,c,calendar]=await Promise.all([json('data/fr.json'),json('data/pilotage.json'),json('data/calendrier-pilotage.json')]);
- if(!Array.isArray(d.seances)||!Array.isArray(d.jalons)||!Array.isArray(c.fr?.actions)||!Array.isArray(c.fr?.objectifs)||!calendar.fr||!window.CockpitCalendar||!window.CockpitEvidence)throw Error('Structure des données incompatible');
+ const [d,c,calendar,model]=await Promise.all([json('data/fr.json'),json('data/pilotage.json'),json('data/calendrier-pilotage.json'),json('data/trajectoire.json')]);
+ if(!Array.isArray(d.seances)||!Array.isArray(d.jalons)||!Array.isArray(c.fr?.actions)||!Array.isArray(c.fr?.objectifs)||!calendar.fr||!window.CockpitCalendar||!window.CockpitEvidence||!window.CockpitProjection)throw Error('Structure des données incompatible');
+ window.CockpitProjection.validatePlan(model,{...d.budget,arrete:d.meta.arrete});
  const input=$('#day'),min='2026-09-01',max='2027-06-30';
- const select=x=>{const v=/^\d{4}-\d{2}-\d{2}$/.test(x||'')?x:today();input.value=v<min?min:v>max?max:v;render(d,c,input.value,calendar.fr);};
+ const select=x=>{const v=/^\d{4}-\d{2}-\d{2}$/.test(x||'')?x:today();input.value=v<min?min:v>max?max:v;render(d,c,input.value,calendar.fr,model);};
  input.addEventListener('change',()=>select(input.value));$('#today').onclick=()=>select(today());$('#print').onclick=()=>window.print();
  select(new URLSearchParams(location.search).get('now')||today());
 }

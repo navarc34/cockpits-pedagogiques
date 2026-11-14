@@ -31,3 +31,7 @@ jobs:
         run: node tests/test_calendrier.cjs
       - name: Reconnaissance et traçabilité des séances
         run: node tests/test_preuves.cjs
+      - name: Trajectoire annuelle et validation des allocations
+        run: python3 tests/test_trajectoire.py
+      - name: Simulateur de scénarios et projections
+        run: node tests/test_projection.cjs
