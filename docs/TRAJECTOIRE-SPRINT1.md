@@ -1,0 +1,11 @@
+# Trajectoire pédagogique — Sprint 1 (PR à valider)
+- `trajectoire.html` : vue en lecture seule du pilotage pédagogique du français.
+- `data/pilotage.json` : objectifs explicitement déclarés et actions proposées ; aucune estimation implicite de maîtrise.
+- `tests/test_pilotage.py` : contrôles élémentaires du modèle de données.
+- Depuis le cockpit français, un lien « Trajectoire » ouvre la page autonome.
+- Un champ `valeurConfirmee: null` signifie « non mesuré ».
+- Le budget reste arrêté à la date indiquée dans le fichier du cours.
+- Il n’existe pas encore de calendrier prévisionnel assez détaillé pour calculer un écart réel en heures.
+- Les jalons sont rapprochés par une expression dans leur titre : dette technique, créer des identifiants stables avant automatisation.
+- Pour tester : lancer un serveur HTTP local et ouvrir `trajectoire.html?now=2026-11-14`.
+- Recette navigateur (mobile, clavier, contraste, modes clair/sombre) requise avant fusion.

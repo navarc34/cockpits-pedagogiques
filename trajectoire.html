@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer">
+<title>Trajectoire pédagogique · Français</title><link rel="stylesheet" href="assets/cockpit.css">
+<style>
+:root{--wrap:1290px;--c:#c2603f}
+.hero{padding:36px 0 24px;border-bottom:1px solid var(--line)}h1{font:600 clamp(31px,4.5vw,50px)/1.1 Fraunces,Georgia,serif;margin:10px 0}
+h2{font:600 23px Fraunces,Georgia,serif;margin:0 0 12px}h3{font:600 18px Fraunces,Georgia,serif;margin:7px 0}
+.back{font-size:12px;font-weight:700;color:var(--soft);text-decoration:none}.intro{max-width:840px;color:var(--soft)}
+.meta,.small{font-size:12px;color:var(--soft)}.tools{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:22px 0}
+.tools label{font-size:12px;font-weight:700}.tools input,.tools button{border:1px solid var(--line);border-radius:9px;background:var(--card);color:var(--ink);padding:9px 12px;font:inherit}
+.tools button{cursor:pointer}.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.kpi,.panel{padding:20px}.kpi b{display:block;font:600 29px Fraunces,serif;margin:5px 0}.kpi span,.kpi em{display:block;font-size:11px;color:var(--soft)}.kpi em{font-style:normal}
+.layout{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.85fr);gap:18px;margin-top:22px}
+.action{border:1px solid var(--line);border-radius:12px;padding:15px;margin-top:10px}.action p,.objective p{color:var(--soft);font-size:12px;margin:7px 0}
+.action small,.objective small{color:var(--soft)}.tag{display:inline-block;border:1px solid var(--line);border-radius:50px;padding:3px 9px;font-size:11px;color:var(--soft)}
+.objective{padding:14px 0;border-top:1px solid var(--line)}.objective:first-of-type{border:0}.objective strong{font-size:13px}
+.note{padding:12px 14px;border-left:3px solid var(--gold);margin-top:14px;background:color-mix(in srgb,var(--gold) 7%,transparent);border-radius:0 8px 8px 0;font-size:12px}
+.progress{height:7px;background:var(--empty);border-radius:6px;overflow:hidden;margin-top:7px}.progress i{display:block;height:100%;background:var(--c)}
+footer{color:var(--soft);font-size:11px;padding:30px 0 48px}.error{color:var(--red);padding:15px}
+@media(max-width:950px){.layout{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:500px){.kpi,.panel{padding:13px}.kpi b{font-size:23px}}
+@media print{.tools,.back{display:none}body{background:white!important}.layout{grid-template-columns:1fr}.glass{box-shadow:none;backdrop-filter:none}}
+</style></head><body><div class="wrap">
+<header class="hero"><a href="cours.html?id=fr" class="back">← Retour au français</a><p class="kicker">Sprint 1 · pilotage pédagogique</p>
+<h1>Trajectoire pédagogique</h1><p class="intro">Une aide à la décision fondée sur les jalons, les heures déclarées et des objectifs explicites. Les propositions sont à confirmer par l’enseignant : une échéance n’établit pas à elle seule la maîtrise des élèves.</p>
+<p class="meta" id="meta">Chargement des sources…</p></header>
+<div class="tools"><label for="day">Date d’analyse</label><input type="date" id="day" min="2026-09-01" max="2027-06-30"><button id="today" type="button">Aujourd’hui</button><button id="print" type="button">Imprimer</button></div>
+<div id="error" role="alert"></div><div class="kpis" id="kpis"></div><div class="layout">
+<main class="panel glass"><h2>Décisions à examiner</h2><p class="small" id="count"></p><div id="actions"></div>
+<div class="note">Une action est proposée parce qu’une échéance et une justification figurent dans les données. Il ne s’agit ni d’une décision automatique ni d’un diagnostic sur les élèves.</div></main>
+<aside><section class="panel glass"><h2>Objectifs et preuves</h2><div id="objectives"></div></section>
+<section class="panel glass" style="margin-top:17px"><h2>Fiabilité du diagnostic</h2><div id="quality"></div></section></aside></div>
+<footer>Prototype en lecture seule · aucune écriture dans Pronote ou GitHub · état des données affiché explicitement</footer></div>
+<script>
+'use strict';
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+const today=()=>new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Paris',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+const date=d=>new Date(d+'T12:00:00'),days=(a,b)=>Math.round((date(b)-date(a))/86400000);
+const fmt=d=>date(d).toLocaleDateString('fr-FR',{day:'numeric',month:'short',year:'numeric'});
+const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+async function json(url){const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw Error(url+' : HTTP '+r.status);return r.json();}
+function render(d,c,day){
+ const cutoff=d.meta.arrete,ago=days(cutoff,day),obj=c.fr.objectifs;
+ $('#meta').textContent='Français · '+d.meta.sourcePronote+' · arrêté au '+fmt(cutoff)+' · propositions du '+fmt(c.meta.dateReference);
+ const nPub=d.seances.filter(s=>s.date<=cutoff&&s.statut==='publié').length;
+ const nSais=d.seances.filter(s=>s.date<=day&&s.statut==='à saisir').length;
+ const k=[['Heures déclarées',d.budget.consomme+' h','arrêté au '+fmt(cutoff)],['Heures restantes',d.budget.aVenir+' h','sur '+d.budget.total+' h'],['Séances publiées',nPub,'jusqu’à l’arrêté'],['Créneaux à saisir',nSais,'ne signifie pas retard pédagogique']];
+ $('#kpis').innerHTML=k.map(x=>'<div class="glass kpi"><span>'+esc(x[0])+'</span><b>'+esc(x[1])+'</b><em>'+esc(x[2])+'</em></div>').join('');
+ const actions=c.fr.actions.map(a=>({...a,delta:days(day,a.echeance),source:d.jalons.find(j=>j.txt.includes(a.sourceRecherche))})).filter(a=>a.delta>=-7&&a.delta<=21).sort((a,b)=>a.delta-b.delta||b.importance-a.importance).slice(0,5);
+ $('#count').textContent=actions.length+' proposition(s) sur la fenêtre −7/+21 jours';
+ $('#actions').innerHTML=actions.map((a,i)=>'<article class="action"><small>'+esc(fmt(a.echeance))+' · '+esc(a.delta<0?'dépassée de '+(-a.delta)+' j':a.delta===0?"aujourd’hui":"dans "+a.delta+" j")+'</small> <span class="tag">'+esc(a.statut)+'</span><h3>'+(i+1)+'. '+esc(a.titre)+'</h3><p>'+esc(a.justification)+'</p><small>Source : '+esc(a.source?.txt||a.sourceRecherche)+(a.source?' · jalon retrouvé':' · jalon non confirmé')+' · <a href="cours.html?id=fr#timeline">Timeline</a></small></article>').join('')||'<p>Aucune proposition déclarée dans cette fenêtre.</p>';
+ $('#objectives').innerHTML=obj.map(o=>{const measured=typeof o.valeurConfirmee==='number',pct=measured?clamp(100*o.valeurConfirmee/o.cible,0,100):0;
+ return '<div class="objective"><strong>'+esc(o.libelle)+'</strong><p>Échéance : '+esc(fmt(o.echeance))+'</p>'+(measured?'<b>'+o.valeurConfirmee+' / '+o.cible+'</b><div class="progress"><i style="width:'+pct+'%"></i></div>':'<span class="tag">Non mesuré</span>')+'<p>'+esc(o.methode)+'</p><small>Source : '+esc(o.source)+'</small></div>';}).join('');
+ $('#quality').innerHTML='<div class="note"><b>Écart prévu / réalisé : indisponible.</b> Les créneaux prévisionnels quotidiens ne figurent pas dans ces JSON ; le rythme linéaire de l’année n’est pas utilisé.</div>'+(ago>0?'<div class="note"><b>Données anciennes :</b> l’arrêté précède la date sélectionnée de '+ago+' jour(s). Les heures demeurent celles de cet arrêté.</div>':'');
+}
+async function main(){
+ const [d,c]=await Promise.all([json('data/fr.json'),json('data/pilotage.json')]);
+ if(!Array.isArray(d.seances)||!Array.isArray(d.jalons)||!Array.isArray(c.fr?.actions)||!Array.isArray(c.fr?.objectifs))throw Error('Structure des données incompatible');
+ const input=$('#day'),min='2026-09-01',max='2027-06-30';
+ const select=x=>{const v=/^\d{4}-\d{2}-\d{2}$/.test(x||'')?x:today();input.value=v<min?min:v>max?max:v;render(d,c,input.value);};
+ input.addEventListener('change',()=>select(input.value));$('#today').onclick=()=>select(today());$('#print').onclick=()=>window.print();
+ select(new URLSearchParams(location.search).get('now')||today());
+}
+main().catch(e=>{$('#error').innerHTML='<p class="error">Chargement impossible : '+esc(e.message)+'. Utiliser un serveur HTTP et vérifier les JSON.</p>';console.error(e)});
+</script></body></html>

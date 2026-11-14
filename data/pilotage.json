@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "meta": {
+    "libelle": "Trajectoire pédagogique — démonstrateur en lecture seule",
+    "dateReference": "2026-11-13",
+    "validation": "objectifs proposés, à confirmer par l’enseignant"
+  },
+  "fr": {
+    "objectifs": [
+      {
+        "id": "fr-el-annuel",
+        "libelle": "Explications linéaires préparées pour l’oral",
+        "cible": 12,
+        "unite": "textes",
+        "echeance": "2027-06-01",
+        "valeurConfirmee": null,
+        "source": "Progression annuelle",
+        "methode": "Compter uniquement les explications travaillées et validées pour l’oral"
+      },
+      {
+        "id": "fr-objets",
+        "libelle": "Objets d’étude couverts",
+        "cible": 4,
+        "unite": "objets",
+        "echeance": "2027-06-01",
+        "valeurConfirmee": null,
+        "source": "Progression annuelle",
+        "methode": "Couvrir signifie clore la séquence, non la commencer"
+      },
+      {
+        "id": "fr-bb1",
+        "libelle": "Préparation du bac blanc n°1",
+        "cible": 1,
+        "unite": "échéance",
+        "echeance": "2026-12-03",
+        "valeurConfirmee": null,
+        "source": "Jalons de français",
+        "methode": "Le jalon ne prouve pas la maîtrise des exercices"
+      },
+      {
+        "id": "fr-negation",
+        "libelle": "Travail sur la négation",
+        "cible": 1,
+        "unite": "notion",
+        "echeance": "2026-11-30",
+        "valeurConfirmee": null,
+        "source": "Grammaire à voir",
+        "methode": "Confirmer préparation et réalisation séparément"
+      }
+    ],
+    "actions": [
+      {
+        "id": "fr-ds",
+        "titre": "Finaliser le devoir de contraction puis organiser la correction",
+        "echeance": "2026-11-16",
+        "importance": 3,
+        "statut": "à confirmer",
+        "justification": "Devoir prévu le 16 novembre, à corriger avant le bac blanc du 3 décembre.",
+        "sourceRecherche": "DS contraction 2/2"
+      },
+      {
+        "id": "fr-lectures",
+        "titre": "Confirmer les contrôles de lecture",
+        "echeance": "2026-11-20",
+        "importance": 2,
+        "statut": "date proposée",
+        "justification": "Contrôles envisagés pour le 20 novembre : leur date reste à valider.",
+        "sourceRecherche": "Contrôles de lecture"
+      },
+      {
+        "id": "fr-rimbaud",
+        "titre": "Répartir les trois EL de Rimbaud dans les séances disponibles",
+        "echeance": "2026-11-23",
+        "importance": 3,
+        "statut": "à planifier",
+        "justification": "Début annoncé le 23 novembre ; clôture recherchée avant les vacances de Noël.",
+        "sourceRecherche": "Lancement Rimbaud"
+      },
+      {
+        "id": "fr-inspection",
+        "titre": "Préparer la séance de grammaire sur la négation",
+        "echeance": "2026-11-30",
+        "importance": 3,
+        "statut": "à préparer",
+        "justification": "Inspection prévue le 30 novembre ; la négation figure encore parmi les notions à voir.",
+        "sourceRecherche": "Inspection IA-IPR"
+      }
+    ]
+  }
+}

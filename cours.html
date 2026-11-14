@@ -111,6 +111,7 @@ async function main(){
   <div class="kpi glass"><b style="color:${late?'var(--red)':'var(--ok)'}">${late}</b><span>créneau${late>1?'x':''} passé${late>1?'s':''} à saisir</span></div>`;
   const TABS=[['synthese','Synthèse'],['priorites','Priorités'],['pronote','Pronote'],['timeline','Timeline'],['progression','Progression'],['programme','Programme'],['grammaire','Grammaire'],['culture','Culture']];
   $('#tabs').innerHTML=TABS.map(([k,t])=>`<a href="#${k}" data-t="${k}">${t}</a>`).join('');
+  $('#tabs').insertAdjacentHTML('beforeend','<a href="trajectoire.html" title="Pilotage pédagogique du français">Trajectoire ↗</a>');
   let tlRedraw=()=>{};
   const route=()=>{const h=location.hash.slice(1),k=TABS.some(t=>t[0]===h)?h:'synthese';
     document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===k));
