@@ -12,14 +12,14 @@
     "revision": "2026-11-13.1",
     "arrete": "2026-11-13",
     "lastSuccessfulSync": null,
-    "collection": "manuelle",
+    "collection": "automatisée",
     "sources": [
       "Pronote",
       "Bilans de séances",
       "Dossiers Hn",
       "Progressions et ressources pédagogiques"
     ],
-    "note": "Cette révision décrit les données actuellement publiées ; aucune collecte automatique n’est encore active."
+    "note": "Révision décrivant les données publiées. Collecte automatisée active depuis le 14/11/2026 (2 exécutions/jour via tâches planifiées Vibe) ; révision incrémentée à chaque instantané poussé."
   },
   "planning": {
     "fr": {
