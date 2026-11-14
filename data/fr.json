@@ -129,31 +129,36 @@
       "date": "2026-11-16",
       "type": "ds",
       "txt": "DS contraction 2/2",
-      "etat": "à venir"
+      "etat": "à venir",
+      "id": "fr-jalon-ds-contraction-2"
     },
     {
       "date": "2026-11-20",
       "type": "controle",
       "txt": "Contrôles de lecture Graffigny + cursive (proposition)",
-      "etat": "à venir"
+      "etat": "à venir",
+      "id": "fr-jalon-controles-lecture"
     },
     {
       "date": "2026-11-23",
       "type": "jalon",
       "txt": "Lancement Rimbaud (S2) + rituel oral",
-      "etat": "à venir"
+      "etat": "à venir",
+      "id": "fr-jalon-lancement-rimbaud"
     },
     {
       "date": "2026-11-30",
       "type": "inspection",
       "txt": "Inspection IA-IPR (11h-12h + entretien) — grammaire, la négation · cursive Rimbaud due",
-      "etat": "à venir"
+      "etat": "à venir",
+      "id": "fr-jalon-inspection-negation"
     },
     {
       "date": "2026-12-03",
       "type": "bac-blanc",
       "txt": "Bac blanc n°1 : contraction + essai (4 h)",
-      "etat": "à venir"
+      "etat": "à venir",
+      "id": "fr-jalon-bac-blanc-1"
     },
     {
       "date": "2026-12-07",

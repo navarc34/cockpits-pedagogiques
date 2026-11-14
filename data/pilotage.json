@@ -1,9 +1,9 @@
 {
-  "version": 1,
+  "version": 2,
   "meta": {
     "libelle": "Trajectoire pédagogique — démonstrateur en lecture seule",
     "dateReference": "2026-11-13",
-    "validation": "objectifs proposés, à confirmer par l’enseignant"
+    "validation": "Cibles et propositions à confirmer par l’enseignant ; observations non assimilées à des validations"
   },
   "fr": {
     "objectifs": [
@@ -13,9 +13,17 @@
         "cible": 12,
         "unite": "textes",
         "echeance": "2027-06-01",
-        "valeurConfirmee": null,
-        "source": "Progression annuelle",
-        "methode": "Compter uniquement les explications travaillées et validées pour l’oral"
+        "source": {
+          "document": "progression annuelle",
+          "reference": "progression.sequences et priorites.long",
+          "statut": "à confirmer"
+        },
+        "methode": "Compter uniquement les explications travaillées et validées pour l’oral",
+        "realisation": {
+          "confirmees": [],
+          "candidates": [],
+          "exclues": []
+        }
       },
       {
         "id": "fr-objets",
@@ -23,9 +31,17 @@
         "cible": 4,
         "unite": "objets",
         "echeance": "2027-06-01",
-        "valeurConfirmee": null,
-        "source": "Progression annuelle",
-        "methode": "Couvrir signifie clore la séquence, non la commencer"
+        "source": {
+          "document": "progression annuelle",
+          "reference": "progression.sequences",
+          "statut": "à confirmer"
+        },
+        "methode": "Couvrir signifie clore la séquence, non la commencer",
+        "realisation": {
+          "confirmees": [],
+          "candidates": [],
+          "exclues": []
+        }
       },
       {
         "id": "fr-bb1",
@@ -33,9 +49,17 @@
         "cible": 1,
         "unite": "échéance",
         "echeance": "2026-12-03",
-        "valeurConfirmee": null,
-        "source": "Jalons de français",
-        "methode": "Le jalon ne prouve pas la maîtrise des exercices"
+        "source": {
+          "document": "jalons du français",
+          "reference": "fr-jalon-bac-blanc-1",
+          "statut": "à confirmer"
+        },
+        "methode": "Le jalon ne prouve pas la maîtrise des exercices",
+        "realisation": {
+          "confirmees": [],
+          "candidates": [],
+          "exclues": []
+        }
       },
       {
         "id": "fr-negation",
@@ -43,9 +67,17 @@
         "cible": 1,
         "unite": "notion",
         "echeance": "2026-11-30",
-        "valeurConfirmee": null,
-        "source": "Grammaire à voir",
-        "methode": "Confirmer préparation et réalisation séparément"
+        "source": {
+          "document": "grammaire du français",
+          "reference": "grammaire.aVoir",
+          "statut": "à confirmer"
+        },
+        "methode": "Confirmer préparation et réalisation séparément",
+        "realisation": {
+          "confirmees": [],
+          "candidates": [],
+          "exclues": []
+        }
       }
     ],
     "actions": [
@@ -54,36 +86,40 @@
         "titre": "Finaliser le devoir de contraction puis organiser la correction",
         "echeance": "2026-11-16",
         "importance": 3,
-        "statut": "à confirmer",
         "justification": "Devoir prévu le 16 novembre, à corriger avant le bac blanc du 3 décembre.",
-        "sourceRecherche": "DS contraction 2/2"
+        "jalonId": "fr-jalon-ds-contraction-2",
+        "certitude": "confirmée",
+        "etat": "à instruire"
       },
       {
         "id": "fr-lectures",
         "titre": "Confirmer les contrôles de lecture",
         "echeance": "2026-11-20",
         "importance": 2,
-        "statut": "date proposée",
         "justification": "Contrôles envisagés pour le 20 novembre : leur date reste à valider.",
-        "sourceRecherche": "Contrôles de lecture"
+        "jalonId": "fr-jalon-controles-lecture",
+        "certitude": "proposée",
+        "etat": "à instruire"
       },
       {
         "id": "fr-rimbaud",
         "titre": "Répartir les trois EL de Rimbaud dans les séances disponibles",
         "echeance": "2026-11-23",
         "importance": 3,
-        "statut": "à planifier",
         "justification": "Début annoncé le 23 novembre ; clôture recherchée avant les vacances de Noël.",
-        "sourceRecherche": "Lancement Rimbaud"
+        "jalonId": "fr-jalon-lancement-rimbaud",
+        "certitude": "confirmée",
+        "etat": "à instruire"
       },
       {
         "id": "fr-inspection",
         "titre": "Préparer la séance de grammaire sur la négation",
         "echeance": "2026-11-30",
         "importance": 3,
-        "statut": "à préparer",
         "justification": "Inspection prévue le 30 novembre ; la négation figure encore parmi les notions à voir.",
-        "sourceRecherche": "Inspection IA-IPR"
+        "jalonId": "fr-jalon-inspection-negation",
+        "certitude": "confirmée",
+        "etat": "à instruire"
       }
     ]
   }

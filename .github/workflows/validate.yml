@@ -17,7 +17,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+      - name: Installer la validation du schéma pilotage
+        run: python3 -m pip install jsonschema==4.23.0
       - name: Garde de confidentialité
         run: python3 scripts/check_privacy.py
       - name: Validation des données et de la syntaxe JS
         run: python3 scripts/validate.py
+      - name: Contrat de pilotage et tests de rejet
+        run: python3 tests/test_pilotage.py

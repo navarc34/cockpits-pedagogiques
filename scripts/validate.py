@@ -37,7 +37,7 @@ for k, d in C.items():
     for j in d['jalons']:
         if not ISO.match(j['date']): E.append(f"{k} : jalon à date invalide {j['date']}")
 node = shutil.which('node')
-for page in ('index.html', 'cours.html'):
+for page in ('index.html', 'cours.html', 'trajectoire.html'):
     for js in re.findall(r'<script>(.*?)</script>', (R/page).read_text(encoding='utf-8'), re.S):
         if not node: print(f'avertissement : node absent, syntaxe JS de {page} non vérifiée'); break
         with tempfile.NamedTemporaryFile('w', suffix='.js', delete=False, encoding='utf-8') as t: t.write(js)
