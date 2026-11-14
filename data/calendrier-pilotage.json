@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "meta": {
+    "dateReference": "2026-11-13",
+    "statut": "hypothèse à confirmer",
+    "provenance": "Alternance inférée des séances de septembre à novembre 2026; à rapprocher de l'agenda",
+    "limites": "Jours fériés, reports et annulations non inventoriés. La fin d'une période de vacances est traitée comme jour de reprise."
+  },
+  "fr": {
+    "debut": "2026-09-04",
+    "fin": "2027-06-30",
+    "heuresParCreneau": 1,
+    "hebdomadaire": [
+      {
+        "jour": 1,
+        "heure": "11:00",
+        "libelle": "Lundi matin"
+      },
+      {
+        "jour": 5,
+        "heure": "10:00",
+        "libelle": "Vendredi matin"
+      }
+    ],
+    "alternance": {
+      "lundiAncre": "2026-09-07",
+      "semaines": [
+        {
+          "jour": 5,
+          "heure": "13:00",
+          "libelle": "Troisième heure A"
+        },
+        {
+          "jour": 1,
+          "heure": "15:00",
+          "libelle": "Troisième heure B"
+        }
+      ]
+    },
+    "exclusions": [],
+    "inclusions": [],
+    "joursFeriesVerifies": false,
+    "calendrierValide": false,
+    "objectifFenetre": {
+      "debut": "2026-11-23",
+      "fin": "2026-12-18",
+      "libelle": "Rimbaud : séances entre lancement et vacances de Noël"
+    }
+  }
+}
