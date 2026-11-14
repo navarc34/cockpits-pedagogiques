@@ -1,0 +1,220 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Trajectoire pédagogique validable et projets de planification",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "meta",
+    "reference",
+    "historique"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cours",
+        "arrete",
+        "statut",
+        "validation",
+        "provenance",
+        "scenarioReference",
+        "politique",
+        "sourceBudget",
+        "sourceCalendrier"
+      ],
+      "properties": {
+        "cours": {
+          "const": "fr"
+        },
+        "arrete": {
+          "$ref": "#/$defs/date"
+        },
+        "statut": {
+          "enum": [
+            "brouillon",
+            "validée"
+          ]
+        },
+        "validation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provenance": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scenarioReference": {
+          "const": "reference"
+        },
+        "politique": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceBudget": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceCalendrier": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "titre",
+        "budgetHeures",
+        "blocs",
+        "jalons"
+      ],
+      "properties": {
+        "id": {
+          "const": "reference"
+        },
+        "titre": {
+          "type": "string",
+          "minLength": 1
+        },
+        "budgetHeures": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "blocs": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/bloc"
+          }
+        },
+        "jalons": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/jalon"
+          }
+        }
+      }
+    },
+    "historique": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "date",
+          "decision",
+          "justification"
+        ],
+        "properties": {
+          "date": {
+            "$ref": "#/$defs/date"
+          },
+          "decision": {
+            "type": "string",
+            "minLength": 1
+          },
+          "justification": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "date": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "bloc": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "titre",
+        "type",
+        "heures",
+        "debut",
+        "fin",
+        "source",
+        "statut"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "titre": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "enum": [
+            "sequence",
+            "transversal",
+            "reserve"
+          ]
+        },
+        "heures": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "debut": {
+          "$ref": "#/$defs/date"
+        },
+        "fin": {
+          "$ref": "#/$defs/date"
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "statut": {
+          "enum": [
+            "proposition",
+            "validé"
+          ]
+        }
+      }
+    },
+    "jalon": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "date",
+        "libelle",
+        "refJalon"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "date": {
+          "$ref": "#/$defs/date"
+        },
+        "libelle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "refJalon": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

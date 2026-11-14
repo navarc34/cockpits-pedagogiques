@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "meta": {
+    "cours": "fr",
+    "arrete": "2026-11-13",
+    "statut": "brouillon",
+    "validation": "non validée",
+    "provenance": "Répartition illustrative créée pour simuler un cap annuel ; ne constitue pas une décision pédagogique validée.",
+    "scenarioReference": "reference",
+    "politique": "Le plan de référence n'est jamais réécrit par les simulations. Les écarts demandent confirmation.",
+    "sourceBudget": "data/fr.json#budget",
+    "sourceCalendrier": "data/calendrier-pilotage.json#fr"
+  },
+  "reference": {
+    "id": "reference",
+    "titre": "Trajectoire de travail à valider",
+    "budgetHeures": 74,
+    "blocs": [
+      {
+        "id": "graffigny",
+        "titre": "Clôture Graffigny",
+        "type": "sequence",
+        "heures": 4,
+        "debut": "2026-11-16",
+        "fin": "2026-11-20",
+        "source": "progression.sequences[S1]",
+        "statut": "proposition"
+      },
+      {
+        "id": "rimbaud",
+        "titre": "Rimbaud",
+        "type": "sequence",
+        "heures": 10,
+        "debut": "2026-11-23",
+        "fin": "2026-12-18",
+        "source": "progression.sequences[S2]",
+        "statut": "proposition"
+      },
+      {
+        "id": "chretien",
+        "titre": "Chrétien de Troyes",
+        "type": "sequence",
+        "heures": 18,
+        "debut": "2027-01-04",
+        "fin": "2027-03-26",
+        "source": "progression.sequences[S3]",
+        "statut": "proposition"
+      },
+      {
+        "id": "musset",
+        "titre": "Musset",
+        "type": "sequence",
+        "heures": 17,
+        "debut": "2027-03-29",
+        "fin": "2027-06-04",
+        "source": "progression.sequences[S4]",
+        "statut": "proposition"
+      },
+      {
+        "id": "transversal",
+        "titre": "Écrit, oral et langue",
+        "type": "transversal",
+        "heures": 17,
+        "debut": "2026-11-16",
+        "fin": "2027-06-04",
+        "source": "progression.transversal",
+        "statut": "proposition"
+      },
+      {
+        "id": "reserve",
+        "titre": "Réserve et imprévus",
+        "type": "reserve",
+        "heures": 8,
+        "debut": "2026-11-16",
+        "fin": "2027-06-04",
+        "source": "choix de pilotage proposé",
+        "statut": "proposition"
+      }
+    ],
+    "jalons": [
+      {
+        "id": "lancement-rimbaud",
+        "date": "2026-11-23",
+        "libelle": "Lancement Rimbaud",
+        "refJalon": "fr-jalon-lancement-rimbaud"
+      },
+      {
+        "id": "bb1",
+        "date": "2026-12-03",
+        "libelle": "Bac blanc n°1",
+        "refJalon": "fr-jalon-bac-blanc-1"
+      },
+      {
+        "id": "fin-rimbaud",
+        "date": "2026-12-19",
+        "libelle": "Objectif de clôture Rimbaud",
+        "refJalon": null
+      },
+      {
+        "id": "eaf",
+        "date": "2027-06-14",
+        "libelle": "EAF",
+        "refJalon": null
+      }
+    ]
+  },
+  "historique": []
+}
