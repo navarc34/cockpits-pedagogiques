@@ -1,0 +1,9 @@
+# Empreintes SHA-256 de termes interdits (mot normalisé : minuscules, sans accents).
+# Ajouter : python scripts/check_privacy.py --hash MOT
+f7caea433d2062e9342236cd8c3e4c4e8ff8b1dfd03a8fce806ad274aa0bb934  # terme 1
+763677987520dd76a27717e965ba8c083d196d498110d315d0becd719a3693ea  # terme 2
+807a09440428c0a8aef58bd3ece32938b0d76e638119e47619756f5c2c20ff3a  # terme 3
+274c8009224625d893a48ad78481d1130dc31b32c8500b335bfcf73168f6fa54  # terme 4
+c101ec5b01ed7fa27104f5f75a9fd05feba4f155c8d0f15f6dae01a65a1a7ed7  # terme 5
+9776eaeb86b27c8327f8ed15f381345baf1d16d991999e1fa8982d1905b28ca3  # terme 6
+173ea81f8b1fe0c380e962dd1020e04fca5a19fe95d9e555f3df2494562b91ee  # terme 7

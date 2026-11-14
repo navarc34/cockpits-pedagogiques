@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Validation du dépôt avant tout commit (CI + local).
 
+Confidentialité : voir scripts/check_privacy.py (appelé par la CI avant ce script).
+
 Usage : python3 scripts/validate.py
 
 Contrôles :
@@ -23,37 +25,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 # ---------------------------------------------------------------- confidentialité
-# Motifs interdits, insensibles à la casse, dans le CONTENU des fichiers scannés.
-BLACKLIST = [
-    "urfe", "honoré", "st2s3", "dufêtre", "durieux", "guillaume", "hugonnet",
-    "nicolas", "ac-lyon", "1llcal1",
-    "cv-aura.apps.education.fr", "digipad.app/p/", "chat.mistral.ai",
-    "drive.google.com", "docs.google.com",
-]
-# Adresses e-mail (aucune adresse ne doit figurer dans les données).
-EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
-
-def scan_paths():
-    paths = list((ROOT / "data").glob("*.json"))
-    paths += list((ROOT / "data").glob("*/events.json"))
-    paths += list((ROOT / "schemas").glob("*.json"))
-    for name in ("index.html", "cours.html", "README.md"):
-        p = ROOT / name
-        if p.exists():
-            paths.append(p)
-    return paths
-
-def validate_privacy(errors):
-    for p in scan_paths():
-        text = p.read_text(encoding="utf-8", errors="replace")
-        low = text.lower()
-        for pat in BLACKLIST:
-            if pat in low:
-                idx = low.index(pat)
-                errors.append(f"CONFIDENTIALITÉ [{p}] : motif interdit « {pat} » → …{text[max(0, idx-40):idx+60]}…")
-        if p.suffix == ".json":
-            for m in EMAIL_RE.finditer(text):
-                errors.append(f"CONFIDENTIALITÉ [{p}] : adresse e-mail détectée « {m.group(0)} »")
+# La confidentialité est vérifiée par scripts/check_privacy.py (empreintes
+# SHA-256 : les mots interdits ne sont pas publiés dans ce dépôt), appelé par
+# la CI avant ce script.
 
 # ---------------------------------------------------------------- structure v1
 SCHEMA_PATH = ROOT / "schemas" / "event.schema.json"
@@ -114,7 +88,6 @@ def validate_v2(errors, warnings):
 # ---------------------------------------------------------------- main
 def main():
     errors, warnings = [], []
-    validate_privacy(errors)
     schema = load_schema()
     for target in sorted((ROOT / "data").glob("*/events.json")):
         validate_events_file(target, schema, errors, warnings)
