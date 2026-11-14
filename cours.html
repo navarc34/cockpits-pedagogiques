@@ -98,15 +98,14 @@ async function main(){
   $('#loading').remove();
   document.documentElement.style.setProperty('--c',col(d.meta.couleur));
   document.title=d.meta.nom+' · Cockpit';
-  const b=d.budget,pct=b.consomme/b.total;
-  const past=d.seances.filter(s=>s.date<=NOW),SUM=(a,f)=>a.reduce((x,s)=>x+(s.hours||0)*(f?f(s):1),0);
-  const prevu=Math.round(SUM(past)),declar=Math.round(SUM(past,s=>s.statut!=='à saisir')),aSais=Math.round(SUM(past,s=>s.statut==='à saisir'));
-  const nPub=d.seances.filter(s=>s.statut==='publié').length,late=past.filter(s=>s.statut==='à saisir').length;
+  const b=d.budget,pct=b.consomme/b.total,el=Math.min(1,Math.max(0,(D(NOW)-T0)/(T1-T0)));
+  const nPub=d.seances.filter(s=>s.statut==='publié').length,late=d.seances.filter(s=>s.statut==='à saisir'&&s.date<=NOW).length;
   $('#kick').textContent='Cockpit de cours · 2026-2027';$('#title').textContent=d.meta.nom;
   $('#sub').textContent=`${d.meta.classe} · créneaux : ${d.meta.creneaux} (${d.meta.rythme}). ${d.meta.noteMultiniveau||''}`;
-  $('#kpis').innerHTML=`<div class="kpi glass"><b>${prevu}<i> h</i></b><span>prévues à ce jour (plan de séances, sur ${b.total} h)</span><div class="bar"><i style="width:${Math.round(Math.min(1,prevu/b.total)*100)}%"></i></div></div>
-  <div class="kpi glass"><b>${declar}<i> h</i></b><span>saisies dans Pronote à ce jour (publiées, distanciel ou non publiées)</span><div class="bar"><i style="width:${Math.round(Math.min(1,declar/Math.max(1,prevu))*100)}%"></i></div></div>
-  <div class="kpi glass"><b style="color:${aSais?'var(--red)':'var(--ok)'}">${aSais}<i> h</i></b><span>${aSais?'en attente de saisie dans Pronote — retard administratif, séances réalisées':'saisie Pronote à jour'}</span></div>
+  const dh=Math.round((pct-el)*b.total);
+  $('#kpis').innerHTML=`<div class="kpi glass"><b>${b.consomme}<i> h</i></b><span>consommées au ${fl(d.meta.arrete,FD)}</span><div class="bar"><i style="width:${Math.round(pct*100)}%"></i><u style="left:${(el*100).toFixed(1)}%"></u></div></div>
+  <div class="kpi glass"><b>${b.aVenir}<i> h</i></b><span>à venir (sur ${b.total} h)</span></div>
+  <div class="kpi glass"><b style="color:${dh>=0?'var(--ok)':'var(--red)'}">${dh>=0?'+':'−'}${Math.abs(dh)}<i> h</i></b><span>${dh>=0?'d’avance':'de retard'} sur le rythme de l’année</span></div>
   <div class="kpi glass"><b>${nPub}<i>/${d.seances.length}</i></b><span>séances publiées</span></div>
   <div class="kpi glass"><b style="color:${late?'var(--red)':'var(--ok)'}">${late}</b><span>créneau${late>1?'x':''} passé${late>1?'s':''} à saisir</span></div>`;
   const TABS=[['synthese','Synthèse'],['priorites','Priorités'],['pronote','Pronote'],['timeline','Timeline'],['progression','Progression'],['programme','Programme'],['grammaire','Grammaire'],['culture','Culture']];
@@ -142,7 +141,7 @@ async function main(){
   const vac=(d.vacances||[]).map(v=>`<div class="tl-vac" style="left:${X(v.debut)}px;width:${Math.max(3,X(v.fin)-X(v.debut))}px" title="${esc(v.txt)}"></div>`).join('');
   const cnt={};const dots=d.seances.map(s=>{const k=cnt[s.date]=(cnt[s.date]||0)+1;return `<div class="dot ${stCls[s.statut]||''}" style="left:${X(s.date)+(k-1)*10}px;top:${12}px" title="${esc(fl(s.date,FD)+' · '+(s.titre||'non saisi'))}"></div>`;}).join('');
   $('#timeline').innerHTML=head('Timeline annuelle','septembre → juin · cliquer un jalon')+`<div class="tlbar desk"><button id="tnow">Aujourd’hui</button><button id="treset" title="Remet les bulles à leur place d’origine">Réinitialiser les bulles</button><div class="leg"><span><i style="background:var(--ok)"></i>franchi</span><span><i style="background:var(--sea)"></i>à venir</span><span><i style="background:var(--red)"></i>échéance</span></div></div>
-  <div class="tl glass" id="tl"><div style="width:${AX}px"><div class="tl-scale">${mois}</div><div class="tl-row" style="height:${lanes.length*58+30}px">${vac}${now}${ev.map(e=>`<div class="ev ${e.j.etat==='à venir'?'todo':'done'} ${/bac|eaf|ds/.test(e.j.type)?'exam':''}" style="left:${e.x}px;top:${e.l*58+12}px" data-i="${esc(e.j.date+'|'+e.j.txt)}"><i class="thread"></i><i class="pin"></i><button type="button" class="card" title="Glisser pour déplacer · cliquer pour le détail"><small>${esc(fl(e.j.date,FD))}</small>${esc(e.j.txt)}</button></div>`).join('')}</div><div class="tl-row" style="height:34px;border-top:1px solid var(--line)">${vac}${now}${dots}</div></div></div>`;
+  <div class="tl glass" id="tl"><div style="width:${AX}px"><div class="tl-scale">${mois}</div><div class="tl-row" style="height:${lanes.length*58+30}px">${vac}${now}${ev.map((e,i)=>`<div class="ev ${e.j.etat==='à venir'?'todo':'done'} ${/bac|eaf|ds/.test(e.j.type)?'exam':''}" style="left:${e.x}px;top:${e.l*58+12}px" data-i="${i}"><i class="thread"></i><i class="pin"></i><button type="button" class="card" title="Glisser pour déplacer · cliquer pour le détail"><small>${esc(fl(e.j.date,FD))}</small>${esc(e.j.txt)}</button></div>`).join('')}</div><div class="tl-row" style="height:34px;border-top:1px solid var(--line)">${vac}${now}${dots}</div></div></div>`;
   const AG=[...J.map(j=>({d:j.date,t:j.txt,k:j.etat==='à venir'?'':'done',x:/bac|eaf|ds/.test(j.type)?' exam':'',e:j.etat||''})),...(d.vacances||[]).map(v=>({d:v.debut,t:'Vacances · '+(v.txt||'')+' (jusqu’au '+fl(v.fin,FD)+')',k:'vac',x:'',e:''}))].sort((p,q)=>p.d<q.d?-1:1);
   let agm='',agn=false,mo='';AG.forEach(a=>{const m=fl(a.d,{month:'long',year:'numeric'});if(m!==mo){mo=m;agm+=`<div class="agm">${esc(m)}</div>`;}if(!agn&&a.d>=NOW){agn=true;agm+=`<div class="agnow">Aujourd’hui · ${esc(fl(NOW,FD))}</div>`;}agm+=`<div class="ag ${a.k}${a.x} ${a.d<NOW?'past':''}"><time>${esc(fl(a.d,{weekday:'short',day:'numeric'}))}</time><i></i><span>${esc(a.t)}<em>${esc(a.e)}</em></span></div>`;});
   $('#timeline').insertAdjacentHTML('beforeend',`<div class="agenda">${agm}</div>`);
