@@ -61,6 +61,17 @@ def main():
         candidates=[{"id":"preuve-un","date":"2026-11-10","type":"document","reference":"document test"}],
         confirmees=[{"id":"preuve-un","date":"2026-11-10","type":"document","reference":"document test"}]
     ))
+
+    for o in DATA["fr"]["objectifs"]:
+        r = o["reconnaissance"]
+        if r["mode"] == "regex":
+            import re
+            try:
+                re.compile(r["motif"], re.I)
+            except re.error as exc:
+                raise AssertionError(f"Expression de reconnaissance invalide : {o['id']} ({exc})")
+    expect_invalid("règle regex absente", lambda x: x["fr"]["objectifs"][0].pop("reconnaissance"))
+    expect_invalid("mode manuel avec motif", lambda x: x["fr"]["objectifs"][1]["reconnaissance"].update(motif=".*"))
     print("Pilotage : schéma, cohérence et tests négatifs OK")
 
 if __name__ == "__main__":

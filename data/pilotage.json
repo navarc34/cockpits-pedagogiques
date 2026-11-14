@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "meta": {
     "libelle": "Trajectoire pédagogique — démonstrateur en lecture seule",
     "dateReference": "2026-11-13",
@@ -23,6 +23,14 @@
           "confirmees": [],
           "candidates": [],
           "exclues": []
+        },
+        "reconnaissance": {
+          "mode": "regex",
+          "champs": [
+            "titre"
+          ],
+          "motif": "(?:\\bEL\\s*(?:n[°o.]?\\s*|#\\s*)?[12]\\b|explication\\s+lin[eé]aire\\s*#?\\s*2)",
+          "commentaire": "Identifie les séances citant explicitement EL n°1 ou EL n°2. Plusieurs séances peuvent concerner le même texte ; elles ne comptent pas comme plusieurs EL validées."
         }
       },
       {
@@ -41,6 +49,11 @@
           "confirmees": [],
           "candidates": [],
           "exclues": []
+        },
+        "reconnaissance": {
+          "mode": "manuel",
+          "champs": [],
+          "commentaire": "La clôture d’un objet d’étude exige une validation explicite de la séquence. Aucune détection textuelle ne suffit."
         }
       },
       {
@@ -59,6 +72,14 @@
           "confirmees": [],
           "candidates": [],
           "exclues": []
+        },
+        "reconnaissance": {
+          "mode": "regex",
+          "champs": [
+            "titre"
+          ],
+          "motif": "\\b(?:contraction|essai)\\b",
+          "commentaire": "Repère les séances de méthode ou entraînement à la contraction et à l’essai ; ne mesure pas la préparation effective au bac blanc."
         }
       },
       {
@@ -77,6 +98,15 @@
           "confirmees": [],
           "candidates": [],
           "exclues": []
+        },
+        "reconnaissance": {
+          "mode": "regex",
+          "champs": [
+            "titre",
+            "resume"
+          ],
+          "motif": "\\bn[eé]gation\\b",
+          "commentaire": "Une mention de négation ne démontre pas que la notion a été étudiée et maîtrisée."
         }
       }
     ],

@@ -23,3 +23,13 @@ Servir le dépôt via HTTP, ouvrir `trajectoire.html?now=2026-11-14`, puis teste
 - Une séance à saisir ou manquante n'est pas qualifiée de non réalisée. Les statuts postérieurs à la date d'arrêté ne constituent pas un fait acquis.
 - Fenêtre Rimbaud (23 novembre au 18 décembre) : estimation exploratoire, à rapprocher de l'agenda.
 - Tests automatisés : modèle Python et moteur JavaScript Node, exécutés dans la CI.
+
+## Sprint 1C — Séances candidates et vérification pédagogique
+
+- `data/pilotage.json` v3 déclare pour chaque objectif une règle `reconnaissance` (`regex` sur des champs explicités ou `manuel`).
+- `assets/trajectoire-evidence.js` produit des correspondances *candidates* uniquement pour les séances documentées au plus tard à la date d'arrêté ; les séances futures et les entrées « à saisir » ne sont pas des preuves.
+- L’interface affiche les séances candidates avec date, titre, statut, champs correspondants, référence stable dérivée de date + heure et motif de reconnaissance.
+- Une même EL peut apparaître sur plusieurs séances : le nombre de correspondances **n'est pas** le nombre d'EL validées.
+- Les exclusions et confirmations déclarées dans `realisation` prévalent sur la règle automatique. Leur validation reste un acte humain et doit être saisie dans le JSON versionné.
+- `tests/test_preuves.cjs` protège le cutoff, la non-duplication, le fonctionnement des exclusions, le mode manuel et les regex invalides ; `tests/test_pilotage.py` vérifie la structure des règles.
+- Limite : une clé de séance `date+heure` peut entrer en collision pour des créneaux simultanés ou changer après déplacement. Pour une généralisation, prévoir de vrais IDs persistants dans les exports.

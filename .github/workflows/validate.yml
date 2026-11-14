@@ -29,3 +29,5 @@ jobs:
         run: python3 tests/test_calendrier.py
       - name: Tests de récurrence et de rapprochement
         run: node tests/test_calendrier.cjs
+      - name: Reconnaissance et traçabilité des séances
+        run: node tests/test_preuves.cjs

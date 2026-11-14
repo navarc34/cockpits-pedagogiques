@@ -11,7 +11,7 @@
   ],
   "properties": {
     "version": {
-      "const": 2
+      "const": 3
     },
     "meta": {
       "type": "object",
@@ -117,7 +117,8 @@
         "echeance",
         "source",
         "methode",
-        "realisation"
+        "realisation",
+        "reconnaissance"
       ],
       "properties": {
         "id": {
@@ -173,6 +174,93 @@
               }
             }
           }
+        },
+        "reconnaissance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "mode",
+            "champs",
+            "commentaire"
+          ],
+          "properties": {
+            "mode": {
+              "enum": [
+                "regex",
+                "manuel"
+              ]
+            },
+            "champs": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "titre",
+                  "resume",
+                  "contenu",
+                  "theme",
+                  "cat"
+                ]
+              }
+            },
+            "motif": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 180
+            },
+            "commentaire": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "mode": {
+                    "const": "regex"
+                  }
+                },
+                "required": [
+                  "mode"
+                ]
+              },
+              "then": {
+                "required": [
+                  "motif"
+                ],
+                "properties": {
+                  "champs": {
+                    "minItems": 1
+                  }
+                }
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "mode": {
+                    "const": "manuel"
+                  }
+                },
+                "required": [
+                  "mode"
+                ]
+              },
+              "then": {
+                "properties": {
+                  "champs": {
+                    "maxItems": 0
+                  }
+                },
+                "not": {
+                  "required": [
+                    "motif"
+                  ]
+                }
+              }
+            }
+          ]
         }
       }
     },

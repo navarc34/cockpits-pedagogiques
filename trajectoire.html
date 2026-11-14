@@ -30,6 +30,15 @@ footer{color:var(--soft);font-size:11px;padding:30px 0 48px}.error{color:var(--r
 .plan-table th,.plan-table td{text-align:left;padding:8px;border-bottom:1px solid var(--line)}
 .plan-table th{color:var(--soft)}.plan-note{font-size:12px;color:var(--soft)}
 @media(max-width:650px){.plan-grid{grid-template-columns:1fr}}
+
+.evidence{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+.evidence summary{cursor:pointer;font-size:12px;font-weight:700;color:var(--sea);padding:5px 0}
+.evidence ul{margin:8px 0 0;padding:0;list-style:none}
+.evidence li{padding:9px 0;border-top:1px solid var(--line);font-size:12px}
+.evidence li:first-child{border:0}.evidence time{color:var(--soft);font-weight:700;margin-right:7px}
+.evidence code{font-size:10px;color:var(--soft);overflow-wrap:anywhere}
+.evidence .rule{font-size:11px;white-space:pre-wrap;overflow-wrap:anywhere;color:var(--soft);padding:9px;border-radius:8px;background:var(--empty)}
+.evidence .warn{font-size:11px;color:var(--soft)}
 </style></head><body><div class="wrap">
 <header class="hero"><a href="cours.html?id=fr" class="back">← Retour au français</a><p class="kicker">Sprint 1 · pilotage pédagogique</p>
 <h1>Trajectoire pédagogique</h1><p class="intro">Une aide à la décision fondée sur les jalons, les heures déclarées et des objectifs explicites. Les propositions sont à confirmer par l’enseignant : une échéance n’établit pas à elle seule la maîtrise des élèves.</p>
@@ -47,6 +56,7 @@ footer{color:var(--soft);font-size:11px;padding:30px 0 48px}.error{color:var(--r
 <section class="panel glass" style="margin-top:17px"><h2>Fiabilité du diagnostic</h2><div id="quality"></div></section></aside></div>
 <footer>Prototype en lecture seule · aucune écriture dans Pronote ou GitHub · état des données affiché explicitement</footer></div>
 <script src="assets/trajectoire-calendar.js"></script>
+<script src="assets/trajectoire-evidence.js"></script>
 <script>
 'use strict';
 const $=s=>document.querySelector(s);
@@ -92,13 +102,21 @@ function render(d,c,day,calendar){
  const actions=historical?[]:c.fr.actions.filter(a=>!['réalisée','abandonnée'].includes(a.etat)).map(a=>({...a,delta:days(day,a.echeance),source:d.jalons.find(j=>j.id===a.jalonId)})).filter(a=>a.delta>=-7&&a.delta<=21).sort((a,b)=>a.delta-b.delta||b.importance-a.importance).slice(0,5);
  $('#count').textContent=(historical?'Aucune proposition rétroactive : instantané indisponible.':actions.length+' proposition(s) sur la fenêtre −7/+21 jours');
  $('#actions').innerHTML=actions.map((a,i)=>'<article class="action"><small>'+esc(fmt(a.echeance))+' · '+esc(a.delta<0?'échéance passée de '+(-a.delta)+' j · réalisation non confirmée':a.delta===0?"aujourd’hui":"dans "+a.delta+" j")+'</small> <span class="tag">'+esc(a.etat)+' · '+esc(a.certitude)+'</span><h3>'+(i+1)+'. '+esc(a.titre)+'</h3><p>'+esc(a.justification)+'</p><small>Source : '+esc(a.source?.txt||a.jalonId)+(a.source?' · jalon retrouvé':' · jalon non confirmé')+' · <a href="cours.html?id=fr#timeline">Timeline</a></small></article>').join('')||'<p>Aucune proposition déclarée dans cette fenêtre.</p>';
- $('#objectives').innerHTML=obj.map(o=>{const confirmations=o.realisation.confirmees.length, suggestions=o.realisation.candidates.length, measured=confirmations>0,pct=measured?clamp(100*confirmations/o.cible,0,100):0;
- return '<div class="objective"><strong>'+esc(o.libelle)+'</strong><p>Échéance : '+esc(fmt(o.echeance))+'</p>'+(measured?'<b>'+confirmations+' / '+o.cible+'</b><div class="progress"><i style="width:'+pct+'%"></i></div>':'<span class="tag">Non mesuré</span>')+'<p>'+esc(o.methode)+'</p><small>Suggestions à vérifier : '+suggestions+' · Source : '+esc(o.source.document)+' / '+esc(o.source.reference)+' ('+esc(o.source.statut)+')</small></div>';}).join('');
+ $('#objectives').innerHTML=obj.map(o=>{
+ const confirmations=o.realisation.confirmees.length;
+ const report=window.CockpitEvidence.audit(o,d.seances,cutoff);
+ const suggestions=historical?[]:report.suggestions;
+ const pct=confirmations?clamp(100*confirmations/o.cible,0,100):0;
+ const status=confirmations?'<b>'+confirmations+' / '+o.cible+'</b><div class="progress"><i style="width:'+pct+'%"></i></div>':'<span class="tag">Non mesuré</span>';
+ const matched=suggestions.map(s=>'<li><time>'+esc(fmt(s.date))+' · '+esc(s.time)+'</time><div>'+esc(s.titre)+'</div><small>Champs concordants : '+esc(s.champs.join(', '))+' · '+esc(s.statut)+'</small><div><code>'+esc(s.id)+'</code></div></li>').join('');
+ const auditable='<details class="evidence"><summary>'+suggestions.length+' séance(s) candidate(s) · consulter les preuves</summary><p class="warn">'+esc(o.reconnaissance.commentaire)+'</p>'+(o.reconnaissance.mode==='regex'?'<div class="rule">Règle déclarée : '+esc(o.reconnaissance.champs.join(', '))+' / '+esc(o.reconnaissance.motif)+'</div>':'<p class="warn">Reconnaissance manuelle : aucun candidat automatique.</p>')+(suggestions.length?'<ul>'+matched+'</ul>':'<p class="warn">Aucune séance candidate avant l’arrêté.</p>')+'</details>';
+ return '<div class="objective"><strong>'+esc(o.libelle)+'</strong><p>Échéance : '+esc(fmt(o.echeance))+'</p>'+status+'<p>'+esc(o.methode)+'</p><small>Confirmées : '+confirmations+' · Candidates : '+suggestions.length+' · Exclues : '+o.realisation.exclues.length+'<div>Source : '+esc(o.source.document)+' / '+esc(o.source.reference)+' ('+esc(o.source.statut)+')</div></small>'+auditable+'</div>';
+ }).join('');
  $('#quality').innerHTML='<div class="note"><b>Écart prévu / réalisé : non qualifiable.</b> Le calendrier reconstitué reste hypothétique ; des séances non publiées ou absentes de l’export peuvent avoir été assurées.</div>'+(historical?'<div class="note"><b>Historique non reconstructible :</b> les données ont été arrêtées après la date sélectionnée. Aucun compteur ni conseil rétroactif n’est présenté.</div>':'')+(stale?'<div class="note"><b>Données anciennes :</b> l’arrêté précède la date sélectionnée de '+ago+' jour(s). Les valeurs restent celles du '+fmt(cutoff)+'.</div>':'');
 }
 async function main(){
  const [d,c,calendar]=await Promise.all([json('data/fr.json'),json('data/pilotage.json'),json('data/calendrier-pilotage.json')]);
- if(!Array.isArray(d.seances)||!Array.isArray(d.jalons)||!Array.isArray(c.fr?.actions)||!Array.isArray(c.fr?.objectifs)||!calendar.fr||!window.CockpitCalendar)throw Error('Structure des données incompatible');
+ if(!Array.isArray(d.seances)||!Array.isArray(d.jalons)||!Array.isArray(c.fr?.actions)||!Array.isArray(c.fr?.objectifs)||!calendar.fr||!window.CockpitCalendar||!window.CockpitEvidence)throw Error('Structure des données incompatible');
  const input=$('#day'),min='2026-09-01',max='2027-06-30';
  const select=x=>{const v=/^\d{4}-\d{2}-\d{2}$/.test(x||'')?x:today();input.value=v<min?min:v>max?max:v;render(d,c,input.value,calendar.fr);};
  input.addEventListener('change',()=>select(input.value));$('#today').onclick=()=>select(today());$('#print').onclick=()=>window.print();
