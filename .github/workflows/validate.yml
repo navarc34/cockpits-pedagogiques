@@ -33,5 +33,7 @@ jobs:
         run: node tests/test_preuves.cjs
       - name: Trajectoire annuelle et validation des allocations
         run: python3 tests/test_trajectoire.py
-      - name: Simulateur de scénarios et projections
+      - name: Projection des allocations annuelles
         run: node tests/test_projection.cjs
+      - name: Versionnement et scénarios pédagogiques
+        run: python3 tests/test_versioning.py

@@ -6,13 +6,6 @@ const m=j("data/trajectoire.json"),fr=j("data/fr.json"),cal=j("data/calendrier-p
 const engine=require("../assets/trajectoire-projection.js");
 const calendar=require("../assets/trajectoire-calendar.js");
 assert(engine.validatePlan(m,{...fr.budget,arrete:fr.meta.arrete}));
-const original=JSON.stringify(m);
-const s=engine.scenario(m,"rimbaud",3);
-assert(s.feasible);assert.equal(s.solde,5);assert.equal(s.blocs.find(x=>x.id==="rimbaud").heures,13);
-assert.equal(s.blocs.reduce((n,x)=>n+x.heures,0),74);assert.equal(JSON.stringify(m),original);
-assert(!engine.scenario(m,"rimbaud",9).feasible);
-assert(!engine.scenario(m,"rimbaud",-11).feasible);
-assert.throws(()=>engine.scenario(m,"reserve",1));
 const p=engine.projection(m,calendar,cal.fr,fr.vacances,"2026-11-14");
 assert.equal(p.budget,74);assert.equal(p.fenetres.length,6);
 assert.equal(p.reserve,8);assert(p.capaciteTheorique>0);

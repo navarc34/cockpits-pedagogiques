@@ -181,5 +181,6 @@ async function main(){
 }
 main().catch(e=>{console.error(e);$('#loading')?.remove();document.querySelector('.wrap').insertAdjacentHTML('afterbegin','<p class="err">Impossible de charger les données du cours ('+esc(e.message)+'). Ouvrez la page via un serveur HTTP (GitHub Pages ou Live Server), pas en file://.</p>');});
 </script>
+<script src="assets/version.js"></script>
 </body>
 </html>

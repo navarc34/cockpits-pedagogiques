@@ -43,3 +43,6 @@ Servir le dépôt via HTTP, ouvrir `trajectoire.html?now=2026-11-14`, puis teste
 - `trajectoire.html` : le cap annuel est maintenant placé en haut. Le sélecteur de bloc et le curseur simulent une variation d'heures financée ou non par la réserve. Aucun scénario n'est écrit dans les JSON.
 - `schemas/trajectoire.schema.json`, `tests/test_trajectoire.py` et `tests/test_projection.cjs` valident budget, dates, doublons, calculs et immutabilité ; la CI exécute les tests.
 - Le passage d'un plan brouillon à un plan validé et son historique doivent résulter d'une décision explicite de l'enseignant et d'une nouvelle version des données.
+
+## Bêta et versionnement
+La simulation de réallocation d'heures a été retirée après recette. Le cap et les budgets proposés restent visibles. La version applicative, la révision de données et le statut des progressions sont séparés dans `data/release.json`. Les propositions de progression latin vivront dans `data/progression-scenarios.json` sans devenir un cap validé tant qu'une décision explicite n'est pas enregistrée.

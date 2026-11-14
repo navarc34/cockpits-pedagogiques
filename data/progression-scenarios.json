@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "arrete": "2026-11-13",
+    "source": "Documents pédagogiques et décisions à intégrer après validation",
+    "revision": "2026-11-13.1",
+    "regle": "Une proposition d'assistant IA ne remplace jamais un cap pédagogique validé."
+  },
+  "cours": {
+    "fr": {
+      "status": "brouillon",
+      "reference": "data/trajectoire.json",
+      "propositions": []
+    },
+    "option": {
+      "status": "en construction",
+      "reference": null,
+      "propositions": []
+    },
+    "spe": {
+      "status": "en construction",
+      "reference": null,
+      "propositions": []
+    }
+  }
+}

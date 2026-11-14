@@ -17,3 +17,8 @@ Le dépôt est public : aucune donnée nominative (personnes, établissement, cl
 - La CI rejoue les deux scripts, mais elle s'exécute **après** le push : le hook est la vraie barrière.
 - Les termes interdits sont stockés sous forme d'empreintes (`scripts/privacy_hashes.txt`). Ajouter un terme : `python3 scripts/check_privacy.py --hash MOT`. Liste en clair facultative et ignorée par git : `scripts/privacy_local.txt`.
 - Les pages portent `noindex` : cela limite l'indexation, ce n'est pas un contrôle d'accès.
+
+## Version bêta et évolutions
+L'application affiche sa version depuis `data/release.json` sur les trois pages. Version de départ : `0.2.0-beta.1`. La révision des données, datée et indépendante, est distincte de la version logicielle. Voir `CHANGELOG.md` et `docs/VERSIONING.md`.
+Le registre `data/progression-scenarios.json` héberge les propositions de progressions (option et spécialité en construction), sans les valider ni modifier les grandes lignes de l'interface.
+La collecte automatique Drive/Pronote plusieurs fois par jour est une cible d'architecture **non encore active**.

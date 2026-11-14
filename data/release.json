@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "application": {
+    "name": "Cockpits pédagogiques",
+    "version": "0.2.0-beta.1",
+    "channel": "beta",
+    "releasedOn": "2026-11-14",
+    "status": "en développement",
+    "changelog": "CHANGELOG.md"
+  },
+  "data": {
+    "revision": "2026-11-13.1",
+    "arrete": "2026-11-13",
+    "lastSuccessfulSync": null,
+    "collection": "manuelle",
+    "sources": [
+      "Pronote",
+      "Bilans de séances",
+      "Dossiers Hn",
+      "Progressions et ressources pédagogiques"
+    ],
+    "note": "Cette révision décrit les données actuellement publiées ; aucune collecte automatique n’est encore active."
+  },
+  "planning": {
+    "fr": {
+      "status": "brouillon",
+      "policy": "Trajectoire indicative et objectifs à valider"
+    },
+    "option": {
+      "status": "en construction",
+      "policy": "Scénarios évolutifs sans allocation annuelle imposée"
+    },
+    "spe": {
+      "status": "en construction",
+      "policy": "Scénarios évolutifs sans allocation annuelle imposée"
+    }
+  }
+}

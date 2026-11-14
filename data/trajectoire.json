@@ -5,9 +5,9 @@
     "arrete": "2026-11-13",
     "statut": "brouillon",
     "validation": "non validée",
-    "provenance": "Répartition illustrative créée pour simuler un cap annuel ; ne constitue pas une décision pédagogique validée.",
+    "provenance": "Répartition indicative des heures encore disponibles ; à confirmer à partir des documents pédagogiques et des décisions de l’enseignant.",
     "scenarioReference": "reference",
-    "politique": "Le plan de référence n'est jamais réécrit par les simulations. Les écarts demandent confirmation.",
+    "politique": "Un plan est une proposition jusqu’à validation explicite. Les mises à jour de sources ne valident ni ne réécrivent le cap.",
     "sourceBudget": "data/fr.json#budget",
     "sourceCalendrier": "data/calendrier-pilotage.json#fr"
   },

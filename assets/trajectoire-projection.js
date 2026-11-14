@@ -15,20 +15,6 @@ function validatePlan(model,budget){
  if(sum(blocs)!==model.reference.budgetHeures)throw Error("Le plan ne répartit pas exactement le budget restant");
  return true;
 }
-function scenario(model,id,delta){
- if(!Number.isInteger(delta))throw Error("Variation entière requise");
- const original=model.reference.blocs;
- const target=original.find(x=>x.id===id);
- const reserve=original.find(x=>x.type==="reserve");
- if(!target||target.type==="reserve")throw Error("Bloc ajustable introuvable");
- // Ne modifie jamais le modèle reçu.
- const blocs=original.map(x=>({...x}));
- blocs.find(x=>x.id===id).heures+=delta;
- blocs.find(x=>x.type==="reserve").heures-=delta;
- const feasible=blocs.every(x=>x.heures>=0);
- return {blocs,feasible,solde:reserve.heures-delta,variation:delta,id,
-   motif:feasible?"Réallocation sans dépasser la réserve déclarée.":"Réserve insuffisante ou allocation négative ; arbitrage nécessaire."};
-}
 function capacity(calendar,vacances,from,to){
  if(!calendar||!calendar.generate)throw Error("Moteur calendrier indisponible");
  const slots=calendar.generate(to.config,vacances,from,to.end);
@@ -50,7 +36,7 @@ function projection(model,calendar,calendarConfig,vacances,day){
    heuresEcouleesTheoriques:past,
    avertissement:"Capacité reconstruite à partir d’une hypothèse de récurrence non validée. Les heures transversales partagent les mêmes créneaux que les séquences : ne pas additionner les capacités par bloc."};
 }
-const api={validatePlan,scenario,projection};
+const api={validatePlan,projection};
 if(typeof module!=="undefined"&&module.exports)module.exports=api;
 root.CockpitProjection=api;
 })(typeof window!=="undefined"?window:globalThis);
