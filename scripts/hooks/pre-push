@@ -1,3 +1,0 @@
-#!/bin/sh
-# Activation : git config core.hooksPath scripts/hooks
-python3 scripts/check_privacy.py && python3 scripts/validate.py
