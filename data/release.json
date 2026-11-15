@@ -9,9 +9,9 @@
     "changelog": "CHANGELOG.md"
   },
   "data": {
-    "revision": "2026-11-13.1",
-    "arrete": "2026-11-13",
-    "lastSuccessfulSync": null,
+    "revision": "2026-11-15.1",
+    "arrete": "2026-11-15",
+    "lastSuccessfulSync": "2026-11-15T07:45:00+01:00",
     "collection": "automatisée",
     "sources": [
       "Pronote",

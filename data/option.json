@@ -9,7 +9,7 @@
     "sourcePronote": "Export Pronote du 12/11/2026 (dossier ____EDT_EXPORTS_PRONOTE de l'option)",
     "sourceBudget": "Créneaux de l'agenda Google, année scolaire 2026-27",
     "noteMultiniveau": "Chaque séance doit idéalement toucher les programmes des deux niveaux (2nde ET terminale).",
-    "arrete": "2026-11-13"
+    "arrete": "2026-11-15"
   },
   "budget": {
     "total": 66,
@@ -128,6 +128,18 @@
       "date": "2026-11-20",
       "type": "jalon",
       "txt": "Larentia chap. 2 leçon 1 : traduction",
+      "etat": "à venir"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "tutorat",
+      "txt": "Visite de la tutrice pendant le créneau (8h-9h)",
+      "etat": "à venir"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "conference",
+      "txt": "Visio « Ulysse 26 » : peut-on adapter l'Odyssée ? (18h-19h)",
       "etat": "à venir"
     }
   ],

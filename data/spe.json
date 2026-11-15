@@ -8,7 +8,7 @@
     "couleur": "#5b7150",
     "sourcePronote": "Export Pronote du 12/11/2026 (dossier ____EDT_EXPORTS_PRONOTE de la spécialité)",
     "sourceBudget": "Créneaux de l'agenda Google, année scolaire 2026-27 (2 h par créneau)",
-    "arrete": "2026-11-13"
+    "arrete": "2026-11-15"
   },
   "budget": {
     "total": 134,
@@ -135,6 +135,12 @@
       "date": "2026-11-16",
       "type": "controle",
       "txt": "Contrôle rituel #3 : Ecce Larentia chap. 1",
+      "etat": "à venir"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "conference",
+      "txt": "Visio « Ulysse 26 » : peut-on adapter l'Odyssée ? (18h-19h)",
       "etat": "à venir"
     },
     {

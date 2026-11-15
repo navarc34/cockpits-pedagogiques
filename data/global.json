@@ -2,13 +2,14 @@
   "meta": {
     "annee": "2026-2027",
     "lycee": "Lycée",
-    "maj": "13/11/2026",
+    "maj": "15/11/2026",
     "sources": {
       "pronote": "Exports Pronote du 12/11/2026 (3 matières)",
       "budget": "Créneaux de cours comptés dans l'agenda Google (année scolaire 2026-27)",
-      "progressions": "Progressions annuelles validées / cadres de travail (Drive + Knowledge)"
+      "progressions": "Progressions annuelles validées / cadres de travail (Drive + Knowledge)",
+      "agenda": "Agenda Google vérifié le 15/11/2026 (fenêtre 15-29/11 : créneaux des 3 cours, échéances, aucune annulation)"
     },
-    "arrete": "2026-11-13"
+    "arrete": "2026-11-15"
   },
   "courses": [
     {
@@ -139,6 +140,24 @@
     ]
   },
   "calendrier": [
+    {
+      "date": "2026-11-20",
+      "fin": null,
+      "type": "jalon-cours",
+      "txt": "Fin du 1er trimestre"
+    },
+    {
+      "date": "2026-11-20",
+      "fin": null,
+      "type": "tutorat",
+      "txt": "Visite de la tutrice (pendant le créneau d'option latin, 8h-9h)"
+    },
+    {
+      "date": "2026-11-23",
+      "fin": null,
+      "type": "conference",
+      "txt": "Conférence en visio « Ulysse 26 » : peut-on adapter l'Odyssée ? (18h-19h)"
+    },
     {
       "date": "2026-11-23",
       "fin": null,
