@@ -10,7 +10,7 @@ fetch("data/release.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("ver
  footer.style.cssText="max-width:1460px;margin:20px auto 35px;padding:12px 22px;border-top:1px solid var(--line,#ddd);font:11px/1.6 Inter,sans-serif;color:var(--soft,#666)";
  const pieces=["<strong>"+esc(a.version)+"</strong> · "+esc(a.channel),
    "Données "+esc(d.revision)+" · arrêtées au "+esc(d.arrete),
-   d.lastSuccessfulSync?"Dernière collecte : "+esc(d.lastSuccessfulSync):"Collecte automatique non activée"];
+   d.lastSuccessfulSync?"Mis à jour le "+esc(new Date(d.lastSuccessfulSync).toLocaleDateString("fr-FR"))+" à "+esc(new Date(d.lastSuccessfulSync).toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"})):"Collecte automatique non activée"];
  if(planning)pieces.push("Progression "+esc(context)+" : "+esc(planning.status));
  pieces.push('<a href="CHANGELOG.md" style="color:inherit">Historique des versions</a>');
  footer.innerHTML=pieces.join(" · ");
