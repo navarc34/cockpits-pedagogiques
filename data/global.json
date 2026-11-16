@@ -2,14 +2,14 @@
   "meta": {
     "annee": "2026-2027",
     "lycee": "Lycée",
-    "maj": "15/11/2026",
+    "maj": "16/11/2026",
     "sources": {
-      "pronote": "Exports Pronote du 12/11/2026 (3 matières)",
+      "pronote": "Exports Pronote du 15/11/2026 (option latin, spé LLCA) et du 12/11/2026 (français)",
       "budget": "Créneaux de cours comptés dans l'agenda Google (année scolaire 2026-27)",
       "progressions": "Progressions annuelles validées / cadres de travail (Drive + Knowledge)",
-      "agenda": "Agenda Google vérifié le 15/11/2026 (fenêtre 15-29/11 : créneaux des 3 cours, échéances, aucune annulation)"
+      "agenda": "Agenda Google vérifié le 16/11/2026 (fenêtre 16-30/11 : créneaux des 3 cours, échéances, aucune annulation ; un créneau de français du ven. 20/11 avancé au lun. 16/11 15h-16h)"
     },
-    "arrete": "2026-11-15"
+    "arrete": "2026-11-16"
   },
   "courses": [
     {
@@ -140,6 +140,12 @@
     ]
   },
   "calendrier": [
+    {
+      "date": "2026-11-16",
+      "fin": null,
+      "type": "deplacement",
+      "txt": "Créneau de français avancé au lundi 16/11 (15h-16h) — cours normalement prévu le vendredi 20/11"
+    },
     {
       "date": "2026-11-20",
       "fin": null,
