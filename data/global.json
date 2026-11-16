@@ -28,7 +28,8 @@
       "prochainJalon": {
         "date": "2026-11-16",
         "txt": "DS contraction 2/2"
-      }
+      },
+      "dernierExportPronote": "2026-11-12"
     },
     {
       "id": "option",
@@ -46,7 +47,8 @@
       "prochainJalon": {
         "date": "2026-11-16",
         "txt": "Contrôle rituel #3 (Larentia ch. 1)"
-      }
+      },
+      "dernierExportPronote": "2026-11-15"
     },
     {
       "id": "spe",
@@ -64,7 +66,8 @@
       "prochainJalon": {
         "date": "2026-11-16",
         "txt": "Contrôle rituel #3 (Larentia ch. 1)"
-      }
+      },
+      "dernierExportPronote": "2026-11-15"
     }
   ],
   "prioritesGlobales": {
