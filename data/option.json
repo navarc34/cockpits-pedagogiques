@@ -13,8 +13,8 @@
   },
   "budget": {
     "total": 66,
-    "consomme": 17,
-    "aVenir": 49,
+    "consomme": 18,
+    "aVenir": 48,
     "unite": "h"
   },
   "priorites": {
@@ -122,7 +122,7 @@
       "date": "2026-11-16",
       "type": "controle",
       "txt": "Contrôle rituel #3 : Ecce Larentia chap. 1",
-      "etat": "à venir"
+      "etat": "réalisé"
     },
     {
       "date": "2026-11-20",
@@ -636,12 +636,12 @@
       "date": "2026-11-16",
       "time": "13:00",
       "hours": 1,
-      "titre": "",
-      "statut": "à saisir",
+      "titre": "Larentia II,1 : fin de la traduction + contrôle rituel #3 + débrief du distanciel (Prima Porta)",
+      "statut": "réalisé non publié",
       "theme": "",
       "cat": "",
-      "contenu": "",
-      "resume": "",
+      "contenu": "Objectifs : achever la traduction de la leçon 1 du chapitre 2 d Ecce Larentia ; évaluer les automatismes (contrôle rituel #3, chapitre 1) ; débriefer le travail distanciel (statue d Auguste de Prima Porta, parallèle avec les portraits présidentiels). Déroulé : I. Fin de la traduction de Larentia II,1 (traduction complète de la leçon ; exercices non traités, à reprendre). II. Contrôle rituel #3 (Ecce Larentia chap. 1). III. Débrief du distanciel : Prima Porta, parallèle avec les portraits de présidents français. Trace écrite non distribuée (à prévoir au prochain cours) ; mots-concepts et futur de l indicatif non abordés (reportés). Prochaine séance (20/11) : un élève absent (visite culturelle) ; trace écrite à distribuer.",
+      "resume": "Larentia II,1 : fin de la traduction + contrôle rituel #3 + débrief du distanciel (Prima Porta)Objectifs : achever la traduction de la leçon 1 du chapitre 2 d Ecce Larentia ; évaluer les automatismes ",
       "elements": [],
       "afaire": [],
       "absents": 0

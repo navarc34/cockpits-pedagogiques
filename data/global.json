@@ -19,15 +19,15 @@
       "href": "cours.html?id=fr",
       "budget": {
         "total": 99,
-        "consomme": 25,
-        "aVenir": 74,
+        "consomme": 27,
+        "aVenir": 72,
         "unite": "h"
       },
       "progressionStatut": "établie",
-      "resume": "S1 Graffigny à clôturer (EL2/EL3) → S2 Rimbaud dès le 23/11. BB1 le 03/12, inspection le 30/11.",
+      "resume": "S1 Graffigny à clôturer (EL2/EL3) → S2 Rimbaud dès le 23/11. DS contraction 2/2 passé le 16/11. BB1 le 03/12, inspection le 30/11.",
       "prochainJalon": {
-        "date": "2026-11-16",
-        "txt": "DS contraction 2/2"
+        "date": "2026-11-20",
+        "txt": "Contrôles de lecture Graffigny + cursive (proposition)"
       },
       "dernierExportPronote": "2026-11-12"
     },
@@ -38,15 +38,15 @@
       "href": "cours.html?id=option",
       "budget": {
         "total": 66,
-        "consomme": 17,
-        "aVenir": 49,
+        "consomme": 18,
+        "aVenir": 48,
         "unite": "h"
       },
       "progressionStatut": "en chantier",
-      "resume": "S1 « Observer le vivant » close le 06/11 → S2 « Imperium sine fine » (Énéide I, 274-295 + Auguste). CR#3 le 16/11.",
+      "resume": "S1 « Observer le vivant » close le 06/11 → S2 « Imperium sine fine » (Énéide I, 274-295 + Auguste). CR#3 passé le 16/11 ; Larentia II,1 traduite.",
       "prochainJalon": {
-        "date": "2026-11-16",
-        "txt": "Contrôle rituel #3 (Larentia ch. 1)"
+        "date": "2026-11-20",
+        "txt": "Séance du 20/11 : trace écrite à distribuer + suite Auguste (tutrice présente)"
       },
       "dernierExportPronote": "2026-11-15"
     },
@@ -57,15 +57,15 @@
       "href": "cours.html?id=spe",
       "budget": {
         "total": 134,
-        "consomme": 34,
-        "aVenir": 100,
+        "consomme": 36,
+        "aVenir": 98,
         "unite": "h"
       },
       "progressionStatut": "en chantier (cadre non figé)",
-      "resume": "OE1 « Gouverner » bouclée par l'essai du 06/11 → séquence Didon (Énéide IV) lancée le 09/11. CR#3 le 16/11.",
+      "resume": "OE1 « Gouverner » bouclée par l essai du 06/11 → séquence Didon (Énéide IV) lancée le 09/11. CR#3 passé le 16/11 ; Didon fondatrice (I, 360-368) au 20/11.",
       "prochainJalon": {
-        "date": "2026-11-16",
-        "txt": "Contrôle rituel #3 (Larentia ch. 1)"
+        "date": "2026-11-20",
+        "txt": "Poursuite Larentia II,1 + Didon fondatrice (I, 360-368)"
       },
       "dernierExportPronote": "2026-11-15"
     }
@@ -74,11 +74,11 @@
     "court": [
       {
         "cours": "fr",
-        "txt": "Finir le DS contraction (16/11) et corriger les copies avant le BB1 du 03/12"
+        "txt": "Corriger le DS contraction du 16/11 et rendre les copies avant le BB1 du 03/12"
       },
       {
         "cours": "fr, option, spe",
-        "txt": "Contrôles rituels #3 latin (16/11) : faire réviser via l'app de vocabulaire"
+        "txt": "Contrôles rituels #3 latin passés le 16/11 : corriger les copies (français : copies DS du 16/11 incluses)"
       },
       {
         "cours": "fr",
@@ -86,7 +86,7 @@
       },
       {
         "cours": "fr, option, spe",
-        "txt": "Saisir Pronote : créneaux passés non publiés (visio du 13/11, DS du 16/11…)"
+        "txt": "Saisir Pronote : créneaux passés non publiés (visio du 13/11, séances du 16/11, créneau avancé du 16/11 15h-16h)"
       },
       {
         "cours": "fr",
