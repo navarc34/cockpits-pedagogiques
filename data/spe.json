@@ -144,6 +144,20 @@
       "etat": "à venir"
     },
     {
+      "date": "2026-11-23",
+      "type": "controle",
+      "txt": "Contrôle de lecture : Énéide I-IV (Pronote : pour le 23/11)",
+      "etat": "à venir",
+      "id": "spe-jalon-controle-lecture-eneide"
+    },
+    {
+      "date": "2026-11-27",
+      "type": "ds",
+      "txt": "DS sur la Séquence 1 — Le Prince Idéal, Auguste (avec essai, Pronote : pour le 27/11)",
+      "etat": "à venir",
+      "id": "spe-jalon-ds-sequence-1"
+    },
+    {
       "date": "2026-12-19",
       "type": "lecture",
       "txt": "Vacances de Noël : lecture Énéide V-VIII (volume à décider)",
@@ -633,8 +647,34 @@
       "date": "2026-11-16",
       "time": "16:00",
       "hours": 2,
+      "titre": "Séquence 2 — Didon, reine de Carthage — Séance 1 : reprise et cadrage après les blocages",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Séquence 2 — Didon, reine de Carthage — Séance 1 : reprise et cadrage après les blocages\nObjectifs : réactiver la langue par le rituel de lecture-traduction ; contrôle rituel #3 ; faire le bilan de la séquence 1 et installer la séquence 2 ; points de grammaire en travaillant les textes.\nI. Ecce Larentia, chapitre 2, leçon 1 : oralisation et traduction ligne à ligne en tour de rôle ; réactivation des cas et fonctions et des pronoms démonstratifs (hic, iste, ille).\nII. Contrôle rituel #3.\nIII. Point d'étape : bilan de la séquence 1 (Gouverner : du mythe à l'histoire, quel « prince » idéal ? — Machiavel, Rabelais, Quinte-Curce, Suétone, l'Auguste de Prima Porta, l'auctoritas) et entrée dans la séquence 2 : Didon, reine de Carthage. Calendrier des évaluations annoncé : contrôle rituel #4, DS sur la séquence 1 (avec essai), contrôle de lecture de l'Énéide.\nIV. Distribution des supports de la séquence 2 : fiche de conjugaison ; fiche sur Virgile et plan de l'Énéide ; dossier de travail sur Didon et Énée (le périple d'Énée, la colère de Didon, le départ d'Énée). Reprise du travail distanciel : le périple d'Énée, la colère de Didon.\nV. Langue : les mots de liaison (coordonnants), leur rôle essentiel pour lire les textes antiques.",
+      "resume": "Séquence 2 — Didon, reine de Carthage — Séance 1 : reprise et cadrage après les blocages",
+      "elements": [
+        "Acquérir et mobiliser un lexique fréquentiel",
+        "Connaître et mobiliser œuvres, genres, mythes, figures et notions majeures de l'Antiquité",
+        "Connaître les grands repères de l'histoire grecque et romaine",
+        "Construire et justifier une traduction",
+        "Interpréter un texte en mobilisant langue, contexte et culture",
+        "La cité entre réalités et utopies / Gouverner : du mythe à l'histoire, quel « prince » idéal ?",
+        "Lire et oraliser un texte latin",
+        "Repérer des indices et formuler une hypothèse de sens"
+      ],
+      "afaire": [
+        "Pour le 23/11 : contrôle de lecture sur les 4 premiers chants de l'Énéide",
+        "Pour le 27/11 : DS sur la Séquence 1 — Le Prince Idéal, Auguste"
+      ],
+      "absents": 1
+    },
+    {
+      "date": "2026-11-20",
+      "time": "15:00",
+      "hours": 2,
       "titre": "",
-      "statut": "réalisé non publié",
+      "statut": "à saisir",
       "theme": "",
       "cat": "",
       "contenu": "",
@@ -644,7 +684,21 @@
       "absents": 0
     },
     {
-      "date": "2026-11-20",
+      "date": "2026-11-23",
+      "time": "16:00",
+      "hours": 2,
+      "titre": "",
+      "statut": "à saisir",
+      "theme": "",
+      "cat": "",
+      "contenu": "",
+      "resume": "",
+      "elements": [],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-11-27",
       "time": "15:00",
       "hours": 2,
       "titre": "",

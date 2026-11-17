@@ -4,7 +4,7 @@
     "lycee": "Lycée",
     "maj": "17/11/2026",
     "sources": {
-      "pronote": "Exports Pronote du 15/11/2026 (option latin, spé LLCA) et du 12/11/2026 (français)",
+      "pronote": "Exports Pronote du 17/11/2026 (français, option latin, spé LLCA)",
       "budget": "Créneaux de cours comptés dans l'agenda Google (année scolaire 2026-27)",
       "progressions": "Progressions annuelles validées / cadres de travail (Drive + Knowledge)",
       "agenda": "Agenda Google vérifié le 17/11/2026 (fenêtre 17/11-01/12 : créneaux des 3 cours sans annulation ; formation « Didactique des LCA » Lyon 3 le 18/11 ; inspection IA-IPR le 30/11 ; bac blanc n°1 le 03/12)"
@@ -24,12 +24,12 @@
         "unite": "h"
       },
       "progressionStatut": "établie",
-      "resume": "S1 Graffigny à clôturer (EL2/EL3) → S2 Rimbaud dès le 23/11. DS contraction 2/2 passé le 16/11. BB1 le 03/12, inspection le 30/11.",
+      "resume": "S1 Graffigny à clôturer (EL2/EL3) → contrôles de lecture le 23/11 puis S2 Rimbaud. DS contraction 2/2 passé le 16/11. BB1 le 03/12, inspection le 30/11.",
       "prochainJalon": {
-        "date": "2026-11-20",
-        "txt": "Contrôles de lecture Graffigny + cursive (proposition)"
+        "date": "2026-11-23",
+        "txt": "Contrôles de lecture Graffigny + cursive (pour le 23/11)"
       },
-      "dernierExportPronote": "2026-11-12"
+      "dernierExportPronote": "2026-11-17"
     },
     {
       "id": "option",
@@ -48,7 +48,7 @@
         "date": "2026-11-20",
         "txt": "Séance du 20/11 : trace écrite à distribuer + suite Auguste (tutrice présente)"
       },
-      "dernierExportPronote": "2026-11-15"
+      "dernierExportPronote": "2026-11-17"
     },
     {
       "id": "spe",
@@ -67,7 +67,7 @@
         "date": "2026-11-20",
         "txt": "Poursuite Larentia II,1 + Didon fondatrice (I, 360-368)"
       },
-      "dernierExportPronote": "2026-11-15"
+      "dernierExportPronote": "2026-11-17"
     }
   ],
   "prioritesGlobales": {
