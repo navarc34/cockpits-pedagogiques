@@ -2,14 +2,14 @@
   "meta": {
     "annee": "2026-2027",
     "lycee": "Lycée",
-    "maj": "16/11/2026",
+    "maj": "17/11/2026",
     "sources": {
       "pronote": "Exports Pronote du 15/11/2026 (option latin, spé LLCA) et du 12/11/2026 (français)",
       "budget": "Créneaux de cours comptés dans l'agenda Google (année scolaire 2026-27)",
       "progressions": "Progressions annuelles validées / cadres de travail (Drive + Knowledge)",
-      "agenda": "Agenda Google vérifié le 16/11/2026 (fenêtre 16-30/11 : créneaux des 3 cours, échéances, aucune annulation ; un créneau de français du ven. 20/11 avancé au lun. 16/11 15h-16h)"
+      "agenda": "Agenda Google vérifié le 17/11/2026 (fenêtre 17/11-01/12 : créneaux des 3 cours sans annulation ; formation « Didactique des LCA » Lyon 3 le 18/11 ; inspection IA-IPR le 30/11 ; bac blanc n°1 le 03/12)"
     },
-    "arrete": "2026-11-16"
+    "arrete": "2026-11-17"
   },
   "courses": [
     {
@@ -148,6 +148,12 @@
       "fin": null,
       "type": "deplacement",
       "txt": "Créneau de français avancé au lundi 16/11 (15h-16h) — cours normalement prévu le vendredi 20/11"
+    },
+    {
+      "date": "2026-11-18",
+      "fin": null,
+      "type": "conference",
+      "txt": "Formation « Didactique des LCA » — Lyon 3 (16h-18h)"
     },
     {
       "date": "2026-11-20",
