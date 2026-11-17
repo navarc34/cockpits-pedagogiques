@@ -8,7 +8,7 @@
     "couleur": "#5b7150",
     "sourcePronote": "Export Pronote du 15/11/2026 (dossier ____EDT_EXPORTS_PRONOTE de la spécialité)",
     "sourceBudget": "Créneaux de l'agenda Google, année scolaire 2026-27 (2 h par créneau)",
-    "arrete": "2026-11-16"
+    "arrete": "2026-11-17"
   },
   "budget": {
     "total": 134,
@@ -619,12 +619,12 @@
       "date": "2026-11-13",
       "time": "15:00",
       "hours": 2,
-      "titre": "",
-      "statut": "à saisir",
+      "titre": "[Distanciel] Séq 2 - Didon, reine de Carthage - Séance 1 - La colère de Didon envers Énée dans l'Énéide",
+      "statut": "publié",
       "theme": "",
       "cat": "",
-      "contenu": "",
-      "resume": "",
+      "contenu": "[Distanciel] Séq 2 - Didon, reine de Carthage - Séance 1 - La colère de Didon envers Énée dans l'Énéide",
+      "resume": "[Distanciel] Séq 2 - Didon, reine de Carthage - Séance 1 - La colère de Didon envers Énée dans l'Énéide",
       "elements": [],
       "afaire": [],
       "absents": 0
@@ -634,7 +634,7 @@
       "time": "16:00",
       "hours": 2,
       "titre": "",
-      "statut": "à saisir",
+      "statut": "réalisé non publié",
       "theme": "",
       "cat": "",
       "contenu": "",

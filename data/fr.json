@@ -8,7 +8,7 @@
     "couleur": "#c2603f",
     "sourcePronote": "Export Pronote du 12/11/2026 (dossier ____EDT_EXPORTS_PRONOTE du cours)",
     "sourceBudget": "Créneaux de l'agenda Google, année scolaire 2026-27",
-    "arrete": "2026-11-16"
+    "arrete": "2026-11-17"
   },
   "budget": {
     "total": 99,
@@ -742,12 +742,12 @@
       "date": "2026-11-13",
       "time": "10:00",
       "hours": 1,
-      "titre": "",
-      "statut": "à saisir",
+      "titre": "[Distanciel] Correction de l'entraînement à la contraction + fin de l'EL2 (lettre 34) + annonce EL3",
+      "statut": "réalisé non publié",
       "theme": "",
       "cat": "",
-      "contenu": "",
-      "resume": "",
+      "contenu": "[Distanciel] Correction de l'entraînement à la contraction + fin de l'EL2 (lettre 34) + annonce EL3",
+      "resume": "[Distanciel] Correction de l'entraînement à la contraction + fin de l'EL2 (lettre 34) + annonce EL3",
       "elements": [],
       "afaire": [
         "Pour le 16/11I - Entraînement à la contraction de texte en vue du DS lundi 16/11 (2ème heure du DS du lundi 9/11)1) Connaître parfaitement le document de méthodologie de la contraction2) ✨Reviser la méthodologie avec cette application : Réviser la contraction de texte — 1ère ST2S. Objectif : atteindre un score d'au moins 80%3) Certains d'entre vous souhaitez avoir des exemples de contractions :- Vous pouvez analyser la correction de la contraction du texte sur l'éloge de la procrastination est jointe.- Vous pouvez également relire la contraction du texte de Lucie Azéma (sujet du DS sur l'essai) qui est un très bon exemple d'application de la méthode. Entraînez-vous à contracter le texte en appliquant la méthode avant de lire le corrigé !ELEVE_eleve_correction_contraction_Santolaria_40_mins.pdf ELEVE_exemple_contraction_texte_Lucie_Azéma.pdf ELEVE_sujet_40mins_entrainement_contraction_Santolaria.pdf ELEVES_méthodo_contraction_texte_v2.pdf Français 1ère ST2S : objectif bac français 🎓- Lycée Réviser la contraction de texte avec une app "
@@ -767,6 +767,20 @@
       "elements": [],
       "afaire": [],
       "absents": 0
+    },
+    {
+      "date": "2026-11-16",
+      "time": "15:00",
+      "hours": 1,
+      "titre": "Créneau avancé (déplacé du ven. 20/11, 15h-16h) — cours de français",
+      "statut": "réalisé non publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Créneau avancé du vendredi 20/11 déplacé au lundi 16/11 (15h-16h) pour dépanner une collègue. Contenu à saisir dans Pronote.",
+      "resume": "Créneau avancé du ven. 20/11 déplacé au lun. 16/11 15h-16h",
+      "elements": [],
+      "afaire": [],
+      "absents": null
     },
     {
       "date": "2026-11-20",
