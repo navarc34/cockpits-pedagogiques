@@ -2,7 +2,7 @@
   "version": 1,
   "meta": {
     "cours": "fr",
-    "arrete": "2026-11-13",
+    "arrete": "2026-11-17",
     "statut": "brouillon",
     "validation": "non validée",
     "provenance": "Répartition indicative des heures encore disponibles ; à confirmer à partir des documents pédagogiques et des décisions de l’enseignant.",
@@ -14,7 +14,7 @@
   "reference": {
     "id": "reference",
     "titre": "Trajectoire de travail à valider",
-    "budgetHeures": 74,
+    "budgetHeures": 72,
     "blocs": [
       {
         "id": "graffigny",
@@ -70,7 +70,7 @@
         "id": "reserve",
         "titre": "Réserve et imprévus",
         "type": "reserve",
-        "heures": 8,
+        "heures": 6,
         "debut": "2026-11-16",
         "fin": "2027-06-04",
         "source": "choix de pilotage proposé",
