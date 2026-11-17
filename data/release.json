@@ -9,10 +9,10 @@
     "changelog": "CHANGELOG.md"
   },
   "data": {
-    "revision": "2026-11-17.3",
+    "revision": "2026-11-17.4",
     "arrete": "2026-11-17",
-    "lastSuccessfulSync": "2026-11-17T20:45:00+01:00",
-    "collection": "automatisée",
+    "lastSuccessfulSync": "2026-11-17T20:23:08+01:00",
+    "collection": "rattrapage mode B",
     "sources": [
       "Pronote",
       "Bilans de séances",
