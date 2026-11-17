@@ -124,9 +124,9 @@
       {
         "id": "fr-lectures",
         "titre": "Confirmer les contrôles de lecture",
-        "echeance": "2026-11-20",
+        "echeance": "2026-11-23",
         "importance": 2,
-        "justification": "Contrôles envisagés pour le 20 novembre : leur date reste à valider.",
+        "justification": "Contrôles de lecture Graffigny et lecture cursive indiqués dans Pronote pour le 23 novembre ; date à confirmer pédagogiquement.",
         "jalonId": "fr-jalon-controles-lecture",
         "certitude": "proposée",
         "etat": "à instruire"
