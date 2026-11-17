@@ -619,8 +619,200 @@
       "date": "2026-11-13",
       "time": "15:00",
       "hours": 2,
-      "titre": "[Distanciel] Séq 2 - Didon, reine de Carthage - Séance 1 - La colère de Didon envers Énée dans l'Énéide",
-      "statut": "publié",
+      "titre": "",
+      "statut": "à saisir",
       "theme": "",
       "cat": "",
-      "contenu": "[Distanciel] Séq 2 - Didon, reine de Carthage - Séance 1 - La colère de Didon envers Énée dans l'Énéide",
+      "contenu": "",
+      "resume": "",
+      "elements": [],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-11-16",
+      "time": "16:00",
+      "hours": 2,
+      "titre": "",
+      "statut": "à saisir",
+      "theme": "",
+      "cat": "",
+      "contenu": "",
+      "resume": "",
+      "elements": [],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-11-20",
+      "time": "15:00",
+      "hours": 2,
+      "titre": "",
+      "statut": "à saisir",
+      "theme": "",
+      "cat": "",
+      "contenu": "",
+      "resume": "",
+      "elements": [],
+      "afaire": [],
+      "absents": 0
+    }
+  ],
+  "programme": [
+    {
+      "bloc": "1. LIRE, COMPRENDRE, TRADUIRE ET INTERPRÉTER",
+      "items": [
+        {
+          "label": "Lire et oraliser un texte latin",
+          "n": 13
+        },
+        {
+          "label": "Repérer des indices et formuler une hypothèse de sens",
+          "n": 5
+        },
+        {
+          "label": "Construire et justifier une traduction",
+          "n": 5
+        },
+        {
+          "label": "Interpréter un texte en mobilisant langue, contexte et culture",
+          "n": 5
+        },
+        {
+          "label": "Analyser les procédés d'écriture et construire une interprétation littéraire",
+          "n": 0
+        }
+      ]
+    },
+    {
+      "bloc": "2. LANGUE ET LEXIQUE",
+      "items": [
+        {
+          "label": "Identifier et analyser formes, fonctions et structures syntaxiques",
+          "n": 9
+        },
+        {
+          "label": "Réinvestir les faits de langue pour construire le sens",
+          "n": 3
+        },
+        {
+          "label": "Acquérir et mobiliser un lexique fréquentiel",
+          "n": 3
+        },
+        {
+          "label": "Étudier étymologie, familles de mots et mots-concepts",
+          "n": 5
+        }
+      ]
+    },
+    {
+      "bloc": "3. CULTURE ANTIQUE ET REPÈRES",
+      "items": [
+        {
+          "label": "Situer textes, auteurs, événements et espaces dans leurs contextes",
+          "n": 10
+        },
+        {
+          "label": "Connaître les grands repères de l'histoire grecque et romaine",
+          "n": 0
+        },
+        {
+          "label": "Connaître et mobiliser œuvres, genres, mythes, figures et notions majeures de la culture antique",
+          "n": 0
+        }
+      ]
+    },
+    {
+      "bloc": "4. CONFRONTER ET METTRE EN PERSPECTIVE",
+      "items": [
+        {
+          "label": "Lire en édition bilingue et comparer textes, traductions, images, objets ou représentations (amendement validé : lecture bilingue explicite)",
+          "n": 0
+        },
+        {
+          "label": "Comprendre réception, transmission et transformations de l'Antiquité",
+          "n": 0
+        },
+        {
+          "label": "Mettre en relation mondes anciens et monde moderne/contemporain",
+          "n": 9
+        },
+        {
+          "label": "Construire une synthèse à partir de plusieurs textes ou documents",
+          "n": 6
+        }
+      ]
+    },
+    {
+      "bloc": "5. S'EXPRIMER, ARGUMENTER ET CONSTRUIRE SON AUTONOMIE",
+      "items": [
+        {
+          "label": "Justifier une réponse ou une interprétation par des indices précis",
+          "n": 2
+        },
+        {
+          "label": "Produire un écrit organisé et argumenté",
+          "n": 0
+        },
+        {
+          "label": "Problématiser une question littéraire, politique ou culturelle",
+          "n": 3
+        },
+        {
+          "label": "Construire et développer une réflexion personnelle de type essai",
+          "n": 3
+        },
+        {
+          "label": "Présenter, expliquer et argumenter à l'oral",
+          "n": 0
+        },
+        {
+          "label": "Rechercher, sélectionner et exploiter des ressources de manière autonome",
+          "n": 4
+        },
+        {
+          "label": "Construire un portfolio mettant en résonance Antiquité et modernité",
+          "n": 0
+        }
+      ]
+    },
+    {
+      "bloc": "6. OBJETS D'ÉTUDE",
+      "items": [
+        {
+          "label": "La cité entre réalités et utopies",
+          "n": 14
+        },
+        {
+          "label": "Justice des dieux, justice des hommes",
+          "n": 0
+        },
+        {
+          "label": "Amour, Amours",
+          "n": 0
+        },
+        {
+          "label": "Méditerranée : conflits, influences et échanges",
+          "n": 0
+        }
+      ]
+    },
+    {
+      "bloc": "Notes d'évaluation (31/10/2026)",
+      "items": [
+        {
+          "label": "Les 4 objets d'étude reprennent exactement les libellés du BO.",
+          "n": 0
+        },
+        {
+          "label": "La progression grammaticale spé 1ère (locatif, formes syncopées, passif impersonnel, double datif, génitif/ablatif de qualité…) est recouverte par l'item générique 2.1 — suffisant pour un référentiel de cochage.",
+          "n": 0
+        },
+        {
+          "label": "Le portfolio (diptyques antique/moderne en résonance) et l'essai (épreuves écrites fin 1ère et bac) sont explicitement présents.",
+          "n": 0
+        }
+      ]
+    }
+  ]
+}
