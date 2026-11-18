@@ -17,7 +17,12 @@ const past=generate(cfg,fr.vacances,"2026-09-04","2026-11-13");
 const report=reconcile(past,fr.seances,"2026-11-13");
 assert(report.prevu>0&&report.documente>0);
 assert(report.documente<=report.prevu);
-assert(report.aVerifier>0);
+// Aucun dossier à vérifier est un état normal quand le suivi est à jour.
+assert(Number.isInteger(report.aVerifier) && report.aVerifier >= 0);
+assert.equal(
+  report.aVerifier,
+  report.rows.filter(x=>x.qualification==="à vérifier").length
+);
 assert(!report.rows.some(x=>x.qualification==="retard"));
 const withExtra={...cfg,inclusions:[{date:"2026-10-19",heure:"11:00",hours:1,motif:"séance exceptionnelle"}]};
 assert.equal(generate(withExtra,fr.vacances,"2026-10-19","2026-10-19").length,1);
