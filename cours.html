@@ -126,11 +126,11 @@ async function main(){
   // Priorités : les tâches échues restent visibles, mais dans leur propre liste.
   const sorted=a=>[...a].sort((x,y)=>(x.dateEcheance||'9999-12-31').localeCompare(y.dateEcheance||'9999-12-31'));
   const court=d.priorites.court||[];
-  const avenir=sorted(court.filter(p=>!p.fait&&(!p.dateEcheance||p.dateEcheance>=NOW)));
+  const avenir=sorted(court.filter(p=>!p.fait&&(!p.dateEcheance||p.dateEcheance>=NOW))).sort((a,b)=>(b.urgent?1:0)-(a.urgent?1:0));
   const retard=sorted(court.filter(p=>!p.fait&&p.dateEcheance&&p.dateEcheance<NOW));
   const terminees=sorted(court.filter(p=>p.fait));
   const lateSe=d.seances.filter(s=>s.statut==='à saisir'&&s.date<=NOW);
-  const item=(p)=>`<li>${esc(p.txt)}${p.echeance?` <small style="color:var(--soft)">(${esc(p.echeance)})</small>`:''}${!p.dateEcheance?` <small style="color:var(--soft)">· date à fixer</small>`:''}</li>`;
+  const item=(p)=>`<li>${p.urgent?`<b style="color:var(--red)">⚑ URGENT</b> `:''}${esc(p.txt)}${p.echeance?` <small style="color:var(--soft)">(${esc(p.echeance)})</small>`:''}${!p.dateEcheance?` <small style="color:var(--soft)">· date à fixer</small>`:''}</li>`;
   const group=(titre,items,empty)=>`<div class="card glass"><h3>${titre} <small style="font:600 12px Inter;color:var(--soft)">(${items.length})</small></h3><ul>${items.map(item).join('')||`<li style="color:var(--soft)">${empty}</li>`}</ul></div>`;
   const alert=lateSe.length?`<li><span aria-hidden="true">🔔</span> <b>Saisir Pronote :</b> ${lateSe.length} créneau${lateSe.length>1?'x':''} passé${lateSe.length>1?'s':''} non publié${lateSe.length>1?'s':''} (${lateSe.map(s=>fl(s.date,FD)).join(', ')})</li>`:'';
   const overdue=`<div class="card glass"><h3>En retard <small style="font:600 12px Inter;color:var(--soft)">(${retard.length+ (lateSe.length?1:0)})</small></h3><ul>${alert}${retard.map(item).join('')||(!alert?'<li style="color:var(--soft)">Aucune priorité en retard.</li>':'')}</ul></div>`;
@@ -139,11 +139,11 @@ async function main(){
   $('#priorites').innerHTML=head('Priorités','à venir · en retard · terminées · horizons moyen et long')+
     `<div class="grid">${group('À venir',avenir,'Aucune échéance à venir.')}${overdue}${done}</div>`+
     `<div class="grid" style="margin-top:18px">${pcol('Moyen terme','moyen')+pcol('Long terme','long')}</div>`;
-  // Journal de bord (bilans de séance H{n})
-  const jrn=[...(d.journal||[])].sort((a,b)=>b.date.localeCompare(a.date));
-  const jlst=(t,a,ic)=>a&&a.length?`<ul style="margin:6px 0 10px"><li style="list-style:none;color:var(--soft);font:600 11px Inter,sans-serif;text-transform:uppercase;letter-spacing:.04em">${ic} ${t}</li>${a.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'';
-  $('#journal').innerHTML=head('Journal de bord','bilans de séance : ce qui a marché · à améliorer · pistes et idées')+
-    (jrn.length?`<div style="display:grid;gap:16px">${jrn.map(e=>`<article class="card glass" style="padding:16px 18px"><h3 style="font:600 20px Fraunces,serif;margin:0">${fl(e.date,FL)}</h3>${e.contexte?`<p style="color:var(--soft);font-size:13px;margin:4px 0 8px">${esc(e.contexte)}</p>`:''}${jlst('Ce qui a marché',e.marche,'✅')}${jlst('À améliorer',e.aAmeliorer,'⚠️')}${jlst('Pistes et idées',e.idees,'💡')}</article>`).join('')}</div>`:`<div class="card glass" style="padding:14px">Aucun bilan de séance collecté pour l'instant.</div>`);
+  // Journal de bord (bilans de séance H{n}) : 3 rubriques, items classés par date
+  const jitems=(k)=>[...(d.journal||[])].flatMap(e=>(e[k]||[]).map(t=>({date:e.date,contexte:e.contexte||'',txt:t}))).sort((a,b)=>b.date.localeCompare(a.date));
+  const jcol=(t,k,ic,empty)=>{const a=jitems(k);return `<div class="card glass"><h3>${ic} ${t} <small style="font:600 12px Inter;color:var(--soft)">(${a.length})</small></h3><ul>${a.map(x=>`<li><small style="color:var(--soft);font-weight:600">${fl(x.date,FD)} —</small> ${esc(x.txt)}</li>`).join('')||`<li style="color:var(--soft)">${empty}</li>`}</ul></div>`;};
+  $('#journal').innerHTML=head('Journal de bord','bilans de séance, items classés par date · cliquer une date pour le contexte')+
+    `<div class="grid">${jcol('Ce qui a marché','marche','✅','Aucun point collecté.')}${jcol('À améliorer','aAmeliorer','⚠️','Aucun point collecté.')}${jcol('Pistes et idées','idees','💡','Aucune piste collectée.')}</div>`;
   // Pronote
   let f='tous';const FIL=[['tous','Toutes'],['publié','Publiées'],['distanciel','Distanciel'],['réalisé non publié','Non publiées'],['à saisir','À saisir']];
   $('#pronote').innerHTML=head('Pronote','cahier de textes complet · cliquer une séance pour la déplier')+`<div class="filters" id="filters">${FIL.map(([k,t])=>`<button data-f="${esc(k)}">${t} <span style="opacity:.55">${k==='tous'?d.seances.length:d.seances.filter(s=>s.statut===k).length}</span></button>`).join('')}</div><div class="seances" id="sl"></div>`;
