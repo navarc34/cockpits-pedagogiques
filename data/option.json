@@ -50,6 +50,12 @@
     "dateEcheance": "2026-11-23",
     "fait": false,
     "urgent": true
+   },
+   {
+    "txt": "URGENT — finaliser la progression annuelle de l’option avec le big menu (et les assistants IA)",
+    "echeance": "à fixer",
+    "fait": false,
+    "urgent": true
    }
   ],
   "moyen": [

@@ -47,6 +47,13 @@
     "echeance": "03/12",
     "dateEcheance": "2026-12-03",
     "fait": false
+   },
+   {
+    "txt": "URGENT — fixer la date du contrôle de lecture de Rimbaud (avant les vacances de Noël)",
+    "echeance": "avant Noël",
+    "dateEcheance": "2026-12-11",
+    "fait": false,
+    "urgent": true
    }
   ],
   "moyen": [
@@ -81,6 +88,14 @@
    {
     "txt": "Mettre plusieurs exemples de contractions corrigées sur le digipad pour préparer le DS (demande des élèves)",
     "echeance": "nov. (idée du bilan du 06/11)"
+   },
+   {
+    "txt": "Concevoir le big menu FR d’idées de séances (équivalent du big menu latin)",
+    "echeance": "T2 (idée du bilan du 16/11)"
+   },
+   {
+    "txt": "Carnet de lexique des parcours + app de grammaire couvrant l’inventaire des questions possibles sur les 12 textes d’EL",
+    "echeance": "T2 (idées du bilan du 13/11)"
    }
   ],
   "long": [
@@ -1225,7 +1240,14 @@
     "Activité eduscol sur la lettre XXXIV (apport de la lettre à l’ensemble du récit)",
     "Idées de séances Graffigny : genre épistolaire, mots du parcours, cibles de la critique, groupement sur l’éducation des femmes",
     "Petites apps de révision pour les contrôles de lecture",
-    "Phrase du jour en contrôle oral de grammaire, désignation au hasard"
+    "Phrase du jour en contrôle oral de grammaire, désignation au hasard",
+    "Explorer les sujets possibles de l’essai et de la contraction",
+    "Point sur les spécificités du genre littéraire pour chaque objet d’étude (fiches « Objectif BAC » 1re techno)",
+    "Scanner le manuel Hachette « Objectif BAC » 1re techno : fiches, exemples, lexique — source de questions rituelles et d’apps",
+    "Inventaire exhaustif des questions de grammaire possibles sur les textes des EL (tâche récurrente en Knowledge) → app de révision couvrant les 12 textes de l’EAF",
+    "Intégrer l’étude du lexique : carnet de mots des parcours et groupements (pratique d’un formateur à l’Inspé), app possible",
+    "Exos de méthodo sur les registres à déposer dans l’espace élève (séance prête)",
+    "Sources d’idées : dossier NRP 1res lettres, ebook Ellipse, digipad d’un collègue"
    ]
   },
   {
@@ -1247,7 +1269,8 @@
    ],
    "idees": [
     "Enregistrer ce format îlots + EL à trous dans la boîte à idées",
-    "Étendre le format match / app projetée en début de séance de réactivation"
+    "Étendre le format match / app projetée en début de séance de réactivation",
+    "Concevoir un big menu FR d’idées de séances et de pratiques pédagogiques (équivalent du big menu latin)"
    ]
   }
  ]

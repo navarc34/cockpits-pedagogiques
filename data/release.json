@@ -1,38 +1,38 @@
 {
-  "schemaVersion": 1,
-  "application": {
-    "name": "Cockpits pédagogiques",
-    "version": "0.2.0-beta.1",
-    "channel": "beta",
-    "releasedOn": "2026-11-14",
-    "status": "en développement",
-    "changelog": "CHANGELOG.md"
+ "schemaVersion": 1,
+ "application": {
+  "name": "Cockpits pédagogiques",
+  "version": "0.2.0-beta.1",
+  "channel": "beta",
+  "releasedOn": "2026-11-14",
+  "status": "en développement",
+  "changelog": "CHANGELOG.md"
+ },
+ "data": {
+  "revision": "2026-11-20.1",
+  "arrete": "2026-11-17",
+  "lastSuccessfulSync": "2026-11-20T12:30:00+01:00",
+  "collection": "automatisée",
+  "sources": [
+   "Pronote",
+   "Bilans de séances",
+   "Dossiers Hn",
+   "Progressions et ressources pédagogiques"
+  ],
+  "note": "Révision décrivant les données publiées. Collecte automatisée active depuis le 14/11/2026 (2 exécutions/jour via tâches planifiées Vibe) ; révision incrémentée à chaque instantané poussé."
+ },
+ "planning": {
+  "fr": {
+   "status": "brouillon",
+   "policy": "Trajectoire indicative et objectifs à valider"
   },
-  "data": {
-    "revision": "2026-11-18.1",
-    "arrete": "2026-11-17",
-    "lastSuccessfulSync": "2026-11-18T07:10:00+01:00",
-    "collection": "automatisée",
-    "sources": [
-      "Pronote",
-      "Bilans de séances",
-      "Dossiers Hn",
-      "Progressions et ressources pédagogiques"
-    ],
-    "note": "Révision décrivant les données publiées. Collecte automatisée active depuis le 14/11/2026 (2 exécutions/jour via tâches planifiées Vibe) ; révision incrémentée à chaque instantané poussé."
+  "option": {
+   "status": "en construction",
+   "policy": "Scénarios évolutifs sans allocation annuelle imposée"
   },
-  "planning": {
-    "fr": {
-      "status": "brouillon",
-      "policy": "Trajectoire indicative et objectifs à valider"
-    },
-    "option": {
-      "status": "en construction",
-      "policy": "Scénarios évolutifs sans allocation annuelle imposée"
-    },
-    "spe": {
-      "status": "en construction",
-      "policy": "Scénarios évolutifs sans allocation annuelle imposée"
-    }
+  "spe": {
+   "status": "en construction",
+   "policy": "Scénarios évolutifs sans allocation annuelle imposée"
   }
+ }
 }
