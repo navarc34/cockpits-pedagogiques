@@ -1,986 +1,1031 @@
 {
- "meta": {
-  "id": "spe",
-  "nom": "Spécialité LLCA latin — 1ʳᵉ",
-  "classe": "groupe de spécialité",
-  "creneaux": "lun. 16h-18h · ven. 15h-17h",
-  "rythme": "4 h/semaine",
-  "couleur": "#5b7150",
-  "sourcePronote": "Export Pronote du 15/11/2026 (dossier ____EDT_EXPORTS_PRONOTE de la spécialité)",
-  "sourceBudget": "Créneaux de l'agenda Google, année scolaire 2026-27 (2 h par créneau)",
-  "arrete": "2026-11-17"
- },
- "budget": {
-  "total": 134,
-  "consomme": 36,
-  "aVenir": 98,
-  "unite": "h"
- },
- "priorites": {
-  "court": [
-   {
-    "txt": "Séquence 2 « Didon, reine de Carthage » : séance 1 lancée (09/11) — documents distribués",
-    "echeance": "en cours",
-    "fait": false
-   },
-   {
-    "txt": "Séance visio du 13/11 : Ecce Larentia chap. 2 + fiche Virgile + préparation Didon",
-    "echeance": "13/11",
-    "dateEcheance": "2026-11-13",
-    "fait": true
-   },
-   {
-    "txt": "Contrôle rituel #3 : vocabulaire Ecce Larentia chap. 1 (leçons I-III)",
-    "echeance": "16/11",
-    "dateEcheance": "2026-11-16",
-    "fait": true
-   }
-  ],
-  "moyen": [
-   {
-    "txt": "Dérouler la séquence Didon (Énéide IV) : furor vs pietas, tragédie de l'abandon — l'œuvre a été lue en entier à la Toussaint",
-    "echeance": "nov.-déc."
-   },
-   {
-    "txt": "Refermer l'OE1 « La cité… » : l'essai « Gouverner » a été fait sur table le 06/11 (grille paliers 1-4) — restitution et correction",
-    "echeance": "T2"
-   },
-   {
-    "txt": "Langue : pronoms (is/ea/id, réfléchi), parfait, premières subordinations — au service des textes",
-    "echeance": "T2"
-   },
-   {
-    "txt": "Poursuivre Ecce Larentia / Via Latina (chap. 2 en cours) : oralisation + traduction",
-    "echeance": "T2"
-   },
-   {
-    "txt": "Concevoir l'app de révision de l'Énéide pour le contrôle de lecture (diégèse, personnages, extraits latins à situer)",
-    "echeance": "nov. (idée des bilans 06-13/11)"
-   },
-   {
-    "txt": "Quiz de mythologie sur app projetée (images/textes à deviner), éventuellement en rituel — enthousiasme des élèves",
-    "echeance": "T2 (idée du bilan du 13/11)"
-   },
-   {
-    "txt": "Trace écrite complète « prince idéal / Auguste » pour le DS2 : Rosanvallon, corpus des figures du prince, facettes d’Auguste chez Suétone, auctoritas",
-    "echeance": "nov. (bilan du 13/11)"
-   },
-   {
-    "txt": "Séance de traduction avec dictionnaires au CDI (réserver la salle info)",
-    "echeance": "T2 (idée du bilan du 13/11)"
-   },
-   {
-    "txt": "Renforcer la séquence Didon : ressources des manuels (Hatier 1re ?) et big menu",
-    "echeance": "déc. (bilans du 13-16/11)"
-   }
-  ],
-  "long": [
-   {
-    "txt": "Couvrir les 4 OE du BO : cité (en cours) → Amour, amours (Didon, piste naturelle) → Justice des dieux (séquence BIEN_, Médée / De Clementia) → Méditerranée (Actium, Florus)",
-    "echeance": "année"
-   },
-   {
-    "txt": "Énéide fil rouge : I-IV lus ✅ → V-VIII (T2) → IX-XII en cursive ciblée (T3) ; contrôle/oral à chaque reprise de vacances",
-    "echeance": "année"
-   },
-   {
-    "txt": "Figures féminines de la Méditerranée : Didon → Médée → Cléopâtre → Livie (+ poésie : Ariane, Cynthia)",
-    "echeance": "chantier transversal"
-   },
-   {
-    "txt": "Épreuve écrite de fin de 1ère (2 h) — sprint épreuve en mai-juin (sujets type, Énéide VI)",
-    "echeance": "mai-juin"
-   }
-  ]
- },
- "jalons": [
-  {
-   "date": "2026-09-18",
-   "type": "ds",
-   "txt": "DS n°1 : grands repères antiques + langue",
-   "etat": "réalisé"
-  },
-  {
-   "date": "2026-09-25",
-   "type": "controle",
-   "txt": "Contrôle rituel #1 : 1re déclinaison",
-   "etat": "réalisé"
-  },
-  {
-   "date": "2026-10-02",
-   "type": "alerte",
-   "txt": "Distanciel (blocages) : travaux Auguste en autonomie, contrôles #2-3 décalés",
-   "etat": "fait"
-  },
-  {
-   "date": "2026-10-12",
-   "type": "dm",
-   "txt": "DM bilan « Auguste » (Suétone, Prima Porta, portraits présidents, auctoritas) — bonus",
-   "etat": "réalisé"
-  },
-  {
-   "date": "2026-10-16",
-   "type": "lecture",
-   "txt": "Lecture obligatoire Toussaint : Énéide I-IV « le crayon à la main »",
-   "etat": "réalisé"
-  },
-  {
-   "date": "2026-11-02",
-   "type": "controle",
-   "txt": "Contrôles rituels #2-3 + bilan lecture Énéide + réception (Turner)",
-   "etat": "réalisé"
-  },
-  {
-   "date": "2026-11-06",
-   "type": "essai",
-   "txt": "Essai OE1 sur table (1h30) : « Gouverner : du mythe à l'histoire, quel prince idéal ? »",
-   "etat": "réalisé"
-  },
-  {
-   "date": "2026-11-09",
-   "type": "jalon",
-   "txt": "Lancement séq. 2 : Didon, reine de Carthage (Énéide IV)",
-   "etat": "réalisé"
-  },
-  {
-   "date": "2026-11-13",
-   "type": "cours",
-   "txt": "Visio : Larentia chap. 2 + fiche Virgile + préparation Didon",
-   "etat": "réalisé"
-  },
-  {
-   "date": "2026-11-16",
-   "type": "controle",
-   "txt": "Contrôle rituel #3 : Ecce Larentia chap. 1",
-   "etat": "réalisé"
-  },
-  {
-   "date": "2026-11-23",
-   "type": "conference",
-   "txt": "Visio « Ulysse 26 » : peut-on adapter l'Odyssée ? (18h-19h)",
-   "etat": "à venir"
-  },
-  {
-   "date": "2026-11-23",
-   "type": "controle",
-   "txt": "Contrôle de lecture : Énéide I-IV (Pronote : pour le 23/11)",
-   "etat": "à venir",
-   "id": "spe-jalon-controle-lecture-eneide"
-  },
-  {
-   "date": "2026-11-27",
-   "type": "ds",
-   "txt": "DS sur la Séquence 1 — Le Prince Idéal, Auguste (avec essai, Pronote : pour le 27/11)",
-   "etat": "à venir",
-   "id": "spe-jalon-ds-sequence-1"
-  },
-  {
-   "date": "2026-12-19",
-   "type": "lecture",
-   "txt": "Vacances de Noël : lecture Énéide V-VIII (volume à décider)",
-   "etat": "à venir"
-  }
- ],
- "vacances": [
-  {
-   "debut": "2026-10-17",
-   "fin": "2026-11-02",
-   "txt": "Vacances de Toussaint"
-  },
-  {
-   "debut": "2026-12-19",
-   "fin": "2027-01-04",
-   "txt": "Vacances de Noël"
-  },
-  {
-   "debut": "2027-02-13",
-   "fin": "2027-03-01",
-   "txt": "Vacances d'hiver"
-  },
-  {
-   "debut": "2027-04-10",
-   "fin": "2027-04-26",
-   "txt": "Vacances de printemps"
-  }
- ],
- "progression": {
-  "statut": "en chantier",
-  "source": "Cadre v1 du 02/11/2026, volontairement NON FIGÉ : pistes par OE, pas de calendrier impératif. Principe validé : exploiter en priorité des séquences de collègues (BIEN_, SUPER, Hatier) et les adapter.",
-  "sequences": [
-   {
-    "no": "S1",
-    "titre": "La cité entre réalités et utopies — Gouverner : quel prince idéal ?",
-    "parcours": "OE1 du BO",
-    "oeuvre": "Corpus : Quinte-Curce VIII, 8 ; Rabelais Gargantua 50 ; Machiavel XVII ; Suétone (Néron, Auguste) ; Pline, Panégyrique",
-    "periode": "sept.-nov. 2026",
+  "meta": {
+    "id": "spe",
+    "nom": "Spécialité LLCA latin — 1ʳᵉ",
+    "classe": "groupe de spécialité",
+    "creneaux": "lun. 16h-18h · ven. 15h-17h",
+    "rythme": "4 h/semaine",
     "couleur": "#5b7150",
-    "etat": "en cours (essai fait le 06/11)",
-    "detail": "Fondation de Rome (Tite-Live, Boucheron) ; le bon prince ; Auguste (Suétone, Prima Porta, auctoritas Machiavel ↔ De Gaulle) ; essai de spécialité fait sur table. À refermer."
-   },
-   {
-    "no": "S2",
-    "titre": "Didon, reine de Carthage",
-    "parcours": "amorce OE3 « Amour, amours » (piste naturelle)",
-    "oeuvre": "Virgile, Énéide IV (lue en entier) — documents : colère de Didon, Énée quitte Carthage, périple d'Énée",
-    "periode": "nov. 2026-",
-    "couleur": "#7d5480",
-    "etat": "lancée le 09/11",
-    "detail": "furor vs pietas, tragédie de l'abandon ; réceptions (Turner, Purcell, Césaire…) ; mots-concepts à construire."
-   }
+    "sourcePronote": "Export Pronote du 15/11/2026 (dossier ____EDT_EXPORTS_PRONOTE de la spécialité)",
+    "sourceBudget": "Créneaux de l'agenda Google, année scolaire 2026-27 (2 h par créneau)",
+    "arrete": "2026-11-17"
+  },
+  "budget": {
+    "total": 134,
+    "consomme": 36,
+    "aVenir": 98,
+    "unite": "h"
+  },
+  "priorites": {
+    "court": [
+      {
+        "txt": "Séquence 2 « Didon, reine de Carthage » : séance 1 lancée (09/11) — documents distribués",
+        "echeance": "en cours",
+        "fait": false
+      },
+      {
+        "txt": "Séance visio du 13/11 : Ecce Larentia chap. 2 + fiche Virgile + préparation Didon",
+        "echeance": "13/11",
+        "dateEcheance": "2026-11-13",
+        "fait": true
+      },
+      {
+        "txt": "Contrôle rituel #3 : vocabulaire Ecce Larentia chap. 1 (leçons I-III)",
+        "echeance": "16/11",
+        "dateEcheance": "2026-11-16",
+        "fait": true
+      },
+      {
+        "txt": "Élaborer le programme de révision du CR4 (intégrer les coordonnants vus sur Didon, tableau des principaux coordonnants) — les élèves demandent plus de temps pour réviser",
+        "echeance": "avant le CR4",
+        "fait": false,
+        "urgent": true
+      },
+      {
+        "txt": "Concevoir la petite app de mythologie devenue nécessaire pour les contrôles rituels (noms grecs et latins des divinités, notes de l'édition GF de l'Énéide)",
+        "echeance": "CR4 en vue",
+        "fait": false,
+        "urgent": true
+      },
+      {
+        "txt": "Bâtir la trace écrite Séq. 1 « prince idéal / Auguste » : cours simple en 2-3 points (laius Romulus, auctoritas, Rosanvallon + corpus des figures du prince, Suétone) + fiche complète avant le DS2",
+        "echeance": "nov.",
+        "fait": false,
+        "urgent": true
+      },
+      {
+        "txt": "Faire un point portfolio (attendu par les élèves)",
+        "echeance": "20/11",
+        "dateEcheance": "2026-11-20",
+        "fait": false,
+        "urgent": true
+      },
+      {
+        "txt": "Élaborer le sujet du DS sur l'essai",
+        "echeance": "23/11",
+        "dateEcheance": "2026-11-23",
+        "fait": false,
+        "urgent": true
+      },
+      {
+        "txt": "Prévoir une courte explication sur Janus (demande d'une élève)",
+        "echeance": "20/11",
+        "dateEcheance": "2026-11-20",
+        "fait": false
+      },
+      {
+        "txt": "Prévoir un petit temps de méthodo sur l'essai au prochain cours",
+        "echeance": "20/11",
+        "dateEcheance": "2026-11-20",
+        "fait": false
+      }
+    ],
+    "moyen": [
+      {
+        "txt": "Dérouler la séquence Didon (Énéide IV) : furor vs pietas, tragédie de l'abandon — l'œuvre a été lue en entier à la Toussaint",
+        "echeance": "nov.-déc."
+      },
+      {
+        "txt": "Refermer l'OE1 « La cité… » : l'essai « Gouverner » a été fait sur table le 06/11 (grille paliers 1-4) — restitution et correction",
+        "echeance": "T2"
+      },
+      {
+        "txt": "Langue : pronoms (is/ea/id, réfléchi), parfait, premières subordinations — au service des textes",
+        "echeance": "T2"
+      },
+      {
+        "txt": "Poursuivre Ecce Larentia / Via Latina (chap. 2 en cours) : oralisation + traduction",
+        "echeance": "T2"
+      },
+      {
+        "txt": "Concevoir l'app de révision de l'Énéide pour le contrôle de lecture (diégèse, personnages, extraits latins à situer)",
+        "echeance": "nov. (idée des bilans 06-13/11)"
+      },
+      {
+        "txt": "Quiz de mythologie sur app projetée (images/textes à deviner), éventuellement en rituel — enthousiasme des élèves",
+        "echeance": "T2 (idée du bilan du 13/11)"
+      },
+      {
+        "txt": "Séance de traduction avec dictionnaires au CDI (réserver la salle info)",
+        "echeance": "T2 (idée du bilan du 13/11)"
+      },
+      {
+        "txt": "Renforcer la séquence Didon : ressources des manuels (Hatier 1re ?) et big menu",
+        "echeance": "déc. (bilans du 13-16/11)"
+      },
+      {
+        "txt": "Finaliser la progression annuelle avec le big menu et les assistants IA",
+        "echeance": "T2-T3",
+        "urgent": true
+      }
+    ],
+    "long": [
+      {
+        "txt": "Couvrir les 4 OE du BO : cité (en cours) → Amour, amours (Didon, piste naturelle) → Justice des dieux (séquence BIEN_, Médée / De Clementia) → Méditerranée (Actium, Florus)",
+        "echeance": "année"
+      },
+      {
+        "txt": "Énéide fil rouge : I-IV lus ✅ → V-VIII (T2) → IX-XII en cursive ciblée (T3) ; contrôle/oral à chaque reprise de vacances",
+        "echeance": "année"
+      },
+      {
+        "txt": "Figures féminines de la Méditerranée : Didon → Médée → Cléopâtre → Livie (+ poésie : Ariane, Cynthia)",
+        "echeance": "chantier transversal"
+      },
+      {
+        "txt": "Épreuve écrite de fin de 1ère (2 h) — sprint épreuve en mai-juin (sujets type, Énéide VI)",
+        "echeance": "mai-juin"
+      }
+    ]
+  },
+  "jalons": [
+    {
+      "date": "2026-09-18",
+      "type": "ds",
+      "txt": "DS n°1 : grands repères antiques + langue",
+      "etat": "réalisé"
+    },
+    {
+      "date": "2026-09-25",
+      "type": "controle",
+      "txt": "Contrôle rituel #1 : 1re déclinaison",
+      "etat": "réalisé"
+    },
+    {
+      "date": "2026-10-02",
+      "type": "alerte",
+      "txt": "Distanciel (blocages) : travaux Auguste en autonomie, contrôles #2-3 décalés",
+      "etat": "fait"
+    },
+    {
+      "date": "2026-10-12",
+      "type": "dm",
+      "txt": "DM bilan « Auguste » (Suétone, Prima Porta, portraits présidents, auctoritas) — bonus",
+      "etat": "réalisé"
+    },
+    {
+      "date": "2026-10-16",
+      "type": "lecture",
+      "txt": "Lecture obligatoire Toussaint : Énéide I-IV « le crayon à la main »",
+      "etat": "réalisé"
+    },
+    {
+      "date": "2026-11-02",
+      "type": "controle",
+      "txt": "Contrôles rituels #2-3 + bilan lecture Énéide + réception (Turner)",
+      "etat": "réalisé"
+    },
+    {
+      "date": "2026-11-06",
+      "type": "essai",
+      "txt": "Essai OE1 sur table (1h30) : « Gouverner : du mythe à l'histoire, quel prince idéal ? »",
+      "etat": "réalisé"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "jalon",
+      "txt": "Lancement séq. 2 : Didon, reine de Carthage (Énéide IV)",
+      "etat": "réalisé"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "cours",
+      "txt": "Visio : Larentia chap. 2 + fiche Virgile + préparation Didon",
+      "etat": "réalisé"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "controle",
+      "txt": "Contrôle rituel #3 : Ecce Larentia chap. 1",
+      "etat": "réalisé"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "conference",
+      "txt": "Visio « Ulysse 26 » : peut-on adapter l'Odyssée ? (18h-19h)",
+      "etat": "à venir"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "controle",
+      "txt": "Contrôle de lecture : Énéide I-IV (Pronote : pour le 23/11)",
+      "etat": "à venir",
+      "id": "spe-jalon-controle-lecture-eneide"
+    },
+    {
+      "date": "2026-11-27",
+      "type": "ds",
+      "txt": "DS sur la Séquence 1 — Le Prince Idéal, Auguste (avec essai, Pronote : pour le 27/11)",
+      "etat": "à venir",
+      "id": "spe-jalon-ds-sequence-1"
+    },
+    {
+      "date": "2026-12-19",
+      "type": "lecture",
+      "txt": "Vacances de Noël : lecture Énéide V-VIII (volume à décider)",
+      "etat": "à venir"
+    }
   ],
-  "pistes": [
-   {
-    "titre": "OE3 « Amour, amours »",
-    "detail": "après Didon : Cléopâtre (fiche A5 / séquence BIEN_, Florus), Livie (Suétone, Hatier p. 144), poésie : Catulle 64 (Ariane), Propèce (Cynthia), Sappho (trad.)"
-   },
-   {
-    "titre": "OE2 « Justice des dieux, justice des hommes » (T2)",
-    "detail": "séquence BIEN_ à adapter ; corpus : Médée (Sénèque/Ovide), Sénèque De Clementia (sujet corrigé Hatier p. 126-128), Cicéron ; Énéide VI (Enfers) pour relancer la lecture"
-   },
-   {
-    "titre": "OE4 « Méditerranée : conflits, influences et échanges » (T3)",
-    "detail": "BIEN_ Méditerranée + dossier Eureka ; Actium/bouclier d'Énée (chant VIII), Florus, César, limes/provincia/foedus, cultes orientaux"
-   },
-   {
-    "titre": "Énéide fil rouge",
-    "detail": "I-IV lus ✅ → V-VIII (T2 : Nisus/Euryale, Enfers, bouclier) → IX-XII en cursive (T3 : mort de Turnus = boucle Romulus)"
-   },
-   {
-    "titre": "Figures féminines de la Méditerranée",
-    "detail": "chantier transversal : Didon, Médée, Cléopâtre, Livie, Ariane, Cynthia, Sappho, Didon élégiaque (Héroïdes 7)"
-   },
-   {
-    "titre": "Sprint épreuve (mai-juin)",
-    "detail": "sujets type F3 (2 h : texte + traduction + langue/culture-essai 500 mots), versions/thèmes programmatiques, sujet prêt Énéide VI"
-   }
+  "vacances": [
+    {
+      "debut": "2026-10-17",
+      "fin": "2026-11-02",
+      "txt": "Vacances de Toussaint"
+    },
+    {
+      "debut": "2026-12-19",
+      "fin": "2027-01-04",
+      "txt": "Vacances de Noël"
+    },
+    {
+      "debut": "2027-02-13",
+      "fin": "2027-03-01",
+      "txt": "Vacances d'hiver"
+    },
+    {
+      "debut": "2027-04-10",
+      "fin": "2027-04-26",
+      "txt": "Vacances de printemps"
+    }
+  ],
+  "progression": {
+    "statut": "en chantier",
+    "source": "Cadre v1 du 02/11/2026, volontairement NON FIGÉ : pistes par OE, pas de calendrier impératif. Principe validé : exploiter en priorité des séquences de collègues (BIEN_, SUPER, Hatier) et les adapter.",
+    "sequences": [
+      {
+        "no": "S1",
+        "titre": "La cité entre réalités et utopies — Gouverner : quel prince idéal ?",
+        "parcours": "OE1 du BO",
+        "oeuvre": "Corpus : Quinte-Curce VIII, 8 ; Rabelais Gargantua 50 ; Machiavel XVII ; Suétone (Néron, Auguste) ; Pline, Panégyrique",
+        "periode": "sept.-nov. 2026",
+        "couleur": "#5b7150",
+        "etat": "en cours (essai fait le 06/11)",
+        "detail": "Fondation de Rome (Tite-Live, Boucheron) ; le bon prince ; Auguste (Suétone, Prima Porta, auctoritas Machiavel ↔ De Gaulle) ; essai de spécialité fait sur table. À refermer."
+      },
+      {
+        "no": "S2",
+        "titre": "Didon, reine de Carthage",
+        "parcours": "amorce OE3 « Amour, amours » (piste naturelle)",
+        "oeuvre": "Virgile, Énéide IV (lue en entier) — documents : colère de Didon, Énée quitte Carthage, périple d'Énée",
+        "periode": "nov. 2026-",
+        "couleur": "#7d5480",
+        "etat": "lancée le 09/11",
+        "detail": "furor vs pietas, tragédie de l'abandon ; réceptions (Turner, Purcell, Césaire…) ; mots-concepts à construire."
+      }
+    ],
+    "pistes": [
+      {
+        "titre": "OE3 « Amour, amours »",
+        "detail": "après Didon : Cléopâtre (fiche A5 / séquence BIEN_, Florus), Livie (Suétone, Hatier p. 144), poésie : Catulle 64 (Ariane), Propèce (Cynthia), Sappho (trad.)"
+      },
+      {
+        "titre": "OE2 « Justice des dieux, justice des hommes » (T2)",
+        "detail": "séquence BIEN_ à adapter ; corpus : Médée (Sénèque/Ovide), Sénèque De Clementia (sujet corrigé Hatier p. 126-128), Cicéron ; Énéide VI (Enfers) pour relancer la lecture"
+      },
+      {
+        "titre": "OE4 « Méditerranée : conflits, influences et échanges » (T3)",
+        "detail": "BIEN_ Méditerranée + dossier Eureka ; Actium/bouclier d'Énée (chant VIII), Florus, César, limes/provincia/foedus, cultes orientaux"
+      },
+      {
+        "titre": "Énéide fil rouge",
+        "detail": "I-IV lus ✅ → V-VIII (T2 : Nisus/Euryale, Enfers, bouclier) → IX-XII en cursive (T3 : mort de Turnus = boucle Romulus)"
+      },
+      {
+        "titre": "Figures féminines de la Méditerranée",
+        "detail": "chantier transversal : Didon, Médée, Cléopâtre, Livie, Ariane, Cynthia, Sappho, Didon élégiaque (Héroïdes 7)"
+      },
+      {
+        "titre": "Sprint épreuve (mai-juin)",
+        "detail": "sujets type F3 (2 h : texte + traduction + langue/culture-essai 500 mots), versions/thèmes programmatiques, sujet prêt Énéide VI"
+      }
+    ]
+  },
+  "grammaire": {
+    "vus": [
+      {
+        "titre": "Cas et fonctions ; structure canonique de la phrase latine ; déclinaisons 1-3 (identification par le génitif)",
+        "date": "sept."
+      },
+      {
+        "titre": "Indicatif : infectum/perfectum, temps primitifs, conjugaisons 1-4",
+        "date": "18/09-28/09"
+      },
+      {
+        "titre": "Verbe sum au présent et au parfait",
+        "date": "02/10"
+      },
+      {
+        "titre": "Adjectifs de la 1re classe (modèle bonus)",
+        "date": "02/10"
+      },
+      {
+        "titre": "Interrogation : -ne, num, nonne / ita, minime",
+        "date": "21/09"
+      },
+      {
+        "titre": "Pronoms démonstratifs (usage anaphorique et possessif) + réfléchi",
+        "date": "16/10-02/11"
+      },
+      {
+        "titre": "Le futur de l'indicatif (Énéide I, 274-295)",
+        "date": "09/11"
+      }
+    ],
+    "aVoir": [
+      {
+        "titre": "Le parfait (approfondissement) — amorcé via Eutrope en option, à consolider en spé",
+        "echeance": "T2"
+      },
+      {
+        "titre": "Premières subordinations ; participes, infinitive, ablatif absolu (attendus T2)",
+        "echeance": "T2"
+      },
+      {
+        "titre": "4e-5e déclinaisons, adjectifs 2e classe, passif",
+        "echeance": "à planifier"
+      },
+      {
+        "titre": "Morphologie spé 1ère (locatif, formes syncopées, passif impersonnel, double datif, génitif/ablatif de qualité…)",
+        "echeance": "T2-T3"
+      }
+    ]
+  },
+  "culture": {
+    "auteursTextes": [
+      {
+        "titre": "Virgile, Énéide I (273-277 ; 274-295 prophétie de Jupiter) — lecture intégrale chants I-IV",
+        "contexte": "fondation, roman national, fil rouge de l'année"
+      },
+      {
+        "titre": "Tite-Live, Ab urbe condita I, 6-7 (champ lexical de la violence)",
+        "contexte": "fratricide fondateur"
+      },
+      {
+        "titre": "Lhomond (juxtalinéaire, remise en ordre)",
+        "contexte": "langue débutant"
+      },
+      {
+        "titre": "Quinte-Curce, Vie d'Alexandre VIII, 8 ; Rabelais, Gargantua 50 ; Machiavel, Le Prince XVII",
+        "contexte": "le « bon prince » — OE1"
+      },
+      {
+        "titre": "Suétone, Vie des douze Césars — Néron ; portrait d'Auguste (§ Parthes, dominus, pater patriae)",
+        "contexte": "regard de l'historien vs panégyrique"
+      },
+      {
+        "titre": "Pline le Jeune, Panégyrique de Trajan",
+        "contexte": "l'éloge du prince"
+      },
+      {
+        "titre": "Exemplier « auctoritas » : de Machiavel à Charles de Gaulle",
+        "contexte": "notion politique, étymologie augere → Augustus"
+      },
+      {
+        "titre": "Via Latina, Ecce Larentia I-III (chap. 2 en cours)",
+        "contexte": "oralisation, langue"
+      }
+    ],
+    "referencesCulturelles": [
+      "P. Boucheron, Quand l'histoire fait des dates (pomerium, Lapis Niger, mythe/archéologie)",
+      "Ambrogio Lorenzetti, Allégorie du bon gouvernement + P. Rosanvallon (vidéo)",
+      "Auguste de Prima Porta (cuirasse, Parthes, Cupidon/Vénus, polychromie) vs portraits officiels de la Ve République",
+      "Turner, Didon bâtissant Carthage (réception de l'épopée)",
+      "TED-Ed « Why should you read Virgil's Aeneid? », La P'tite Librairie (présentation de l'Énéide)",
+      "Frise du monde gréco-romain + carte diachronique de la Méditerranée antique",
+      "Res gestae divi Augusti §34 (auctoritas)"
+    ],
+    "periodes": [
+      {
+        "titre": "Fondation de Rome (mythe et archéologie)",
+        "detail": "Romulus, pomerium, Lapis Niger"
+      },
+      {
+        "titre": "Rome augustéenne",
+        "detail": "Empire, statuaire, roman national, auctoritas"
+      },
+      {
+        "titre": "Réceptions modernes",
+        "detail": "Renaissance (Machiavel), XVIIIe ? , portrait présidentiel, De Gaulle, Turner"
+      }
+    ],
+    "motsConcepts": [
+      "pietas",
+      "pomerium",
+      "urbs",
+      "auctoritas",
+      "imperium"
+    ]
+  },
+  "seances": [
+    {
+      "date": "2026-09-04",
+      "time": "15:00",
+      "hours": 2,
+      "titre": "Cadrage de l'année : entrée dans l'objet d'étude « La cité entre réalités et utopies » — la fon",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Cadrage de l'année : entrée dans l'objet d'étude « La cité entre réalités et utopies » — la fondation de RomeObjectifs :mobiliser les repères de la guerre de Troie et des origines du latin ; situer Virgile et Tite-Live face au mythe de la fondation ; s'initier aux fondamentaux de la langue latine ; mémoriser le mot-concept PIETASDéroulé :Entrée dans l'objet d'étude par la fondation de Rome.- Rappel des principales figures de la guerre de Troie- Rappel sur les origines indo-européennes du latin- Présentation de Virgile et Tite-Live et des deux approches du mythe de la fondation de Rome, par l'épopée et l'écriture du roman national romain- capsule grammaticale : première approche des fondamentaux de la langue latine- Question de fin de cours pour la prochaine séance : « Pourquoi Romulus doit-il tuer son frère pour fonder Rome ? » Lexique : mot-concept => PIETAS (d'Enée)",
+      "resume": "Cadrage de l'année : entrée dans l'objet d'étude « La cité entre réalités et utopies » — la fondation de RomeObjectifs :mobiliser les repères de la guerre de Troie et des origines du latin ; situer Virgile et Tite-Live face au mythe de la fondation ; s'initier",
+      "elements": [
+        "Connaître et mobiliser œuvres, genres, mythes, figures et notions majeures de l'AntiquitéConnaître les grands repères de l’histoire grecque et romaine Identifier et analyser formes, fonctions et structures syntaxiques La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin Situer textes, auteurs, événements et espaces dans leurs contextes"
+      ],
+      "afaire": [
+        "Pour le 07/09Eleve_travail_prochaine_seance.pdf "
+      ],
+      "absents": 1
+    },
+    {
+      "date": "2026-09-07",
+      "time": "16:00",
+      "hours": 2,
+      "titre": "Séq. 1 — La fondation de Rome : le fratricide fondateur (Boucheron) et la langue : cas et fonct",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Séq. 1 — La fondation de Rome : le fratricide fondateur (Boucheron) et la langue : cas et fonctionsOjectif :problématiser la violence fondatrice (Romulus/Remus, pomerium, Lapis Niger) ; distinguer les deux approches du mythe (épopée / roman national) ; identifier cas, fonctions et déclinaisons ; mémoriser le mot-concept POMERIUMPoursuite du travail commencé sur la fondation de Romevisionnage du documentaire Arte avec Patrick Boucheron https://www.arte.tv/fr/videos/086127-007-A/quand-l-histoire-fait-dates/ => éléments de réponse à la question « Pourquoi Romulus doit-il tuer son frère pour fonder Rome ? »P. Boucheron pose le geste fondateur du sillon qui délimite le pomerium comme une limite religieuse, administrative et politiqueRome est fondée comme une colonie grecqueComment concilier le fratricide initial avec la grandeur de Rome ?Que penser d'un système politique fondé par un acte de violence initial ?P. Boucheron fait le lien entre la fiction politique et la realité des découvertes archéologique (Lapis Niger)P. Boucheron pose la question de la fondation de Rome en ces termes : \"L'histoire de la fondation de Rome n'est-elle pas l'histoire du mythe de la fondation de Rome?\"Lexique : mot-concept => POMERIUM Travail sur la languedialogue magister-discipuli en latin à partir d'un texte simpleDistribution de fiches de grammaire et travail sur les notions de cas et fonctionsTravail d'identification des cas et des fonctions dans les phrases latineIdentifications des déclinaisons à partir du génitifTravail à partir d'un texteDistribution d'un extrait de Tite-Live (Ier siècle av. J.-C. - Ier siècle ap. J.-C.), Ab urbe condita, I, 6-71) Relevez le champ lexical de la violence (l. 9 à 14) (relever les mots en latin). Pourquoi les deux frères en viennent-ils aux mains? 2) Quels éléments de la légende les archéologues ont-ils retrouvés ? Aidez-vous de cette vidéo https://www.youtube.com/watch?v=fYKGha8dS3) Mettez en perspective l'usage de la violence dans l'accès au pouvoir à travers des textes de votre choix de l'histoire romaine (fondation de Rome, guerres civiles, Empire) et de l'histoire contemporaine. Un court paragraphe d’une demi-page environ. Eleve_travail_prochaine_seance.pdf ",
+      "resume": "Séq. 1 — La fondation de Rome : le fratricide fondateur (Boucheron) et la langue : cas et fonctionsOjectif :problématiser la violence fondatrice (Romulus/Remus, pomerium, Lapis Niger) ; distinguer les deux approches du mythe (épopée / roman national) ; identif",
+      "elements": [
+        "Analyser les procédés d’écriture et construire une interprétation littéraire Comprendre réception, transmission et transformations de l’Antiquité Connaître et mobiliser œuvres, genres, mythes, figures et notions majeures de l'AntiquitéConnaître les grands repères de l’histoire grecque et romaine Construire et développer une réflexion personnelle de type essai Construire une synthèse à partir de plusieurs textes ou documents Étudier étymologie, familles de mots et mots-concepts Identifier et analyser formes, fonctions et structures syntaxiques Interpréter un texte en mobilisant langue, contexte et culture La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin Problématiser une question littéraire, politique ou culturelle Rechercher, sélectionner et exploiter des ressources de manière autonome Réinvestir les faits de langue pour construire le sens Repérer des indices et formuler une hypothèse de sens Situer textes, auteurs, événements et espaces dans leurs contextes"
+      ],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-09-11",
+      "time": "15:00",
+      "hours": 2,
+      "titre": "Consolider les repères du monde gréco-romain : frise, carte et premier texte virgilien",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Consolider les repères du monde gréco-romain : frise, carte et premier texte virgilienObjectifs : construire une vision d’ensemble du continuum gréco-romain et consolider les premiers textes de la séquence avant d’entrer plus nettement dans le sous-ensemble « Gouverner : du mythe à l’histoire, quel prince idéal ? ».situer périodes, événements et auteurs sur une frise chronologique ; lire une carte diachronique de la Méditerranée antique ; oraliser un texte latin (Ecce Larentia) ; analyser Énéide I, 273-277 (continuité Troie → Énée → Romulus → Rome)Déroulé :Construction et correction d’une frise chronologique du monde grec et romain : grandes périodes, événements majeurs et principaux auteurs.Lecture d’une carte diachronique de la Méditerranée antique pour comprendre les continuités, conquêtes, circulations et héritages entre mondes grec et romain.Activité de reconnaissance iconographique à partir de grands repères de l’Antiquité.Latin oralisé avec Ecce Laurentia : lecture, compréhension globale et questions simples.Identification cas / fonction + traductionTravail sur Virgile, Énéide I, 273-277 : continuité Troie → Énée → Romulus → Rome ; ELEVE_frise_grece_rome_A3.png ELEVE_Leçon-1-Manuel Via Latina De Lingua et vita Romanorum_c.pdf ELEVE_Mediterranée_antique_OK.png ",
+      "resume": "Consolider les repères du monde gréco-romain : frise, carte et premier texte virgilienObjectifs : construire une vision d’ensemble du continuum gréco-romain et consolider les premiers textes de la séquence avant d’entrer plus nettement dans le sous-ensemble « ",
+      "elements": [
+        "Comparer textes, traductions, images, objets ou représentations Connaître les grands repères de l’histoire grecque et romaine Identifier et analyser formes, fonctions et structures syntaxiques La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin Repérer des indices et formuler une hypothèse de sens Situer textes, auteurs, événements et espaces dans leurs contextes"
+      ],
+      "afaire": [],
+      "absents": 1
+    },
+    {
+      "date": "2026-09-14",
+      "time": "16:00",
+      "hours": 2,
+      "titre": "Séq. 1 — séance 1 « Gouverner » : le « bon prince » chez Quinte-Curce, Rabelais et Machiavel",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Séq. 1 — séance 1 « Gouverner » : le « bon prince » chez Quinte-Curce, Rabelais et MachiavelObjectifs :réviser les grands repères antiques; comparer trois conceptions du bon prince ; classer les caractérisations dans un tableau à trois colonnes ; s'entraîner à l'identification des cas (nominatif, vocatif, accusatif, ablatif) ; recomposer un texte de Lhomond à l'aide du juxtalinéaireDéroulé :Révision des grands repères de l'antiquité gréco-romaine à partir de la frisePoursuite des exercices de grammaire sur l'identification du nominatif, vocatif, accusatif et certains ablatifsTexte de Lhomond : travail de remise dans le bon ordre + premier travail de compréhension des phrases latines grâce au juxtalinéaire Entrée dans la séquence 1 – La cité entre réalités et utopies avec le premier sous-ensembleSéance 1 - Gouverner : du mythe à l'histoire : quel prince idéal ?Distribution de textes Quinte Curce, Vie d'Alexandre, VIII, 8,(en traduction), Rabelais, Gargantua, chap 50, Machiavel, Le Prince, chap XVIILecturetravail de repérage dans les textes de ce qui caractérise le \"bon prince\" pour les auteursdébut d'un tableau à trois colonnes pour classer les caractérisations du \"bon prince\" selon Quinte Curce, Vie d'Alexandre, VIII, 8,(en traduction), Rabelais, Gargantua, chap 50, Machiavel, Le Prince, chap XVII",
+      "resume": "Séq. 1 — séance 1 « Gouverner » : le « bon prince » chez Quinte-Curce, Rabelais et MachiavelObjectifs :réviser les grands repères antiques; comparer trois conceptions du bon prince ; classer les caractérisations dans un tableau à trois colonnes ; s'entraîner à",
+      "elements": [
+        "Analyser les procédés d’écriture et construire une interprétation littéraire Comparer textes, traductions, images, objets ou représentations Connaître et mobiliser œuvres, genres, mythes, figures et notions majeures de l'AntiquitéConnaître les grands repères de l’histoire grecque et romaine Interpréter un texte en mobilisant langue, contexte et culture Justifier une réponse ou une interprétation par des indices précis La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Mettre en relation mondes anciens et monde moderne/contemporain Problématiser une question littéraire, politique ou culturelle Situer textes, auteurs, événements et espaces dans leurs contextes"
+      ],
+      "afaire": [
+        "Pour le 18/09Contrôle : Grands repères antiquesGuerre de Troie. Connaître son origine. Connaître les protagonistes vus en cours et à quel camp ils appartiennent (Troyens : Priam, Hector, Paris, Enée / Grecs : Agamemnon, Ménélas, Hélène, Achille, Ulysse).Romulus et Remus : faire le lien avec la guerre de Troie, connaître les principaux jalons de leur histoire : mère, père, ancêtre, raison du conflitFrise chronologique : des Mycéniens jusqu'à la chute de l'Empire Romain d'occident. Savoir dater les grands évènements vus en cours / Savoir citer et situer dans le temps des figures littéraires majeures grecques et romaines vues en cours.Langue :connaître la structure canonique d'une phrase latine : sujet - compléments - verbe,savoir relier la fonction d'un mot (sujet, attribut du sujet, COD, COI, Comp. Circonstanciel) avec son cas latin, savoir identifier les mots aux nominatif, au vocatif, à l'accusatif, à l'ablatif dans une phrase latine (avec des mots de la 1ère, 2ème, 3ème déclinaisons)connaître la première déclinaison des noms en entier (rosa,ae)savoir identifier la déclinaison d'un nom à partir de son génitifsavoir traduire une phrase latine simple avec le vocabulaire fourni.Voir les docs sur le digipad : "
+      ],
+      "absents": 0
+    },
+    {
+      "date": "2026-09-18",
+      "time": "15:00",
+      "hours": 2,
+      "titre": "DS n°1 : grands repères antiques et langue + Langue (phrase latine) + « Gouverner » (1) : class",
+      "statut": "publié",
+      "theme": "",
+      "cat": "Devoir sur table DS ",
+      "contenu": "DS n°1 : grands repères antiques et langue + Langue (phrase latine) + « Gouverner » (1) : classer le « bon prince »Objectifs :restituer les grands repères antiques (Troie, Romulus, frise) ; identifier cas, déclinaisons et conjugaison ; classer les caractérisations du bon prince (Quinte-Curce, Rabelais, Machiavel) Contrôle : Grands repères antiquesGuerre de Troie : Connaître son origine. Connaître les protagonistes vus en cours et à quel camp ils appartiennent (Troyens : Priam, Hector, Paris, Enée / Grecs : Agamemnon, Ménélas, Hélène, Achille, Ulysse).Romulus et Remus : faire le lien avec la guerre de Troie, connaître les principaux jalons de leur histoire : mère, père, ancêtre, raison du conflitFrise chronologique : des Mycéniens jusqu'à la chute de l'Empire Romain d'occident. Savoir dater les grands évènements vus en cours / Savoir citer et situer dans le temps des figures littéraires majeures grecques et romaines vues en cours.Langue :connaître la structure canonique d'une phrase latine : sujet - compléments - verbe,savoir relier la fonction d'un mot (sujet, attribut du sujet, COD, COI, Comp. Circonstanciel) avec son cas latin, savoir identifier les mots aux nominatif, au vocatif, à l'accusatif, à l'ablatif dans une phrase latine (avec des mots de la 1ère, 2ème, 3ème déclinaisons)connaître la première déclinaison des noms en entier (rosa,ae)savoir identifier la déclinaison d'un nom à partir de son génitifsavoir traduire une phrase latine simple avec le vocabulaire fourni.Voir les documents sur le digipad :  Langue : travail sur les temps de l'indicatifObjectifs :reconnaître à quelle conjugaison appartient un verbesavoir identifier les temps de l'infectum et du perfectum en fonction du radical du verbesavoir reconnaître le temps en fonction du suffixesavoir reconnaître la personne en fonction de la désinenceidentifier et traduire un verbe dans un textePoursuite du travail de la séquence 1 – La cité entre réalités et utopies / Séance 1 - Gouverner : du mythe à l'histoire : quel prince idéal ?objectif : classer les caractérisations du \"bon prince\" selon Quinte Curce, Vie d'Alexandre, VIII, 8,(en traduction), Rabelais, Gargantua, chap 50, Machiavel, Le Prince, chap XVII",
+      "resume": "DS n°1 : grands repères antiques et langue + Langue (phrase latine) + « Gouverner » (1) : classer le « bon prince »Objectifs :restituer les grands repères antiques (Troie, Romulus, frise) ; identifier cas, déclinaisons et conjugaison ; classer les caractérisat",
+      "elements": [
+        "Analyser les procédés d’écriture et construire une interprétation littéraire Comparer textes, traductions, images, objets ou représentations Connaître et mobiliser œuvres, genres, mythes, figures et notions majeures de l'AntiquitéConnaître les grands repères de l’histoire grecque et romaine Construire une synthèse à partir de plusieurs textes ou documents Identifier et analyser formes, fonctions et structures syntaxiques Interpréter un texte en mobilisant langue, contexte et culture La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Mettre en relation mondes anciens et monde moderne/contemporain Problématiser une question littéraire, politique ou culturelle Situer textes, auteurs, événements et espaces dans leurs contextes"
+      ],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-09-21",
+      "time": "16:00",
+      "hours": 2,
+      "titre": "Correction du DS, l'interrogation en latin + Seq 1 : caractérisations du \"bon prince\" selon Qui",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Correction du DS, l'interrogation en latin + Seq 1 : caractérisations du \"bon prince\" selon Quinte Curce, Vie d'Alexandre, VIII, 8,(en traduction), Rabelais, Gargantua, chap 50, Machiavel, Le Prince, chap XVIIObjectifs :corriger ses erreurs du contrôle ; identifier les questions en latin (-ne, num, nonne) et y répondre (ita / minime) ; repérer le lexique et les procédés qui caractérisent la figure du prince idéal Rendu et correction du contrôle => Retour sur les erreursTravail sur les exercices de Via Latina \"Ecce Larentia\"Objectifs: identifier les types de questions en latin grâce au mot interrogatif : -ne, num, nonnerépondre : ita (= oui, affimative), minime (non, négative).Poursuite du travail de la séquence 1 – La cité entre réalités et utopies / Séance 1 - Gouverner : du mythe à l'histoire : quel prince idéal ?Objectifs :classer les caractérisations du \"bon prince\" selon Quinte Curce, Vie d'Alexandre, VIII, 8,(en traduction), Rabelais, Gargantua, chap 50, Machiavel, Le Prince, chap XVIIrepérage du lexique et des procédés littéraires permettant de caractériser la \"figure du prince idéal\"",
+      "resume": "Correction du DS, l'interrogation en latin + Seq 1 : caractérisations du \"bon prince\" selon Quinte Curce, Vie d'Alexandre, VIII, 8,(en traduction), Rabelais, Gargantua, chap 50, Machiavel, Le Prince, chap XVIIObjectifs :corriger ses erreurs du contrôle ; ident",
+      "elements": [
+        "Analyser les procédés d’écriture et construire une interprétation littéraire Comparer textes, traductions, images, objets ou représentations Construire une synthèse à partir de plusieurs textes ou documents Identifier et analyser formes, fonctions et structures syntaxiques Interpréter un texte en mobilisant langue, contexte et culture La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin Mettre en relation mondes anciens et monde moderne/contemporain"
+      ],
+      "afaire": [
+        "Pour le 25/09Vocabulaire : apprendre les mots de la 1ère déclinaisons de la Fiche N°1Relire la fiche de grammaire sur la conjugaisonLire le texte de Suétone et repérer les formes verbales"
+      ],
+      "absents": 0
+    },
+    {
+      "date": "2026-09-25",
+      "time": "15:00",
+      "hours": 2,
+      "titre": "Contrôle rituel #1 + Méthodo Essai + Seq 1 séance 1 « Gouverner » : le regard de l'historien (S",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Contrôle rituel #1 + Méthodo Essai + Seq 1 séance 1 « Gouverner » : le regard de l'historien (Suétone, Néron) et l'éloge du prince (Pline, Trajan)Objectifs :traduire un texte avec les noms de la 1ère déclinaison ; s'approprier la méthode de l'essai (spécialité) ; mettre en relation Lorenzetti et l'idée de bon gouvernement ; caractériser le prince idéal chez l'historien (Suétone) et le panégyrique (Pline)Contrôle rituel #1 : vocabulaire et traduction, noms de la première déclinaison Méthodologie de l'essai à partir de documents supports fournis : méthode et exemple Séquence 1 - La cité entre réalité et utopie / Séance 1 : gouverver, du mythe à l'histoire : la figure du \"Prince idéal\"Projection et échanges autour de la vidéo de Pierre Rosenvallon sur l'idée du bon gouvernement : https://www.youtube.com/watch?v=Tg2rPB8HJDUmise en perspective avec la fresque allégorique du bon gouvernement d'Ambrogio Lorenzetti Travail sur le texte de Suétone sur Néron, Vie des douze Césarsoralisationrepérage des verbesmise en relation avec les autres textes étudiés => ici le regard de l'historien qui construit la figure du prince idéal Travail sur le texte de Pline le Jeune, Panégyrique de Trajantravail de remise dans l'ordre de la traductionrepérage des procédés littéraires pour valoriser Trajan : exclamatives, expressions hyperboliquesconstruire un paragraphe argumenté.pdf méthodo_essai_hatier.pdf ELEVE_Méthodologie_de_l_essai_spé_latin.pdf ",
+      "resume": "Contrôle rituel #1 + Méthodo Essai + Seq 1 séance 1 « Gouverner » : le regard de l'historien (Suétone, Néron) et l'éloge du prince (Pline, Trajan)Objectifs :traduire un texte avec les noms de la 1ère déclinaison ; s'approprier la méthode de l'essai (spécialité",
+      "elements": [
+        "Acquérir et mobiliser un lexique fréquentiel Analyser les procédés d’écriture et construire une interprétation littéraire Comparer textes, traductions, images, objets ou représentations Comprendre réception, transmission et transformations de l’Antiquité Connaître les grands repères de l’histoire grecque et romaine Construire et développer une réflexion personnelle de type essai Identifier et analyser formes, fonctions et structures syntaxiques Interpréter un texte en mobilisant langue, contexte et culture La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin Mettre en relation mondes anciens et monde moderne/contemporain Réinvestir les faits de langue pour construire le sens Repérer des indices et formuler une hypothèse de sens Situer textes, auteurs, événements et espaces dans leurs contextes"
+      ],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-09-28",
+      "time": "16:00",
+      "hours": 2,
+      "titre": "Langue : la 2e déclinaison (ludus, puer, monstrum) ; révisions conjugaison ; Séq. 1 - séance 2 ",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Langue : la 2e déclinaison (ludus, puer, monstrum) ; révisions conjugaison ; Séq. 1 - séance 2 : repères sur Auguste + méthode de l'essaiObjectifs :distinguer les trois modèles morphologiques de la 2e déclinaison ; réviser la conjugaison (infectum/perfectum) ; réactiver les repères historiques sur Auguste et la méthodologie de l'essai Grammaire : approfondissement sur les noms de la deuxième déclinaisonObjectif : comprendre les similtudes et différences entre les déclinaisons morphologiques de type ludus, puer et monstrum Mise en application avec des exercices de grammaire et de traductionRévisions sur la conjugaison Rappels de la méthodologie de l'essaiObjectif : se préparer en vue de l'épreuve de spécialité Rappels historiques sur Auguste ",
+      "resume": "Langue : la 2e déclinaison (ludus, puer, monstrum) ; révisions conjugaison ; Séq. 1 - séance 2 : repères sur Auguste + méthode de l'essaiObjectifs :distinguer les trois modèles morphologiques de la 2e déclinaison ; réviser la conjugaison (infectum/perfectum) ;",
+      "elements": [
+        "Connaître les grands repères de l’histoire grecque et romaine Construire et développer une réflexion personnelle de type essai Construire et justifier une traduction La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin Repérer des indices et formuler une hypothèse de sens Situer textes, auteurs, événements et espaces dans leurs contextes"
+      ],
+      "afaire": [],
+      "absents": 1
+    },
+    {
+      "date": "2026-10-02",
+      "time": "15:00",
+      "hours": 2,
+      "titre": "Séq. 1 - le portrait d'Auguste chez Suétone + préparation langue (adjectifs, verbe sum)",
+      "statut": "distanciel",
+      "theme": "",
+      "cat": "",
+      "contenu": "[Distanciel] Séq. 1 - le portrait d'Auguste chez Suétone + préparation langue (adjectifs, verbe sum)Objectifs :dégager les caractéristiques d'Auguste dans le corpus de Suétone (termes latins associés) ; observer les adjectifs de la 1ère classe ; mémoriser le verbe sum au présent et au parfait ; préparer Ecce Larentia II Le contrôle rituel de latin est décalé à notre prochain cours du lundi 05 octobre. (rappel : il portera sur les noms de la 2ème déclinaison de ager,agri à regnum,i, ainsi que sur la 2ème déclinaison des noms : modèles ludus, puer, monstrum sur la fiche des déclinaisons. )Travail pour aujourd'hui :1) lire le texte Ecce Larentia II et repérer d'éventuelles difficultés pour le prochain cours. 2) Dans le cadre de notre objet d'étude sur le \"prince idéal\" => regarder la vidéo sur Auguste https://ladigitale.dev/digiview/#/v/b62e038ecc57e973 => lire la fiche sur Auguste distribuée au dernier cours : Auguste, fondateur de l'Empire romain => dans le corpus de textes sur Auguste distribué au dernier cours, choisir 2 textes et dégager une ou plusieurs caractéristiques propres au personnage d’Auguste et la lecture qu’en donne Suétone. (noter les termes latins associés) Pour lundi en grammaire :a) regarder les adjectifs qualificatifs de la 1ère classe (fiche distribuée au dernier cours => modèle bonus) et observer les correspondances de désinences entre les 1ères et 2ème déclinaison des nomsb) apprendre le verbe être au présent et au parfait (fiche jointe)- sum es est sumus estis sunt- fui fuisti fuit fuimus fuistis fuerunt Tous les supports de cours sont également mis à disposition sur la page web :  Bon travail !.Fiche Sum.pdfELEVE_Ecce-Larentia-II.pdfCorpus 1 Portrait d'Auguste.pdfELEVE_Auguste.pdfCorpus 1 Portrait d'Auguste.pdf ELEVE_Auguste.pdf Adjectifs Pronoms.pdf ELEVE_Ecce-Larentia-II.pdf Fiche Sum.pdf ",
+      "resume": "[Distanciel] Séq. 1 - le portrait d'Auguste chez Suétone + préparation langue (adjectifs, verbe sum)Objectifs :dégager les caractéristiques d'Auguste dans le corpus de Suétone (termes latins associés) ; observer les adjectifs de la 1ère classe ; mémoriser le v",
+      "elements": [
+        "Connaître les grands repères de l’histoire grecque et romaine Identifier et analyser formes, fonctions et structures syntaxiques La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin"
+      ],
+      "afaire": [
+        "Pour le 05/10 Dans le cadre de notre objet d'étude sur le \"prince idéal\" => avoir regardé la vidéo sur Auguste https://ladigitale.dev/digiview/#/v/b62e038ecc57e973 => avoir lu la fiche sur Auguste distribuée au dernier cours : Auguste, fondateur de l'Empire romain => dans le corpus de textes sur Auguste distribué au dernier cours, avoir choisi 2 textes et dégagé une ou plusieurs caractéristiques propres au personnage d’Auguste et la lecture qu’en donne Suétone. (noter les termes latins associés) Grammaire a) regarder les adjectifs qualificatifs de la 1ère classe (fiche distribuée au dernier cours => modèle bonus) et observer les correspondances de désinences entre les 1ères et 2ème déclinaison des nomsb) apprendre le verbe être au présent et au parfait (fiche jointe)- sum es est sumus estis sunt- fui fuisti fuit fuimus fuistis fueruntPour le 12/10Contrôle rituel de vocabulaire et grammaire #2vocabulaire : apprendre les noms de la 2ème déclinaison de ager,agri à regnum,i.déclinaison : connaître la 2ème déclinaison des noms : modèles ludus, puer, monstrum sur la fiche des déclinaisons"
+      ],
+      "absents": 0
+    },
+    {
+      "date": "2026-10-05",
+      "time": "16:00",
+      "hours": 2,
+      "titre": "Séq. 1 - séance 2 « Gouverner » : Auguste, modèle du Prince — l'Auguste de Prima Porta et l'ima",
+      "statut": "distanciel",
+      "theme": "",
+      "cat": "",
+      "contenu": "[Distanciel] Séq. 1 - séance 2 « Gouverner » : Auguste, modèle du Prince — l'Auguste de Prima Porta et l'image du pouvoirObjectifs :analyser la statue d'Auguste de Prima Porta et formuler des hypothèses ; confronter aux portraits officiels des présidents de la Ve République ; s'entraîner sur Ecce Larentia II (ex. 10-16) (Du fait du mode distanciel, les contrôles rituels de voc et grammaire #2 et #3 sont décalés au lundi 12/10) Voici le travail à faire aujourd'hui pour cette séance à distance.Vous avez déjà pris connaissance des textes latins de Suétone (avec leur traduction), qui dessinent un portrait d'Auguste. Nous rassemblerons vos trouvailles au prochain cours. Aujourd'hui vous allez faire un petit travail sur l'Auguste de Prima Porta en autonomie. (oui j'ai bien compris que la statue de Prima Porta avait un fan club ! et à raison d'ailleurs...) Séance 2 : Auguste, le modèle du Prince.Problématique : comment Auguste met-il en scène son image pour affirmer un nouveau type de pouvoir ?=> Travail en autonomie sur l'Auguste de Prima Porta et confrontation avec l'époque contemporaine. 1) Observez attentivement la statue d'Auguste dite de Prima Porta (voir images jointes) .Sans faire de recherche dans un premier temps, relevez des éléments qui vous paraissent avoir été choisis pour donner d'Auguste l'image d'un homme exceptionnel ou puissant.Formulez des hypothèses : que veut-on faire comprendre au spectateur ? 2) Choisissez deux portraits officiels de présidents de la Ve République, appartenant à deux périodes différentes si possible.Pour chacun :1. Identifiez le président et la date du portrait.2. Décrivez brièvement sa posture, son vêtement, le décor et les objets visibles.3. Repérez les symboles du pouvoir ou de la République.4. Quelle(s) qualité(s) du président l'image cherche-t-elle selon vous à mettre en avant ?5. Comparez avec Prima Porta : trouvez des ressemblances et différences dans la manière de représenter le chef de l'État / le dépositaire du pouvoir. Pour vendredi 09/10 : préparer Ecce Larentia II Objectif : comprendre un texte latin (relativement) simple et mettre en application les règles de grammaire. Poursuivre le travail en autonomie commencé vendredi sur Ecce Larentia II.1. Relire attentivement le texte Ecce Larentia II.2. Écouter la lecture du texte avec le texte sous les yeux :https://ladigitale.dev/digiview/#/v/eebbeb6e99d492223. Faire les exercices 10, 11, 13, 14 et 16 Nous corrigerons et relirons le texte ensemble au prochain cours. Continuez à apprendre le verbe sum au présent et au parfait.(rappel : tous les supports de cours sont disponibles sur la page web du cours : ) Auguste polychromie 1.jpg Auguste cuirasse gros plan.jpg ",
+      "resume": "[Distanciel] Séq. 1 - séance 2 « Gouverner » : Auguste, modèle du Prince — l'Auguste de Prima Porta et l'image du pouvoirObjectifs :analyser la statue d'Auguste de Prima Porta et formuler des hypothèses ; confronter aux portraits officiels des présidents de la",
+      "elements": [
+        "Analyser les procédés d’écriture et construire une interprétation littéraire Comparer textes, traductions, images, objets ou représentations Connaître et mobiliser œuvres, genres, mythes, figures et notions majeures de l'AntiquitéConnaître les grands repères de l’histoire grecque et romaine Construire et justifier une traduction Justifier une réponse ou une interprétation par des indices précis La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin Mettre en relation mondes anciens et monde moderne/contemporain Rechercher, sélectionner et exploiter des ressources de manière autonome Situer textes, auteurs, événements et espaces dans leurs contextes"
+      ],
+      "afaire": [
+        "Pour le 09/10Ecce Larentia IIObjectif : comprendre un texte latin (relativement) simple et mettre en application les règles de grammaire.Pour vendredi 09/10, poursuivre le travail en autonomie commencé vendredi sur Ecce Larentia II.1. Relire attentivement le texte Ecce Larentia II.2. Écouter la lecture du texte avec le texte sous les yeux :https://ladigitale.dev/digiview/#/v/eebbeb6e99d492223. Faire les exercices 10, 11, 13, 14 et 16 Nous corrigerons et relirons le texte ensemble. Continuez à apprendre le verbe sum au présent et au parfait.(rappel : tous les supports de cours sont disponibles sur la page web du cours : )Pour le 16/10Contrôle rituel de vocabulaire et grammaire #3vocabulaire : apprendre les noms de la 3ème déclinaison de civis à tempus."
+      ],
+      "absents": 0
+    },
+    {
+      "date": "2026-10-09",
+      "time": "15:00",
+      "hours": 2,
+      "titre": "Séq. 1 — « Gouverner » séance 3 : l'auctoritas, de Machiavel à de Gaulle + Ecce Larentia III",
+      "statut": "distanciel",
+      "theme": "",
+      "cat": "",
+      "contenu": "[Distanciel]Séq. 1 — « Gouverner » séance 3 : l'auctoritas, de Machiavel à de Gaulle + Ecce Larentia IIIObjectifs : identifier la notion politique commune à l'exemplier ; confronter deux conceptions opposées de l'auctoritas (citations à l'appui) ; explorer l'étymologie du nom Auguste ; traduire Ecce Larentia III Travail à faire en autonomie :Lisez les textes de l'exemplier, de Machiavel à Charles de Gaulle. Ils permettent de réfléchir à une même notion politique.- Quelle est la notion politique commune à ces textes ? - Choisissez deux auteurs qui présentent des conceptions différentes, voire opposées, de cette notion. (justifez votre choix en vous appuyant sur une courte citation de chacun)- Quel rapprochement pouvez-vous faire entre cette notion et le nom Auguste ? Cherchez en particulier du côté de l'étymologie latine.Consignes : Il n'y a pas de rendu à faire sur Pronote. Répondez aux questions par des phrases brèves. Ne pas analyser tous les textes en détail mais prenez le temps de lire l'ensemble des texte et sélectionnez les passages qui vous paraissent les plus intéressants pour répondre aux questions. Travail sur la langue Lire Ecce Larentia III et essayer de traduire le texte. ELEVE_Textes_Seq1_Seance3.pdf ELEVE_Ecce-Larentia-III.pdf ",
+      "resume": "[Distanciel]Séq. 1 — « Gouverner » séance 3 : l'auctoritas, de Machiavel à de Gaulle + Ecce Larentia IIIObjectifs : identifier la notion politique commune à l'exemplier ; confronter deux conceptions opposées de l'auctoritas (citations à l'appui) ; explorer l'é",
+      "elements": [
+        "Comparer textes, traductions, images, objets ou représentations Construire une synthèse à partir de plusieurs textes ou documents Étudier étymologie, familles de mots et mots-concepts La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin Mettre en relation mondes anciens et monde moderne/contemporain Rechercher, sélectionner et exploiter des ressources de manière autonome"
+      ],
+      "afaire": [
+        "Pour le 16/10 Entraînez vous à lire et comprendre le latin par la relecture et traduction d'Ecce Larentia II et III "
+      ],
+      "absents": 0
+    },
+    {
+      "date": "2026-10-12",
+      "time": "16:00",
+      "hours": 2,
+      "titre": "Séq. 1 - séance 2 - bilan « Auguste » (dépôt espace élève) + découverte de Virgile et de l'Énéi",
+      "statut": "distanciel",
+      "theme": "",
+      "cat": "",
+      "contenu": "[Distanciel] Séq. 1 - séance 2 - bilan « Auguste » (dépôt espace élève) + découverte de Virgile et de l'ÉnéideObjectifs : sélectionner et mettre au propre ses analyses (Suétone, Prima Porta, portraits présidentiels, auctoritas) ; situer Virgile, l'épopée et le lien Énée-Auguste ; relire et oraliser Ecce Larentia II et III Travail en autonomie — Lundi 12 octobre 2026Je serai connecté à 16h00 dans une salle virtuelle si vous avez d'éventuelles questions :  Voici le travail à faire aujourd'hui en autonomie I Bilan des travaux précédents sur Auguste à déposer dans l'espace élèveLes trois derniers cours ont été consacrés à l'étude de la figure d'Auguste.Déposez dans l'espace élève les éléments suivants, issus des travaux déjà réalisés :Votre analyse des deux textes de Suétone que vous avez choisis, en faisant apparaître les qualités ou les caractéristiques d'Auguste, ainsi que les termes latins correspondants.Vos principales observations sur la statue d'Auguste de Prima Porta (trois éléments significatifs).Votre comparaison entre les portraits officiels de deux présidents de la Ve République et la statue de Prima Porta.Deux auteurs qui présentent des conceptions différentes, voire opposées de la notion d'auctoritas. (justifez votre choix en vous appuyant sur une courte citation de chacun) de Machiavel à Charles de Gaulle, avec une brève explication des conceptions de l'autorité qu'elles expriment. Il ne s'agit pas de refaire les exercices, mais de sélectionner et de mettre au propre l'essentiel de votre travail. Le travail sera noté en bonus, c'est à dire que c'est une note facultative : seuls les points qui améliorent la moyenne sont pris en compte. II Découverte de Virgile et de l'ÉnéideRegardez les vidéos suivantes de présentation de l'Eneide de Virgile :la vidéo pédagogique de TED-Ed, Why should you read Virgil's Aeneid?, de Mark Robinson (5 min 35), en activant les sous-titres français si besoin. https://ladigitale.dev/digiview/#/v/723d5dd68bfdc736VIRGILE / L'ENEIDE / LA P'TITE LIBRAIRIE https://www.youtube.com/watch?v=e6Xv-oAv2o8Prenez des notes pour le prochain cours (certains points ont déjà été plus ou moins évoquées en cours) :Qui est Virgile ? À quelle époque vit-il et dans quel contexte politique compose-t-il l'Énéide ?Qu'est-ce qu'une épopée ? De quelles grandes œuvres de la littérature grecque Virgile s'inspire-t-il ?Comment l'histoire d'Énée permet-elle de mettre en valeur les origines et la grandeur de Rome ? Quel lien peut-on établir avec Auguste ? III Lecture du latinRelisez Ecce Larentia II et III à haute voix en vous entraînant à comprendre en lisant le latin. (pour le vocabulaire, n'hésitez pas à regarder la traduction des mots dans le Gaffiot en ligne).",
+      "resume": "[Distanciel] Séq. 1 - séance 2 - bilan « Auguste » (dépôt espace élève) + découverte de Virgile et de l'ÉnéideObjectifs : sélectionner et mettre au propre ses analyses (Suétone, Prima Porta, portraits présidentiels, auctoritas) ; situer Virgile, l'épopée et le",
+      "elements": [
+        "Comparer textes, traductions, images, objets ou représentations Construire une synthèse à partir de plusieurs textes ou documents Étudier étymologie, familles de mots et mots-concepts La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin Mettre en relation mondes anciens et monde moderne/contemporain Rechercher, sélectionner et exploiter des ressources de manière autonome Situer textes, auteurs, événements et espaces dans leurs contextes"
+      ],
+      "afaire": [
+        "Pour le 13/10Les trois derniers cours ont été consacrés à l'étude de la figure d'Auguste. Déposez dans l'espace élève les éléments suivants, issus des travaux déjà réalisés :Votre analyse des deux textes de Suétone que vous avez choisis, en faisant apparaître les qualités ou les caractéristiques d'Auguste, ainsi que les termes latins correspondants.Vos principales observations sur la statue d'Auguste de Prima Porta (trois éléments significatifs).Votre comparaison entre les portraits officiels de deux présidents de la Ve République et la statue de Prima Porta.Deux auteurs qui présentent des conceptions différentes, voire opposées de la notion d'auctoritas. (justifez votre choix en vous appuyant sur une courte citation de chacun) de Machiavel à Charles de Gaulle, avec une brève explication des conceptions de l'autorité qu'elles expriment. Il ne s'agit pas de refaire les exercices, mais de sélectionner et de mettre au propre l'essentiel de votre travail. Le travail sera noté en bonus, c'est à dire que c'est une note facultative : seuls les points qui améliorent la moyenne sont pris en compte."
+      ],
+      "absents": 0
+    },
+    {
+      "date": "2026-10-16",
+      "time": "15:00",
+      "hours": 2,
+      "titre": "Visio : traduction commentée d'Ecce Larentia II et III + cadrage du travail pour les vacances",
+      "statut": "distanciel",
+      "theme": "",
+      "cat": "",
+      "contenu": "[Distanciel] Visio : traduction commentée d'Ecce Larentia II et III + cadrage du travail pour les vacancesObjectifs :acquérir une lecture et une compréhension fluides d'un texte latin ; repérer déclinaisons, cas, verbes au présent de l'indicatif et pronoms démonstratifs ; réinvestir les faits de langue pour construire le sens Lien de connexion pour le cours en visio :  Lecture et traduction du latinTravail de traduction commentée sur Ecce Larentia II et III. repérage des déclinaisons et des casrepérage des verbes conjuqué au présent de l'indicatifidentification des pronoms démonstratifs dans un usage anaphorique et possessif.rappels sur l'interrogation",
+      "resume": "[Distanciel] Visio : traduction commentée d'Ecce Larentia II et III + cadrage du travail pour les vacancesObjectifs :acquérir une lecture et une compréhension fluides d'un texte latin ; repérer déclinaisons, cas, verbes au présent de l'indicatif et pronoms dém",
+      "elements": [
+        "Acquérir et mobiliser un lexique fréquentiel Construire et justifier une traduction Lire et oraliser un texte latin Réinvestir les faits de langue pour construire le sens Repérer des indices et formuler une hypothèse de sens"
+      ],
+      "afaire": [
+        "Pour le 02/11Lecture obligatoire pour les vacances de la Toussaint — Virgile, L'Énéide, chants I à IV (traduction française intégrale)Prenez une édition complète de poche. Edition de poche recommandée : GF Flammarion.Cette lecture vous permettra de découvrir directement l'une des œuvres majeures de la littérature latine (et mondiale). Nous l'exploiterons dans nos différents objets d'étude en classe.Lisez \"le crayon à la main\" en notant les principaux épisodes, les principaux personnages et divinités, les lieux, quelques citations de passages qui vous paraissent importants, ainsi que vos impressions de lecture.Cette lecture donnera lieu à un contrôle de lecture et/ou un oral après les vacances de la Toussaint. Contrôle rituel de vocabulaire et grammaire #2 et #3 (décalés suite à la fermeture du lycée)vocabulaire : apprendre les noms de la 2ème déclinaison de ager,agri à regnum,i.vocabulaire : apprendre les noms de la 3ème déclinaison de civis à tempus.vocabulaire : verbes de la 1ère et de la 2ème conjugaisondéclinaison : 2ème déclinaison des noms : modèles ludus, puer, monstrum sur la fiche des déclinaisonsdéclinaison : 3ème déclinaison des noms : modèle dux, corpus, civis, mareconjugaison : connaître le verbe sum au présent et au parfait de l'indicatif"
+      ],
+      "absents": 0
+    },
+    {
+      "date": "2026-11-02",
+      "time": "16:00",
+      "hours": 2,
+      "titre": "Séq. 1 — Reprise : bilan de l'Énéide (I-IV), réception (Turner), contrôle rituel #2, Ecce Laren",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Séq. 1 — Reprise : bilan de l'Énéide (I-IV), réception (Turner), contrôle rituel #2, Ecce Larentia II, corpus AugusteObjectifs : vérifier la lecture de l'Énéide ; évaluer les automatismes linguistiques (contrôle rituel) ; consolider la lecture et la traduction d'un texte latin ; caractériser la figure d'Auguste à travers le corpus de Suétone et la statuaire.I. Bilan de la lecture obligatoire : Virgile, Énéide, chants I à IV - difficultés rencontrées (intertextualité avec l'Odyssée : Charybde et Scylla), échanges sur les épisodes marquants.II. Réception de l'Antiquité : étude du tableau de Turner, Didon bâtissant Carthage — mise en relation peinture et épopée antique.III. Contrôle rituel #2 : vocabulaire et grammaire (2e et 3e déclinaisons, verbes de la 1re et 2e conjugaison, verbe sum).IV. Lecture du latin : Ecce Larentia II (Via Latina) — lecture oralisée et traduction à l'oral ; exercices 10 à 14/15 ; rappels sur les pronoms démonstratifs et l'interrogation.V. Corpus Auguste (Suétone) : méthode — citer le texte et identifier les mots-clés et idées qui convergent vers le portrait d'Auguste : homme célébré par les augures (proximité du divin), refusant le titre de dominus (souvenir du rex honni depuis la fin de la royauté), humble, conquérant (enseignes restituées par les Parthes) et pacificateur. Poursuite avec la statue d'Auguste de Prima Porta (étude à achever) ; prochaine étape : le concept d'auctoritas et ses résonances antiques et contemporaines. Turner_Dido_Building_Carthage.jpg ",
+      "resume": "Séq. 1 — Reprise : bilan de l'Énéide (I-IV), réception (Turner), contrôle rituel #2, Ecce Larentia II, corpus AugusteObjectifs : vérifier la lecture de l'Énéide ; évaluer les automatismes linguistiques (contrôle rituel) ; consolider la lecture et la traduction",
+      "elements": [
+        "Acquérir et mobiliser un lexique fréquentiel Comparer textes, traductions, images, objets ou représentations Connaître et mobiliser œuvres, genres, mythes, figures et notions majeures de l'AntiquitéConnaître les grands repères de l’histoire grecque et romaine Construire et justifier une traduction Construire une synthèse à partir de plusieurs textes ou documents Étudier étymologie, familles de mots et mots-concepts Identifier et analyser formes, fonctions et structures syntaxiques La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin Mettre en relation mondes anciens et monde moderne/contemporain Situer textes, auteurs, événements et espaces dans leurs contextes"
+      ],
+      "afaire": [],
+      "absents": 2
+    },
+    {
+      "date": "2026-11-06",
+      "time": "15:00",
+      "hours": 2,
+      "titre": "Séq. 1 - Auguste et l'auctoritas : statuaire, écho contemporain (de Gaulle) et Séq 2. Introduct",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Séq. 1 - Auguste et l'auctoritas : statuaire, écho contemporain (de Gaulle) et Séq 2. Introduction à l'Énéide I, 274-295 (prophétie de Jupiter)Objectifs : interpréter la statuaire et les images du pouvoir en les confrontant aux textes ; aborder un texte virgilien en latin par le repérage et la traduction guidée ; construire le mot-concept auctoritas.I. Distribution de la fiche sur l'auctoritas, du groupement de textes autour de cette notion, et d'un extrait de l'Énéide (I, 274-295) en latin, sans traduction.II. Retour sur le DM : description et interprétation de l'Auguste de Prima Porta ; mise en relation avec les textes de Suétone — Auguste conquérant, pacificateur, proche du divin, humble : les facettes du portrait convergent vers l'auctoritas.III. Comparaison avec l'image du pouvoir aujourd'hui : portrait officiel de Charles de Gaulle — analyse des éléments symboliques (les livres en arrière-plan : quel sens donner ? => culture littéraire du général, héritage humaniste, héritage des Lumières ? Quel écho possible de la dimension religieuse augustéenne ?).IV. Lecture de l'extrait de l'Énéide : comprendre la dimension de roman national que contient la prophétie de Jupiter adressée à Venus.Repérage des noms propres et des formes verbales ; traduction guidée de passages clés (excipiet / pono / dedi) — un empire sans limites dans l'espace et dans le temps : analyse littéraire des temps verbaux (futur, présent, parfait) ; travail sur l'énonciation (qui parle ? à qui ? dans quel contexte ? Vénus supplie Jupiter).ELEVE_Auctoritas_mot_concept.pdf ELEVE_virgile-énéide-i-274-295-texte-+-lexique.pdf ",
+      "resume": "Séq. 1 - Auguste et l'auctoritas : statuaire, écho contemporain (de Gaulle) et Séq 2. Introduction à l'Énéide I, 274-295 (prophétie de Jupiter)Objectifs : interpréter la statuaire et les images du pouvoir en les confrontant aux textes ; aborder un texte virgil",
+      "elements": [
+        "Analyser les procédés d’écriture et construire une interprétation littéraire Comparer textes, traductions, images, objets ou représentations Connaître et mobiliser œuvres, genres, mythes, figures et notions majeures de l'AntiquitéConnaître les grands repères de l’histoire grecque et romaine Construire et justifier une traduction Étudier étymologie, familles de mots et mots-concepts Identifier et analyser formes, fonctions et structures syntaxiques La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin Mettre en relation mondes anciens et monde moderne/contemporain"
+      ],
+      "afaire": [
+        "Pour le 16/11Contrôle rituel de vocabulaire et de grammaire #3 sur le chapitre 1 d'Ecce Larentia (leçons I à III)C'est un vocabulaire que nous avons déjà travaillé en cours. => réviser le vocabulaire de la fiche jointe grâce à l'application en ligne :  Réviser le vocabulaire de Ecce Larentia chapitre 1 ELEVE_Voc_essentiel_Ecce_Larentia_Cap_I.pdf "
+      ],
+      "absents": 2
+    },
+    {
+      "date": "2026-11-09",
+      "time": "16:00",
+      "hours": 2,
+      "titre": "Séq 2 - Didon, reine de Carthage - Séance 1 - La colère de Didon envers Enée dans l'Eneide",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Séq 2 - Didon, reine de Carthage - Séance 1 - La colère de Didon envers Enée dans l'Eneide",
+      "resume": "Séq 2 - Didon, reine de Carthage - Séance 1 - La colère de Didon envers Enée dans l'Eneide",
+      "elements": [],
+      "afaire": [
+        "Pour le 13/11Ce vendredi 13/11 nous ferons une séance en visio : voici le lien de connexion. 1) S'éxercer à lire et traduire le texte de Ecce Larentia joint (suite de l'histoire de Larentia, nous attaquons le deuxième chapitre). Chercher le vocabulaire sur gaffiot.fr si besoin. 2) Lire la fiche sur l'Eneide jointe. 3) Nous aborderons notre nouvelle séquence de cours sur Didon, reine de Carthage=> prenez connaissance des documents joints et retrouvez le contexte des passages \"la colère de Didon\" et \"Enée quitte Carthage\" dans votre édition en français.ELEVE_fiche_Virgile.pdf Larentia__chapt2_lecon1_romulus_et_remus.pdf ELEVE_Enée_quitte_Carthage.pdf ELEVE_la_colère_d_Didon.pdf ELEVE_Le périple d'Énée.pdf "
+      ],
+      "absents": 0
+    },
+    {
+      "date": "2026-11-13",
+      "time": "15:00",
+      "hours": 2,
+      "titre": "[Distanciel] Séq 2 - Didon, reine de Carthage - Séance 1 - La colère de Didon envers Énée dans l'Énéide",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "[Distanciel] Séq 2 - Didon, reine de Carthage - Séance 1 - La colère de Didon envers Énée dans l'Énéide",
+      "resume": "[Distanciel] Séq 2 - Didon, reine de Carthage - Séance 1 - La colère de Didon envers Énée dans l'Énéide",
+      "elements": [],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-11-16",
+      "time": "16:00",
+      "hours": 2,
+      "titre": "Séquence 2 — Didon, reine de Carthage — Séance 1 : reprise et cadrage après les blocages",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Séquence 2 — Didon, reine de Carthage — Séance 1 : reprise et cadrage après les blocages\nObjectifs : réactiver la langue par le rituel de lecture-traduction ; contrôle rituel #3 ; faire le bilan de la séquence 1 et installer la séquence 2 ; points de grammaire en travaillant les textes.\nI. Ecce Larentia, chapitre 2, leçon 1 : oralisation et traduction ligne à ligne en tour de rôle ; réactivation des cas et fonctions et des pronoms démonstratifs (hic, iste, ille).\nII. Contrôle rituel #3.\nIII. Point d'étape : bilan de la séquence 1 (Gouverner : du mythe à l'histoire, quel « prince » idéal ? — Machiavel, Rabelais, Quinte-Curce, Suétone, l'Auguste de Prima Porta, l'auctoritas) et entrée dans la séquence 2 : Didon, reine de Carthage. Calendrier des évaluations annoncé : contrôle rituel #4, DS sur la séquence 1 (avec essai), contrôle de lecture de l'Énéide.\nIV. Distribution des supports de la séquence 2 : fiche de conjugaison ; fiche sur Virgile et plan de l'Énéide ; dossier de travail sur Didon et Énée (le périple d'Énée, la colère de Didon, le départ d'Énée). Reprise du travail distanciel : le périple d'Énée, la colère de Didon.\nV. Langue : les mots de liaison (coordonnants), leur rôle essentiel pour lire les textes antiques.",
+      "resume": "Séquence 2 — Didon, reine de Carthage — Séance 1 : reprise et cadrage après les blocages",
+      "elements": [
+        "Acquérir et mobiliser un lexique fréquentiel",
+        "Connaître et mobiliser œuvres, genres, mythes, figures et notions majeures de l'Antiquité",
+        "Connaître les grands repères de l'histoire grecque et romaine",
+        "Construire et justifier une traduction",
+        "Interpréter un texte en mobilisant langue, contexte et culture",
+        "La cité entre réalités et utopies / Gouverner : du mythe à l'histoire, quel « prince » idéal ?",
+        "Lire et oraliser un texte latin",
+        "Repérer des indices et formuler une hypothèse de sens"
+      ],
+      "afaire": [
+        "Pour le 23/11 : contrôle de lecture sur les 4 premiers chants de l'Énéide",
+        "Pour le 27/11 : DS sur la Séquence 1 — Le Prince Idéal, Auguste"
+      ],
+      "absents": 1
+    },
+    {
+      "date": "2026-11-20",
+      "time": "15:00",
+      "hours": 2,
+      "titre": "",
+      "statut": "à saisir",
+      "theme": "",
+      "cat": "",
+      "contenu": "",
+      "resume": "",
+      "elements": [],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-11-23",
+      "time": "16:00",
+      "hours": 2,
+      "titre": "",
+      "statut": "à saisir",
+      "theme": "",
+      "cat": "",
+      "contenu": "",
+      "resume": "",
+      "elements": [],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-11-27",
+      "time": "15:00",
+      "hours": 2,
+      "titre": "",
+      "statut": "à saisir",
+      "theme": "",
+      "cat": "",
+      "contenu": "",
+      "resume": "",
+      "elements": [],
+      "afaire": [],
+      "absents": 0
+    }
+  ],
+  "programme": [
+    {
+      "bloc": "1. LIRE, COMPRENDRE, TRADUIRE ET INTERPRÉTER",
+      "items": [
+        {
+          "label": "Lire et oraliser un texte latin",
+          "n": 13
+        },
+        {
+          "label": "Repérer des indices et formuler une hypothèse de sens",
+          "n": 5
+        },
+        {
+          "label": "Construire et justifier une traduction",
+          "n": 5
+        },
+        {
+          "label": "Interpréter un texte en mobilisant langue, contexte et culture",
+          "n": 5
+        },
+        {
+          "label": "Analyser les procédés d'écriture et construire une interprétation littéraire",
+          "n": 0
+        }
+      ]
+    },
+    {
+      "bloc": "2. LANGUE ET LEXIQUE",
+      "items": [
+        {
+          "label": "Identifier et analyser formes, fonctions et structures syntaxiques",
+          "n": 9
+        },
+        {
+          "label": "Réinvestir les faits de langue pour construire le sens",
+          "n": 3
+        },
+        {
+          "label": "Acquérir et mobiliser un lexique fréquentiel",
+          "n": 3
+        },
+        {
+          "label": "Étudier étymologie, familles de mots et mots-concepts",
+          "n": 5
+        }
+      ]
+    },
+    {
+      "bloc": "3. CULTURE ANTIQUE ET REPÈRES",
+      "items": [
+        {
+          "label": "Situer textes, auteurs, événements et espaces dans leurs contextes",
+          "n": 10
+        },
+        {
+          "label": "Connaître les grands repères de l'histoire grecque et romaine",
+          "n": 0
+        },
+        {
+          "label": "Connaître et mobiliser œuvres, genres, mythes, figures et notions majeures de la culture antique",
+          "n": 0
+        }
+      ]
+    },
+    {
+      "bloc": "4. CONFRONTER ET METTRE EN PERSPECTIVE",
+      "items": [
+        {
+          "label": "Lire en édition bilingue et comparer textes, traductions, images, objets ou représentations (amendement validé : lecture bilingue explicite)",
+          "n": 0
+        },
+        {
+          "label": "Comprendre réception, transmission et transformations de l'Antiquité",
+          "n": 0
+        },
+        {
+          "label": "Mettre en relation mondes anciens et monde moderne/contemporain",
+          "n": 9
+        },
+        {
+          "label": "Construire une synthèse à partir de plusieurs textes ou documents",
+          "n": 6
+        }
+      ]
+    },
+    {
+      "bloc": "5. S'EXPRIMER, ARGUMENTER ET CONSTRUIRE SON AUTONOMIE",
+      "items": [
+        {
+          "label": "Justifier une réponse ou une interprétation par des indices précis",
+          "n": 2
+        },
+        {
+          "label": "Produire un écrit organisé et argumenté",
+          "n": 0
+        },
+        {
+          "label": "Problématiser une question littéraire, politique ou culturelle",
+          "n": 3
+        },
+        {
+          "label": "Construire et développer une réflexion personnelle de type essai",
+          "n": 3
+        },
+        {
+          "label": "Présenter, expliquer et argumenter à l'oral",
+          "n": 0
+        },
+        {
+          "label": "Rechercher, sélectionner et exploiter des ressources de manière autonome",
+          "n": 4
+        },
+        {
+          "label": "Construire un portfolio mettant en résonance Antiquité et modernité",
+          "n": 0
+        }
+      ]
+    },
+    {
+      "bloc": "6. OBJETS D'ÉTUDE",
+      "items": [
+        {
+          "label": "La cité entre réalités et utopies",
+          "n": 14
+        },
+        {
+          "label": "Justice des dieux, justice des hommes",
+          "n": 0
+        },
+        {
+          "label": "Amour, Amours",
+          "n": 0
+        },
+        {
+          "label": "Méditerranée : conflits, influences et échanges",
+          "n": 0
+        }
+      ]
+    },
+    {
+      "bloc": "Notes d'évaluation (31/10/2026)",
+      "items": [
+        {
+          "label": "Les 4 objets d'étude reprennent exactement les libellés du BO.",
+          "n": 0
+        },
+        {
+          "label": "La progression grammaticale spé 1ère (locatif, formes syncopées, passif impersonnel, double datif, génitif/ablatif de qualité…) est recouverte par l'item générique 2.1 — suffisant pour un référentiel de cochage.",
+          "n": 0
+        },
+        {
+          "label": "Le portfolio (diptyques antique/moderne en résonance) et l'essai (épreuves écrites fin 1ère et bac) sont explicitement présents.",
+          "n": 0
+        }
+      ]
+    }
+  ],
+  "journal": [
+    {
+      "date": "2026-11-02",
+      "contexte": "2 élèves absents. Point lecture de Virgile, tableau de Turner (Didon bâtissant Carthage), CR #2, Larentia II lu et traduit à l’oral, textes de Suétone et Prima Porta (non terminé).",
+      "marche": [
+        "Le tableau de Turner apprécié des élèves",
+        "Des progrès notables de prononciation à l’oral (Larentia II)"
+      ],
+      "aAmeliorer": [
+        "La compréhension reste difficile pour une élève sur la traduction orale",
+        "Lister et garder une trace écrite des caractéristiques du portrait d’Auguste (Suétone) : à continuer",
+        "Terminer l’analyse de Prima Porta"
+      ],
+      "idees": [
+        "Mettre un titre aux DS sur Pronote",
+        "Saisir les appréciations élèves dans l’espace élève Pronote",
+        "Converger vers la figure multidimensionnelle d’Auguste et l’auctoritas, avec échos contemporains (corpus Hobbes, De Gaulle…, comparaison visuelle avec les portraits présidentiels)"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "contexte": "2 heures. Fiche auctoritas + groupement de textes. Retour sur le DM Prima Porta, comparaison avec De Gaulle, extrait de l’Énéide en latin sans traduction (repérages, traduction guidée), digressions riches ( analyse littéraire, hexamètre).",
+      "marche": [
+        "Des interactions de groupe riches : élèves participants, bonnes idées",
+        "Le texte de l’Énéide a permis de faire le lien avec Auguste ; repérages réussis sur les mots faciles",
+        "La comparaison Prima Porta / De Gaulle : remarques intéressantes (livres en arrière-plan)"
+      ],
+      "aAmeliorer": [
+        "Peu de traces écrites : statuer sur l’attendu (les formateurs consultés divergent)",
+        "La préparation en amont de certains points",
+        "Grammaire et oralisation passées à la trappe : programme trop ambitieux ?",
+        "La gestion du temps",
+        "Ritualiser la langue : au moins 10 min de Larentia chaque cours (aussi en option)"
+      ],
+      "idees": [
+        "Feuille de conjugaison plus complète à distribuer",
+        "Fiche sur l’hexamètre dactylique (avec scan de manuels)",
+        "App de révision de l’Énéide pour le contrôle de lecture : diégèse, personnages, extraits latins à situer + questions plus personnelles",
+        "Mots-concepts à inscrire au référentiel : imperium, pietas, éventuellement fas/fatum",
+        "Proposer des sujets de portfolio au plus tôt ; même travail pour l’option",
+        "Confirmer la date de l’essai sur Auguste",
+        "Prévoir un temps de constitution d’un classeur propre (feuilles en vrac) et montrer un exemple",
+        "Petit excursus numismatique avec des monnaies romaines anciennes",
+        "Distribuer une fiche résumé des 4 premiers chants de l’Énéide (édition GF) enrichie des figures mythologiques",
+        "Pour la visite de l’IA-IPR : excursus culturels et échos contemporains — statues recolorisées, déconstruire Renan",
+        "Fiche tableau des conjugaisons (Déléani) à distribuer"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "contexte": "Séance du 09/11 annulée par les blocages, reportée en visio. Prophétie de Jupiter (Énéide I, 274-295) + travail sur Didon (périple d’Énée, colère de Didon).",
+      "marche": [
+        "Le périple d’Énée à reconstituer : interactif, visualisation géographique, mémorisation par la méthode des loci, ludique et instructif",
+        "La traduction manquante à retrouver à partir du latin : mobilise repérage, traduction, grammaire et mémoire"
+      ],
+      "aAmeliorer": [
+        "Le distanciel sans micro ne permet presque aucune interaction : oralisation impossible, séance écourtée"
+      ],
+      "idees": [
+        "Quiz de mythologie sur app projetée (images/textes à deviner), éventuellement en rituel — a suscité l’enthousiasme ; demande des élèves : noms grecs et latins des divinités",
+        "Trace écrite complète « prince idéal / Auguste » pour le DS : Rosanvallon, corpus des figures du prince, facettes d’Auguste chez Suétone, auctoritas",
+        "Leçon rapide sur le futur + fiche de conjugaison",
+        "App de révision pour le DS sur la séquence 1",
+        "Présenter les apps de révision en chantier : mythologie, Énéide, grammaire, méthodo du DS (design : 3 niveaux débutants/confirmés/experts)",
+        "App sur la littérature antique latine, envisageable comme contrôle rituel",
+        "Séance de traduction avec dictionnaires au CDI (réserver la salle info)",
+        "Saisie Pronote des devoirs : toujours inclure le lien vers le digipad",
+        "Structurer les traces écrites : réflexion sur l’exigence de contenu en spé"
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "contexte": "Nombreux temps de cadrage (reprise après blocages). Larentia chap. 2 leçon 1, lien séq. 1 → séq. 2 Didon, CR3, coordonnants, documents Didon distribués, débat sur l’essai.",
+      "marche": [
+        "Larentia très utile pour se mettre le latin en bouche et revoir la grammaire",
+        "De plus en plus à l’aise pour dérouler le cours, même en cas de perturbation du déroulé prévu"
+      ],
+      "aAmeliorer": [
+        "Prévoir toujours un temps de contenu de cours = trace écrite ; un cours plus organisé (ex. titre « Séquence 2 : Didon »)",
+        "La notion de cas/fonction redevenue fragile pour la plupart : remédiation",
+        "Le retour sur Romulus non fait",
+        "La séance « Didon fondatrice » (comparaison des fondateurs) non commencée : à reporter",
+        "La méthodologie de l’essai à présenter au prochain cours (inquiétude des élèves)"
+      ],
+      "idees": [
+        "Intégrer régulièrement des questions simples sur les cas/fonctions dans les contrôles rituels",
+        "CR : intégrer de la mythologie, en réponse à la demande de réduire le nombre de mots",
+        "Excursus culturels à systématiser (boustrophédon, scripta continua : digression appréciée)",
+        "Le futur à traiter (fiche + texte de Virgile)",
+        "Histoire du manuscrit de l’Énéide (scripta continua) : petit excursus de quelques minutes, apprécié des élèves",
+        "Rituel Larentia 10 min pour se mettre en jambe : en cours d’adoption",
+        "Enrichir la séquence Didon : manuels (Hatier 1re ?), autres ressources, big menu",
+        "Exploiter la lecture cursive de l’Énéide : contrôle de lecture + lien avec l’objet d’étude « prince idéal »",
+        "Fiche sur l’hexamètre dactylique"
+      ]
+    }
   ]
- },
- "grammaire": {
-  "vus": [
-   {
-    "titre": "Cas et fonctions ; structure canonique de la phrase latine ; déclinaisons 1-3 (identification par le génitif)",
-    "date": "sept."
-   },
-   {
-    "titre": "Indicatif : infectum/perfectum, temps primitifs, conjugaisons 1-4",
-    "date": "18/09-28/09"
-   },
-   {
-    "titre": "Verbe sum au présent et au parfait",
-    "date": "02/10"
-   },
-   {
-    "titre": "Adjectifs de la 1re classe (modèle bonus)",
-    "date": "02/10"
-   },
-   {
-    "titre": "Interrogation : -ne, num, nonne / ita, minime",
-    "date": "21/09"
-   },
-   {
-    "titre": "Pronoms démonstratifs (usage anaphorique et possessif) + réfléchi",
-    "date": "16/10-02/11"
-   },
-   {
-    "titre": "Le futur de l'indicatif (Énéide I, 274-295)",
-    "date": "09/11"
-   }
-  ],
-  "aVoir": [
-   {
-    "titre": "Le parfait (approfondissement) — amorcé via Eutrope en option, à consolider en spé",
-    "echeance": "T2"
-   },
-   {
-    "titre": "Premières subordinations ; participes, infinitive, ablatif absolu (attendus T2)",
-    "echeance": "T2"
-   },
-   {
-    "titre": "4e-5e déclinaisons, adjectifs 2e classe, passif",
-    "echeance": "à planifier"
-   },
-   {
-    "titre": "Morphologie spé 1ère (locatif, formes syncopées, passif impersonnel, double datif, génitif/ablatif de qualité…)",
-    "echeance": "T2-T3"
-   }
-  ]
- },
- "culture": {
-  "auteursTextes": [
-   {
-    "titre": "Virgile, Énéide I (273-277 ; 274-295 prophétie de Jupiter) — lecture intégrale chants I-IV",
-    "contexte": "fondation, roman national, fil rouge de l'année"
-   },
-   {
-    "titre": "Tite-Live, Ab urbe condita I, 6-7 (champ lexical de la violence)",
-    "contexte": "fratricide fondateur"
-   },
-   {
-    "titre": "Lhomond (juxtalinéaire, remise en ordre)",
-    "contexte": "langue débutant"
-   },
-   {
-    "titre": "Quinte-Curce, Vie d'Alexandre VIII, 8 ; Rabelais, Gargantua 50 ; Machiavel, Le Prince XVII",
-    "contexte": "le « bon prince » — OE1"
-   },
-   {
-    "titre": "Suétone, Vie des douze Césars — Néron ; portrait d'Auguste (§ Parthes, dominus, pater patriae)",
-    "contexte": "regard de l'historien vs panégyrique"
-   },
-   {
-    "titre": "Pline le Jeune, Panégyrique de Trajan",
-    "contexte": "l'éloge du prince"
-   },
-   {
-    "titre": "Exemplier « auctoritas » : de Machiavel à Charles de Gaulle",
-    "contexte": "notion politique, étymologie augere → Augustus"
-   },
-   {
-    "titre": "Via Latina, Ecce Larentia I-III (chap. 2 en cours)",
-    "contexte": "oralisation, langue"
-   }
-  ],
-  "referencesCulturelles": [
-   "P. Boucheron, Quand l'histoire fait des dates (pomerium, Lapis Niger, mythe/archéologie)",
-   "Ambrogio Lorenzetti, Allégorie du bon gouvernement + P. Rosanvallon (vidéo)",
-   "Auguste de Prima Porta (cuirasse, Parthes, Cupidon/Vénus, polychromie) vs portraits officiels de la Ve République",
-   "Turner, Didon bâtissant Carthage (réception de l'épopée)",
-   "TED-Ed « Why should you read Virgil's Aeneid? », La P'tite Librairie (présentation de l'Énéide)",
-   "Frise du monde gréco-romain + carte diachronique de la Méditerranée antique",
-   "Res gestae divi Augusti §34 (auctoritas)"
-  ],
-  "periodes": [
-   {
-    "titre": "Fondation de Rome (mythe et archéologie)",
-    "detail": "Romulus, pomerium, Lapis Niger"
-   },
-   {
-    "titre": "Rome augustéenne",
-    "detail": "Empire, statuaire, roman national, auctoritas"
-   },
-   {
-    "titre": "Réceptions modernes",
-    "detail": "Renaissance (Machiavel), XVIIIe ? , portrait présidentiel, De Gaulle, Turner"
-   }
-  ],
-  "motsConcepts": [
-   "pietas",
-   "pomerium",
-   "urbs",
-   "auctoritas",
-   "imperium"
-  ]
- },
- "seances": [
-  {
-   "date": "2026-09-04",
-   "time": "15:00",
-   "hours": 2,
-   "titre": "Cadrage de l'année : entrée dans l'objet d'étude « La cité entre réalités et utopies » — la fon",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "Cadrage de l'année : entrée dans l'objet d'étude « La cité entre réalités et utopies » — la fondation de RomeObjectifs :mobiliser les repères de la guerre de Troie et des origines du latin ; situer Virgile et Tite-Live face au mythe de la fondation ; s'initier aux fondamentaux de la langue latine ; mémoriser le mot-concept PIETASDéroulé :Entrée dans l'objet d'étude par la fondation de Rome.- Rappel des principales figures de la guerre de Troie- Rappel sur les origines indo-européennes du latin- Présentation de Virgile et Tite-Live et des deux approches du mythe de la fondation de Rome, par l'épopée et l'écriture du roman national romain- capsule grammaticale : première approche des fondamentaux de la langue latine- Question de fin de cours pour la prochaine séance : « Pourquoi Romulus doit-il tuer son frère pour fonder Rome ? » Lexique : mot-concept => PIETAS (d'Enée)",
-   "resume": "Cadrage de l'année : entrée dans l'objet d'étude « La cité entre réalités et utopies » — la fondation de RomeObjectifs :mobiliser les repères de la guerre de Troie et des origines du latin ; situer Virgile et Tite-Live face au mythe de la fondation ; s'initier",
-   "elements": [
-    "Connaître et mobiliser œuvres, genres, mythes, figures et notions majeures de l'AntiquitéConnaître les grands repères de l’histoire grecque et romaine Identifier et analyser formes, fonctions et structures syntaxiques La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin Situer textes, auteurs, événements et espaces dans leurs contextes"
-   ],
-   "afaire": [
-    "Pour le 07/09Eleve_travail_prochaine_seance.pdf "
-   ],
-   "absents": 1
-  },
-  {
-   "date": "2026-09-07",
-   "time": "16:00",
-   "hours": 2,
-   "titre": "Séq. 1 — La fondation de Rome : le fratricide fondateur (Boucheron) et la langue : cas et fonct",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "Séq. 1 — La fondation de Rome : le fratricide fondateur (Boucheron) et la langue : cas et fonctionsOjectif :problématiser la violence fondatrice (Romulus/Remus, pomerium, Lapis Niger) ; distinguer les deux approches du mythe (épopée / roman national) ; identifier cas, fonctions et déclinaisons ; mémoriser le mot-concept POMERIUMPoursuite du travail commencé sur la fondation de Romevisionnage du documentaire Arte avec Patrick Boucheron https://www.arte.tv/fr/videos/086127-007-A/quand-l-histoire-fait-dates/ => éléments de réponse à la question « Pourquoi Romulus doit-il tuer son frère pour fonder Rome ? »P. Boucheron pose le geste fondateur du sillon qui délimite le pomerium comme une limite religieuse, administrative et politiqueRome est fondée comme une colonie grecqueComment concilier le fratricide initial avec la grandeur de Rome ?Que penser d'un système politique fondé par un acte de violence initial ?P. Boucheron fait le lien entre la fiction politique et la realité des découvertes archéologique (Lapis Niger)P. Boucheron pose la question de la fondation de Rome en ces termes : \"L'histoire de la fondation de Rome n'est-elle pas l'histoire du mythe de la fondation de Rome?\"Lexique : mot-concept => POMERIUM Travail sur la languedialogue magister-discipuli en latin à partir d'un texte simpleDistribution de fiches de grammaire et travail sur les notions de cas et fonctionsTravail d'identification des cas et des fonctions dans les phrases latineIdentifications des déclinaisons à partir du génitifTravail à partir d'un texteDistribution d'un extrait de Tite-Live (Ier siècle av. J.-C. - Ier siècle ap. J.-C.), Ab urbe condita, I, 6-71) Relevez le champ lexical de la violence (l. 9 à 14) (relever les mots en latin). Pourquoi les deux frères en viennent-ils aux mains? 2) Quels éléments de la légende les archéologues ont-ils retrouvés ? Aidez-vous de cette vidéo https://www.youtube.com/watch?v=fYKGha8dS3) Mettez en perspective l'usage de la violence dans l'accès au pouvoir à travers des textes de votre choix de l'histoire romaine (fondation de Rome, guerres civiles, Empire) et de l'histoire contemporaine. Un court paragraphe d’une demi-page environ. Eleve_travail_prochaine_seance.pdf ",
-   "resume": "Séq. 1 — La fondation de Rome : le fratricide fondateur (Boucheron) et la langue : cas et fonctionsOjectif :problématiser la violence fondatrice (Romulus/Remus, pomerium, Lapis Niger) ; distinguer les deux approches du mythe (épopée / roman national) ; identif",
-   "elements": [
-    "Analyser les procédés d’écriture et construire une interprétation littéraire Comprendre réception, transmission et transformations de l’Antiquité Connaître et mobiliser œuvres, genres, mythes, figures et notions majeures de l'AntiquitéConnaître les grands repères de l’histoire grecque et romaine Construire et développer une réflexion personnelle de type essai Construire une synthèse à partir de plusieurs textes ou documents Étudier étymologie, familles de mots et mots-concepts Identifier et analyser formes, fonctions et structures syntaxiques Interpréter un texte en mobilisant langue, contexte et culture La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin Problématiser une question littéraire, politique ou culturelle Rechercher, sélectionner et exploiter des ressources de manière autonome Réinvestir les faits de langue pour construire le sens Repérer des indices et formuler une hypothèse de sens Situer textes, auteurs, événements et espaces dans leurs contextes"
-   ],
-   "afaire": [],
-   "absents": 0
-  },
-  {
-   "date": "2026-09-11",
-   "time": "15:00",
-   "hours": 2,
-   "titre": "Consolider les repères du monde gréco-romain : frise, carte et premier texte virgilien",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "Consolider les repères du monde gréco-romain : frise, carte et premier texte virgilienObjectifs : construire une vision d’ensemble du continuum gréco-romain et consolider les premiers textes de la séquence avant d’entrer plus nettement dans le sous-ensemble « Gouverner : du mythe à l’histoire, quel prince idéal ? ».situer périodes, événements et auteurs sur une frise chronologique ; lire une carte diachronique de la Méditerranée antique ; oraliser un texte latin (Ecce Larentia) ; analyser Énéide I, 273-277 (continuité Troie → Énée → Romulus → Rome)Déroulé :Construction et correction d’une frise chronologique du monde grec et romain : grandes périodes, événements majeurs et principaux auteurs.Lecture d’une carte diachronique de la Méditerranée antique pour comprendre les continuités, conquêtes, circulations et héritages entre mondes grec et romain.Activité de reconnaissance iconographique à partir de grands repères de l’Antiquité.Latin oralisé avec Ecce Laurentia : lecture, compréhension globale et questions simples.Identification cas / fonction + traductionTravail sur Virgile, Énéide I, 273-277 : continuité Troie → Énée → Romulus → Rome ; ELEVE_frise_grece_rome_A3.png ELEVE_Leçon-1-Manuel Via Latina De Lingua et vita Romanorum_c.pdf ELEVE_Mediterranée_antique_OK.png ",
-   "resume": "Consolider les repères du monde gréco-romain : frise, carte et premier texte virgilienObjectifs : construire une vision d’ensemble du continuum gréco-romain et consolider les premiers textes de la séquence avant d’entrer plus nettement dans le sous-ensemble « ",
-   "elements": [
-    "Comparer textes, traductions, images, objets ou représentations Connaître les grands repères de l’histoire grecque et romaine Identifier et analyser formes, fonctions et structures syntaxiques La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin Repérer des indices et formuler une hypothèse de sens Situer textes, auteurs, événements et espaces dans leurs contextes"
-   ],
-   "afaire": [],
-   "absents": 1
-  },
-  {
-   "date": "2026-09-14",
-   "time": "16:00",
-   "hours": 2,
-   "titre": "Séq. 1 — séance 1 « Gouverner » : le « bon prince » chez Quinte-Curce, Rabelais et Machiavel",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "Séq. 1 — séance 1 « Gouverner » : le « bon prince » chez Quinte-Curce, Rabelais et MachiavelObjectifs :réviser les grands repères antiques; comparer trois conceptions du bon prince ; classer les caractérisations dans un tableau à trois colonnes ; s'entraîner à l'identification des cas (nominatif, vocatif, accusatif, ablatif) ; recomposer un texte de Lhomond à l'aide du juxtalinéaireDéroulé :Révision des grands repères de l'antiquité gréco-romaine à partir de la frisePoursuite des exercices de grammaire sur l'identification du nominatif, vocatif, accusatif et certains ablatifsTexte de Lhomond : travail de remise dans le bon ordre + premier travail de compréhension des phrases latines grâce au juxtalinéaire Entrée dans la séquence 1 – La cité entre réalités et utopies avec le premier sous-ensembleSéance 1 - Gouverner : du mythe à l'histoire : quel prince idéal ?Distribution de textes Quinte Curce, Vie d'Alexandre, VIII, 8,(en traduction), Rabelais, Gargantua, chap 50, Machiavel, Le Prince, chap XVIILecturetravail de repérage dans les textes de ce qui caractérise le \"bon prince\" pour les auteursdébut d'un tableau à trois colonnes pour classer les caractérisations du \"bon prince\" selon Quinte Curce, Vie d'Alexandre, VIII, 8,(en traduction), Rabelais, Gargantua, chap 50, Machiavel, Le Prince, chap XVII",
-   "resume": "Séq. 1 — séance 1 « Gouverner » : le « bon prince » chez Quinte-Curce, Rabelais et MachiavelObjectifs :réviser les grands repères antiques; comparer trois conceptions du bon prince ; classer les caractérisations dans un tableau à trois colonnes ; s'entraîner à",
-   "elements": [
-    "Analyser les procédés d’écriture et construire une interprétation littéraire Comparer textes, traductions, images, objets ou représentations Connaître et mobiliser œuvres, genres, mythes, figures et notions majeures de l'AntiquitéConnaître les grands repères de l’histoire grecque et romaine Interpréter un texte en mobilisant langue, contexte et culture Justifier une réponse ou une interprétation par des indices précis La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Mettre en relation mondes anciens et monde moderne/contemporain Problématiser une question littéraire, politique ou culturelle Situer textes, auteurs, événements et espaces dans leurs contextes"
-   ],
-   "afaire": [
-    "Pour le 18/09Contrôle : Grands repères antiquesGuerre de Troie. Connaître son origine. Connaître les protagonistes vus en cours et à quel camp ils appartiennent (Troyens : Priam, Hector, Paris, Enée / Grecs : Agamemnon, Ménélas, Hélène, Achille, Ulysse).Romulus et Remus : faire le lien avec la guerre de Troie, connaître les principaux jalons de leur histoire : mère, père, ancêtre, raison du conflitFrise chronologique : des Mycéniens jusqu'à la chute de l'Empire Romain d'occident. Savoir dater les grands évènements vus en cours / Savoir citer et situer dans le temps des figures littéraires majeures grecques et romaines vues en cours.Langue :connaître la structure canonique d'une phrase latine : sujet - compléments - verbe,savoir relier la fonction d'un mot (sujet, attribut du sujet, COD, COI, Comp. Circonstanciel) avec son cas latin, savoir identifier les mots aux nominatif, au vocatif, à l'accusatif, à l'ablatif dans une phrase latine (avec des mots de la 1ère, 2ème, 3ème déclinaisons)connaître la première déclinaison des noms en entier (rosa,ae)savoir identifier la déclinaison d'un nom à partir de son génitifsavoir traduire une phrase latine simple avec le vocabulaire fourni.Voir les docs sur le digipad : "
-   ],
-   "absents": 0
-  },
-  {
-   "date": "2026-09-18",
-   "time": "15:00",
-   "hours": 2,
-   "titre": "DS n°1 : grands repères antiques et langue + Langue (phrase latine) + « Gouverner » (1) : class",
-   "statut": "publié",
-   "theme": "",
-   "cat": "Devoir sur table DS ",
-   "contenu": "DS n°1 : grands repères antiques et langue + Langue (phrase latine) + « Gouverner » (1) : classer le « bon prince »Objectifs :restituer les grands repères antiques (Troie, Romulus, frise) ; identifier cas, déclinaisons et conjugaison ; classer les caractérisations du bon prince (Quinte-Curce, Rabelais, Machiavel) Contrôle : Grands repères antiquesGuerre de Troie : Connaître son origine. Connaître les protagonistes vus en cours et à quel camp ils appartiennent (Troyens : Priam, Hector, Paris, Enée / Grecs : Agamemnon, Ménélas, Hélène, Achille, Ulysse).Romulus et Remus : faire le lien avec la guerre de Troie, connaître les principaux jalons de leur histoire : mère, père, ancêtre, raison du conflitFrise chronologique : des Mycéniens jusqu'à la chute de l'Empire Romain d'occident. Savoir dater les grands évènements vus en cours / Savoir citer et situer dans le temps des figures littéraires majeures grecques et romaines vues en cours.Langue :connaître la structure canonique d'une phrase latine : sujet - compléments - verbe,savoir relier la fonction d'un mot (sujet, attribut du sujet, COD, COI, Comp. Circonstanciel) avec son cas latin, savoir identifier les mots aux nominatif, au vocatif, à l'accusatif, à l'ablatif dans une phrase latine (avec des mots de la 1ère, 2ème, 3ème déclinaisons)connaître la première déclinaison des noms en entier (rosa,ae)savoir identifier la déclinaison d'un nom à partir de son génitifsavoir traduire une phrase latine simple avec le vocabulaire fourni.Voir les documents sur le digipad :  Langue : travail sur les temps de l'indicatifObjectifs :reconnaître à quelle conjugaison appartient un verbesavoir identifier les temps de l'infectum et du perfectum en fonction du radical du verbesavoir reconnaître le temps en fonction du suffixesavoir reconnaître la personne en fonction de la désinenceidentifier et traduire un verbe dans un textePoursuite du travail de la séquence 1 – La cité entre réalités et utopies / Séance 1 - Gouverner : du mythe à l'histoire : quel prince idéal ?objectif : classer les caractérisations du \"bon prince\" selon Quinte Curce, Vie d'Alexandre, VIII, 8,(en traduction), Rabelais, Gargantua, chap 50, Machiavel, Le Prince, chap XVII",
-   "resume": "DS n°1 : grands repères antiques et langue + Langue (phrase latine) + « Gouverner » (1) : classer le « bon prince »Objectifs :restituer les grands repères antiques (Troie, Romulus, frise) ; identifier cas, déclinaisons et conjugaison ; classer les caractérisat",
-   "elements": [
-    "Analyser les procédés d’écriture et construire une interprétation littéraire Comparer textes, traductions, images, objets ou représentations Connaître et mobiliser œuvres, genres, mythes, figures et notions majeures de l'AntiquitéConnaître les grands repères de l’histoire grecque et romaine Construire une synthèse à partir de plusieurs textes ou documents Identifier et analyser formes, fonctions et structures syntaxiques Interpréter un texte en mobilisant langue, contexte et culture La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Mettre en relation mondes anciens et monde moderne/contemporain Problématiser une question littéraire, politique ou culturelle Situer textes, auteurs, événements et espaces dans leurs contextes"
-   ],
-   "afaire": [],
-   "absents": 0
-  },
-  {
-   "date": "2026-09-21",
-   "time": "16:00",
-   "hours": 2,
-   "titre": "Correction du DS, l'interrogation en latin + Seq 1 : caractérisations du \"bon prince\" selon Qui",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "Correction du DS, l'interrogation en latin + Seq 1 : caractérisations du \"bon prince\" selon Quinte Curce, Vie d'Alexandre, VIII, 8,(en traduction), Rabelais, Gargantua, chap 50, Machiavel, Le Prince, chap XVIIObjectifs :corriger ses erreurs du contrôle ; identifier les questions en latin (-ne, num, nonne) et y répondre (ita / minime) ; repérer le lexique et les procédés qui caractérisent la figure du prince idéal Rendu et correction du contrôle => Retour sur les erreursTravail sur les exercices de Via Latina \"Ecce Larentia\"Objectifs: identifier les types de questions en latin grâce au mot interrogatif : -ne, num, nonnerépondre : ita (= oui, affimative), minime (non, négative).Poursuite du travail de la séquence 1 – La cité entre réalités et utopies / Séance 1 - Gouverner : du mythe à l'histoire : quel prince idéal ?Objectifs :classer les caractérisations du \"bon prince\" selon Quinte Curce, Vie d'Alexandre, VIII, 8,(en traduction), Rabelais, Gargantua, chap 50, Machiavel, Le Prince, chap XVIIrepérage du lexique et des procédés littéraires permettant de caractériser la \"figure du prince idéal\"",
-   "resume": "Correction du DS, l'interrogation en latin + Seq 1 : caractérisations du \"bon prince\" selon Quinte Curce, Vie d'Alexandre, VIII, 8,(en traduction), Rabelais, Gargantua, chap 50, Machiavel, Le Prince, chap XVIIObjectifs :corriger ses erreurs du contrôle ; ident",
-   "elements": [
-    "Analyser les procédés d’écriture et construire une interprétation littéraire Comparer textes, traductions, images, objets ou représentations Construire une synthèse à partir de plusieurs textes ou documents Identifier et analyser formes, fonctions et structures syntaxiques Interpréter un texte en mobilisant langue, contexte et culture La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin Mettre en relation mondes anciens et monde moderne/contemporain"
-   ],
-   "afaire": [
-    "Pour le 25/09Vocabulaire : apprendre les mots de la 1ère déclinaisons de la Fiche N°1Relire la fiche de grammaire sur la conjugaisonLire le texte de Suétone et repérer les formes verbales"
-   ],
-   "absents": 0
-  },
-  {
-   "date": "2026-09-25",
-   "time": "15:00",
-   "hours": 2,
-   "titre": "Contrôle rituel #1 + Méthodo Essai + Seq 1 séance 1 « Gouverner » : le regard de l'historien (S",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "Contrôle rituel #1 + Méthodo Essai + Seq 1 séance 1 « Gouverner » : le regard de l'historien (Suétone, Néron) et l'éloge du prince (Pline, Trajan)Objectifs :traduire un texte avec les noms de la 1ère déclinaison ; s'approprier la méthode de l'essai (spécialité) ; mettre en relation Lorenzetti et l'idée de bon gouvernement ; caractériser le prince idéal chez l'historien (Suétone) et le panégyrique (Pline)Contrôle rituel #1 : vocabulaire et traduction, noms de la première déclinaison Méthodologie de l'essai à partir de documents supports fournis : méthode et exemple Séquence 1 - La cité entre réalité et utopie / Séance 1 : gouverver, du mythe à l'histoire : la figure du \"Prince idéal\"Projection et échanges autour de la vidéo de Pierre Rosenvallon sur l'idée du bon gouvernement : https://www.youtube.com/watch?v=Tg2rPB8HJDUmise en perspective avec la fresque allégorique du bon gouvernement d'Ambrogio Lorenzetti Travail sur le texte de Suétone sur Néron, Vie des douze Césarsoralisationrepérage des verbesmise en relation avec les autres textes étudiés => ici le regard de l'historien qui construit la figure du prince idéal Travail sur le texte de Pline le Jeune, Panégyrique de Trajantravail de remise dans l'ordre de la traductionrepérage des procédés littéraires pour valoriser Trajan : exclamatives, expressions hyperboliquesconstruire un paragraphe argumenté.pdf méthodo_essai_hatier.pdf ELEVE_Méthodologie_de_l_essai_spé_latin.pdf ",
-   "resume": "Contrôle rituel #1 + Méthodo Essai + Seq 1 séance 1 « Gouverner » : le regard de l'historien (Suétone, Néron) et l'éloge du prince (Pline, Trajan)Objectifs :traduire un texte avec les noms de la 1ère déclinaison ; s'approprier la méthode de l'essai (spécialité",
-   "elements": [
-    "Acquérir et mobiliser un lexique fréquentiel Analyser les procédés d’écriture et construire une interprétation littéraire Comparer textes, traductions, images, objets ou représentations Comprendre réception, transmission et transformations de l’Antiquité Connaître les grands repères de l’histoire grecque et romaine Construire et développer une réflexion personnelle de type essai Identifier et analyser formes, fonctions et structures syntaxiques Interpréter un texte en mobilisant langue, contexte et culture La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin Mettre en relation mondes anciens et monde moderne/contemporain Réinvestir les faits de langue pour construire le sens Repérer des indices et formuler une hypothèse de sens Situer textes, auteurs, événements et espaces dans leurs contextes"
-   ],
-   "afaire": [],
-   "absents": 0
-  },
-  {
-   "date": "2026-09-28",
-   "time": "16:00",
-   "hours": 2,
-   "titre": "Langue : la 2e déclinaison (ludus, puer, monstrum) ; révisions conjugaison ; Séq. 1 - séance 2 ",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "Langue : la 2e déclinaison (ludus, puer, monstrum) ; révisions conjugaison ; Séq. 1 - séance 2 : repères sur Auguste + méthode de l'essaiObjectifs :distinguer les trois modèles morphologiques de la 2e déclinaison ; réviser la conjugaison (infectum/perfectum) ; réactiver les repères historiques sur Auguste et la méthodologie de l'essai Grammaire : approfondissement sur les noms de la deuxième déclinaisonObjectif : comprendre les similtudes et différences entre les déclinaisons morphologiques de type ludus, puer et monstrum Mise en application avec des exercices de grammaire et de traductionRévisions sur la conjugaison Rappels de la méthodologie de l'essaiObjectif : se préparer en vue de l'épreuve de spécialité Rappels historiques sur Auguste ",
-   "resume": "Langue : la 2e déclinaison (ludus, puer, monstrum) ; révisions conjugaison ; Séq. 1 - séance 2 : repères sur Auguste + méthode de l'essaiObjectifs :distinguer les trois modèles morphologiques de la 2e déclinaison ; réviser la conjugaison (infectum/perfectum) ;",
-   "elements": [
-    "Connaître les grands repères de l’histoire grecque et romaine Construire et développer une réflexion personnelle de type essai Construire et justifier une traduction La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin Repérer des indices et formuler une hypothèse de sens Situer textes, auteurs, événements et espaces dans leurs contextes"
-   ],
-   "afaire": [],
-   "absents": 1
-  },
-  {
-   "date": "2026-10-02",
-   "time": "15:00",
-   "hours": 2,
-   "titre": "Séq. 1 - le portrait d'Auguste chez Suétone + préparation langue (adjectifs, verbe sum)",
-   "statut": "distanciel",
-   "theme": "",
-   "cat": "",
-   "contenu": "[Distanciel] Séq. 1 - le portrait d'Auguste chez Suétone + préparation langue (adjectifs, verbe sum)Objectifs :dégager les caractéristiques d'Auguste dans le corpus de Suétone (termes latins associés) ; observer les adjectifs de la 1ère classe ; mémoriser le verbe sum au présent et au parfait ; préparer Ecce Larentia II Le contrôle rituel de latin est décalé à notre prochain cours du lundi 05 octobre. (rappel : il portera sur les noms de la 2ème déclinaison de ager,agri à regnum,i, ainsi que sur la 2ème déclinaison des noms : modèles ludus, puer, monstrum sur la fiche des déclinaisons. )Travail pour aujourd'hui :1) lire le texte Ecce Larentia II et repérer d'éventuelles difficultés pour le prochain cours. 2) Dans le cadre de notre objet d'étude sur le \"prince idéal\" => regarder la vidéo sur Auguste https://ladigitale.dev/digiview/#/v/b62e038ecc57e973 => lire la fiche sur Auguste distribuée au dernier cours : Auguste, fondateur de l'Empire romain => dans le corpus de textes sur Auguste distribué au dernier cours, choisir 2 textes et dégager une ou plusieurs caractéristiques propres au personnage d’Auguste et la lecture qu’en donne Suétone. (noter les termes latins associés) Pour lundi en grammaire :a) regarder les adjectifs qualificatifs de la 1ère classe (fiche distribuée au dernier cours => modèle bonus) et observer les correspondances de désinences entre les 1ères et 2ème déclinaison des nomsb) apprendre le verbe être au présent et au parfait (fiche jointe)- sum es est sumus estis sunt- fui fuisti fuit fuimus fuistis fuerunt Tous les supports de cours sont également mis à disposition sur la page web :  Bon travail !.Fiche Sum.pdfELEVE_Ecce-Larentia-II.pdfCorpus 1 Portrait d'Auguste.pdfELEVE_Auguste.pdfCorpus 1 Portrait d'Auguste.pdf ELEVE_Auguste.pdf Adjectifs Pronoms.pdf ELEVE_Ecce-Larentia-II.pdf Fiche Sum.pdf ",
-   "resume": "[Distanciel] Séq. 1 - le portrait d'Auguste chez Suétone + préparation langue (adjectifs, verbe sum)Objectifs :dégager les caractéristiques d'Auguste dans le corpus de Suétone (termes latins associés) ; observer les adjectifs de la 1ère classe ; mémoriser le v",
-   "elements": [
-    "Connaître les grands repères de l’histoire grecque et romaine Identifier et analyser formes, fonctions et structures syntaxiques La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin"
-   ],
-   "afaire": [
-    "Pour le 05/10 Dans le cadre de notre objet d'étude sur le \"prince idéal\" => avoir regardé la vidéo sur Auguste https://ladigitale.dev/digiview/#/v/b62e038ecc57e973 => avoir lu la fiche sur Auguste distribuée au dernier cours : Auguste, fondateur de l'Empire romain => dans le corpus de textes sur Auguste distribué au dernier cours, avoir choisi 2 textes et dégagé une ou plusieurs caractéristiques propres au personnage d’Auguste et la lecture qu’en donne Suétone. (noter les termes latins associés) Grammaire a) regarder les adjectifs qualificatifs de la 1ère classe (fiche distribuée au dernier cours => modèle bonus) et observer les correspondances de désinences entre les 1ères et 2ème déclinaison des nomsb) apprendre le verbe être au présent et au parfait (fiche jointe)- sum es est sumus estis sunt- fui fuisti fuit fuimus fuistis fueruntPour le 12/10Contrôle rituel de vocabulaire et grammaire #2vocabulaire : apprendre les noms de la 2ème déclinaison de ager,agri à regnum,i.déclinaison : connaître la 2ème déclinaison des noms : modèles ludus, puer, monstrum sur la fiche des déclinaisons"
-   ],
-   "absents": 0
-  },
-  {
-   "date": "2026-10-05",
-   "time": "16:00",
-   "hours": 2,
-   "titre": "Séq. 1 - séance 2 « Gouverner » : Auguste, modèle du Prince — l'Auguste de Prima Porta et l'ima",
-   "statut": "distanciel",
-   "theme": "",
-   "cat": "",
-   "contenu": "[Distanciel] Séq. 1 - séance 2 « Gouverner » : Auguste, modèle du Prince — l'Auguste de Prima Porta et l'image du pouvoirObjectifs :analyser la statue d'Auguste de Prima Porta et formuler des hypothèses ; confronter aux portraits officiels des présidents de la Ve République ; s'entraîner sur Ecce Larentia II (ex. 10-16) (Du fait du mode distanciel, les contrôles rituels de voc et grammaire #2 et #3 sont décalés au lundi 12/10) Voici le travail à faire aujourd'hui pour cette séance à distance.Vous avez déjà pris connaissance des textes latins de Suétone (avec leur traduction), qui dessinent un portrait d'Auguste. Nous rassemblerons vos trouvailles au prochain cours. Aujourd'hui vous allez faire un petit travail sur l'Auguste de Prima Porta en autonomie. (oui j'ai bien compris que la statue de Prima Porta avait un fan club ! et à raison d'ailleurs...) Séance 2 : Auguste, le modèle du Prince.Problématique : comment Auguste met-il en scène son image pour affirmer un nouveau type de pouvoir ?=> Travail en autonomie sur l'Auguste de Prima Porta et confrontation avec l'époque contemporaine. 1) Observez attentivement la statue d'Auguste dite de Prima Porta (voir images jointes) .Sans faire de recherche dans un premier temps, relevez des éléments qui vous paraissent avoir été choisis pour donner d'Auguste l'image d'un homme exceptionnel ou puissant.Formulez des hypothèses : que veut-on faire comprendre au spectateur ? 2) Choisissez deux portraits officiels de présidents de la Ve République, appartenant à deux périodes différentes si possible.Pour chacun :1. Identifiez le président et la date du portrait.2. Décrivez brièvement sa posture, son vêtement, le décor et les objets visibles.3. Repérez les symboles du pouvoir ou de la République.4. Quelle(s) qualité(s) du président l'image cherche-t-elle selon vous à mettre en avant ?5. Comparez avec Prima Porta : trouvez des ressemblances et différences dans la manière de représenter le chef de l'État / le dépositaire du pouvoir. Pour vendredi 09/10 : préparer Ecce Larentia II Objectif : comprendre un texte latin (relativement) simple et mettre en application les règles de grammaire. Poursuivre le travail en autonomie commencé vendredi sur Ecce Larentia II.1. Relire attentivement le texte Ecce Larentia II.2. Écouter la lecture du texte avec le texte sous les yeux :https://ladigitale.dev/digiview/#/v/eebbeb6e99d492223. Faire les exercices 10, 11, 13, 14 et 16 Nous corrigerons et relirons le texte ensemble au prochain cours. Continuez à apprendre le verbe sum au présent et au parfait.(rappel : tous les supports de cours sont disponibles sur la page web du cours : ) Auguste polychromie 1.jpg Auguste cuirasse gros plan.jpg ",
-   "resume": "[Distanciel] Séq. 1 - séance 2 « Gouverner » : Auguste, modèle du Prince — l'Auguste de Prima Porta et l'image du pouvoirObjectifs :analyser la statue d'Auguste de Prima Porta et formuler des hypothèses ; confronter aux portraits officiels des présidents de la",
-   "elements": [
-    "Analyser les procédés d’écriture et construire une interprétation littéraire Comparer textes, traductions, images, objets ou représentations Connaître et mobiliser œuvres, genres, mythes, figures et notions majeures de l'AntiquitéConnaître les grands repères de l’histoire grecque et romaine Construire et justifier une traduction Justifier une réponse ou une interprétation par des indices précis La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin Mettre en relation mondes anciens et monde moderne/contemporain Rechercher, sélectionner et exploiter des ressources de manière autonome Situer textes, auteurs, événements et espaces dans leurs contextes"
-   ],
-   "afaire": [
-    "Pour le 09/10Ecce Larentia IIObjectif : comprendre un texte latin (relativement) simple et mettre en application les règles de grammaire.Pour vendredi 09/10, poursuivre le travail en autonomie commencé vendredi sur Ecce Larentia II.1. Relire attentivement le texte Ecce Larentia II.2. Écouter la lecture du texte avec le texte sous les yeux :https://ladigitale.dev/digiview/#/v/eebbeb6e99d492223. Faire les exercices 10, 11, 13, 14 et 16 Nous corrigerons et relirons le texte ensemble. Continuez à apprendre le verbe sum au présent et au parfait.(rappel : tous les supports de cours sont disponibles sur la page web du cours : )Pour le 16/10Contrôle rituel de vocabulaire et grammaire #3vocabulaire : apprendre les noms de la 3ème déclinaison de civis à tempus."
-   ],
-   "absents": 0
-  },
-  {
-   "date": "2026-10-09",
-   "time": "15:00",
-   "hours": 2,
-   "titre": "Séq. 1 — « Gouverner » séance 3 : l'auctoritas, de Machiavel à de Gaulle + Ecce Larentia III",
-   "statut": "distanciel",
-   "theme": "",
-   "cat": "",
-   "contenu": "[Distanciel]Séq. 1 — « Gouverner » séance 3 : l'auctoritas, de Machiavel à de Gaulle + Ecce Larentia IIIObjectifs : identifier la notion politique commune à l'exemplier ; confronter deux conceptions opposées de l'auctoritas (citations à l'appui) ; explorer l'étymologie du nom Auguste ; traduire Ecce Larentia III Travail à faire en autonomie :Lisez les textes de l'exemplier, de Machiavel à Charles de Gaulle. Ils permettent de réfléchir à une même notion politique.- Quelle est la notion politique commune à ces textes ? - Choisissez deux auteurs qui présentent des conceptions différentes, voire opposées, de cette notion. (justifez votre choix en vous appuyant sur une courte citation de chacun)- Quel rapprochement pouvez-vous faire entre cette notion et le nom Auguste ? Cherchez en particulier du côté de l'étymologie latine.Consignes : Il n'y a pas de rendu à faire sur Pronote. Répondez aux questions par des phrases brèves. Ne pas analyser tous les textes en détail mais prenez le temps de lire l'ensemble des texte et sélectionnez les passages qui vous paraissent les plus intéressants pour répondre aux questions. Travail sur la langue Lire Ecce Larentia III et essayer de traduire le texte. ELEVE_Textes_Seq1_Seance3.pdf ELEVE_Ecce-Larentia-III.pdf ",
-   "resume": "[Distanciel]Séq. 1 — « Gouverner » séance 3 : l'auctoritas, de Machiavel à de Gaulle + Ecce Larentia IIIObjectifs : identifier la notion politique commune à l'exemplier ; confronter deux conceptions opposées de l'auctoritas (citations à l'appui) ; explorer l'é",
-   "elements": [
-    "Comparer textes, traductions, images, objets ou représentations Construire une synthèse à partir de plusieurs textes ou documents Étudier étymologie, familles de mots et mots-concepts La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin Mettre en relation mondes anciens et monde moderne/contemporain Rechercher, sélectionner et exploiter des ressources de manière autonome"
-   ],
-   "afaire": [
-    "Pour le 16/10 Entraînez vous à lire et comprendre le latin par la relecture et traduction d'Ecce Larentia II et III "
-   ],
-   "absents": 0
-  },
-  {
-   "date": "2026-10-12",
-   "time": "16:00",
-   "hours": 2,
-   "titre": "Séq. 1 - séance 2 - bilan « Auguste » (dépôt espace élève) + découverte de Virgile et de l'Énéi",
-   "statut": "distanciel",
-   "theme": "",
-   "cat": "",
-   "contenu": "[Distanciel] Séq. 1 - séance 2 - bilan « Auguste » (dépôt espace élève) + découverte de Virgile et de l'ÉnéideObjectifs : sélectionner et mettre au propre ses analyses (Suétone, Prima Porta, portraits présidentiels, auctoritas) ; situer Virgile, l'épopée et le lien Énée-Auguste ; relire et oraliser Ecce Larentia II et III Travail en autonomie — Lundi 12 octobre 2026Je serai connecté à 16h00 dans une salle virtuelle si vous avez d'éventuelles questions :  Voici le travail à faire aujourd'hui en autonomie I Bilan des travaux précédents sur Auguste à déposer dans l'espace élèveLes trois derniers cours ont été consacrés à l'étude de la figure d'Auguste.Déposez dans l'espace élève les éléments suivants, issus des travaux déjà réalisés :Votre analyse des deux textes de Suétone que vous avez choisis, en faisant apparaître les qualités ou les caractéristiques d'Auguste, ainsi que les termes latins correspondants.Vos principales observations sur la statue d'Auguste de Prima Porta (trois éléments significatifs).Votre comparaison entre les portraits officiels de deux présidents de la Ve République et la statue de Prima Porta.Deux auteurs qui présentent des conceptions différentes, voire opposées de la notion d'auctoritas. (justifez votre choix en vous appuyant sur une courte citation de chacun) de Machiavel à Charles de Gaulle, avec une brève explication des conceptions de l'autorité qu'elles expriment. Il ne s'agit pas de refaire les exercices, mais de sélectionner et de mettre au propre l'essentiel de votre travail. Le travail sera noté en bonus, c'est à dire que c'est une note facultative : seuls les points qui améliorent la moyenne sont pris en compte. II Découverte de Virgile et de l'ÉnéideRegardez les vidéos suivantes de présentation de l'Eneide de Virgile :la vidéo pédagogique de TED-Ed, Why should you read Virgil's Aeneid?, de Mark Robinson (5 min 35), en activant les sous-titres français si besoin. https://ladigitale.dev/digiview/#/v/723d5dd68bfdc736VIRGILE / L'ENEIDE / LA P'TITE LIBRAIRIE https://www.youtube.com/watch?v=e6Xv-oAv2o8Prenez des notes pour le prochain cours (certains points ont déjà été plus ou moins évoquées en cours) :Qui est Virgile ? À quelle époque vit-il et dans quel contexte politique compose-t-il l'Énéide ?Qu'est-ce qu'une épopée ? De quelles grandes œuvres de la littérature grecque Virgile s'inspire-t-il ?Comment l'histoire d'Énée permet-elle de mettre en valeur les origines et la grandeur de Rome ? Quel lien peut-on établir avec Auguste ? III Lecture du latinRelisez Ecce Larentia II et III à haute voix en vous entraînant à comprendre en lisant le latin. (pour le vocabulaire, n'hésitez pas à regarder la traduction des mots dans le Gaffiot en ligne).",
-   "resume": "[Distanciel] Séq. 1 - séance 2 - bilan « Auguste » (dépôt espace élève) + découverte de Virgile et de l'ÉnéideObjectifs : sélectionner et mettre au propre ses analyses (Suétone, Prima Porta, portraits présidentiels, auctoritas) ; situer Virgile, l'épopée et le",
-   "elements": [
-    "Comparer textes, traductions, images, objets ou représentations Construire une synthèse à partir de plusieurs textes ou documents Étudier étymologie, familles de mots et mots-concepts La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin Mettre en relation mondes anciens et monde moderne/contemporain Rechercher, sélectionner et exploiter des ressources de manière autonome Situer textes, auteurs, événements et espaces dans leurs contextes"
-   ],
-   "afaire": [
-    "Pour le 13/10Les trois derniers cours ont été consacrés à l'étude de la figure d'Auguste. Déposez dans l'espace élève les éléments suivants, issus des travaux déjà réalisés :Votre analyse des deux textes de Suétone que vous avez choisis, en faisant apparaître les qualités ou les caractéristiques d'Auguste, ainsi que les termes latins correspondants.Vos principales observations sur la statue d'Auguste de Prima Porta (trois éléments significatifs).Votre comparaison entre les portraits officiels de deux présidents de la Ve République et la statue de Prima Porta.Deux auteurs qui présentent des conceptions différentes, voire opposées de la notion d'auctoritas. (justifez votre choix en vous appuyant sur une courte citation de chacun) de Machiavel à Charles de Gaulle, avec une brève explication des conceptions de l'autorité qu'elles expriment. Il ne s'agit pas de refaire les exercices, mais de sélectionner et de mettre au propre l'essentiel de votre travail. Le travail sera noté en bonus, c'est à dire que c'est une note facultative : seuls les points qui améliorent la moyenne sont pris en compte."
-   ],
-   "absents": 0
-  },
-  {
-   "date": "2026-10-16",
-   "time": "15:00",
-   "hours": 2,
-   "titre": "Visio : traduction commentée d'Ecce Larentia II et III + cadrage du travail pour les vacances",
-   "statut": "distanciel",
-   "theme": "",
-   "cat": "",
-   "contenu": "[Distanciel] Visio : traduction commentée d'Ecce Larentia II et III + cadrage du travail pour les vacancesObjectifs :acquérir une lecture et une compréhension fluides d'un texte latin ; repérer déclinaisons, cas, verbes au présent de l'indicatif et pronoms démonstratifs ; réinvestir les faits de langue pour construire le sens Lien de connexion pour le cours en visio :  Lecture et traduction du latinTravail de traduction commentée sur Ecce Larentia II et III. repérage des déclinaisons et des casrepérage des verbes conjuqué au présent de l'indicatifidentification des pronoms démonstratifs dans un usage anaphorique et possessif.rappels sur l'interrogation",
-   "resume": "[Distanciel] Visio : traduction commentée d'Ecce Larentia II et III + cadrage du travail pour les vacancesObjectifs :acquérir une lecture et une compréhension fluides d'un texte latin ; repérer déclinaisons, cas, verbes au présent de l'indicatif et pronoms dém",
-   "elements": [
-    "Acquérir et mobiliser un lexique fréquentiel Construire et justifier une traduction Lire et oraliser un texte latin Réinvestir les faits de langue pour construire le sens Repérer des indices et formuler une hypothèse de sens"
-   ],
-   "afaire": [
-    "Pour le 02/11Lecture obligatoire pour les vacances de la Toussaint — Virgile, L'Énéide, chants I à IV (traduction française intégrale)Prenez une édition complète de poche. Edition de poche recommandée : GF Flammarion.Cette lecture vous permettra de découvrir directement l'une des œuvres majeures de la littérature latine (et mondiale). Nous l'exploiterons dans nos différents objets d'étude en classe.Lisez \"le crayon à la main\" en notant les principaux épisodes, les principaux personnages et divinités, les lieux, quelques citations de passages qui vous paraissent importants, ainsi que vos impressions de lecture.Cette lecture donnera lieu à un contrôle de lecture et/ou un oral après les vacances de la Toussaint. Contrôle rituel de vocabulaire et grammaire #2 et #3 (décalés suite à la fermeture du lycée)vocabulaire : apprendre les noms de la 2ème déclinaison de ager,agri à regnum,i.vocabulaire : apprendre les noms de la 3ème déclinaison de civis à tempus.vocabulaire : verbes de la 1ère et de la 2ème conjugaisondéclinaison : 2ème déclinaison des noms : modèles ludus, puer, monstrum sur la fiche des déclinaisonsdéclinaison : 3ème déclinaison des noms : modèle dux, corpus, civis, mareconjugaison : connaître le verbe sum au présent et au parfait de l'indicatif"
-   ],
-   "absents": 0
-  },
-  {
-   "date": "2026-11-02",
-   "time": "16:00",
-   "hours": 2,
-   "titre": "Séq. 1 — Reprise : bilan de l'Énéide (I-IV), réception (Turner), contrôle rituel #2, Ecce Laren",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "Séq. 1 — Reprise : bilan de l'Énéide (I-IV), réception (Turner), contrôle rituel #2, Ecce Larentia II, corpus AugusteObjectifs : vérifier la lecture de l'Énéide ; évaluer les automatismes linguistiques (contrôle rituel) ; consolider la lecture et la traduction d'un texte latin ; caractériser la figure d'Auguste à travers le corpus de Suétone et la statuaire.I. Bilan de la lecture obligatoire : Virgile, Énéide, chants I à IV - difficultés rencontrées (intertextualité avec l'Odyssée : Charybde et Scylla), échanges sur les épisodes marquants.II. Réception de l'Antiquité : étude du tableau de Turner, Didon bâtissant Carthage — mise en relation peinture et épopée antique.III. Contrôle rituel #2 : vocabulaire et grammaire (2e et 3e déclinaisons, verbes de la 1re et 2e conjugaison, verbe sum).IV. Lecture du latin : Ecce Larentia II (Via Latina) — lecture oralisée et traduction à l'oral ; exercices 10 à 14/15 ; rappels sur les pronoms démonstratifs et l'interrogation.V. Corpus Auguste (Suétone) : méthode — citer le texte et identifier les mots-clés et idées qui convergent vers le portrait d'Auguste : homme célébré par les augures (proximité du divin), refusant le titre de dominus (souvenir du rex honni depuis la fin de la royauté), humble, conquérant (enseignes restituées par les Parthes) et pacificateur. Poursuite avec la statue d'Auguste de Prima Porta (étude à achever) ; prochaine étape : le concept d'auctoritas et ses résonances antiques et contemporaines. Turner_Dido_Building_Carthage.jpg ",
-   "resume": "Séq. 1 — Reprise : bilan de l'Énéide (I-IV), réception (Turner), contrôle rituel #2, Ecce Larentia II, corpus AugusteObjectifs : vérifier la lecture de l'Énéide ; évaluer les automatismes linguistiques (contrôle rituel) ; consolider la lecture et la traduction",
-   "elements": [
-    "Acquérir et mobiliser un lexique fréquentiel Comparer textes, traductions, images, objets ou représentations Connaître et mobiliser œuvres, genres, mythes, figures et notions majeures de l'AntiquitéConnaître les grands repères de l’histoire grecque et romaine Construire et justifier une traduction Construire une synthèse à partir de plusieurs textes ou documents Étudier étymologie, familles de mots et mots-concepts Identifier et analyser formes, fonctions et structures syntaxiques La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin Mettre en relation mondes anciens et monde moderne/contemporain Situer textes, auteurs, événements et espaces dans leurs contextes"
-   ],
-   "afaire": [],
-   "absents": 2
-  },
-  {
-   "date": "2026-11-06",
-   "time": "15:00",
-   "hours": 2,
-   "titre": "Séq. 1 - Auguste et l'auctoritas : statuaire, écho contemporain (de Gaulle) et Séq 2. Introduct",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "Séq. 1 - Auguste et l'auctoritas : statuaire, écho contemporain (de Gaulle) et Séq 2. Introduction à l'Énéide I, 274-295 (prophétie de Jupiter)Objectifs : interpréter la statuaire et les images du pouvoir en les confrontant aux textes ; aborder un texte virgilien en latin par le repérage et la traduction guidée ; construire le mot-concept auctoritas.I. Distribution de la fiche sur l'auctoritas, du groupement de textes autour de cette notion, et d'un extrait de l'Énéide (I, 274-295) en latin, sans traduction.II. Retour sur le DM : description et interprétation de l'Auguste de Prima Porta ; mise en relation avec les textes de Suétone — Auguste conquérant, pacificateur, proche du divin, humble : les facettes du portrait convergent vers l'auctoritas.III. Comparaison avec l'image du pouvoir aujourd'hui : portrait officiel de Charles de Gaulle — analyse des éléments symboliques (les livres en arrière-plan : quel sens donner ? => culture littéraire du général, héritage humaniste, héritage des Lumières ? Quel écho possible de la dimension religieuse augustéenne ?).IV. Lecture de l'extrait de l'Énéide : comprendre la dimension de roman national que contient la prophétie de Jupiter adressée à Venus.Repérage des noms propres et des formes verbales ; traduction guidée de passages clés (excipiet / pono / dedi) — un empire sans limites dans l'espace et dans le temps : analyse littéraire des temps verbaux (futur, présent, parfait) ; travail sur l'énonciation (qui parle ? à qui ? dans quel contexte ? Vénus supplie Jupiter).ELEVE_Auctoritas_mot_concept.pdf ELEVE_virgile-énéide-i-274-295-texte-+-lexique.pdf ",
-   "resume": "Séq. 1 - Auguste et l'auctoritas : statuaire, écho contemporain (de Gaulle) et Séq 2. Introduction à l'Énéide I, 274-295 (prophétie de Jupiter)Objectifs : interpréter la statuaire et les images du pouvoir en les confrontant aux textes ; aborder un texte virgil",
-   "elements": [
-    "Analyser les procédés d’écriture et construire une interprétation littéraire Comparer textes, traductions, images, objets ou représentations Connaître et mobiliser œuvres, genres, mythes, figures et notions majeures de l'AntiquitéConnaître les grands repères de l’histoire grecque et romaine Construire et justifier une traduction Étudier étymologie, familles de mots et mots-concepts Identifier et analyser formes, fonctions et structures syntaxiques La cité entre réalités et utopies / Gouverner : du mythe à l’histoire, quel “prince” idéal ? »Lire et oraliser un texte latin Mettre en relation mondes anciens et monde moderne/contemporain"
-   ],
-   "afaire": [
-    "Pour le 16/11Contrôle rituel de vocabulaire et de grammaire #3 sur le chapitre 1 d'Ecce Larentia (leçons I à III)C'est un vocabulaire que nous avons déjà travaillé en cours. => réviser le vocabulaire de la fiche jointe grâce à l'application en ligne :  Réviser le vocabulaire de Ecce Larentia chapitre 1 ELEVE_Voc_essentiel_Ecce_Larentia_Cap_I.pdf "
-   ],
-   "absents": 2
-  },
-  {
-   "date": "2026-11-09",
-   "time": "16:00",
-   "hours": 2,
-   "titre": "Séq 2 - Didon, reine de Carthage - Séance 1 - La colère de Didon envers Enée dans l'Eneide",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "Séq 2 - Didon, reine de Carthage - Séance 1 - La colère de Didon envers Enée dans l'Eneide",
-   "resume": "Séq 2 - Didon, reine de Carthage - Séance 1 - La colère de Didon envers Enée dans l'Eneide",
-   "elements": [],
-   "afaire": [
-    "Pour le 13/11Ce vendredi 13/11 nous ferons une séance en visio : voici le lien de connexion. 1) S'éxercer à lire et traduire le texte de Ecce Larentia joint (suite de l'histoire de Larentia, nous attaquons le deuxième chapitre). Chercher le vocabulaire sur gaffiot.fr si besoin. 2) Lire la fiche sur l'Eneide jointe. 3) Nous aborderons notre nouvelle séquence de cours sur Didon, reine de Carthage=> prenez connaissance des documents joints et retrouvez le contexte des passages \"la colère de Didon\" et \"Enée quitte Carthage\" dans votre édition en français.ELEVE_fiche_Virgile.pdf Larentia__chapt2_lecon1_romulus_et_remus.pdf ELEVE_Enée_quitte_Carthage.pdf ELEVE_la_colère_d_Didon.pdf ELEVE_Le périple d'Énée.pdf "
-   ],
-   "absents": 0
-  },
-  {
-   "date": "2026-11-13",
-   "time": "15:00",
-   "hours": 2,
-   "titre": "[Distanciel] Séq 2 - Didon, reine de Carthage - Séance 1 - La colère de Didon envers Énée dans l'Énéide",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "[Distanciel] Séq 2 - Didon, reine de Carthage - Séance 1 - La colère de Didon envers Énée dans l'Énéide",
-   "resume": "[Distanciel] Séq 2 - Didon, reine de Carthage - Séance 1 - La colère de Didon envers Énée dans l'Énéide",
-   "elements": [],
-   "afaire": [],
-   "absents": 0
-  },
-  {
-   "date": "2026-11-16",
-   "time": "16:00",
-   "hours": 2,
-   "titre": "Séquence 2 — Didon, reine de Carthage — Séance 1 : reprise et cadrage après les blocages",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "Séquence 2 — Didon, reine de Carthage — Séance 1 : reprise et cadrage après les blocages\nObjectifs : réactiver la langue par le rituel de lecture-traduction ; contrôle rituel #3 ; faire le bilan de la séquence 1 et installer la séquence 2 ; points de grammaire en travaillant les textes.\nI. Ecce Larentia, chapitre 2, leçon 1 : oralisation et traduction ligne à ligne en tour de rôle ; réactivation des cas et fonctions et des pronoms démonstratifs (hic, iste, ille).\nII. Contrôle rituel #3.\nIII. Point d'étape : bilan de la séquence 1 (Gouverner : du mythe à l'histoire, quel « prince » idéal ? — Machiavel, Rabelais, Quinte-Curce, Suétone, l'Auguste de Prima Porta, l'auctoritas) et entrée dans la séquence 2 : Didon, reine de Carthage. Calendrier des évaluations annoncé : contrôle rituel #4, DS sur la séquence 1 (avec essai), contrôle de lecture de l'Énéide.\nIV. Distribution des supports de la séquence 2 : fiche de conjugaison ; fiche sur Virgile et plan de l'Énéide ; dossier de travail sur Didon et Énée (le périple d'Énée, la colère de Didon, le départ d'Énée). Reprise du travail distanciel : le périple d'Énée, la colère de Didon.\nV. Langue : les mots de liaison (coordonnants), leur rôle essentiel pour lire les textes antiques.",
-   "resume": "Séquence 2 — Didon, reine de Carthage — Séance 1 : reprise et cadrage après les blocages",
-   "elements": [
-    "Acquérir et mobiliser un lexique fréquentiel",
-    "Connaître et mobiliser œuvres, genres, mythes, figures et notions majeures de l'Antiquité",
-    "Connaître les grands repères de l'histoire grecque et romaine",
-    "Construire et justifier une traduction",
-    "Interpréter un texte en mobilisant langue, contexte et culture",
-    "La cité entre réalités et utopies / Gouverner : du mythe à l'histoire, quel « prince » idéal ?",
-    "Lire et oraliser un texte latin",
-    "Repérer des indices et formuler une hypothèse de sens"
-   ],
-   "afaire": [
-    "Pour le 23/11 : contrôle de lecture sur les 4 premiers chants de l'Énéide",
-    "Pour le 27/11 : DS sur la Séquence 1 — Le Prince Idéal, Auguste"
-   ],
-   "absents": 1
-  },
-  {
-   "date": "2026-11-20",
-   "time": "15:00",
-   "hours": 2,
-   "titre": "",
-   "statut": "à saisir",
-   "theme": "",
-   "cat": "",
-   "contenu": "",
-   "resume": "",
-   "elements": [],
-   "afaire": [],
-   "absents": 0
-  },
-  {
-   "date": "2026-11-23",
-   "time": "16:00",
-   "hours": 2,
-   "titre": "",
-   "statut": "à saisir",
-   "theme": "",
-   "cat": "",
-   "contenu": "",
-   "resume": "",
-   "elements": [],
-   "afaire": [],
-   "absents": 0
-  },
-  {
-   "date": "2026-11-27",
-   "time": "15:00",
-   "hours": 2,
-   "titre": "",
-   "statut": "à saisir",
-   "theme": "",
-   "cat": "",
-   "contenu": "",
-   "resume": "",
-   "elements": [],
-   "afaire": [],
-   "absents": 0
-  }
- ],
- "programme": [
-  {
-   "bloc": "1. LIRE, COMPRENDRE, TRADUIRE ET INTERPRÉTER",
-   "items": [
-    {
-     "label": "Lire et oraliser un texte latin",
-     "n": 13
-    },
-    {
-     "label": "Repérer des indices et formuler une hypothèse de sens",
-     "n": 5
-    },
-    {
-     "label": "Construire et justifier une traduction",
-     "n": 5
-    },
-    {
-     "label": "Interpréter un texte en mobilisant langue, contexte et culture",
-     "n": 5
-    },
-    {
-     "label": "Analyser les procédés d'écriture et construire une interprétation littéraire",
-     "n": 0
-    }
-   ]
-  },
-  {
-   "bloc": "2. LANGUE ET LEXIQUE",
-   "items": [
-    {
-     "label": "Identifier et analyser formes, fonctions et structures syntaxiques",
-     "n": 9
-    },
-    {
-     "label": "Réinvestir les faits de langue pour construire le sens",
-     "n": 3
-    },
-    {
-     "label": "Acquérir et mobiliser un lexique fréquentiel",
-     "n": 3
-    },
-    {
-     "label": "Étudier étymologie, familles de mots et mots-concepts",
-     "n": 5
-    }
-   ]
-  },
-  {
-   "bloc": "3. CULTURE ANTIQUE ET REPÈRES",
-   "items": [
-    {
-     "label": "Situer textes, auteurs, événements et espaces dans leurs contextes",
-     "n": 10
-    },
-    {
-     "label": "Connaître les grands repères de l'histoire grecque et romaine",
-     "n": 0
-    },
-    {
-     "label": "Connaître et mobiliser œuvres, genres, mythes, figures et notions majeures de la culture antique",
-     "n": 0
-    }
-   ]
-  },
-  {
-   "bloc": "4. CONFRONTER ET METTRE EN PERSPECTIVE",
-   "items": [
-    {
-     "label": "Lire en édition bilingue et comparer textes, traductions, images, objets ou représentations (amendement validé : lecture bilingue explicite)",
-     "n": 0
-    },
-    {
-     "label": "Comprendre réception, transmission et transformations de l'Antiquité",
-     "n": 0
-    },
-    {
-     "label": "Mettre en relation mondes anciens et monde moderne/contemporain",
-     "n": 9
-    },
-    {
-     "label": "Construire une synthèse à partir de plusieurs textes ou documents",
-     "n": 6
-    }
-   ]
-  },
-  {
-   "bloc": "5. S'EXPRIMER, ARGUMENTER ET CONSTRUIRE SON AUTONOMIE",
-   "items": [
-    {
-     "label": "Justifier une réponse ou une interprétation par des indices précis",
-     "n": 2
-    },
-    {
-     "label": "Produire un écrit organisé et argumenté",
-     "n": 0
-    },
-    {
-     "label": "Problématiser une question littéraire, politique ou culturelle",
-     "n": 3
-    },
-    {
-     "label": "Construire et développer une réflexion personnelle de type essai",
-     "n": 3
-    },
-    {
-     "label": "Présenter, expliquer et argumenter à l'oral",
-     "n": 0
-    },
-    {
-     "label": "Rechercher, sélectionner et exploiter des ressources de manière autonome",
-     "n": 4
-    },
-    {
-     "label": "Construire un portfolio mettant en résonance Antiquité et modernité",
-     "n": 0
-    }
-   ]
-  },
-  {
-   "bloc": "6. OBJETS D'ÉTUDE",
-   "items": [
-    {
-     "label": "La cité entre réalités et utopies",
-     "n": 14
-    },
-    {
-     "label": "Justice des dieux, justice des hommes",
-     "n": 0
-    },
-    {
-     "label": "Amour, Amours",
-     "n": 0
-    },
-    {
-     "label": "Méditerranée : conflits, influences et échanges",
-     "n": 0
-    }
-   ]
-  },
-  {
-   "bloc": "Notes d'évaluation (31/10/2026)",
-   "items": [
-    {
-     "label": "Les 4 objets d'étude reprennent exactement les libellés du BO.",
-     "n": 0
-    },
-    {
-     "label": "La progression grammaticale spé 1ère (locatif, formes syncopées, passif impersonnel, double datif, génitif/ablatif de qualité…) est recouverte par l'item générique 2.1 — suffisant pour un référentiel de cochage.",
-     "n": 0
-    },
-    {
-     "label": "Le portfolio (diptyques antique/moderne en résonance) et l'essai (épreuves écrites fin 1ère et bac) sont explicitement présents.",
-     "n": 0
-    }
-   ]
-  }
- ],
- "journal": [
-  {
-   "date": "2026-11-02",
-   "contexte": "2 élèves absents. Point lecture de Virgile, tableau de Turner (Didon bâtissant Carthage), CR #2, Larentia II lu et traduit à l’oral, textes de Suétone et Prima Porta (non terminé).",
-   "marche": [
-    "Le tableau de Turner apprécié des élèves",
-    "Des progrès notables de prononciation à l’oral (Larentia II)"
-   ],
-   "aAmeliorer": [
-    "La compréhension reste difficile pour une élève sur la traduction orale",
-    "Lister et garder une trace écrite des caractéristiques du portrait d’Auguste (Suétone) : à continuer",
-    "Terminer l’analyse de Prima Porta"
-   ],
-   "idees": [
-    "Mettre un titre aux DS sur Pronote",
-    "Saisir les appréciations élèves dans l’espace élève Pronote",
-    "Converger vers la figure multidimensionnelle d’Auguste et l’auctoritas, avec échos contemporains (corpus Hobbes, De Gaulle…, comparaison visuelle avec les portraits présidentiels)"
-   ]
-  },
-  {
-   "date": "2026-11-06",
-   "contexte": "2 heures. Fiche auctoritas + groupement de textes. Retour sur le DM Prima Porta, comparaison avec De Gaulle, extrait de l’Énéide en latin sans traduction (repérages, traduction guidée), digressions riches ( analyse littéraire, hexamètre).",
-   "marche": [
-    "Des interactions de groupe riches : élèves participants, bonnes idées",
-    "Le texte de l’Énéide a permis de faire le lien avec Auguste ; repérages réussis sur les mots faciles",
-    "La comparaison Prima Porta / De Gaulle : remarques intéressantes (livres en arrière-plan)"
-   ],
-   "aAmeliorer": [
-    "Peu de traces écrites : statuer sur l’attendu (les formateurs consultés divergent)",
-    "La préparation en amont de certains points",
-    "Grammaire et oralisation passées à la trappe : programme trop ambitieux ?",
-    "La gestion du temps",
-    "Ritualiser la langue : au moins 10 min de Larentia chaque cours (aussi en option)"
-   ],
-   "idees": [
-    "Feuille de conjugaison plus complète à distribuer",
-    "Fiche sur l’hexamètre dactylique (avec scan de manuels)",
-    "App de révision de l’Énéide pour le contrôle de lecture : diégèse, personnages, extraits latins à situer + questions plus personnelles",
-    "Mots-concepts à inscrire au référentiel : imperium, pietas, éventuellement fas/fatum",
-    "Proposer des sujets de portfolio au plus tôt ; même travail pour l’option",
-    "Confirmer la date de l’essai sur Auguste",
-    "Prévoir un temps de constitution d’un classeur propre (feuilles en vrac) et montrer un exemple",
-    "Petit excursus numismatique avec des monnaies romaines anciennes",
-    "Distribuer une fiche résumé des 4 premiers chants de l’Énéide (édition GF) enrichie des figures mythologiques",
-    "Pour la visite de l’IA-IPR : excursus culturels et échos contemporains — statues recolorisées, déconstruire Renan",
-    "Fiche tableau des conjugaisons (Déléani) à distribuer"
-   ]
-  },
-  {
-   "date": "2026-11-13",
-   "contexte": "Séance du 09/11 annulée par les blocages, reportée en visio. Prophétie de Jupiter (Énéide I, 274-295) + travail sur Didon (périple d’Énée, colère de Didon).",
-   "marche": [
-    "Le périple d’Énée à reconstituer : interactif, visualisation géographique, mémorisation par la méthode des loci, ludique et instructif",
-    "La traduction manquante à retrouver à partir du latin : mobilise repérage, traduction, grammaire et mémoire"
-   ],
-   "aAmeliorer": [
-    "Le distanciel sans micro ne permet presque aucune interaction : oralisation impossible, séance écourtée"
-   ],
-   "idees": [
-    "Quiz de mythologie sur app projetée (images/textes à deviner), éventuellement en rituel — a suscité l’enthousiasme ; demande des élèves : noms grecs et latins des divinités",
-    "Trace écrite complète « prince idéal / Auguste » pour le DS : Rosanvallon, corpus des figures du prince, facettes d’Auguste chez Suétone, auctoritas",
-    "Leçon rapide sur le futur + fiche de conjugaison",
-    "App de révision pour le DS sur la séquence 1",
-    "Présenter les apps de révision en chantier : mythologie, Énéide, grammaire, méthodo du DS (design : 3 niveaux débutants/confirmés/experts)",
-    "App sur la littérature antique latine, envisageable comme contrôle rituel",
-    "Séance de traduction avec dictionnaires au CDI (réserver la salle info)",
-    "Saisie Pronote des devoirs : toujours inclure le lien vers le digipad",
-    "Structurer les traces écrites : réflexion sur l’exigence de contenu en spé"
-   ]
-  },
-  {
-   "date": "2026-11-16",
-   "contexte": "Nombreux temps de cadrage (reprise après blocages). Larentia chap. 2 leçon 1, lien séq. 1 → séq. 2 Didon, CR3, coordonnants, documents Didon distribués, débat sur l’essai.",
-   "marche": [
-    "Larentia très utile pour se mettre le latin en bouche et revoir la grammaire",
-    "De plus en plus à l’aise pour dérouler le cours, même en cas de perturbation du déroulé prévu"
-   ],
-   "aAmeliorer": [
-    "Prévoir toujours un temps de contenu de cours = trace écrite ; un cours plus organisé (ex. titre « Séquence 2 : Didon »)",
-    "La notion de cas/fonction redevenue fragile pour la plupart : remédiation",
-    "Le retour sur Romulus non fait",
-    "La séance « Didon fondatrice » (comparaison des fondateurs) non commencée : à reporter",
-    "La méthodologie de l’essai à présenter au prochain cours (inquiétude des élèves)"
-   ],
-   "idees": [
-    "Intégrer régulièrement des questions simples sur les cas/fonctions dans les contrôles rituels",
-    "CR : intégrer de la mythologie, en réponse à la demande de réduire le nombre de mots",
-    "Excursus culturels à systématiser (boustrophédon, scripta continua : digression appréciée)",
-    "Le futur à traiter (fiche + texte de Virgile)",
-    "Histoire du manuscrit de l’Énéide (scripta continua) : petit excursus de quelques minutes, apprécié des élèves",
-    "Rituel Larentia 10 min pour se mettre en jambe : en cours d’adoption",
-    "Enrichir la séquence Didon : manuels (Hatier 1re ?), autres ressources, big menu",
-    "Exploiter la lecture cursive de l’Énéide : contrôle de lecture + lien avec l’objet d’étude « prince idéal »",
-    "Fiche sur l’hexamètre dactylique"
-   ]
-  }
- ]
 }
