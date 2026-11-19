@@ -121,8 +121,8 @@ async function main(){
   const bdg=e=>String(e).startsWith('en cours')?'work':/^(planifi|à lancer)/.test(e)?'plan':/^(faite|clos)/.test(e)?'ok':'work';
   const seq=(d.progression.sequences||[]).map(s=>`<div class="card glass seq" style="--c:${col(s.couleur)}"><span class="no">${esc(s.no)} · ${esc(s.periode)}</span><h3>${esc(s.titre)}<span class="badge ${bdg(s.etat)}">${esc(s.etat)}</span></h3><p class="per">${esc(s.parcours)}</p><p class="det"><b>Œuvre :</b> ${esc(s.oeuvre)}<br><b>Support :</b> ${esc(s.cursive||'—')}<br>${esc(s.detail)}</p></div>`).join('');
   const li=a=>a.map(j=>`<li><b>${fl(j.date,FD)}</b> — ${esc(j.txt)}</li>`).join('')||'<li>—</li>';
-  const J=[...d.jalons].sort((x,y)=>x.date<y.date?-1:1);
-  $('#synthese').innerHTML=head('Synthèse','l’année en un coup d’œil')+`<div class="card glass" style="margin-top:16px"><h3>Carte de l’année</h3>${heat(d)}</div><div class="grid"><div class="card glass"><h3>Jalons à venir</h3><ul>${li(J.filter(j=>j.etat==='à venir'))}</ul></div><div class="card glass"><h3>Derniers jalons franchis</h3><ul>${li(J.filter(j=>j.etat!=='à venir').slice(-6).reverse())}</ul></div></div>`;
+  const J=[...d.jalons].sort((x,y)=>x.date<y.date?-1:x.date>y.date?1:0);
+  $('#synthese').innerHTML=head('Synthèse','l’année en un coup d’œil')+`<div class="card glass" style="margin-top:16px"><h3>Carte de l’année</h3>${heat(d)}</div><div class="grid"><div class="card glass"><h3>Jalons à venir</h3><ul>${li(J.filter(j=>j.etat==='à venir'))}</ul></div><div class="card glass"><h3>Derniers jalons franchis</h3><ul>${li([...J.filter(j=>j.etat!=='à venir')].sort((a,b)=>b.date<a.date?-1:b.date>a.date?1:0).slice(0,6))}</ul></div></div>`;
   // Priorités : les tâches échues restent visibles, mais dans leur propre liste.
   const sorted=a=>[...a].sort((x,y)=>(x.dateEcheance||'9999-12-31').localeCompare(y.dateEcheance||'9999-12-31'));
   const court=d.priorites.court||[];
