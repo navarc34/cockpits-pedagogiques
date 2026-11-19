@@ -354,58 +354,139 @@
     "auteursTextes": [
       {
         "titre": "Virgile, Énéide I (273-277 ; 274-295 prophétie de Jupiter) — lecture intégrale chants I-IV",
-        "contexte": "fondation, roman national, fil rouge de l'année"
+        "contexte": "fondation, roman national, fil rouge de l'année",
+        "seancesRef": [
+          "2026-09-04",
+          "2026-11-02",
+          "2026-11-09",
+          "2026-11-16"
+        ]
       },
       {
         "titre": "Tite-Live, Ab urbe condita I, 6-7 (champ lexical de la violence)",
-        "contexte": "fratricide fondateur"
+        "contexte": "fratricide fondateur",
+        "seancesRef": [
+          "2026-09-04",
+          "2026-09-07"
+        ]
       },
       {
         "titre": "Lhomond (juxtalinéaire, remise en ordre)",
-        "contexte": "langue débutant"
+        "contexte": "langue débutant",
+        "seancesRef": [
+          "2026-09-14"
+        ]
       },
       {
         "titre": "Quinte-Curce, Vie d'Alexandre VIII, 8 ; Rabelais, Gargantua 50 ; Machiavel, Le Prince XVII",
-        "contexte": "le « bon prince » — OE1"
+        "contexte": "le « bon prince » — OE1",
+        "seancesRef": [
+          "2026-09-14",
+          "2026-10-09"
+        ]
       },
       {
         "titre": "Suétone, Vie des douze Césars — Néron ; portrait d'Auguste (§ Parthes, dominus, pater patriae)",
-        "contexte": "regard de l'historien vs panégyrique"
+        "contexte": "regard de l'historien vs panégyrique",
+        "seancesRef": [
+          "2026-10-02",
+          "2026-10-05",
+          "2026-10-12"
+        ]
       },
       {
         "titre": "Pline le Jeune, Panégyrique de Trajan",
-        "contexte": "l'éloge du prince"
+        "contexte": "l'éloge du prince",
+        "seancesRef": [
+          "2026-09-25"
+        ]
       },
       {
         "titre": "Exemplier « auctoritas » : de Machiavel à Charles de Gaulle",
-        "contexte": "notion politique, étymologie augere → Augustus"
+        "contexte": "notion politique, étymologie augere → Augustus",
+        "seancesRef": [
+          "2026-10-09",
+          "2026-11-06"
+        ]
       },
       {
         "titre": "Via Latina, Ecce Larentia I-III (chap. 2 en cours)",
-        "contexte": "oralisation, langue"
+        "contexte": "oralisation, langue",
+        "seancesRef": [
+          "2026-10-16",
+          "2026-11-16"
+        ]
       }
     ],
     "referencesCulturelles": [
-      "P. Boucheron, Quand l'histoire fait des dates (pomerium, Lapis Niger, mythe/archéologie)",
-      "Ambrogio Lorenzetti, Allégorie du bon gouvernement + P. Rosanvallon (vidéo)",
-      "Auguste de Prima Porta (cuirasse, Parthes, Cupidon/Vénus, polychromie) vs portraits officiels de la Ve République",
-      "Turner, Didon bâtissant Carthage (réception de l'épopée)",
-      "TED-Ed « Why should you read Virgil's Aeneid? », La P'tite Librairie (présentation de l'Énéide)",
-      "Frise du monde gréco-romain + carte diachronique de la Méditerranée antique",
-      "Res gestae divi Augusti §34 (auctoritas)"
+      {
+        "txt": "P. Boucheron, Quand l'histoire fait des dates (pomerium, Lapis Niger, mythe/archéologie)",
+        "seancesRef": [
+          "2026-09-07"
+        ]
+      },
+      {
+        "txt": "Ambrogio Lorenzetti, Allégorie du bon gouvernement + P. Rosanvallon (vidéo)",
+        "seancesRef": [
+          "2026-09-25"
+        ]
+      },
+      {
+        "txt": "Auguste de Prima Porta (cuirasse, Parthes, Cupidon/Vénus, polychromie) vs portraits officiels de la Ve République",
+        "seancesRef": [
+          "2026-10-05",
+          "2026-11-06",
+          "2026-11-16"
+        ]
+      },
+      {
+        "txt": "Turner, Didon bâtissant Carthage (réception de l'épopée)",
+        "seancesRef": [
+          "2026-11-02"
+        ]
+      },
+      {
+        "txt": "TED-Ed « Why should you read Virgil's Aeneid? », La P'tite Librairie (présentation de l'Énéide)",
+        "seancesRef": [
+          "2026-10-12"
+        ]
+      },
+      {
+        "txt": "Frise du monde gréco-romain + carte diachronique de la Méditerranée antique",
+        "seancesRef": [
+          "2026-09-11"
+        ]
+      },
+      {
+        "txt": "Res gestae divi Augusti §34 (auctoritas)",
+        "seancesRef": []
+      }
     ],
     "periodes": [
       {
         "titre": "Fondation de Rome (mythe et archéologie)",
-        "detail": "Romulus, pomerium, Lapis Niger"
+        "detail": "Romulus, pomerium, Lapis Niger",
+        "seancesRef": [
+          "2026-09-04",
+          "2026-09-07"
+        ]
       },
       {
         "titre": "Rome augustéenne",
-        "detail": "Empire, statuaire, roman national, auctoritas"
+        "detail": "Empire, statuaire, roman national, auctoritas",
+        "seancesRef": [
+          "2026-10-05",
+          "2026-11-06"
+        ]
       },
       {
         "titre": "Réceptions modernes",
-        "detail": "Renaissance (Machiavel), XVIIIe ? , portrait présidentiel, De Gaulle, Turner"
+        "detail": "Renaissance (Machiavel), XVIIIe ? , portrait présidentiel, De Gaulle, Turner",
+        "seancesRef": [
+          "2026-10-09",
+          "2026-11-02",
+          "2026-11-06"
+        ]
       }
     ],
     "motsConcepts": [

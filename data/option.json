@@ -1,988 +1,1067 @@
 {
- "meta": {
-  "id": "option",
-  "nom": "Option latin LCA — multiniveau 2nde + Tle",
-  "classe": "2 élèves (1 de seconde, 1 de terminale)",
-  "creneaux": "lun. 13h-14h · ven. 8h-9h",
-  "rythme": "2 h/semaine",
-  "couleur": "#3d6b78",
-  "sourcePronote": "Export Pronote du 15/11/2026 (dossier ____EDT_EXPORTS_PRONOTE de l'option)",
-  "sourceBudget": "Créneaux de l'agenda Google, année scolaire 2026-27",
-  "noteMultiniveau": "Chaque séance doit idéalement toucher les programmes des deux niveaux (2nde ET terminale).",
-  "arrete": "2026-11-17"
- },
- "budget": {
-  "total": 66,
-  "consomme": 18,
-  "aVenir": 48,
-  "unite": "h"
- },
- "priorites": {
-  "court": [
-   {
-    "txt": "Séance visio du 13/11 : finir la vidéo Auguste + fiche Énéide",
-    "echeance": "13/11",
-    "dateEcheance": "2026-11-13",
-    "fait": true
-   },
-   {
-    "txt": "Contrôle rituel #3 : vocabulaire Ecce Larentia chap. 1 (leçons I-III)",
-    "echeance": "16/11",
-    "dateEcheance": "2026-11-16",
-    "fait": true
-   },
-   {
-    "txt": "Ecce Larentia chap. 2, leçon 1 : finir les exercices (traduction faite le 16/11)",
-    "echeance": "20/11",
-    "dateEcheance": "2026-11-20",
-    "fait": false
-   },
-   {
-    "txt": "URGENT — élaborer le sujet du contrôle de lecture (prévu le 23/11)",
-    "echeance": "23/11",
-    "dateEcheance": "2026-11-23",
-    "fait": false,
-    "urgent": true
-   },
-   {
-    "txt": "URGENT — prévoir le programme de révision du CR5 (base commune avec la spé ; les élèves veulent plus de temps pour réviser)",
-    "echeance": "23/11",
-    "dateEcheance": "2026-11-23",
-    "fait": false,
-    "urgent": true
-   },
-   {
-    "txt": "URGENT — finaliser la progression annuelle de l’option avec le big menu (et les assistants IA)",
-    "echeance": "à fixer",
-    "fait": false,
-    "urgent": true
-   }
-  ],
-  "moyen": [
-   {
-    "txt": "Poursuivre la S2 « Imperium sine fine » : Énéide I, 274-295 (prophétie de Jupiter), Virgile ↔ Auguste, futur de l'indicatif",
-    "echeance": "nov.-déc."
-   },
-   {
-    "txt": "Consolider la langue : 2e-3e déclinaisons, parfait, verbes 1re-2e conj., sum",
-    "echeance": "T2"
-   },
-   {
-    "txt": "Exploiter la lecture de l'Énéide I-IV (faite à la Toussaint) dans les objets d'étude",
-    "echeance": "T2"
-   },
-   {
-    "txt": "Épigraphie : travail sur l'inscription du trophée d'Auguste de la Turbie (doc « Auguste_iconographie » du dossier Drive Auguste)",
-    "echeance": "T2 (idée du bilan du 16/11)"
-   },
-   {
-    "txt": "Statuer sur la trace écrite en option : réflexion IA sur les attendus eduscol — privilégier lecture, oral, langue, documents à surligner/annoter ?",
-    "echeance": "nov.-déc. (bilan du 16/11)",
-    "urgent": true
-   }
-  ],
-  "long": [
-   {
-    "txt": "Traiter 3 objets d'étude par niveau (dont Méditerranée, obligatoire) — 2nde : L'homme et l'animal (en cours), L'homme et le divin, Soi-même et l'autre ; Tle : Comprendre le monde (en cours), Leçons de sagesse, Inventer/créer",
-    "echeance": "année"
-   },
-   {
-    "txt": "Formaliser la roadmap annuelle de l'option (actuellement esquisse + H{n} au fil de l'eau)",
-    "echeance": "à construire"
-   },
-   {
-    "txt": "Rituels : contrôles voc/grammaire réguliers, oralisation Via Latina, lexique fréquentiel (fiches 1-4, Anki)",
-    "echeance": "année"
-   }
-  ]
- },
- "jalons": [
-  {
-   "date": "2026-09-18",
-   "type": "ds",
-   "txt": "DS n°1 : grands repères antiques + langue",
-   "etat": "réalisé"
-  },
-  {
-   "date": "2026-09-25",
-   "type": "controle",
-   "txt": "Contrôle rituel #1 : 1re déclinaison",
-   "etat": "réalisé"
-  },
-  {
-   "date": "2026-10-02",
-   "type": "alerte",
-   "txt": "Distanciel (blocages) : contrôles rituels #2-3 décalés",
-   "etat": "fait"
-  },
-  {
-   "date": "2026-10-16",
-   "type": "lecture",
-   "txt": "Lecture obligatoire Toussaint : Énéide I-IV « le crayon à la main »",
-   "etat": "réalisé"
-  },
-  {
-   "date": "2026-11-02",
-   "type": "controle",
-   "txt": "Contrôles rituels #2 et #3 + bilan lecture Énéide",
-   "etat": "réalisé"
-  },
-  {
-   "date": "2026-11-06",
-   "type": "jalon",
-   "txt": "Clôture S1 « Observer le vivant » + ouverture S2 Auguste / Imperium sine fine",
-   "etat": "réalisé"
-  },
-  {
-   "date": "2026-11-09",
-   "type": "jalon",
-   "txt": "Séq. 2 : Énéide I, 274-295, prophétie de Jupiter + futur de l'indicatif",
-   "etat": "réalisé"
-  },
-  {
-   "date": "2026-11-13",
-   "type": "cours",
-   "txt": "Visio : vidéo Auguste + fiche Énéide",
-   "etat": "réalisé"
-  },
-  {
-   "date": "2026-11-16",
-   "type": "controle",
-   "txt": "Contrôle rituel #3 : Ecce Larentia chap. 1",
-   "etat": "réalisé"
-  },
-  {
-   "date": "2026-11-20",
-   "type": "jalon",
-   "txt": "Larentia chap. 2 leçon 1 : traduction",
-   "etat": "à venir"
-  },
-  {
-   "date": "2026-11-20",
-   "type": "tutorat",
-   "txt": "Visite de la tutrice pendant le créneau (8h-9h)",
-   "etat": "à venir"
-  },
-  {
-   "date": "2026-11-23",
-   "type": "conference",
-   "txt": "Visio « Ulysse 26 » : peut-on adapter l'Odyssée ? (18h-19h)",
-   "etat": "à venir"
-  },
-  {
-   "date": "2026-11-27",
-   "type": "controle",
-   "txt": "Contrôle de lecture : Énéide I-IV (Pronote : pour le 27/11)",
-   "etat": "à venir",
-   "id": "opt-jalon-controle-lecture-eneide"
-  }
- ],
- "vacances": [
-  {
-   "debut": "2026-10-17",
-   "fin": "2026-11-02",
-   "txt": "Vacances de Toussaint"
-  },
-  {
-   "debut": "2026-12-19",
-   "fin": "2027-01-04",
-   "txt": "Vacances de Noël"
-  },
-  {
-   "debut": "2027-02-13",
-   "fin": "2027-03-01",
-   "txt": "Vacances d'hiver"
-  },
-  {
-   "debut": "2027-04-10",
-   "fin": "2027-04-26",
-   "txt": "Vacances de printemps"
-  }
- ],
- "progression": {
-  "statut": "en chantier",
-  "source": "Pas de progression annuelle formalisée : esquisses (draft « progression annuelle 1ère LCA option » dans ____MES_COURS, progression H{n} remplie au fil de l'eau). À co-construire (collaboration à venir avec Vibe).",
-  "sequences": [
-   {
-    "no": "S0",
-    "titre": "Séquence introductive — Des Grecs aux Romains",
-    "parcours": "Repères mythologiques et historiques",
-    "oeuvre": "Lhomond, De viris illustribus ; Virgile, Énéide I",
-    "periode": "Sept. 2026",
-    "couleur": "#8a9aa5",
-    "etat": "faite",
-    "detail": "Chaîne Troie → Énée → Romulus/Rémus → Rome ; cas et fonctions ; frise et carte des repères antiques."
-   },
-   {
-    "no": "S1",
-    "titre": "Observer le vivant, entre savoir et merveilleux",
-    "parcours": "2de : L'homme et l'animal · Tle : Comprendre le monde",
-    "oeuvre": "Pline, Élien (Mantichore) ; Ovide, Mét. VI (Latone) ; Hygin (Sphinge)",
-    "periode": "Sept.-nov. 2026",
+  "meta": {
+    "id": "option",
+    "nom": "Option latin LCA — multiniveau 2nde + Tle",
+    "classe": "2 élèves (1 de seconde, 1 de terminale)",
+    "creneaux": "lun. 13h-14h · ven. 8h-9h",
+    "rythme": "2 h/semaine",
     "couleur": "#3d6b78",
-    "etat": "clos le 06/11",
-    "detail": "Flaubert (réception), bassin de Latone à Versailles, Gustave Moreau (Sphinge) ; trace écrite sur la construction littéraire des savoirs."
-   },
-   {
-    "no": "S2",
-    "titre": "Imperium sine fine — Auguste",
-    "parcours": "Tle : Comprendre le monde · Méditerranée (amorce)",
-    "oeuvre": "Virgile, Énéide I, 274-295 (prophétie de Jupiter) ; Suétone (portrait d'Auguste)",
-    "periode": "nov. 2026-",
-    "couleur": "#5b7150",
-    "etat": "en cours",
-    "detail": "Lancée le 06/11 : roman national, mots-concepts imperium et pietas, futur de l'indicatif ; à prolonger avec l'Empire et la carte."
-   }
+    "sourcePronote": "Export Pronote du 15/11/2026 (dossier ____EDT_EXPORTS_PRONOTE de l'option)",
+    "sourceBudget": "Créneaux de l'agenda Google, année scolaire 2026-27",
+    "noteMultiniveau": "Chaque séance doit idéalement toucher les programmes des deux niveaux (2nde ET terminale).",
+    "arrete": "2026-11-17"
+  },
+  "budget": {
+    "total": 66,
+    "consomme": 18,
+    "aVenir": 48,
+    "unite": "h"
+  },
+  "priorites": {
+    "court": [
+      {
+        "txt": "Séance visio du 13/11 : finir la vidéo Auguste + fiche Énéide",
+        "echeance": "13/11",
+        "dateEcheance": "2026-11-13",
+        "fait": true
+      },
+      {
+        "txt": "Contrôle rituel #3 : vocabulaire Ecce Larentia chap. 1 (leçons I-III)",
+        "echeance": "16/11",
+        "dateEcheance": "2026-11-16",
+        "fait": true
+      },
+      {
+        "txt": "Ecce Larentia chap. 2, leçon 1 : finir les exercices (traduction faite le 16/11)",
+        "echeance": "20/11",
+        "dateEcheance": "2026-11-20",
+        "fait": false
+      },
+      {
+        "txt": "URGENT — élaborer le sujet du contrôle de lecture (prévu le 23/11)",
+        "echeance": "23/11",
+        "dateEcheance": "2026-11-23",
+        "fait": false,
+        "urgent": true
+      },
+      {
+        "txt": "URGENT — prévoir le programme de révision du CR5 (base commune avec la spé ; les élèves veulent plus de temps pour réviser)",
+        "echeance": "23/11",
+        "dateEcheance": "2026-11-23",
+        "fait": false,
+        "urgent": true
+      },
+      {
+        "txt": "URGENT — finaliser la progression annuelle de l’option avec le big menu (et les assistants IA)",
+        "echeance": "à fixer",
+        "fait": false,
+        "urgent": true
+      }
+    ],
+    "moyen": [
+      {
+        "txt": "Poursuivre la S2 « Imperium sine fine » : Énéide I, 274-295 (prophétie de Jupiter), Virgile ↔ Auguste, futur de l'indicatif",
+        "echeance": "nov.-déc."
+      },
+      {
+        "txt": "Consolider la langue : 2e-3e déclinaisons, parfait, verbes 1re-2e conj., sum",
+        "echeance": "T2"
+      },
+      {
+        "txt": "Exploiter la lecture de l'Énéide I-IV (faite à la Toussaint) dans les objets d'étude",
+        "echeance": "T2"
+      },
+      {
+        "txt": "Épigraphie : travail sur l'inscription du trophée d'Auguste de la Turbie (doc « Auguste_iconographie » du dossier Drive Auguste)",
+        "echeance": "T2 (idée du bilan du 16/11)"
+      },
+      {
+        "txt": "Statuer sur la trace écrite en option : réflexion IA sur les attendus eduscol — privilégier lecture, oral, langue, documents à surligner/annoter ?",
+        "echeance": "nov.-déc. (bilan du 16/11)",
+        "urgent": true
+      }
+    ],
+    "long": [
+      {
+        "txt": "Traiter 3 objets d'étude par niveau (dont Méditerranée, obligatoire) — 2nde : L'homme et l'animal (en cours), L'homme et le divin, Soi-même et l'autre ; Tle : Comprendre le monde (en cours), Leçons de sagesse, Inventer/créer",
+        "echeance": "année"
+      },
+      {
+        "txt": "Formaliser la roadmap annuelle de l'option (actuellement esquisse + H{n} au fil de l'eau)",
+        "echeance": "à construire"
+      },
+      {
+        "txt": "Rituels : contrôles voc/grammaire réguliers, oralisation Via Latina, lexique fréquentiel (fiches 1-4, Anki)",
+        "echeance": "année"
+      }
+    ]
+  },
+  "jalons": [
+    {
+      "date": "2026-09-18",
+      "type": "ds",
+      "txt": "DS n°1 : grands repères antiques + langue",
+      "etat": "réalisé"
+    },
+    {
+      "date": "2026-09-25",
+      "type": "controle",
+      "txt": "Contrôle rituel #1 : 1re déclinaison",
+      "etat": "réalisé"
+    },
+    {
+      "date": "2026-10-02",
+      "type": "alerte",
+      "txt": "Distanciel (blocages) : contrôles rituels #2-3 décalés",
+      "etat": "fait"
+    },
+    {
+      "date": "2026-10-16",
+      "type": "lecture",
+      "txt": "Lecture obligatoire Toussaint : Énéide I-IV « le crayon à la main »",
+      "etat": "réalisé"
+    },
+    {
+      "date": "2026-11-02",
+      "type": "controle",
+      "txt": "Contrôles rituels #2 et #3 + bilan lecture Énéide",
+      "etat": "réalisé"
+    },
+    {
+      "date": "2026-11-06",
+      "type": "jalon",
+      "txt": "Clôture S1 « Observer le vivant » + ouverture S2 Auguste / Imperium sine fine",
+      "etat": "réalisé"
+    },
+    {
+      "date": "2026-11-09",
+      "type": "jalon",
+      "txt": "Séq. 2 : Énéide I, 274-295, prophétie de Jupiter + futur de l'indicatif",
+      "etat": "réalisé"
+    },
+    {
+      "date": "2026-11-13",
+      "type": "cours",
+      "txt": "Visio : vidéo Auguste + fiche Énéide",
+      "etat": "réalisé"
+    },
+    {
+      "date": "2026-11-16",
+      "type": "controle",
+      "txt": "Contrôle rituel #3 : Ecce Larentia chap. 1",
+      "etat": "réalisé"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "jalon",
+      "txt": "Larentia chap. 2 leçon 1 : traduction",
+      "etat": "à venir"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "tutorat",
+      "txt": "Visite de la tutrice pendant le créneau (8h-9h)",
+      "etat": "à venir"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "conference",
+      "txt": "Visio « Ulysse 26 » : peut-on adapter l'Odyssée ? (18h-19h)",
+      "etat": "à venir"
+    },
+    {
+      "date": "2026-11-27",
+      "type": "controle",
+      "txt": "Contrôle de lecture : Énéide I-IV (Pronote : pour le 27/11)",
+      "etat": "à venir",
+      "id": "opt-jalon-controle-lecture-eneide"
+    }
   ],
-  "pistes": [
-   {
-    "titre": "L'homme et le divin (2nde)",
-    "detail": "à construire — gisements : manuels Hatier 2nde, Via Latina, boîte à idées latin"
-   },
-   {
-    "titre": "Soi-même et l'autre (2nde)",
-    "detail": "à construire"
-   },
-   {
-    "titre": "Méditerranée : voyager, explorer, découvrir (2nde) / présence des mondes antiques (Tle)",
-    "detail": "objet obligatoire — à construire ; l'Énéide déjà lue est un appui naturel"
-   },
-   {
-    "titre": "Leçons de sagesse antique (Tle)",
-    "detail": "à construire"
-   },
-   {
-    "titre": "Inventer, créer, fabriquer, produire (Tle)",
-    "detail": "à construire"
-   }
+  "vacances": [
+    {
+      "debut": "2026-10-17",
+      "fin": "2026-11-02",
+      "txt": "Vacances de Toussaint"
+    },
+    {
+      "debut": "2026-12-19",
+      "fin": "2027-01-04",
+      "txt": "Vacances de Noël"
+    },
+    {
+      "debut": "2027-02-13",
+      "fin": "2027-03-01",
+      "txt": "Vacances d'hiver"
+    },
+    {
+      "debut": "2027-04-10",
+      "fin": "2027-04-26",
+      "txt": "Vacances de printemps"
+    }
+  ],
+  "progression": {
+    "statut": "en chantier",
+    "source": "Pas de progression annuelle formalisée : esquisses (draft « progression annuelle 1ère LCA option » dans ____MES_COURS, progression H{n} remplie au fil de l'eau). À co-construire (collaboration à venir avec Vibe).",
+    "sequences": [
+      {
+        "no": "S0",
+        "titre": "Séquence introductive — Des Grecs aux Romains",
+        "parcours": "Repères mythologiques et historiques",
+        "oeuvre": "Lhomond, De viris illustribus ; Virgile, Énéide I",
+        "periode": "Sept. 2026",
+        "couleur": "#8a9aa5",
+        "etat": "faite",
+        "detail": "Chaîne Troie → Énée → Romulus/Rémus → Rome ; cas et fonctions ; frise et carte des repères antiques."
+      },
+      {
+        "no": "S1",
+        "titre": "Observer le vivant, entre savoir et merveilleux",
+        "parcours": "2de : L'homme et l'animal · Tle : Comprendre le monde",
+        "oeuvre": "Pline, Élien (Mantichore) ; Ovide, Mét. VI (Latone) ; Hygin (Sphinge)",
+        "periode": "Sept.-nov. 2026",
+        "couleur": "#3d6b78",
+        "etat": "clos le 06/11",
+        "detail": "Flaubert (réception), bassin de Latone à Versailles, Gustave Moreau (Sphinge) ; trace écrite sur la construction littéraire des savoirs."
+      },
+      {
+        "no": "S2",
+        "titre": "Imperium sine fine — Auguste",
+        "parcours": "Tle : Comprendre le monde · Méditerranée (amorce)",
+        "oeuvre": "Virgile, Énéide I, 274-295 (prophétie de Jupiter) ; Suétone (portrait d'Auguste)",
+        "periode": "nov. 2026-",
+        "couleur": "#5b7150",
+        "etat": "en cours",
+        "detail": "Lancée le 06/11 : roman national, mots-concepts imperium et pietas, futur de l'indicatif ; à prolonger avec l'Empire et la carte."
+      }
+    ],
+    "pistes": [
+      {
+        "titre": "L'homme et le divin (2nde)",
+        "detail": "à construire — gisements : manuels Hatier 2nde, Via Latina, boîte à idées latin"
+      },
+      {
+        "titre": "Soi-même et l'autre (2nde)",
+        "detail": "à construire"
+      },
+      {
+        "titre": "Méditerranée : voyager, explorer, découvrir (2nde) / présence des mondes antiques (Tle)",
+        "detail": "objet obligatoire — à construire ; l'Énéide déjà lue est un appui naturel"
+      },
+      {
+        "titre": "Leçons de sagesse antique (Tle)",
+        "detail": "à construire"
+      },
+      {
+        "titre": "Inventer, créer, fabriquer, produire (Tle)",
+        "detail": "à construire"
+      }
+    ]
+  },
+  "grammaire": {
+    "vus": [
+      {
+        "titre": "Cas et fonctions ; identification des déclinaisons par le génitif",
+        "date": "07/09"
+      },
+      {
+        "titre": "1re déclinaison (rosa) — fiche voc n°1",
+        "date": "21/09"
+      },
+      {
+        "titre": "2e déclinaison (ludus, puer, monstrum)",
+        "date": "28/09"
+      },
+      {
+        "titre": "3e déclinaison (dux, corpus, civis, mare)",
+        "date": "16/10-02/11"
+      },
+      {
+        "titre": "Conjugaison : temps primitifs, infectum/perfectum ; verbes 1re-2e conj.",
+        "date": "21/09-12/10"
+      },
+      {
+        "titre": "Verbe sum au présent et au parfait",
+        "date": "02/10"
+      },
+      {
+        "titre": "Adjectifs de la 1re classe (modèle bonus)",
+        "date": "02/10"
+      },
+      {
+        "titre": "Interrogation : -ne, num, nonne / réponses ita, minime (oralisation Via Latina)",
+        "date": "25/09"
+      },
+      {
+        "titre": "Le futur de l'indicatif (Énéide I, 274-295)",
+        "date": "09/11"
+      },
+      {
+        "titre": "Le parfait de l'indicatif (Eutrope)",
+        "date": "06/11"
+      }
+    ],
+    "aVoir": [
+      {
+        "titre": "Pronoms (démonstratifs, réfléchis) — amorcés en distanciel, à consolider",
+        "echeance": "T2"
+      },
+      {
+        "titre": "4e-5e déclinaisons ; adjectifs 2e classe",
+        "echeance": "à planifier"
+      },
+      {
+        "titre": "Premières subordinations",
+        "echeance": "à planifier"
+      }
+    ]
+  },
+  "culture": {
+    "auteursTextes": [
+      {
+        "titre": "Abbé Lhomond, De viris illustribus, 4",
+        "contexte": "fondation de Rome",
+        "seancesRef": [
+          "2026-09-04"
+        ]
+      },
+      {
+        "titre": "Virgile, Énéide I (273-277 ; 274-295 prophétie de Jupiter)",
+        "contexte": "origines de Rome, imperium sine fine",
+        "seancesRef": [
+          "2026-11-06",
+          "2026-11-09"
+        ]
+      },
+      {
+        "titre": "Horace, Épîtres — « Graecia capta ferum victorem cepit… »",
+        "contexte": "héritage grec",
+        "seancesRef": [
+          "2026-09-11"
+        ]
+      },
+      {
+        "titre": "Pline l'Ancien & Élien — le Mantichore",
+        "contexte": "S1 : observer le vivant",
+        "seancesRef": [
+          "2026-09-14",
+          "2026-09-18"
+        ]
+      },
+      {
+        "titre": "Ovide, Métamorphoses VI, 366-381 (Latone)",
+        "contexte": "S1 + réception à Versailles",
+        "seancesRef": [
+          "2026-09-25"
+        ]
+      },
+      {
+        "titre": "Hygin, Fables, 67 (la Sphinge et Œdipe)",
+        "contexte": "S1 : le monstre qui interroge l'homme",
+        "seancesRef": [
+          "2026-10-09",
+          "2026-10-12"
+        ]
+      },
+      {
+        "titre": "Flaubert (réception du Mantichore)",
+        "contexte": "construction littéraire des savoirs",
+        "seancesRef": [
+          "2026-09-18"
+        ]
+      },
+      {
+        "titre": "Suétone — portrait d'Auguste (recueil de textes)",
+        "contexte": "S2 Imperium sine fine",
+        "seancesRef": [
+          "2026-11-06",
+          "2026-11-16"
+        ]
+      },
+      {
+        "titre": "Via Latina, Ecce Larentia I-III (chap. 2 leçon 1 en cours)",
+        "contexte": "oralisation, langue",
+        "seancesRef": [
+          "2026-09-25",
+          "2026-10-05",
+          "2026-10-16",
+          "2026-11-02",
+          "2026-11-09",
+          "2026-11-16"
+        ]
+      }
+    ],
+    "referencesCulturelles": [
+      {
+        "txt": "Frise des repères antiques : Mycènes → chute de l'Empire d'Occident",
+        "seancesRef": [
+          "2026-09-11",
+          "2026-09-14"
+        ]
+      },
+      {
+        "txt": "Cartes de la Méditerranée antique (diachroniques)",
+        "seancesRef": [
+          "2026-09-11",
+          "2026-09-14"
+        ]
+      },
+      {
+        "txt": "Bassin de Latone à Versailles (réception d'Ovide)",
+        "seancesRef": [
+          "2026-09-25"
+        ]
+      },
+      {
+        "txt": "Gustave Moreau, Œdipe et la Sphinge (1864, MET) — recherches élèves d'autres représentations",
+        "seancesRef": [
+          "2026-10-09",
+          "2026-10-12"
+        ]
+      },
+      {
+        "txt": "« Augustus, empereur de Rome » (Arte) ; P. Boucheron, Quand l'histoire fait des dates",
+        "seancesRef": [
+          "2026-09-11"
+        ]
+      },
+      {
+        "txt": "Carte de l'Empire romain + chronologie des empereurs (S2)",
+        "seancesRef": [
+          "2026-11-06"
+        ]
+      }
+    ],
+    "periodes": [
+      {
+        "titre": "Guerre de Troie et fondation de Rome (mythe)",
+        "detail": "Troie → Énée → Romulus/Rémus",
+        "seancesRef": [
+          "2026-09-04"
+        ]
+      },
+      {
+        "titre": "Monde grec classique → Rome républicaine → Empire",
+        "detail": "frise chronologique, repères auteurs",
+        "seancesRef": [
+          "2026-09-11"
+        ]
+      },
+      {
+        "titre": "Époque d'Auguste",
+        "detail": "Virgile, Suétone, l'Empire et le roman national",
+        "seancesRef": [
+          "2026-11-06",
+          "2026-11-16"
+        ]
+      }
+    ],
+    "motsConcepts": [
+      "imperium",
+      "pietas"
+    ]
+  },
+  "seances": [
+    {
+      "date": "2026-09-04",
+      "time": "08:00",
+      "hours": 1,
+      "titre": "Séquence introductive — Des Grecs aux Romains : de Troie à Rome",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Séquence introductive — Des Grecs aux Romains : de Troie à RomeObjectifs :reconstituer la chaîne Troie → Énée → Romulus/Rémus → Rome ; comprendre comment Rome rattache ses origines au monde héroïque grec ; acquérir les premiers repères mythologiques, historiques et littéraires (Virgile, Lhomond)Déroulé :Rappel de la guerre de Troie et de ses principaux protagonistes.Énée, de Troie à l’Italie. De l’arrivée d’Énée à la fondation mythique de Rome par Romulus et Rémus.Travail à partir d’un support vidéo et de textes ; entrée dans Virgile, puis Lhomond. Reconstituer la chaîne Troie → Énée → Romulus/Rémus → Rome. Comprendre comment Rome rattache ses origines au monde héroïque grec. Premiers repères mythologiques, historiques et littéraires. VIDEOShttps://www.lumni.fr/video/romulus-et-remushttps://www.arte.tv/fr/videos/086127-007-A/quand-l-histoire-fait-dates/ TEXTES- Abbé Lhomond, De viris illustribus, 4- Virgile, Énéide, I, 273-277Enee_anchise_Federico_Barocci.jpg L’Incendie de Troie de Johann Georg Trautmann.jpg ",
+      "resume": "Séquence introductive — Des Grecs aux Romains : de Troie à RomeObjectifs :reconstituer la chaîne Troie → Énée → Romulus/Rémus → Rome ; comprendre comment Rome rattache ses origines au monde héroïque grec ; acquérir les premiers repères mythologiques, historiqu",
+      "elements": [
+        "[2de] Méditerranée : voyager, explorer, découvrir[Tle] Méditerranée : présence des mondes antiquesComparer textes, traductions, images, objets ou représentationsConnaître les grands repères de l’histoire grecque et romaineConnaître œuvres, genres, mythes, figures et éléments majeurs de civilisationLire et oraliser un texte latinSituer textes, auteurs, événements et espaces dans leurs contextes"
+      ],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-09-07",
+      "time": "13:00",
+      "hours": 1,
+      "titre": "Séq introductive - Langue : « Magister et discipuli », cas et fonctions",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Séq introductive - Langue : « Magister et discipuli », cas et fonctionsObjectifs :relier les fonctions grammaticales françaises et les cas latins ; identifier cas, fonctions et déclinaisons (génitif) dans des phrases latines (Hatier 2de)Déroulé :Lecture du dialogue « Magister et discipuli ». Rappel des fonctions grammaticales en français et correspondance avec les cas latins. Exercices tirés du Hatier 2de : cas/fonctions, mise d’un nom au cas demandé, identification des cas et fonctions dans des phrases/textes latins. Première réactivation de la morphologie nominale.[Grammaire] distribution de fiches grammaticales (source Manuel Hatier 2nde)[Grammaire] Rappels et exercices sur le fonctionnement de la langue latinetravail sur le lien cas - fonctionidentification des fonctions dans la phrase en françaisidentification de la déclinaison à partir du génitiftravail d'identification de déclinaison / cas / fonction à partir d'un texte",
+      "resume": "Séq introductive - Langue : « Magister et discipuli », cas et fonctionsObjectifs :relier les fonctions grammaticales françaises et les cas latins ; identifier cas, fonctions et déclinaisons (génitif) dans des phrases latines (Hatier 2de)Déroulé :Lecture du dia",
+      "elements": [
+        "[2de] Méditerranée : voyager, explorer, découvrir[Tle] Méditerranée : présence des mondes antiquesIdentifier et analyser formes, fonctions et structures syntaxiquesLire et oraliser un texte latin"
+      ],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-09-11",
+      "time": "08:00",
+      "hours": 1,
+      "titre": "Séquence introductive - Grands repères antiques : frise, carte et l'héritage grec (Horace)",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Séquence introductive - Grands repères antiques : frise, carte et l'héritage grec (Horace)Objectifs :placer les repères temporels sur une frise (Mycènes → chute de l'Empire d'Occident) ; lire une carte de la Méditerranée antique ; oraliser et traduire un texte du Via Latina ; analyser la citation d'Horace « Graecia capta… » Grands repères antiquesDe Mycène à la chute de l'empire romain d'occident : travail de placement de repères temporels sur une friseRepérages géographiques sur une carte de la MéditerranéeLecture / oralisation du latinTravail de lecture et de traduction à partir du manuel Manuel Via Latina De Lingua et vita RomanorumRappel des notions de grammaire vues précédemment (cas, fonction, déclinaisons)LangueAnalyse d'une citation d'Horace : \"Graecia capta ferum victorem cepit et artes intulit agresti Latio\". Horace, Epîtres",
+      "resume": "Séquence introductive - Grands repères antiques : frise, carte et l'héritage grec (Horace)Objectifs :placer les repères temporels sur une frise (Mycènes → chute de l'Empire d'Occident) ; lire une carte de la Méditerranée antique ; oraliser et traduire un texte",
+      "elements": [
+        "[2de] Méditerranée : voyager, explorer, découvrir[Tle] Méditerranée : présence des mondes antiquesConnaître les grands repères de l’histoire grecque et romaineConnaître œuvres, genres, mythes, figures et éléments majeurs de civilisationIdentifier et analyser formes, fonctions et structures syntaxiquesLire et oraliser un texte latinSituer textes, auteurs, événements et espaces dans leurs contextes"
+      ],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-09-14",
+      "time": "13:00",
+      "hours": 1,
+      "titre": "Révision repères antiques + travail sur les cas + Séq. 1 - Observer le vivant (séance 1) : le M",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Révision repères antiques + travail sur les cas + Séq. 1 - Observer le vivant (séance 1) : le Mantichore, entre savoir et merveilleux (Pline, Élien)Objectifs :réviser les grands repères antiques ; s'entraîner aux cas (nominatif, accusatif, ablatif) ; repérer les mots latins par comparaison bilingue ; analyser l'usage des ablatifs et des génitifs - révision flash sur les grands repères antiques- présentation des cartes diachroniques de la Méditerranée antique- exercices de grammaire : nominatif, accusatif, ablatifSéquence 1 - Observer le vivant, entre savoir et merveilleuxSéance 1 - Comment les Anciens observent-ils et décrivent-ils le vivant lorsque savoir, témoignage et merveilleux se mêlent ?premier travail sur le Mantichore à partir d'un texte de Pline l'Ancien et d'Elien.travail de repérage des mots latins par comparaison entre le texte latin et le texte en français.analyse de l'usage des ablatifs et des génitifs",
+      "resume": "Révision repères antiques + travail sur les cas + Séq. 1 - Observer le vivant (séance 1) : le Mantichore, entre savoir et merveilleux (Pline, Élien)Objectifs :réviser les grands repères antiques ; s'entraîner aux cas (nominatif, accusatif, ablatif) ; repérer l",
+      "elements": [
+        "[2de] L’homme et l’animal[Tle] Comprendre le mondeConnaître les grands repères de l’histoire grecque et romaineConnaître œuvres, genres, mythes, figures et éléments majeurs de civilisationIdentifier et analyser formes, fonctions et structures syntaxiquesMettre en relation mondes anciens et monde moderne/contemporainRepérer des indices et formuler une hypothèse de sensSituer textes, auteurs, événements et espaces dans leurs contextes"
+      ],
+      "afaire": [
+        "Pour le 18/09Contrôle : Grands repères antiquesGuerre de Troie. Connaître son origine. Connaître les protagonistes vus en cours et à quel camp ils appartiennent (Troyens : Priam, Hector, Paris, Enée / Grecs : Agamemnon, Ménélas, Hélène, Achille, Ulysse).Romulus et Remus : faire le lien avec la guerre de Troie, connaître les principaux jalons de leur histoire : mère, père, ancêtre, raison du conflitFrise chronologique : des Mycéniens jusqu'à la chute de l'Empire Romain d'occident. Savoir dater les grands évènements vus en cours / Savoir citer et situer dans le temps des figures littéraires majeures grecques et romaines vues en cours.Langue :connaître la structure canonique d'une phrase latine : sujet - compléments - verbe,savoir relier la fonction d'un mot (sujet, attribut du sujet, COD, COI, Comp. Circonstanciel) avec son cas latin, savoir identifier les mots aux nominatif, au vocatif, à l'accusatif, à l'ablatif dans une phrase latine (avec des mots de la 1ère, 2ème, 3ème déclinaisons)connaître la première déclinaison des noms en entier (rosa,ae)savoir identifier la déclinaison d'un nom à partir de son génitifsavoir traduire une phrase latine simple avec le vocabulaire fourni.Voir les documents sur le digipad : "
+      ],
+      "absents": 1
+    },
+    {
+      "date": "2026-09-18",
+      "time": "08:00",
+      "hours": 1,
+      "titre": "DS n°1 : grands repères antiques et langue + Séq 1 Observer le vivant (Séance 1) : suite du Man",
+      "statut": "publié",
+      "theme": "",
+      "cat": "Devoir sur table DS ",
+      "contenu": "DS n°1 : grands repères antiques et langue + Séq 1 Observer le vivant (Séance 1) : suite du Mantichore et FlaubertObjectifs :restituer les repères antiques et les acquis de langue (cas, fonctions, 1ère déclinaison) ; comparer le texte antique et sa réception (Flaubert) ; s'interroger sur la construction littéraire des savoirs (trace écrite) Contrôle : Grands repères antiquesGuerre de Troie. Connaître son origine. Connaître les protagonistes vus en cours et à quel camp ils appartiennent (Troyens : Priam, Hector, Paris, Enée / Grecs : Agamemnon, Ménélas, Hélène, Achille, Ulysse).Romulus et Remus : faire le lien avec la guerre de Troie, connaître les principaux jalons de leur histoire : mère, père, ancêtre, raison du conflitFrise chronologique : des Mycéniens jusqu'à la chute de l'Empire Romain d'occident. Savoir dater les grands évènements vus en cours / Savoir citer et situer dans le temps des figures littéraires majeures grecques et romaines vues en cours.Langue :connaître la structure canonique d'une phrase latine : sujet - compléments - verbe,savoir relier la fonction d'un mot (sujet, attribut du sujet, COD, COI, Comp. Circonstanciel) avec son cas latin, savoir identifier les mots aux nominatif, au vocatif, à l'accusatif, à l'ablatif dans une phrase latine (avec des mots de la 1ère, 2ème, 3ème déclinaisons)connaître la première déclinaison des noms en entier (rosa,ae)savoir identifier la déclinaison d'un nom à partir de son génitifsavoir traduire une phrase latine simple avec le vocabulaire fourni.Voir les documents sur le digipad : équence 1 - Observer le vivant, entre savoir et merveilleuxSéance 1 - Comment les Anciens observent-ils et décrivent-ils le vivant lorsque savoir, témoignage et merveilleux se mêlent ?suite du travail sur le Mantichore à partir d'un texte de Pline l'Ancien et d'Elien.travail de repérage des mots latins par comparaison entre le texte latin et le texte en français.analyse de l'usage des ablatifs et des génitifslecture du texte de FlaubertTrace écrite : Les auteurs antiques cherchent à observer et à décrire le monde vivant, mais leurs connaissances reposent aussi sur des récits et des témoignages transmis par d'autres. Etudier ces textes conduit par conséquent à s'interroger sur la manière dont la littérature antique construisait les savoirs.",
+      "resume": "DS n°1 : grands repères antiques et langue + Séq 1 Observer le vivant (Séance 1) : suite du Mantichore et FlaubertObjectifs :restituer les repères antiques et les acquis de langue (cas, fonctions, 1ère déclinaison) ; comparer le texte antique et sa réception (",
+      "elements": [
+        "Comparer textes, traductions, images, objets ou représentationsComprendre réception, transmission et transformations de l’AntiquitéConnaître les grands repères de l’histoire grecque et romaineConnaître œuvres, genres, mythes, figures et éléments majeurs de civilisationConstruire et justifier une traductionIdentifier et analyser formes, fonctions et structures syntaxiquesSituer textes, auteurs, événements et espaces dans leurs contextes"
+      ],
+      "afaire": [],
+      "absents": 1
+    },
+    {
+      "date": "2026-09-21",
+      "time": "13:00",
+      "hours": 1,
+      "titre": "Correction du DS + Langue : la conjugaison de l'indicatif (temps primitifs, infectum/perfectum)",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Correction du DS + Langue : la conjugaison de l'indicatif (temps primitifs, infectum/perfectum)Objectifs :corriger ses erreurs ; différencier les conjugaisons à partir du radical ; reconstituer l'infectum et le perfectum grâce aux temps primitifs ; manipuler par exercices Rendu et correction rapide du contrôle Grammaire introduction à la conjugaison de l'indicatifObjectifs :Introduire la notion de temps primitifsDifférencier les différentes conjugaison en fonction du radical du verbeSavoir reconstituer la construction verbale de l'infectum et du perfectum grâce aux temps primitifs du verbeObservation, manipulation et mise en pratique par des exercices",
+      "resume": "Correction du DS + Langue : la conjugaison de l'indicatif (temps primitifs, infectum/perfectum)Objectifs :corriger ses erreurs ; différencier les conjugaisons à partir du radical ; reconstituer l'infectum et le perfectum grâce aux temps primitifs ; manipuler p",
+      "elements": [
+        "Identifier et analyser formes, fonctions et structures syntaxiques"
+      ],
+      "afaire": [
+        "Pour le 25/09Vocabulaire : apprendre les mots de la 1ère déclinaisons de la Fiche N°1Relire la fiche de grammaire sur la conjugaisonLire le texte d'Ovide (Latone)"
+      ],
+      "absents": 0
+    },
+    {
+      "date": "2026-09-25",
+      "time": "08:00",
+      "hours": 1,
+      "titre": "Contrôle rituel #1 + Ecce Larentia à l'oral + Séq. 1 (Séance 2) : Latone (Ovide, Métamorphoses ",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Contrôle rituel #1 + Ecce Larentia à l'oral + Séq. 1 (Séance 2) : Latone (Ovide, Métamorphoses VI) et sa réception à VersaillesObjectifs :mobiliser le vocabulaire de la 1ère déclinaison ; pratiquer l'oral latin (questions/réponses : ubi, -ne, num, nonne / ita, minime) ; situer Ovide et le mythe de Latone (Mét. VI, 366-381) ; relier l'Antiquité et sa réception moderne (bassin de Latone) Contrôle rituel de vocabulaire et grammaire #1 : noms de la 1ère déclinaison Pratique orale du latin avec Via Latina : Ecce Larentia => question et réponses en latin : Ubi, nonne, num, -ne / ita, minime Séquence 1 : l'homme et l'animal / comprendre le monde / Séance 2 : Observer le vivant, entre savoir et merveilleuxprésentation d'Ovide : https://enseignants.lumni.fr/fiche-media/00000007014/ovide-les-metamorphoses.htmltravail sur l'extrait des Métamorphoses, VI, 366-381, mythe de Latone, mère d'Apollon et DianeAntiquité et modernité : présentation du mythe et du bassin de Latone à Versailles : https://www.youtube.com/watch?v=vqw2Y9TDmbU ",
+      "resume": "Contrôle rituel #1 + Ecce Larentia à l'oral + Séq. 1 (Séance 2) : Latone (Ovide, Métamorphoses VI) et sa réception à VersaillesObjectifs :mobiliser le vocabulaire de la 1ère déclinaison ; pratiquer l'oral latin (questions/réponses : ubi, -ne, num, nonne / ita,",
+      "elements": [
+        "[2de] L’homme et l’animal[Tle] Comprendre le mondeAcquérir et mobiliser un lexique fréquentielComparer textes, traductions, images, objets ou représentationsConnaître les grands repères de l’histoire grecque et romaineConnaître œuvres, genres, mythes, figures et éléments majeurs de civilisationLire et oraliser un texte latinMettre en relation mondes anciens et monde moderne/contemporainSituer textes, auteurs, événements et espaces dans leurs contextes"
+      ],
+      "afaire": [
+        "Pour le 12/10Contrôle rituel de vocabulaire et grammaire #2Vocabulaire : apprendre les noms de la 2ème déclinaison de ager,agri à regnum,i.déclinaison : connaître la 2ème déclinaison des noms : modèles ludus, puer, monstrum sur la fiche des déclinaisons"
+      ],
+      "absents": 1
+    },
+    {
+      "date": "2026-09-28",
+      "time": "13:00",
+      "hours": 1,
+      "titre": "Langue : la 2e déclinaison (ludus, puer, monstrum) + révisions de conjugaison",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Langue : la 2e déclinaison (ludus, puer, monstrum) + révisions de conjugaisonObjectifs :distinguer les trois modèles morphologiques de la 2e déclinaison ; appliquer par des exercices de grammaire et de traduction ; réviser la conjugaison Grammaire : approfondissement sur les noms de la deuxième déclinaisonObjectif : comprendre les similtudes et différences entre les déclinaisons morphologiques de type ludus, puer et monstrum Mise en application avec des exercices de grammaire et de traductionRévision sur la conjugaison",
+      "resume": "Langue : la 2e déclinaison (ludus, puer, monstrum) + révisions de conjugaisonObjectifs :distinguer les trois modèles morphologiques de la 2e déclinaison ; appliquer par des exercices de grammaire et de traduction ; réviser la conjugaison Grammaire : approfondi",
+      "elements": [
+        "Acquérir et mobiliser un lexique fréquentielIdentifier et analyser formes, fonctions et structures syntaxiquesLire et oraliser un texte latin"
+      ],
+      "afaire": [],
+      "absents": 1
+    },
+    {
+      "date": "2026-10-02",
+      "time": "08:00",
+      "hours": 1,
+      "titre": "préparer Ecce Larentia II + adjectifs de la 1ère classe + verbe sum",
+      "statut": "distanciel",
+      "theme": "",
+      "cat": "",
+      "contenu": "[Distanciel] : préparer Ecce Larentia II + adjectifs de la 1ère classe + verbe sumObjectifs :repérer les difficultés d'un texte latin ; observer les correspondances de désinences entre adjectifs et noms (modèle bonus) ; mémoriser le verbe sum au présent et au parfait Le lycée étant fermé aujourd'hui voici le travail à faire à la maison : 1) lire le texte Ecce Larentia II et de repérer d'éventuelles difficultés pour le prochain cours.2) regarder les adjectifs qualificatifs de la 1ère classe (fiche distribuée au dernier cours => modèle bonus) et observer les correspondances de désinences entre les 1ères et 2ème déclinaison des noms3) apprendre le verbe être (sum) au présent et au parfait (fiche jointe) de l'indicatif :- sum es est sumus estis sunt- fui fuisti fuit fuimus fuistis fuerunt Tous les supports de cours sont également mis à disposition sur la page web :  ",
+      "resume": "[Distanciel] : préparer Ecce Larentia II + adjectifs de la 1ère classe + verbe sumObjectifs :repérer les difficultés d'un texte latin ; observer les correspondances de désinences entre adjectifs et noms (modèle bonus) ; mémoriser le verbe sum au présent et au ",
+      "elements": [
+        "Construire et justifier une traductionIdentifier et analyser formes, fonctions et structures syntaxiquesInterpréter un texte en mobilisant langue, contexte et cultureLire et oraliser un texte latinRepérer des indices et formuler une hypothèse de sens"
+      ],
+      "afaire": [
+        "Pour le 12/10Contrôle rituel de vocabulaire et grammaire #3vocabulaire : apprendre les noms de la 3ème déclinaison de civis à tempus.déclinaison : connaître la 3ème déclinaison des noms : modèles duc, corpus, civis, mare sur la fiche des déclinaisons"
+      ],
+      "absents": 0
+    },
+    {
+      "date": "2026-10-05",
+      "time": "13:00",
+      "hours": 1,
+      "titre": "Ecce Larentia II — entraînement (ex. 10-16) et verbe sum",
+      "statut": "distanciel",
+      "theme": "",
+      "cat": "",
+      "contenu": "[Distanciel] Ecce Larentia II — entraînement (ex. 10-16) et verbe sumObjectifs :lire et oraliser un texte latin ; réinvestir les faits de langue pour construire le sens ; s'exercer en autonomie (exercices 10, 11, 13, 14 et 16)Pour ce cours à distance, je vous propose de poursuivre le travail en autonomie commencé vendredi sur Ecce Larentia II.1. Relire attentivement le texte Ecce Larentia II.2. Écouter la lecture du texte avec le texte sous les yeux :https://ladigitale.dev/digiview/#/v/eebbeb6e99d492223. Faire les exercices 10, 11, 13, 14 et 16 Nous corrigerons et relirons le texte ensemble au prochain cours, puis nous aborderons un nouveau texte de notre objet d'étude sur l'homme et l'animal. Continuez à apprendre le verbe sum au présent et au parfait.(rappel : tous les supports de cours sont disponible sur la page web du cours :  ) ELEVE_Ecce-Larentia-II.pdf Fiche Sum.pdf ",
+      "resume": "[Distanciel] Ecce Larentia II — entraînement (ex. 10-16) et verbe sumObjectifs :lire et oraliser un texte latin ; réinvestir les faits de langue pour construire le sens ; s'exercer en autonomie (exercices 10, 11, 13, 14 et 16)Pour ce cours à distance, je vous ",
+      "elements": [
+        "Acquérir et mobiliser un lexique fréquentielIdentifier et analyser formes, fonctions et structures syntaxiquesLire et oraliser un texte latinRéinvestir les faits de langue pour construire le sens"
+      ],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-10-09",
+      "time": "08:00",
+      "hours": 1,
+      "titre": "Séq. 1 (séance 3) : la Sphinge — quand le monstre interroge l'homme (Hygin, Fable 67)",
+      "statut": "distanciel",
+      "theme": "",
+      "cat": "",
+      "contenu": "[Distanciel] Séq. 1 (séance 3) : la Sphinge — quand le monstre interroge l'homme (Hygin, Fable 67)Objectifs :traduire un récit mythologique latin (groupes de mots, parfait déponent) ; identifier formes verbales, cas et fonctions ; relier le mythe à ses représentations artistiques (Gustave Moreau) ; rechercher une autre représentation de la Sphinge La Sphinge : quand le monstre interroge l'hommeObjet d'étude : L'homme et l'animal / Comprendre le mondeObjectif : Lire et traduire un récit mythologique latin pour découvrir la figure de la Sphinge et comprendre comment elle interroge la condition humaine, de l'Antiquité à ses représentations artistiques modernes. Dans la mythologie grecque, la Sphinge, être hybride mi-humain mi-bête, terrorise les habitants de Thèbes. Elle soumet les voyageurs à une énigme : ceux qui ne savent pas répondre sont dévorés. Œdipe décide de l'affronter.Hygin, auteur latin traditionnellement situé à l'époque d'Auguste, raconte cet épisode dans ses Fables. Voici tout d'abord le texte intégral de la Fable 67:1Postquam Oedipus Laii et Iocastes filius ad puberem aetatem pervenit, fortissimus praeter ceteros erat, eique per invidiam aequales obiciebant eum subditum esse Polybo, eo quod Polybus tam clemens esset et ille impudens; quod Oedipus sensit non falso sibi obici. 2Itaque Delphos est profectus sciscitatum de parentibus suis. Interim Laio in prodigiis ostendebatur mortem ei adesse de nati manu. 3Idem cum Delphos iret, obviam ei Oedipus venit, quem satellites cum viam regi dari iuberent, neglexit. Rex equos immisit et rota pedem eius oppressit; Oedipus iratus inscius patrem suum de curru detraxit et occidit. 4 Laio occiso Creon Menoecei filius regnum occupavit; interim Sphinx Typhonis in Boeotiam est missa, quae agros Thebanorum vexabat; ea regi Creonti simultatem constituit, si carmen quod posuisset aliquis interpretatus esset, se inde abire, si autem datum carmen non soluisset, eum se consumpturam dixit neque aliter de finibus excessuram. 5Rex re audita per Graeciam edixit; qui Sphingae carmen soluisset, regnum se et Iocasten sororem ei in coniugium daturum promisit. Cum plures regni cupidine venissent et a Sphinge essent consumpti, Oedipus Laii filius venit et carmen est interpretatus; illa se praecipitavit. 6 Oedipus regnum paternum et Iocasten matrem inscius accepit uxorem, ex qua procreavit Eteoclen et Polynicen, Antigonam et Ismenen. Interim incidit Thebis sterilitas frugum et penuria ob Oedipodis scelera, interrogatusque Tiresias quid ita Thebae vexarentur, respondit, si quis ex draconteo genere superesset et pro patria interiisset, pestilentia liberaturum. Tum Menoeceus [Iocastae pater] se de muris praecipitavit. 7Dum haec Thebis geruntur, Corintho Polybus decedit, quo audito Oedipus moleste ferre coepit, aestimans patrem suum obisse; cui Periboea de eius suppositione palam fecit; item Menoetes senex, qui eum exposuerat, ex pedum cicatricibus et talorum agnovit Lai filium esse. 8 Oedipus re audita postquam vidit se tot scelera nefaria fecisse, ex veste matris fibulas detraxit et se luminibus privavit, regnumque filiis suis alternis annis tradidit, et a Thebis Antigona filia duce profugit.1) Travail de traduction 1 :Interim Sphinx Typhonis in Boeotiam est missa, quae agros Thebanorum vexabat.vexabat : quel est cette forme verbale ? Lexiqueinterim : pendant ce tempsSphinx, Sphingis, f. : la SphingeTyphon, Typhonis, m. : Typhon, personnage mythologiqueBoeotia, ae, f. : Béotie, région grecqueager, agri, m. : champ, territoireThebani, orum, m. pl. : les Thébainsvexo, as, are, avi, atum : ravager, tourmenterest missa : forme passive signifiant « fut envoyée » Traduire séparément par groupe de mots puis en entier.1. Sphinx Typhonis2. in Boeotiam est missa3. quae agros Thebanorum vexabat 2) Travail de traduction 2 :Oedipus Laii filius venit et carmen est interpretatus; illa se praecipitavit. D'abord recopier la phrase puis :1) encadrer les trois groupes verbaux.2) souligner les deux sujets.3) observer Laii : à quel cas est ce nom ? À quel mot se rattache-t-il ?4) quel est le COD de est interpretatus ? LexiqueLaius, i, m.: Laïos, père d'Œdipevenio, is, ire, veni, ventum : venir, arrivercarmen, carminis, n : chant, poème ; ici, énigmeest interpretatus : résolut (verbe au parfait à la forme déponente)illa : celle-ci, ellese : pronom réfléchit de la troisième personnepræcĭpĭtō,āvī, ātum, āre : (se) précipiter (dans le vide)Traduire séparément par groupe de mots puis en entier :1. Oedipus Laii filius venit 2. et carmen est interpretatus3. illa se praecipitavit 3) Repérage grammatical :Cum plures regni cupidine venissent et a Sphinge essent consumpti…Traduction guidée : « Alors que plusieurs hommes étaient venus par désir du pouvoir et avaient été dévorés par la Sphinge… »Identifier le cas latin des mots correspondant à « plusieurs hommes », « par la Sphinge » et « du pouvoir ». 4) EnigmeHygin ne donne pas le texte précis de l'énigme. La tradition mythologique nous l'a cependant transmis :« Quel être marche à quatre pattes le matin, à deux pattes à midi et à trois pattes le soir ? » Qui suis je ? 5) Observer comment le peintre Gustave Moreau représente la confrontation entre Œdipe et le monstre (MET museum)https://www.metmuseum.org/art/collection/search/437153 6) Pour le cours du lundi 12 octobrePour lundi 12 octobre : recherchez une autre représentation artistique de la Sphinge (antique ou moderne). Notez son auteur, son époque et sa provenance. Si vous le pouvez, trouvez également un autre texte antique mentionnant la Sphinge, en grec ou en latin, avec sa référence. sphinge_gustave_moreau_1864.jpg ",
+      "resume": "[Distanciel] Séq. 1 (séance 3) : la Sphinge — quand le monstre interroge l'homme (Hygin, Fable 67)Objectifs :traduire un récit mythologique latin (groupes de mots, parfait déponent) ; identifier formes verbales, cas et fonctions ; relier le mythe à ses représe",
+      "elements": [
+        "[2de] L’homme et l’animal[Tle] Comprendre le mondeComparer textes, traductions, images, objets ou représentationsComprendre réception, transmission et transformations de l’AntiquitéConnaître œuvres, genres, mythes, figures et éléments majeurs de civilisationConstruire et justifier une traductionIdentifier et analyser formes, fonctions et structures syntaxiquesInterpréter un texte en mobilisant langue, contexte et cultureMettre en relation mondes anciens et monde moderne/contemporainRechercher, sélectionner et exploiter des ressources de manière autonomeRéinvestir les faits de langue pour construire le sensRepérer des indices et formuler une hypothèse de sens"
+      ],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-10-12",
+      "time": "13:00",
+      "hours": 1,
+      "titre": "dépôt du travail sur la Sphinge (bonus) + Ecce Larentia III",
+      "statut": "distanciel",
+      "theme": "",
+      "cat": "",
+      "contenu": "[Distanciel] dépôt du travail sur la Sphinge (bonus) + Ecce Larentia IIIObjectifs :traduire un récit mythologique latin (groupes de mots, parfait déponent) ; relier le mythe à ses représentations artistiques (Gustave Moreau) ; rechercher une autre représentation de la Sphinge; oraliser et traduire Ecce Larentia III (ex. 20-22) ; apprendre les verbes de la 1ère et 2e conjugaisonDéroulé :Vous pouvez me déposer vos travaux sur la Sphinge dans l'espace élève. (cela sera noté en note bonus).Si tout va bien, nous nous verrons enfin vendredi 16 octobre et nous pourrons discuter de vos travaux en classe. Voici un lien de connexion à une salle virtuelle dans laquelle je serai connecté à 13h00 si vous avez d'éventuelles questions : Travail sur la langue et le vocabulaireLire Ecce Larentia III : s'entraîner à lire à haute voix.Essayer de traduire le texte. S'aider du dictionnaire gaffiot en ligne si besoin.Faire les exercices 20, 21, 22 Vocabulaire à apprendre pour vendredi 16/10 :Verbes de la 1ère et 2ème conjugaisonELEVE_Ecce-Larentia-III.pdf ",
+      "resume": "[Distanciel] dépôt du travail sur la Sphinge (bonus) + Ecce Larentia IIIObjectifs :traduire un récit mythologique latin (groupes de mots, parfait déponent) ; relier le mythe à ses représentations artistiques (Gustave Moreau) ; rechercher une autre représentati",
+      "elements": [
+        "[2de] L’homme et l’animal[Tle] Comprendre le mondeAcquérir et mobiliser un lexique fréquentielConnaître œuvres, genres, mythes, figures et éléments majeurs de civilisationInterpréter un texte en mobilisant langue, contexte et cultureLire et oraliser un texte latin"
+      ],
+      "afaire": [
+        "Pour le 12/10Vous pouvez déposer votre travail donné sur la Sphinge vendredi 09/10.C'est un dépôt facultatif qui sera noté en bonus. Pour lundi 12 octobre : recherchez une autre représentation artistique de la Sphinge (antique ou moderne). Notez son auteur, son époque et sa provenance. Si vous le pouvez, trouvez également un autre texte antique mentionnant la Sphinge, en grec ou en latin, avec sa référence. Nous reprendrons ce travail lors du cours de vendredi 16/10. Pour le 16/10Lien de connexion pour le cours en visio : "
+      ],
+      "absents": 0
+    },
+    {
+      "date": "2026-10-16",
+      "time": "08:00",
+      "hours": 1,
+      "titre": "reprise Larentia et Sphinge, approche de la 3e déclinaison",
+      "statut": "distanciel",
+      "theme": "",
+      "cat": "",
+      "contenu": "[Distanciel] reprise Larentia et Sphinge, approche de la 3e déclinaisonObjectifs :consolider les points des séances précédentes (Larentia, Sphinge) ; aborder la 3e déclinaison des noms ; organiser les révisions (CR #2 et #3, lecture de l'Énéide)Aucun élève présent. Lien de connexion pour le cours en visio :  En ce derniers cours avant les vacances nous reprendrons certains points des séances précédentes : Larentia, la Sphinge et en fonction du temps disponible nous aborderons la 3ème déclinaison des noms.",
+      "resume": "[Distanciel] reprise Larentia et Sphinge, approche de la 3e déclinaisonObjectifs :consolider les points des séances précédentes (Larentia, Sphinge) ; aborder la 3e déclinaison des noms ; organiser les révisions (CR #2 et #3, lecture de l'Énéide)Aucun élève pré",
+      "elements": [
+        "[2de] L’homme et l’animal[Tle] Comprendre le mondeAcquérir et mobiliser un lexique fréquentielConnaître œuvres, genres, mythes, figures et éléments majeurs de civilisationLire et oraliser un texte latin"
+      ],
+      "afaire": [
+        "Pour le 02/11Lecture obligatoire pour les vacances de la Toussaint — Virgile, L'Énéide, chants I à IV (traduction française intégrale)Prenez une édition complète de poche. Edition de poche recommandée : GF Flammarion.Cette lecture vous permettra de découvrir directement l'une des œuvres majeures de la littérature latine (et mondiale). Nous l'exploiterons dans nos différents objets d'étude en classe.Lisez \"le crayon à la main\" en notant les principaux épisodes, les principaux personnages et divinités, les lieux, quelques citations de passages qui vous paraissent importants, ainsi que vos impressions de lecture.Cette lecture donnera lieu à un contrôle de lecture et/ou un oral après les vacances de la Toussaint. Contrôle rituel de vocabulaire et grammaire #2 et #3 (décalés suite à la fermeture du lycée)vocabulaire : apprendre les noms de la 2ème déclinaison de ager,agri à regnum,i.vocabulaire : apprendre les noms de la 3ème déclinaison de civis à tempus.vocabulaire : verbes de la 1ère et de la 2ème conjugaisondéclinaison : connaître la 2ème déclinaison des noms : modèles ludus, puer, monstrum sur la fiche des déclinaisonsconjugaison : connaître le verbe sum au présent et au parfait de l'indicatif"
+      ],
+      "absents": 0
+    },
+    {
+      "date": "2026-11-02",
+      "time": "13:00",
+      "hours": 1,
+      "titre": "Contrôle rituel de vocabulaire et grammaire #2 et #3 et reprise des travaux réalisés en distanc",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Contrôle rituel de vocabulaire et grammaire #2 et #3 et reprise des travaux réalisés en distancielObjectifs : évaluer les automatismes (2e-3e déclinaisons, verbes, sum) ; rendre compte de la lecture de l'Énéide « le crayon à la main » ; oraliser et traduire Ecce Larentia IIIDéroulé :Contrôle rituel de vocabulaire et grammaire #2 et #3 : noms de la 2e déclinaison (ager → regnum), noms de la 3e déclinaison (civis → tempus), verbes de la 1re et 2e conjugaison, verbe sum au présent et au parfait de l'indicatif.Point sur la lecture obligatoire des vacances : Virgile, Énéide, chants I à IV (lecture « le crayon à la main ») — difficultés rencontrées, premiers repérages des épisodes, personnages et divinités.Lecture et travail sur le texte Ecce Larentia III (Via Latina) : oralisation, compréhension globale, traduction guidée et exercices d'application. ",
+      "resume": "Contrôle rituel de vocabulaire et grammaire #2 et #3 et reprise des travaux réalisés en distancielObjectifs : évaluer les automatismes (2e-3e déclinaisons, verbes, sum) ; rendre compte de la lecture de l'Énéide « le crayon à la main » ; oraliser et traduire Ec",
+      "elements": [
+        "Acquérir et mobiliser un lexique fréquentielConnaître œuvres, genres, mythes, figures et éléments majeurs de civilisationConstruire et justifier une traductionLire et oraliser un texte latinSituer textes, auteurs, événements et espaces dans leurs contextes"
+      ],
+      "afaire": [],
+      "absents": 1
+    },
+    {
+      "date": "2026-11-06",
+      "time": "08:00",
+      "hours": 1,
+      "titre": "Clôture de la Séquence 1 - Observer le vivant, entre savoir et merveilleux ; ouverture sur la S",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Clôture de la Séquence 1 - Observer le vivant, entre savoir et merveilleux ; ouverture sur la Séq 2 : AugusteObjectifs : clore le travail sur la Sphinge en reliant texte antique et représentations modernes ; consolider la morphologie verbale (parfait de l'indicatif) ; ouvrir un nouveau volet sur la figure d'Auguste, en lien avec la lecture de l'Énéide.Déroulé :I. Rendu et correction express des contrôles rituels #2II. La Sphinge (Hygin, Fable 67) : correction ; observation de la toile de Gustave Moreau — situer la scène représentée, mettre en relation le texte antique et sa réception picturale.III. Mise en lien : de l'Énéide à Auguste — pourquoi le portrait d'Auguste s'éclaire de l'épopée de Virgile. Distribution d'un recueil de textes « Portrait d'Auguste » (Suétone), d'une fiche biographique sur Auguste, d'une carte de l'Empire Romain, d'une chronologie des empereurs romainsIV. Grammaire : le parfait de l'indicatif — analyse de formes verbales (exercice 5 de la leçon sur l'indicatif, texte d'Eutrope).V. Début du visionnage d'une vidéo de présentation d'Auguste (à poursuivre au prochain cours). Augustus Empereur de Rome Point de repères Arte sphinge_gustave_moreau_1864.jpg Augustus Empereur de Rome Point de repères Arte Carte Empire.pdf ELEVE_Option_Latin_Auguste.pdf ELEVE_Option_Latin_Empereurs_romains.pdf ",
+      "resume": "Clôture de la Séquence 1 - Observer le vivant, entre savoir et merveilleux ; ouverture sur la Séq 2 : AugusteObjectifs : clore le travail sur la Sphinge en reliant texte antique et représentations modernes ; consolider la morphologie verbale (parfait de l'indi",
+      "elements": [
+        "[2de] L’homme et l’animal[Tle] Comprendre le mondeAcquérir et mobiliser un lexique fréquentielComparer textes, traductions, images, objets ou représentationsConnaître les grands repères de l’histoire grecque et romaineConnaître œuvres, genres, mythes, figures et éléments majeurs de civilisationConstruire et justifier une traductionIdentifier et analyser formes, fonctions et structures syntaxiquesMettre en relation mondes anciens et monde moderne/contemporainSituer textes, auteurs, événements et espaces dans leurs contextes"
+      ],
+      "afaire": [
+        "Pour le 16/11Contrôle rituel de vocabulaire et de grammaire #3 sur le chapitre 1 d'Ecce Larentia (leçons I à III)C'est un vocabulaire que nous avons déjà travaillé en cours. => réviser le vocabulaire de la fiche jointe grâce à l'application en ligne :  Réviser le vocabulaire de Ecce Larentia chapitre 1 ELEVE_Voc_essentiel_Ecce_Larentia_Cap_I.pdf "
+      ],
+      "absents": 0
+    },
+    {
+      "date": "2026-11-09",
+      "time": "13:00",
+      "hours": 1,
+      "titre": "Larentia - Chap2 leçon 1 : lecture et traduction + Séq. 2 « Imperium sine fine » : ouverture — ",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Larentia - Chap2 leçon 1 : lecture et traduction + Séq. 2 « Imperium sine fine » : ouverture — l'Énéide I, 274-295 (prophétie de Jupiter), Virgile et AugusteObjectifs :trouver à partir du texte latin sans indications ni traduction où se situe l'extrait dans le poème (protagonistes, contexte immédiat); mettre en lien Virgile et Auguste (prophétie de Jupiter, roman national) ; travailler sur la morphologie du futur à partir du texte.Déroulé :I. Lecture et traduction de la leçon 1 Chap2 de Ecce Larentia. II. Introduction de la séquence 2 : Imperium sine fine (« un empire sans limites »). Séance 1 : La prophétie de Jupiter (Énéide I, 274-295) III. Repérages lexicaux et grammaticaux : noms propres, formes verbales => identification des temps verbaux : parfait, présent, futurIV. Point de grammaire sur le futurV. Interprétation guidée du texte : qui parle ? à qui ? pourquoi le futur dans la bouche de Jupiter ? Imperium sine fine dedi - le destin annoncé, l'histoire lue à rebours. => Où se situe-t-on dans le poème ?Trace écrite (à compléter au prochain cours) : Dans le chant I de l'Énéide, Vénus se plaint à Jupiter des épreuves d'Énée ; Jupiter le rassure par une prophétie : Énée et sa lignée (Ascagne/Iule, Romulus, puis César et Auguste) fonderont Rome et régneront sur un empire sans limites (imperium sine fine). Le futur de l'indicatif exprime un avenir certain : chez Virgile, le destin de Rome est déjà écrit — et il aboutit à Auguste.Mots-concepts : imperium (l'empire, le pouvoir de commander) ; pietas (le devoir pieux envers les dieux, la famille et la patrie).Langue : le futur de l'indicatif se forme sur le thème du futur : 1re-2e conj. -bo, -bis, -bit, -bimus, -bitis, -bunt ; 3e-4e conj. thème en voyelle (ponet, veniet). Ne pas confondre : -bit (futur) / -vit (parfait). Larentia__chapt2_lecon1_romulus_et_remus.pdf ",
+      "resume": "Larentia - Chap2 leçon 1 : lecture et traduction + Séq. 2 « Imperium sine fine » : ouverture — l'Énéide I, 274-295 (prophétie de Jupiter), Virgile et AugusteObjectifs :trouver à partir du texte latin sans indications ni traduction où se situe l'extrait dans le",
+      "elements": [],
+      "afaire": [
+        "Pour le 13/11Ce vendredi 13/11 nous ferons une séance en visio : voici le lien de connexion. Finir de regarder la vidéo sur Auguste : https://ladigitale.dev/digiview/#/v/b62e038ecc57e973Lire la fiche sur l'Eneide jointe."
+      ],
+      "absents": 0
+    },
+    {
+      "date": "2026-11-13",
+      "time": "08:00",
+      "hours": 1,
+      "titre": "[Distanciel - classe absente] Séq. 2 « Imperium sine fine » : traduction de l'expression, statue d'Auguste de Prima Porta, portraits présidentiels (travail en autonomie)",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "[Distanciel - classe absente] Séq. 2 « Imperium sine fine » : traduction de l'expression, statue d'Auguste de Prima Porta, portraits présidentiels (travail en autonomie)",
+      "resume": "[Distanciel - classe absente] Séq. 2 « Imperium sine fine » : traduction de l'expression, statue d'Auguste de Prima Porta, portraits présidentiels (travail en autonomie)",
+      "elements": [],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-11-16",
+      "time": "13:00",
+      "hours": 1,
+      "titre": "Larentia II,1 : fin de la traduction + contrôle rituel #3 + débrief du distanciel (Prima Porta)",
+      "statut": "publié",
+      "theme": "",
+      "cat": "",
+      "contenu": "Objectifs : achever la traduction de la leçon 1 du chapitre 2 d Ecce Larentia ; évaluer les automatismes (contrôle rituel #3, chapitre 1) ; débriefer le travail distanciel (statue d Auguste de Prima Porta, parallèle avec les portraits présidentiels). Déroulé : I. Fin de la traduction de Larentia II,1 (traduction complète de la leçon ; exercices non traités, à reprendre). II. Contrôle rituel #3 (Ecce Larentia chap. 1). III. Débrief du distanciel : Prima Porta, parallèle avec les portraits de présidents français. Trace écrite non distribuée (à prévoir au prochain cours) ; mots-concepts et futur de l indicatif non abordés (reportés). Prochaine séance (20/11) : un élève absent (visite culturelle) ; trace écrite à distribuer.",
+      "resume": "Larentia II,1 : fin de la traduction + contrôle rituel #3 + débrief du distanciel (Prima Porta)Objectifs : achever la traduction de la leçon 1 du chapitre 2 d Ecce Larentia ; évaluer les automatismes ",
+      "elements": [],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-11-20",
+      "time": "08:00",
+      "hours": 1,
+      "titre": "",
+      "statut": "à saisir",
+      "theme": "",
+      "cat": "",
+      "contenu": "",
+      "resume": "",
+      "elements": [],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-11-23",
+      "time": "13:00",
+      "hours": 1,
+      "titre": "",
+      "statut": "à saisir",
+      "theme": "",
+      "cat": "",
+      "contenu": "",
+      "resume": "",
+      "elements": [],
+      "afaire": [],
+      "absents": 0
+    },
+    {
+      "date": "2026-11-27",
+      "time": "08:00",
+      "hours": 1,
+      "titre": "",
+      "statut": "à saisir",
+      "theme": "",
+      "cat": "",
+      "contenu": "",
+      "resume": "",
+      "elements": [],
+      "afaire": [],
+      "absents": 0
+    }
+  ],
+  "programme": [
+    {
+      "bloc": "1. LIRE, COMPRENDRE, TRADUIRE ET INTERPRÉTER",
+      "items": [
+        {
+          "label": "Lire et oraliser un texte latin",
+          "n": 10
+        },
+        {
+          "label": "Repérer des indices et formuler une hypothèse de sens",
+          "n": 3
+        },
+        {
+          "label": "Construire et justifier une traduction",
+          "n": 5
+        },
+        {
+          "label": "Interpréter un texte en mobilisant langue, contexte et culture",
+          "n": 3
+        },
+        {
+          "label": "Analyser les procédés d'écriture et construire une interprétation littéraire",
+          "n": 0
+        }
+      ]
+    },
+    {
+      "bloc": "2. LANGUE ET LEXIQUE",
+      "items": [
+        {
+          "label": "Identifier et analyser formes, fonctions et structures syntaxiques",
+          "n": 10
+        },
+        {
+          "label": "Réinvestir les faits de langue pour construire le sens",
+          "n": 2
+        },
+        {
+          "label": "Acquérir et mobiliser un lexique fréquentiel",
+          "n": 7
+        },
+        {
+          "label": "Étudier étymologie, familles de mots et mots-concepts",
+          "n": 0
+        }
+      ]
+    },
+    {
+      "bloc": "3. CULTURE ANTIQUE ET REPÈRES",
+      "items": [
+        {
+          "label": "Situer textes, auteurs, événements et espaces dans leurs contextes",
+          "n": 7
+        },
+        {
+          "label": "Connaître les grands repères de l'histoire grecque et romaine",
+          "n": 0
+        },
+        {
+          "label": "Connaître et mobiliser œuvres, genres, mythes, figures et notions majeures de la culture antique",
+          "n": 0
+        }
+      ]
+    },
+    {
+      "bloc": "4. CONFRONTER ET METTRE EN PERSPECTIVE",
+      "items": [
+        {
+          "label": "Comparer textes, traductions, images, objets ou représentations",
+          "n": 5
+        },
+        {
+          "label": "Comprendre réception, transmission et transformations de l'Antiquité",
+          "n": 0
+        },
+        {
+          "label": "Mettre en relation mondes anciens et monde moderne/contemporain",
+          "n": 4
+        },
+        {
+          "label": "Construire une synthèse à partir de plusieurs textes ou documents",
+          "n": 0
+        }
+      ]
+    },
+    {
+      "bloc": "5. S'EXPRIMER, ARGUMENTER ET CONSTRUIRE SON AUTONOMIE",
+      "items": [
+        {
+          "label": "Justifier une réponse ou une interprétation par des indices précis",
+          "n": 0
+        },
+        {
+          "label": "Produire un écrit organisé et argumenté",
+          "n": 0
+        },
+        {
+          "label": "Problématiser une question littéraire, politique ou culturelle",
+          "n": 0
+        },
+        {
+          "label": "Construire et développer une réflexion personnelle de type essai",
+          "n": 0
+        },
+        {
+          "label": "Présenter, expliquer et argumenter à l'oral",
+          "n": 0
+        },
+        {
+          "label": "Rechercher, sélectionner et exploiter des ressources de manière autonome",
+          "n": 1
+        },
+        {
+          "label": "Construire un portfolio mettant en résonance Antiquité et modernité",
+          "n": 0
+        }
+      ]
+    },
+    {
+      "bloc": "6. OBJETS D'ÉTUDE (option — 2nde et Tle, 3 sur 4 à traiter par niveau, dont Méditerranée)",
+      "items": [
+        {
+          "label": "L'Homme et l'animal",
+          "n": 0
+        },
+        {
+          "label": "L'Homme et le divin",
+          "n": 0
+        },
+        {
+          "label": "Soi-même et l'autre",
+          "n": 0
+        },
+        {
+          "label": "Méditerranée : voyager, explorer, découvrir",
+          "n": 3
+        },
+        {
+          "label": "Leçons de sagesse antique",
+          "n": 0
+        },
+        {
+          "label": "Comprendre le monde",
+          "n": 6
+        },
+        {
+          "label": "Inventer, créer, fabriquer, produire",
+          "n": 0
+        },
+        {
+          "label": "Méditerranée : présence des mondes antiques",
+          "n": 3
+        }
+      ]
+    },
+    {
+      "bloc": "Notes d'évaluation (31/10/2026)",
+      "items": [
+        {
+          "label": "Blocs 1-5 = compétences LCA transversales (identiques au référentiel spé, qui fait foi pour le libellé).",
+          "n": 0
+        },
+        {
+          "label": "Bloc 6 initial (objets de spé 1ère : cité, justice, amour, Méditerranée conflits) erroné pour ce cours → remplacé par les 8 objets option 2nde + Tle ci-dessus, conformes aux BO 2019 (Annexe 1 seconde / programme option terminale).",
+          "n": 0
+        },
+        {
+          "label": "Le multiniveau se monitorera en cochant l'objet d'étude correspondant au niveau visé par chaque séance.",
+          "n": 0
+        }
+      ]
+    }
+  ],
+  "journal": [
+    {
+      "date": "2026-11-02",
+      "contexte": "Séance malgré les blocages lycéens (2 élèves présents). Lecture de l’Énéide engagée (4 chants). Travail sur Ecce Larentia III.",
+      "marche": [
+        "La lecture de l’Énéide réellement faite (les 4 chants demandés) par un élève"
+      ],
+      "aAmeliorer": [
+        "Cadrer l’objectif des séances H15-H17",
+        "Choisir la notion de grammaire du prochain contrôle rituel en s’appuyant sur les dossiers H{n}"
+      ],
+      "idees": [
+        "Faire le point sur l’avancement pour cadrer la prochaine séance",
+        "App de révision : vocabulaire + exercices de grammaire classés par sujets (cas, conjugaison, phrases à traduire)",
+        "App de révision pour le contrôle de lecture de l’Énéide"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "contexte": "Portrait d’Auguste par Suétone (recueil distribué), bio d’Auguste, correction de la Sphinge express, lien Énéide-Auguste, travail sur le parfait (Eutrope), vidéo Auguste.",
+      "marche": [
+        "L’intérêt pour la Sphinge représentée en tableau et son énigme",
+        "L’intérêt pour l’histoire d’Auguste",
+        "La participation aux travaux sur le parfait"
+      ],
+      "aAmeliorer": [
+        "Le cours était un peu décousu",
+        "Trop de papier à gérer",
+        "Être convaincu par l’intérêt pédagogique de ce que l’on fait pour le faire avancer avec assurance"
+      ],
+      "idees": [
+        "Finir le visionnage de la vidéo Auguste",
+        "Adapter le contenu Auguste (spé) à l’option",
+        "Exploiter l’extrait de l’Énéide vu en spé",
+        "Statuer sur les travaux à l’oral en option",
+        "Partie portfolio : voir ce que fait un autre stagiaire",
+        "Contrôle rituel possible : vocab + grammaire de Larentia I-III (mémorandum du manuel) + app de révision associée"
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "contexte": "Séance perturbée par le mouvement lycéen (AG + manifestation) ; CR3 repoussé au 16/11. Larentia chap. 2 leçon 1 + prophétie de Jupiter (Énéide).",
+      "marche": [
+        "Le minutage du cours",
+        "L’entrée en langue latine par Larentia",
+        "Faire deviner les enjeux/personnages du texte en élucidant le sens progressivement : à refaire",
+        "S’appuyer sur le texte pour travailler la grammaire : à refaire"
+      ],
+      "aAmeliorer": [
+        "Toujours prévoir une trace écrite (il a manqué celle de la leçon de conjugaison)",
+        "Confirmer l’usage de l’app de révision du vocabulaire"
+      ],
+      "idees": [
+        "Finir la vidéo d’Auguste",
+        "Adapter le contenu d’Auguste (spé) à l’option",
+        "Aller plus vite sur Larentia pour les élèves prêts, avec des textes plus difficiles"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "contexte": "Distanciel (classe absente) : travail en autonomie — traduire « Imperium sine fine » avec le Gaffiot, observer la statue de Prima Porta, confronter avec les portraits officiels présidentiels, vidéo Auguste.",
+      "marche": [],
+      "aAmeliorer": [],
+      "idees": [
+        "Débrefer le distanciel (Prima Porta vs portraits présidentiels)",
+        "Finir la vidéo Auguste"
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "contexte": "Larentia II,1 fin de traduction, CR3, débrief du distanciel (Prima Porta vs portraits présidentiels). Pas de trace écrite distribuée.",
+      "marche": [
+        "Larentia très utile pour se mettre le latin en bouche et revoir la grammaire",
+        "L’analyse d’une œuvre d’art très féconde"
+      ],
+      "aAmeliorer": [
+        "Trace écrite non donnée : la prévoir pour le prochain cours",
+        "Mots-concepts non abordés",
+        "Le futur non traité"
+      ],
+      "idees": [
+        "Réflexion avec l’IA sur les textes eduscol : quel attendu réel de trace écrite en option ? Privilégier lecture, oral, langue, documents à surligner/annoter ?",
+        "Prévoir le programme de révision du CR5 (les élèves veulent plus de temps pour réviser)",
+        "Élaborer le sujet du contrôle de lecture pour le 23/11",
+        "Finaliser la progression annuelle avec le big menu",
+        "Épigraphie : travail sur l’inscription du trophée d’Auguste de la Turbie (doc iconographie Auguste, dossier Drive Auguste)"
+      ]
+    }
   ]
- },
- "grammaire": {
-  "vus": [
-   {
-    "titre": "Cas et fonctions ; identification des déclinaisons par le génitif",
-    "date": "07/09"
-   },
-   {
-    "titre": "1re déclinaison (rosa) — fiche voc n°1",
-    "date": "21/09"
-   },
-   {
-    "titre": "2e déclinaison (ludus, puer, monstrum)",
-    "date": "28/09"
-   },
-   {
-    "titre": "3e déclinaison (dux, corpus, civis, mare)",
-    "date": "16/10-02/11"
-   },
-   {
-    "titre": "Conjugaison : temps primitifs, infectum/perfectum ; verbes 1re-2e conj.",
-    "date": "21/09-12/10"
-   },
-   {
-    "titre": "Verbe sum au présent et au parfait",
-    "date": "02/10"
-   },
-   {
-    "titre": "Adjectifs de la 1re classe (modèle bonus)",
-    "date": "02/10"
-   },
-   {
-    "titre": "Interrogation : -ne, num, nonne / réponses ita, minime (oralisation Via Latina)",
-    "date": "25/09"
-   },
-   {
-    "titre": "Le futur de l'indicatif (Énéide I, 274-295)",
-    "date": "09/11"
-   },
-   {
-    "titre": "Le parfait de l'indicatif (Eutrope)",
-    "date": "06/11"
-   }
-  ],
-  "aVoir": [
-   {
-    "titre": "Pronoms (démonstratifs, réfléchis) — amorcés en distanciel, à consolider",
-    "echeance": "T2"
-   },
-   {
-    "titre": "4e-5e déclinaisons ; adjectifs 2e classe",
-    "echeance": "à planifier"
-   },
-   {
-    "titre": "Premières subordinations",
-    "echeance": "à planifier"
-   }
-  ]
- },
- "culture": {
-  "auteursTextes": [
-   {
-    "titre": "Abbé Lhomond, De viris illustribus, 4",
-    "contexte": "fondation de Rome"
-   },
-   {
-    "titre": "Virgile, Énéide I (273-277 ; 274-295 prophétie de Jupiter)",
-    "contexte": "origines de Rome, imperium sine fine"
-   },
-   {
-    "titre": "Horace, Épîtres — « Graecia capta ferum victorem cepit… »",
-    "contexte": "héritage grec"
-   },
-   {
-    "titre": "Pline l'Ancien & Élien — le Mantichore",
-    "contexte": "S1 : observer le vivant"
-   },
-   {
-    "titre": "Ovide, Métamorphoses VI, 366-381 (Latone)",
-    "contexte": "S1 + réception à Versailles"
-   },
-   {
-    "titre": "Hygin, Fables, 67 (la Sphinge et Œdipe)",
-    "contexte": "S1 : le monstre qui interroge l'homme"
-   },
-   {
-    "titre": "Flaubert (réception du Mantichore)",
-    "contexte": "construction littéraire des savoirs"
-   },
-   {
-    "titre": "Suétone — portrait d'Auguste (recueil de textes)",
-    "contexte": "S2 Imperium sine fine"
-   },
-   {
-    "titre": "Via Latina, Ecce Larentia I-III (chap. 2 leçon 1 en cours)",
-    "contexte": "oralisation, langue"
-   }
-  ],
-  "referencesCulturelles": [
-   "Frise des repères antiques : Mycènes → chute de l'Empire d'Occident",
-   "Cartes de la Méditerranée antique (diachroniques)",
-   "Bassin de Latone à Versailles (réception d'Ovide)",
-   "Gustave Moreau, Œdipe et la Sphinge (1864, MET) — recherches élèves d'autres représentations",
-   "« Augustus, empereur de Rome » (Arte) ; P. Boucheron, Quand l'histoire fait des dates",
-   "Carte de l'Empire romain + chronologie des empereurs (S2)"
-  ],
-  "periodes": [
-   {
-    "titre": "Guerre de Troie et fondation de Rome (mythe)",
-    "detail": "Troie → Énée → Romulus/Rémus"
-   },
-   {
-    "titre": "Monde grec classique → Rome républicaine → Empire",
-    "detail": "frise chronologique, repères auteurs"
-   },
-   {
-    "titre": "Époque d'Auguste",
-    "detail": "Virgile, Suétone, l'Empire et le roman national"
-   }
-  ],
-  "motsConcepts": [
-   "imperium",
-   "pietas"
-  ]
- },
- "seances": [
-  {
-   "date": "2026-09-04",
-   "time": "08:00",
-   "hours": 1,
-   "titre": "Séquence introductive — Des Grecs aux Romains : de Troie à Rome",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "Séquence introductive — Des Grecs aux Romains : de Troie à RomeObjectifs :reconstituer la chaîne Troie → Énée → Romulus/Rémus → Rome ; comprendre comment Rome rattache ses origines au monde héroïque grec ; acquérir les premiers repères mythologiques, historiques et littéraires (Virgile, Lhomond)Déroulé :Rappel de la guerre de Troie et de ses principaux protagonistes.Énée, de Troie à l’Italie. De l’arrivée d’Énée à la fondation mythique de Rome par Romulus et Rémus.Travail à partir d’un support vidéo et de textes ; entrée dans Virgile, puis Lhomond. Reconstituer la chaîne Troie → Énée → Romulus/Rémus → Rome. Comprendre comment Rome rattache ses origines au monde héroïque grec. Premiers repères mythologiques, historiques et littéraires. VIDEOShttps://www.lumni.fr/video/romulus-et-remushttps://www.arte.tv/fr/videos/086127-007-A/quand-l-histoire-fait-dates/ TEXTES- Abbé Lhomond, De viris illustribus, 4- Virgile, Énéide, I, 273-277Enee_anchise_Federico_Barocci.jpg L’Incendie de Troie de Johann Georg Trautmann.jpg ",
-   "resume": "Séquence introductive — Des Grecs aux Romains : de Troie à RomeObjectifs :reconstituer la chaîne Troie → Énée → Romulus/Rémus → Rome ; comprendre comment Rome rattache ses origines au monde héroïque grec ; acquérir les premiers repères mythologiques, historiqu",
-   "elements": [
-    "[2de] Méditerranée : voyager, explorer, découvrir[Tle] Méditerranée : présence des mondes antiquesComparer textes, traductions, images, objets ou représentationsConnaître les grands repères de l’histoire grecque et romaineConnaître œuvres, genres, mythes, figures et éléments majeurs de civilisationLire et oraliser un texte latinSituer textes, auteurs, événements et espaces dans leurs contextes"
-   ],
-   "afaire": [],
-   "absents": 0
-  },
-  {
-   "date": "2026-09-07",
-   "time": "13:00",
-   "hours": 1,
-   "titre": "Séq introductive - Langue : « Magister et discipuli », cas et fonctions",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "Séq introductive - Langue : « Magister et discipuli », cas et fonctionsObjectifs :relier les fonctions grammaticales françaises et les cas latins ; identifier cas, fonctions et déclinaisons (génitif) dans des phrases latines (Hatier 2de)Déroulé :Lecture du dialogue « Magister et discipuli ». Rappel des fonctions grammaticales en français et correspondance avec les cas latins. Exercices tirés du Hatier 2de : cas/fonctions, mise d’un nom au cas demandé, identification des cas et fonctions dans des phrases/textes latins. Première réactivation de la morphologie nominale.[Grammaire] distribution de fiches grammaticales (source Manuel Hatier 2nde)[Grammaire] Rappels et exercices sur le fonctionnement de la langue latinetravail sur le lien cas - fonctionidentification des fonctions dans la phrase en françaisidentification de la déclinaison à partir du génitiftravail d'identification de déclinaison / cas / fonction à partir d'un texte",
-   "resume": "Séq introductive - Langue : « Magister et discipuli », cas et fonctionsObjectifs :relier les fonctions grammaticales françaises et les cas latins ; identifier cas, fonctions et déclinaisons (génitif) dans des phrases latines (Hatier 2de)Déroulé :Lecture du dia",
-   "elements": [
-    "[2de] Méditerranée : voyager, explorer, découvrir[Tle] Méditerranée : présence des mondes antiquesIdentifier et analyser formes, fonctions et structures syntaxiquesLire et oraliser un texte latin"
-   ],
-   "afaire": [],
-   "absents": 0
-  },
-  {
-   "date": "2026-09-11",
-   "time": "08:00",
-   "hours": 1,
-   "titre": "Séquence introductive - Grands repères antiques : frise, carte et l'héritage grec (Horace)",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "Séquence introductive - Grands repères antiques : frise, carte et l'héritage grec (Horace)Objectifs :placer les repères temporels sur une frise (Mycènes → chute de l'Empire d'Occident) ; lire une carte de la Méditerranée antique ; oraliser et traduire un texte du Via Latina ; analyser la citation d'Horace « Graecia capta… » Grands repères antiquesDe Mycène à la chute de l'empire romain d'occident : travail de placement de repères temporels sur une friseRepérages géographiques sur une carte de la MéditerranéeLecture / oralisation du latinTravail de lecture et de traduction à partir du manuel Manuel Via Latina De Lingua et vita RomanorumRappel des notions de grammaire vues précédemment (cas, fonction, déclinaisons)LangueAnalyse d'une citation d'Horace : \"Graecia capta ferum victorem cepit et artes intulit agresti Latio\". Horace, Epîtres",
-   "resume": "Séquence introductive - Grands repères antiques : frise, carte et l'héritage grec (Horace)Objectifs :placer les repères temporels sur une frise (Mycènes → chute de l'Empire d'Occident) ; lire une carte de la Méditerranée antique ; oraliser et traduire un texte",
-   "elements": [
-    "[2de] Méditerranée : voyager, explorer, découvrir[Tle] Méditerranée : présence des mondes antiquesConnaître les grands repères de l’histoire grecque et romaineConnaître œuvres, genres, mythes, figures et éléments majeurs de civilisationIdentifier et analyser formes, fonctions et structures syntaxiquesLire et oraliser un texte latinSituer textes, auteurs, événements et espaces dans leurs contextes"
-   ],
-   "afaire": [],
-   "absents": 0
-  },
-  {
-   "date": "2026-09-14",
-   "time": "13:00",
-   "hours": 1,
-   "titre": "Révision repères antiques + travail sur les cas + Séq. 1 - Observer le vivant (séance 1) : le M",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "Révision repères antiques + travail sur les cas + Séq. 1 - Observer le vivant (séance 1) : le Mantichore, entre savoir et merveilleux (Pline, Élien)Objectifs :réviser les grands repères antiques ; s'entraîner aux cas (nominatif, accusatif, ablatif) ; repérer les mots latins par comparaison bilingue ; analyser l'usage des ablatifs et des génitifs - révision flash sur les grands repères antiques- présentation des cartes diachroniques de la Méditerranée antique- exercices de grammaire : nominatif, accusatif, ablatifSéquence 1 - Observer le vivant, entre savoir et merveilleuxSéance 1 - Comment les Anciens observent-ils et décrivent-ils le vivant lorsque savoir, témoignage et merveilleux se mêlent ?premier travail sur le Mantichore à partir d'un texte de Pline l'Ancien et d'Elien.travail de repérage des mots latins par comparaison entre le texte latin et le texte en français.analyse de l'usage des ablatifs et des génitifs",
-   "resume": "Révision repères antiques + travail sur les cas + Séq. 1 - Observer le vivant (séance 1) : le Mantichore, entre savoir et merveilleux (Pline, Élien)Objectifs :réviser les grands repères antiques ; s'entraîner aux cas (nominatif, accusatif, ablatif) ; repérer l",
-   "elements": [
-    "[2de] L’homme et l’animal[Tle] Comprendre le mondeConnaître les grands repères de l’histoire grecque et romaineConnaître œuvres, genres, mythes, figures et éléments majeurs de civilisationIdentifier et analyser formes, fonctions et structures syntaxiquesMettre en relation mondes anciens et monde moderne/contemporainRepérer des indices et formuler une hypothèse de sensSituer textes, auteurs, événements et espaces dans leurs contextes"
-   ],
-   "afaire": [
-    "Pour le 18/09Contrôle : Grands repères antiquesGuerre de Troie. Connaître son origine. Connaître les protagonistes vus en cours et à quel camp ils appartiennent (Troyens : Priam, Hector, Paris, Enée / Grecs : Agamemnon, Ménélas, Hélène, Achille, Ulysse).Romulus et Remus : faire le lien avec la guerre de Troie, connaître les principaux jalons de leur histoire : mère, père, ancêtre, raison du conflitFrise chronologique : des Mycéniens jusqu'à la chute de l'Empire Romain d'occident. Savoir dater les grands évènements vus en cours / Savoir citer et situer dans le temps des figures littéraires majeures grecques et romaines vues en cours.Langue :connaître la structure canonique d'une phrase latine : sujet - compléments - verbe,savoir relier la fonction d'un mot (sujet, attribut du sujet, COD, COI, Comp. Circonstanciel) avec son cas latin, savoir identifier les mots aux nominatif, au vocatif, à l'accusatif, à l'ablatif dans une phrase latine (avec des mots de la 1ère, 2ème, 3ème déclinaisons)connaître la première déclinaison des noms en entier (rosa,ae)savoir identifier la déclinaison d'un nom à partir de son génitifsavoir traduire une phrase latine simple avec le vocabulaire fourni.Voir les documents sur le digipad : "
-   ],
-   "absents": 1
-  },
-  {
-   "date": "2026-09-18",
-   "time": "08:00",
-   "hours": 1,
-   "titre": "DS n°1 : grands repères antiques et langue + Séq 1 Observer le vivant (Séance 1) : suite du Man",
-   "statut": "publié",
-   "theme": "",
-   "cat": "Devoir sur table DS ",
-   "contenu": "DS n°1 : grands repères antiques et langue + Séq 1 Observer le vivant (Séance 1) : suite du Mantichore et FlaubertObjectifs :restituer les repères antiques et les acquis de langue (cas, fonctions, 1ère déclinaison) ; comparer le texte antique et sa réception (Flaubert) ; s'interroger sur la construction littéraire des savoirs (trace écrite) Contrôle : Grands repères antiquesGuerre de Troie. Connaître son origine. Connaître les protagonistes vus en cours et à quel camp ils appartiennent (Troyens : Priam, Hector, Paris, Enée / Grecs : Agamemnon, Ménélas, Hélène, Achille, Ulysse).Romulus et Remus : faire le lien avec la guerre de Troie, connaître les principaux jalons de leur histoire : mère, père, ancêtre, raison du conflitFrise chronologique : des Mycéniens jusqu'à la chute de l'Empire Romain d'occident. Savoir dater les grands évènements vus en cours / Savoir citer et situer dans le temps des figures littéraires majeures grecques et romaines vues en cours.Langue :connaître la structure canonique d'une phrase latine : sujet - compléments - verbe,savoir relier la fonction d'un mot (sujet, attribut du sujet, COD, COI, Comp. Circonstanciel) avec son cas latin, savoir identifier les mots aux nominatif, au vocatif, à l'accusatif, à l'ablatif dans une phrase latine (avec des mots de la 1ère, 2ème, 3ème déclinaisons)connaître la première déclinaison des noms en entier (rosa,ae)savoir identifier la déclinaison d'un nom à partir de son génitifsavoir traduire une phrase latine simple avec le vocabulaire fourni.Voir les documents sur le digipad : équence 1 - Observer le vivant, entre savoir et merveilleuxSéance 1 - Comment les Anciens observent-ils et décrivent-ils le vivant lorsque savoir, témoignage et merveilleux se mêlent ?suite du travail sur le Mantichore à partir d'un texte de Pline l'Ancien et d'Elien.travail de repérage des mots latins par comparaison entre le texte latin et le texte en français.analyse de l'usage des ablatifs et des génitifslecture du texte de FlaubertTrace écrite : Les auteurs antiques cherchent à observer et à décrire le monde vivant, mais leurs connaissances reposent aussi sur des récits et des témoignages transmis par d'autres. Etudier ces textes conduit par conséquent à s'interroger sur la manière dont la littérature antique construisait les savoirs.",
-   "resume": "DS n°1 : grands repères antiques et langue + Séq 1 Observer le vivant (Séance 1) : suite du Mantichore et FlaubertObjectifs :restituer les repères antiques et les acquis de langue (cas, fonctions, 1ère déclinaison) ; comparer le texte antique et sa réception (",
-   "elements": [
-    "Comparer textes, traductions, images, objets ou représentationsComprendre réception, transmission et transformations de l’AntiquitéConnaître les grands repères de l’histoire grecque et romaineConnaître œuvres, genres, mythes, figures et éléments majeurs de civilisationConstruire et justifier une traductionIdentifier et analyser formes, fonctions et structures syntaxiquesSituer textes, auteurs, événements et espaces dans leurs contextes"
-   ],
-   "afaire": [],
-   "absents": 1
-  },
-  {
-   "date": "2026-09-21",
-   "time": "13:00",
-   "hours": 1,
-   "titre": "Correction du DS + Langue : la conjugaison de l'indicatif (temps primitifs, infectum/perfectum)",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "Correction du DS + Langue : la conjugaison de l'indicatif (temps primitifs, infectum/perfectum)Objectifs :corriger ses erreurs ; différencier les conjugaisons à partir du radical ; reconstituer l'infectum et le perfectum grâce aux temps primitifs ; manipuler par exercices Rendu et correction rapide du contrôle Grammaire introduction à la conjugaison de l'indicatifObjectifs :Introduire la notion de temps primitifsDifférencier les différentes conjugaison en fonction du radical du verbeSavoir reconstituer la construction verbale de l'infectum et du perfectum grâce aux temps primitifs du verbeObservation, manipulation et mise en pratique par des exercices",
-   "resume": "Correction du DS + Langue : la conjugaison de l'indicatif (temps primitifs, infectum/perfectum)Objectifs :corriger ses erreurs ; différencier les conjugaisons à partir du radical ; reconstituer l'infectum et le perfectum grâce aux temps primitifs ; manipuler p",
-   "elements": [
-    "Identifier et analyser formes, fonctions et structures syntaxiques"
-   ],
-   "afaire": [
-    "Pour le 25/09Vocabulaire : apprendre les mots de la 1ère déclinaisons de la Fiche N°1Relire la fiche de grammaire sur la conjugaisonLire le texte d'Ovide (Latone)"
-   ],
-   "absents": 0
-  },
-  {
-   "date": "2026-09-25",
-   "time": "08:00",
-   "hours": 1,
-   "titre": "Contrôle rituel #1 + Ecce Larentia à l'oral + Séq. 1 (Séance 2) : Latone (Ovide, Métamorphoses ",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "Contrôle rituel #1 + Ecce Larentia à l'oral + Séq. 1 (Séance 2) : Latone (Ovide, Métamorphoses VI) et sa réception à VersaillesObjectifs :mobiliser le vocabulaire de la 1ère déclinaison ; pratiquer l'oral latin (questions/réponses : ubi, -ne, num, nonne / ita, minime) ; situer Ovide et le mythe de Latone (Mét. VI, 366-381) ; relier l'Antiquité et sa réception moderne (bassin de Latone) Contrôle rituel de vocabulaire et grammaire #1 : noms de la 1ère déclinaison Pratique orale du latin avec Via Latina : Ecce Larentia => question et réponses en latin : Ubi, nonne, num, -ne / ita, minime Séquence 1 : l'homme et l'animal / comprendre le monde / Séance 2 : Observer le vivant, entre savoir et merveilleuxprésentation d'Ovide : https://enseignants.lumni.fr/fiche-media/00000007014/ovide-les-metamorphoses.htmltravail sur l'extrait des Métamorphoses, VI, 366-381, mythe de Latone, mère d'Apollon et DianeAntiquité et modernité : présentation du mythe et du bassin de Latone à Versailles : https://www.youtube.com/watch?v=vqw2Y9TDmbU ",
-   "resume": "Contrôle rituel #1 + Ecce Larentia à l'oral + Séq. 1 (Séance 2) : Latone (Ovide, Métamorphoses VI) et sa réception à VersaillesObjectifs :mobiliser le vocabulaire de la 1ère déclinaison ; pratiquer l'oral latin (questions/réponses : ubi, -ne, num, nonne / ita,",
-   "elements": [
-    "[2de] L’homme et l’animal[Tle] Comprendre le mondeAcquérir et mobiliser un lexique fréquentielComparer textes, traductions, images, objets ou représentationsConnaître les grands repères de l’histoire grecque et romaineConnaître œuvres, genres, mythes, figures et éléments majeurs de civilisationLire et oraliser un texte latinMettre en relation mondes anciens et monde moderne/contemporainSituer textes, auteurs, événements et espaces dans leurs contextes"
-   ],
-   "afaire": [
-    "Pour le 12/10Contrôle rituel de vocabulaire et grammaire #2Vocabulaire : apprendre les noms de la 2ème déclinaison de ager,agri à regnum,i.déclinaison : connaître la 2ème déclinaison des noms : modèles ludus, puer, monstrum sur la fiche des déclinaisons"
-   ],
-   "absents": 1
-  },
-  {
-   "date": "2026-09-28",
-   "time": "13:00",
-   "hours": 1,
-   "titre": "Langue : la 2e déclinaison (ludus, puer, monstrum) + révisions de conjugaison",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "Langue : la 2e déclinaison (ludus, puer, monstrum) + révisions de conjugaisonObjectifs :distinguer les trois modèles morphologiques de la 2e déclinaison ; appliquer par des exercices de grammaire et de traduction ; réviser la conjugaison Grammaire : approfondissement sur les noms de la deuxième déclinaisonObjectif : comprendre les similtudes et différences entre les déclinaisons morphologiques de type ludus, puer et monstrum Mise en application avec des exercices de grammaire et de traductionRévision sur la conjugaison",
-   "resume": "Langue : la 2e déclinaison (ludus, puer, monstrum) + révisions de conjugaisonObjectifs :distinguer les trois modèles morphologiques de la 2e déclinaison ; appliquer par des exercices de grammaire et de traduction ; réviser la conjugaison Grammaire : approfondi",
-   "elements": [
-    "Acquérir et mobiliser un lexique fréquentielIdentifier et analyser formes, fonctions et structures syntaxiquesLire et oraliser un texte latin"
-   ],
-   "afaire": [],
-   "absents": 1
-  },
-  {
-   "date": "2026-10-02",
-   "time": "08:00",
-   "hours": 1,
-   "titre": "préparer Ecce Larentia II + adjectifs de la 1ère classe + verbe sum",
-   "statut": "distanciel",
-   "theme": "",
-   "cat": "",
-   "contenu": "[Distanciel] : préparer Ecce Larentia II + adjectifs de la 1ère classe + verbe sumObjectifs :repérer les difficultés d'un texte latin ; observer les correspondances de désinences entre adjectifs et noms (modèle bonus) ; mémoriser le verbe sum au présent et au parfait Le lycée étant fermé aujourd'hui voici le travail à faire à la maison : 1) lire le texte Ecce Larentia II et de repérer d'éventuelles difficultés pour le prochain cours.2) regarder les adjectifs qualificatifs de la 1ère classe (fiche distribuée au dernier cours => modèle bonus) et observer les correspondances de désinences entre les 1ères et 2ème déclinaison des noms3) apprendre le verbe être (sum) au présent et au parfait (fiche jointe) de l'indicatif :- sum es est sumus estis sunt- fui fuisti fuit fuimus fuistis fuerunt Tous les supports de cours sont également mis à disposition sur la page web :  ",
-   "resume": "[Distanciel] : préparer Ecce Larentia II + adjectifs de la 1ère classe + verbe sumObjectifs :repérer les difficultés d'un texte latin ; observer les correspondances de désinences entre adjectifs et noms (modèle bonus) ; mémoriser le verbe sum au présent et au ",
-   "elements": [
-    "Construire et justifier une traductionIdentifier et analyser formes, fonctions et structures syntaxiquesInterpréter un texte en mobilisant langue, contexte et cultureLire et oraliser un texte latinRepérer des indices et formuler une hypothèse de sens"
-   ],
-   "afaire": [
-    "Pour le 12/10Contrôle rituel de vocabulaire et grammaire #3vocabulaire : apprendre les noms de la 3ème déclinaison de civis à tempus.déclinaison : connaître la 3ème déclinaison des noms : modèles duc, corpus, civis, mare sur la fiche des déclinaisons"
-   ],
-   "absents": 0
-  },
-  {
-   "date": "2026-10-05",
-   "time": "13:00",
-   "hours": 1,
-   "titre": "Ecce Larentia II — entraînement (ex. 10-16) et verbe sum",
-   "statut": "distanciel",
-   "theme": "",
-   "cat": "",
-   "contenu": "[Distanciel] Ecce Larentia II — entraînement (ex. 10-16) et verbe sumObjectifs :lire et oraliser un texte latin ; réinvestir les faits de langue pour construire le sens ; s'exercer en autonomie (exercices 10, 11, 13, 14 et 16)Pour ce cours à distance, je vous propose de poursuivre le travail en autonomie commencé vendredi sur Ecce Larentia II.1. Relire attentivement le texte Ecce Larentia II.2. Écouter la lecture du texte avec le texte sous les yeux :https://ladigitale.dev/digiview/#/v/eebbeb6e99d492223. Faire les exercices 10, 11, 13, 14 et 16 Nous corrigerons et relirons le texte ensemble au prochain cours, puis nous aborderons un nouveau texte de notre objet d'étude sur l'homme et l'animal. Continuez à apprendre le verbe sum au présent et au parfait.(rappel : tous les supports de cours sont disponible sur la page web du cours :  ) ELEVE_Ecce-Larentia-II.pdf Fiche Sum.pdf ",
-   "resume": "[Distanciel] Ecce Larentia II — entraînement (ex. 10-16) et verbe sumObjectifs :lire et oraliser un texte latin ; réinvestir les faits de langue pour construire le sens ; s'exercer en autonomie (exercices 10, 11, 13, 14 et 16)Pour ce cours à distance, je vous ",
-   "elements": [
-    "Acquérir et mobiliser un lexique fréquentielIdentifier et analyser formes, fonctions et structures syntaxiquesLire et oraliser un texte latinRéinvestir les faits de langue pour construire le sens"
-   ],
-   "afaire": [],
-   "absents": 0
-  },
-  {
-   "date": "2026-10-09",
-   "time": "08:00",
-   "hours": 1,
-   "titre": "Séq. 1 (séance 3) : la Sphinge — quand le monstre interroge l'homme (Hygin, Fable 67)",
-   "statut": "distanciel",
-   "theme": "",
-   "cat": "",
-   "contenu": "[Distanciel] Séq. 1 (séance 3) : la Sphinge — quand le monstre interroge l'homme (Hygin, Fable 67)Objectifs :traduire un récit mythologique latin (groupes de mots, parfait déponent) ; identifier formes verbales, cas et fonctions ; relier le mythe à ses représentations artistiques (Gustave Moreau) ; rechercher une autre représentation de la Sphinge La Sphinge : quand le monstre interroge l'hommeObjet d'étude : L'homme et l'animal / Comprendre le mondeObjectif : Lire et traduire un récit mythologique latin pour découvrir la figure de la Sphinge et comprendre comment elle interroge la condition humaine, de l'Antiquité à ses représentations artistiques modernes. Dans la mythologie grecque, la Sphinge, être hybride mi-humain mi-bête, terrorise les habitants de Thèbes. Elle soumet les voyageurs à une énigme : ceux qui ne savent pas répondre sont dévorés. Œdipe décide de l'affronter.Hygin, auteur latin traditionnellement situé à l'époque d'Auguste, raconte cet épisode dans ses Fables. Voici tout d'abord le texte intégral de la Fable 67:1Postquam Oedipus Laii et Iocastes filius ad puberem aetatem pervenit, fortissimus praeter ceteros erat, eique per invidiam aequales obiciebant eum subditum esse Polybo, eo quod Polybus tam clemens esset et ille impudens; quod Oedipus sensit non falso sibi obici. 2Itaque Delphos est profectus sciscitatum de parentibus suis. Interim Laio in prodigiis ostendebatur mortem ei adesse de nati manu. 3Idem cum Delphos iret, obviam ei Oedipus venit, quem satellites cum viam regi dari iuberent, neglexit. Rex equos immisit et rota pedem eius oppressit; Oedipus iratus inscius patrem suum de curru detraxit et occidit. 4 Laio occiso Creon Menoecei filius regnum occupavit; interim Sphinx Typhonis in Boeotiam est missa, quae agros Thebanorum vexabat; ea regi Creonti simultatem constituit, si carmen quod posuisset aliquis interpretatus esset, se inde abire, si autem datum carmen non soluisset, eum se consumpturam dixit neque aliter de finibus excessuram. 5Rex re audita per Graeciam edixit; qui Sphingae carmen soluisset, regnum se et Iocasten sororem ei in coniugium daturum promisit. Cum plures regni cupidine venissent et a Sphinge essent consumpti, Oedipus Laii filius venit et carmen est interpretatus; illa se praecipitavit. 6 Oedipus regnum paternum et Iocasten matrem inscius accepit uxorem, ex qua procreavit Eteoclen et Polynicen, Antigonam et Ismenen. Interim incidit Thebis sterilitas frugum et penuria ob Oedipodis scelera, interrogatusque Tiresias quid ita Thebae vexarentur, respondit, si quis ex draconteo genere superesset et pro patria interiisset, pestilentia liberaturum. Tum Menoeceus [Iocastae pater] se de muris praecipitavit. 7Dum haec Thebis geruntur, Corintho Polybus decedit, quo audito Oedipus moleste ferre coepit, aestimans patrem suum obisse; cui Periboea de eius suppositione palam fecit; item Menoetes senex, qui eum exposuerat, ex pedum cicatricibus et talorum agnovit Lai filium esse. 8 Oedipus re audita postquam vidit se tot scelera nefaria fecisse, ex veste matris fibulas detraxit et se luminibus privavit, regnumque filiis suis alternis annis tradidit, et a Thebis Antigona filia duce profugit.1) Travail de traduction 1 :Interim Sphinx Typhonis in Boeotiam est missa, quae agros Thebanorum vexabat.vexabat : quel est cette forme verbale ? Lexiqueinterim : pendant ce tempsSphinx, Sphingis, f. : la SphingeTyphon, Typhonis, m. : Typhon, personnage mythologiqueBoeotia, ae, f. : Béotie, région grecqueager, agri, m. : champ, territoireThebani, orum, m. pl. : les Thébainsvexo, as, are, avi, atum : ravager, tourmenterest missa : forme passive signifiant « fut envoyée » Traduire séparément par groupe de mots puis en entier.1. Sphinx Typhonis2. in Boeotiam est missa3. quae agros Thebanorum vexabat 2) Travail de traduction 2 :Oedipus Laii filius venit et carmen est interpretatus; illa se praecipitavit. D'abord recopier la phrase puis :1) encadrer les trois groupes verbaux.2) souligner les deux sujets.3) observer Laii : à quel cas est ce nom ? À quel mot se rattache-t-il ?4) quel est le COD de est interpretatus ? LexiqueLaius, i, m.: Laïos, père d'Œdipevenio, is, ire, veni, ventum : venir, arrivercarmen, carminis, n : chant, poème ; ici, énigmeest interpretatus : résolut (verbe au parfait à la forme déponente)illa : celle-ci, ellese : pronom réfléchit de la troisième personnepræcĭpĭtō,āvī, ātum, āre : (se) précipiter (dans le vide)Traduire séparément par groupe de mots puis en entier :1. Oedipus Laii filius venit 2. et carmen est interpretatus3. illa se praecipitavit 3) Repérage grammatical :Cum plures regni cupidine venissent et a Sphinge essent consumpti…Traduction guidée : « Alors que plusieurs hommes étaient venus par désir du pouvoir et avaient été dévorés par la Sphinge… »Identifier le cas latin des mots correspondant à « plusieurs hommes », « par la Sphinge » et « du pouvoir ». 4) EnigmeHygin ne donne pas le texte précis de l'énigme. La tradition mythologique nous l'a cependant transmis :« Quel être marche à quatre pattes le matin, à deux pattes à midi et à trois pattes le soir ? » Qui suis je ? 5) Observer comment le peintre Gustave Moreau représente la confrontation entre Œdipe et le monstre (MET museum)https://www.metmuseum.org/art/collection/search/437153 6) Pour le cours du lundi 12 octobrePour lundi 12 octobre : recherchez une autre représentation artistique de la Sphinge (antique ou moderne). Notez son auteur, son époque et sa provenance. Si vous le pouvez, trouvez également un autre texte antique mentionnant la Sphinge, en grec ou en latin, avec sa référence. sphinge_gustave_moreau_1864.jpg ",
-   "resume": "[Distanciel] Séq. 1 (séance 3) : la Sphinge — quand le monstre interroge l'homme (Hygin, Fable 67)Objectifs :traduire un récit mythologique latin (groupes de mots, parfait déponent) ; identifier formes verbales, cas et fonctions ; relier le mythe à ses représe",
-   "elements": [
-    "[2de] L’homme et l’animal[Tle] Comprendre le mondeComparer textes, traductions, images, objets ou représentationsComprendre réception, transmission et transformations de l’AntiquitéConnaître œuvres, genres, mythes, figures et éléments majeurs de civilisationConstruire et justifier une traductionIdentifier et analyser formes, fonctions et structures syntaxiquesInterpréter un texte en mobilisant langue, contexte et cultureMettre en relation mondes anciens et monde moderne/contemporainRechercher, sélectionner et exploiter des ressources de manière autonomeRéinvestir les faits de langue pour construire le sensRepérer des indices et formuler une hypothèse de sens"
-   ],
-   "afaire": [],
-   "absents": 0
-  },
-  {
-   "date": "2026-10-12",
-   "time": "13:00",
-   "hours": 1,
-   "titre": "dépôt du travail sur la Sphinge (bonus) + Ecce Larentia III",
-   "statut": "distanciel",
-   "theme": "",
-   "cat": "",
-   "contenu": "[Distanciel] dépôt du travail sur la Sphinge (bonus) + Ecce Larentia IIIObjectifs :traduire un récit mythologique latin (groupes de mots, parfait déponent) ; relier le mythe à ses représentations artistiques (Gustave Moreau) ; rechercher une autre représentation de la Sphinge; oraliser et traduire Ecce Larentia III (ex. 20-22) ; apprendre les verbes de la 1ère et 2e conjugaisonDéroulé :Vous pouvez me déposer vos travaux sur la Sphinge dans l'espace élève. (cela sera noté en note bonus).Si tout va bien, nous nous verrons enfin vendredi 16 octobre et nous pourrons discuter de vos travaux en classe. Voici un lien de connexion à une salle virtuelle dans laquelle je serai connecté à 13h00 si vous avez d'éventuelles questions : Travail sur la langue et le vocabulaireLire Ecce Larentia III : s'entraîner à lire à haute voix.Essayer de traduire le texte. S'aider du dictionnaire gaffiot en ligne si besoin.Faire les exercices 20, 21, 22 Vocabulaire à apprendre pour vendredi 16/10 :Verbes de la 1ère et 2ème conjugaisonELEVE_Ecce-Larentia-III.pdf ",
-   "resume": "[Distanciel] dépôt du travail sur la Sphinge (bonus) + Ecce Larentia IIIObjectifs :traduire un récit mythologique latin (groupes de mots, parfait déponent) ; relier le mythe à ses représentations artistiques (Gustave Moreau) ; rechercher une autre représentati",
-   "elements": [
-    "[2de] L’homme et l’animal[Tle] Comprendre le mondeAcquérir et mobiliser un lexique fréquentielConnaître œuvres, genres, mythes, figures et éléments majeurs de civilisationInterpréter un texte en mobilisant langue, contexte et cultureLire et oraliser un texte latin"
-   ],
-   "afaire": [
-    "Pour le 12/10Vous pouvez déposer votre travail donné sur la Sphinge vendredi 09/10.C'est un dépôt facultatif qui sera noté en bonus. Pour lundi 12 octobre : recherchez une autre représentation artistique de la Sphinge (antique ou moderne). Notez son auteur, son époque et sa provenance. Si vous le pouvez, trouvez également un autre texte antique mentionnant la Sphinge, en grec ou en latin, avec sa référence. Nous reprendrons ce travail lors du cours de vendredi 16/10. Pour le 16/10Lien de connexion pour le cours en visio : "
-   ],
-   "absents": 0
-  },
-  {
-   "date": "2026-10-16",
-   "time": "08:00",
-   "hours": 1,
-   "titre": "reprise Larentia et Sphinge, approche de la 3e déclinaison",
-   "statut": "distanciel",
-   "theme": "",
-   "cat": "",
-   "contenu": "[Distanciel] reprise Larentia et Sphinge, approche de la 3e déclinaisonObjectifs :consolider les points des séances précédentes (Larentia, Sphinge) ; aborder la 3e déclinaison des noms ; organiser les révisions (CR #2 et #3, lecture de l'Énéide)Aucun élève présent. Lien de connexion pour le cours en visio :  En ce derniers cours avant les vacances nous reprendrons certains points des séances précédentes : Larentia, la Sphinge et en fonction du temps disponible nous aborderons la 3ème déclinaison des noms.",
-   "resume": "[Distanciel] reprise Larentia et Sphinge, approche de la 3e déclinaisonObjectifs :consolider les points des séances précédentes (Larentia, Sphinge) ; aborder la 3e déclinaison des noms ; organiser les révisions (CR #2 et #3, lecture de l'Énéide)Aucun élève pré",
-   "elements": [
-    "[2de] L’homme et l’animal[Tle] Comprendre le mondeAcquérir et mobiliser un lexique fréquentielConnaître œuvres, genres, mythes, figures et éléments majeurs de civilisationLire et oraliser un texte latin"
-   ],
-   "afaire": [
-    "Pour le 02/11Lecture obligatoire pour les vacances de la Toussaint — Virgile, L'Énéide, chants I à IV (traduction française intégrale)Prenez une édition complète de poche. Edition de poche recommandée : GF Flammarion.Cette lecture vous permettra de découvrir directement l'une des œuvres majeures de la littérature latine (et mondiale). Nous l'exploiterons dans nos différents objets d'étude en classe.Lisez \"le crayon à la main\" en notant les principaux épisodes, les principaux personnages et divinités, les lieux, quelques citations de passages qui vous paraissent importants, ainsi que vos impressions de lecture.Cette lecture donnera lieu à un contrôle de lecture et/ou un oral après les vacances de la Toussaint. Contrôle rituel de vocabulaire et grammaire #2 et #3 (décalés suite à la fermeture du lycée)vocabulaire : apprendre les noms de la 2ème déclinaison de ager,agri à regnum,i.vocabulaire : apprendre les noms de la 3ème déclinaison de civis à tempus.vocabulaire : verbes de la 1ère et de la 2ème conjugaisondéclinaison : connaître la 2ème déclinaison des noms : modèles ludus, puer, monstrum sur la fiche des déclinaisonsconjugaison : connaître le verbe sum au présent et au parfait de l'indicatif"
-   ],
-   "absents": 0
-  },
-  {
-   "date": "2026-11-02",
-   "time": "13:00",
-   "hours": 1,
-   "titre": "Contrôle rituel de vocabulaire et grammaire #2 et #3 et reprise des travaux réalisés en distanc",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "Contrôle rituel de vocabulaire et grammaire #2 et #3 et reprise des travaux réalisés en distancielObjectifs : évaluer les automatismes (2e-3e déclinaisons, verbes, sum) ; rendre compte de la lecture de l'Énéide « le crayon à la main » ; oraliser et traduire Ecce Larentia IIIDéroulé :Contrôle rituel de vocabulaire et grammaire #2 et #3 : noms de la 2e déclinaison (ager → regnum), noms de la 3e déclinaison (civis → tempus), verbes de la 1re et 2e conjugaison, verbe sum au présent et au parfait de l'indicatif.Point sur la lecture obligatoire des vacances : Virgile, Énéide, chants I à IV (lecture « le crayon à la main ») — difficultés rencontrées, premiers repérages des épisodes, personnages et divinités.Lecture et travail sur le texte Ecce Larentia III (Via Latina) : oralisation, compréhension globale, traduction guidée et exercices d'application. ",
-   "resume": "Contrôle rituel de vocabulaire et grammaire #2 et #3 et reprise des travaux réalisés en distancielObjectifs : évaluer les automatismes (2e-3e déclinaisons, verbes, sum) ; rendre compte de la lecture de l'Énéide « le crayon à la main » ; oraliser et traduire Ec",
-   "elements": [
-    "Acquérir et mobiliser un lexique fréquentielConnaître œuvres, genres, mythes, figures et éléments majeurs de civilisationConstruire et justifier une traductionLire et oraliser un texte latinSituer textes, auteurs, événements et espaces dans leurs contextes"
-   ],
-   "afaire": [],
-   "absents": 1
-  },
-  {
-   "date": "2026-11-06",
-   "time": "08:00",
-   "hours": 1,
-   "titre": "Clôture de la Séquence 1 - Observer le vivant, entre savoir et merveilleux ; ouverture sur la S",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "Clôture de la Séquence 1 - Observer le vivant, entre savoir et merveilleux ; ouverture sur la Séq 2 : AugusteObjectifs : clore le travail sur la Sphinge en reliant texte antique et représentations modernes ; consolider la morphologie verbale (parfait de l'indicatif) ; ouvrir un nouveau volet sur la figure d'Auguste, en lien avec la lecture de l'Énéide.Déroulé :I. Rendu et correction express des contrôles rituels #2II. La Sphinge (Hygin, Fable 67) : correction ; observation de la toile de Gustave Moreau — situer la scène représentée, mettre en relation le texte antique et sa réception picturale.III. Mise en lien : de l'Énéide à Auguste — pourquoi le portrait d'Auguste s'éclaire de l'épopée de Virgile. Distribution d'un recueil de textes « Portrait d'Auguste » (Suétone), d'une fiche biographique sur Auguste, d'une carte de l'Empire Romain, d'une chronologie des empereurs romainsIV. Grammaire : le parfait de l'indicatif — analyse de formes verbales (exercice 5 de la leçon sur l'indicatif, texte d'Eutrope).V. Début du visionnage d'une vidéo de présentation d'Auguste (à poursuivre au prochain cours). Augustus Empereur de Rome Point de repères Arte sphinge_gustave_moreau_1864.jpg Augustus Empereur de Rome Point de repères Arte Carte Empire.pdf ELEVE_Option_Latin_Auguste.pdf ELEVE_Option_Latin_Empereurs_romains.pdf ",
-   "resume": "Clôture de la Séquence 1 - Observer le vivant, entre savoir et merveilleux ; ouverture sur la Séq 2 : AugusteObjectifs : clore le travail sur la Sphinge en reliant texte antique et représentations modernes ; consolider la morphologie verbale (parfait de l'indi",
-   "elements": [
-    "[2de] L’homme et l’animal[Tle] Comprendre le mondeAcquérir et mobiliser un lexique fréquentielComparer textes, traductions, images, objets ou représentationsConnaître les grands repères de l’histoire grecque et romaineConnaître œuvres, genres, mythes, figures et éléments majeurs de civilisationConstruire et justifier une traductionIdentifier et analyser formes, fonctions et structures syntaxiquesMettre en relation mondes anciens et monde moderne/contemporainSituer textes, auteurs, événements et espaces dans leurs contextes"
-   ],
-   "afaire": [
-    "Pour le 16/11Contrôle rituel de vocabulaire et de grammaire #3 sur le chapitre 1 d'Ecce Larentia (leçons I à III)C'est un vocabulaire que nous avons déjà travaillé en cours. => réviser le vocabulaire de la fiche jointe grâce à l'application en ligne :  Réviser le vocabulaire de Ecce Larentia chapitre 1 ELEVE_Voc_essentiel_Ecce_Larentia_Cap_I.pdf "
-   ],
-   "absents": 0
-  },
-  {
-   "date": "2026-11-09",
-   "time": "13:00",
-   "hours": 1,
-   "titre": "Larentia - Chap2 leçon 1 : lecture et traduction + Séq. 2 « Imperium sine fine » : ouverture — ",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "Larentia - Chap2 leçon 1 : lecture et traduction + Séq. 2 « Imperium sine fine » : ouverture — l'Énéide I, 274-295 (prophétie de Jupiter), Virgile et AugusteObjectifs :trouver à partir du texte latin sans indications ni traduction où se situe l'extrait dans le poème (protagonistes, contexte immédiat); mettre en lien Virgile et Auguste (prophétie de Jupiter, roman national) ; travailler sur la morphologie du futur à partir du texte.Déroulé :I. Lecture et traduction de la leçon 1 Chap2 de Ecce Larentia. II. Introduction de la séquence 2 : Imperium sine fine (« un empire sans limites »). Séance 1 : La prophétie de Jupiter (Énéide I, 274-295) III. Repérages lexicaux et grammaticaux : noms propres, formes verbales => identification des temps verbaux : parfait, présent, futurIV. Point de grammaire sur le futurV. Interprétation guidée du texte : qui parle ? à qui ? pourquoi le futur dans la bouche de Jupiter ? Imperium sine fine dedi - le destin annoncé, l'histoire lue à rebours. => Où se situe-t-on dans le poème ?Trace écrite (à compléter au prochain cours) : Dans le chant I de l'Énéide, Vénus se plaint à Jupiter des épreuves d'Énée ; Jupiter le rassure par une prophétie : Énée et sa lignée (Ascagne/Iule, Romulus, puis César et Auguste) fonderont Rome et régneront sur un empire sans limites (imperium sine fine). Le futur de l'indicatif exprime un avenir certain : chez Virgile, le destin de Rome est déjà écrit — et il aboutit à Auguste.Mots-concepts : imperium (l'empire, le pouvoir de commander) ; pietas (le devoir pieux envers les dieux, la famille et la patrie).Langue : le futur de l'indicatif se forme sur le thème du futur : 1re-2e conj. -bo, -bis, -bit, -bimus, -bitis, -bunt ; 3e-4e conj. thème en voyelle (ponet, veniet). Ne pas confondre : -bit (futur) / -vit (parfait). Larentia__chapt2_lecon1_romulus_et_remus.pdf ",
-   "resume": "Larentia - Chap2 leçon 1 : lecture et traduction + Séq. 2 « Imperium sine fine » : ouverture — l'Énéide I, 274-295 (prophétie de Jupiter), Virgile et AugusteObjectifs :trouver à partir du texte latin sans indications ni traduction où se situe l'extrait dans le",
-   "elements": [],
-   "afaire": [
-    "Pour le 13/11Ce vendredi 13/11 nous ferons une séance en visio : voici le lien de connexion. Finir de regarder la vidéo sur Auguste : https://ladigitale.dev/digiview/#/v/b62e038ecc57e973Lire la fiche sur l'Eneide jointe."
-   ],
-   "absents": 0
-  },
-  {
-   "date": "2026-11-13",
-   "time": "08:00",
-   "hours": 1,
-   "titre": "[Distanciel - classe absente] Séq. 2 « Imperium sine fine » : traduction de l'expression, statue d'Auguste de Prima Porta, portraits présidentiels (travail en autonomie)",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "[Distanciel - classe absente] Séq. 2 « Imperium sine fine » : traduction de l'expression, statue d'Auguste de Prima Porta, portraits présidentiels (travail en autonomie)",
-   "resume": "[Distanciel - classe absente] Séq. 2 « Imperium sine fine » : traduction de l'expression, statue d'Auguste de Prima Porta, portraits présidentiels (travail en autonomie)",
-   "elements": [],
-   "afaire": [],
-   "absents": 0
-  },
-  {
-   "date": "2026-11-16",
-   "time": "13:00",
-   "hours": 1,
-   "titre": "Larentia II,1 : fin de la traduction + contrôle rituel #3 + débrief du distanciel (Prima Porta)",
-   "statut": "publié",
-   "theme": "",
-   "cat": "",
-   "contenu": "Objectifs : achever la traduction de la leçon 1 du chapitre 2 d Ecce Larentia ; évaluer les automatismes (contrôle rituel #3, chapitre 1) ; débriefer le travail distanciel (statue d Auguste de Prima Porta, parallèle avec les portraits présidentiels). Déroulé : I. Fin de la traduction de Larentia II,1 (traduction complète de la leçon ; exercices non traités, à reprendre). II. Contrôle rituel #3 (Ecce Larentia chap. 1). III. Débrief du distanciel : Prima Porta, parallèle avec les portraits de présidents français. Trace écrite non distribuée (à prévoir au prochain cours) ; mots-concepts et futur de l indicatif non abordés (reportés). Prochaine séance (20/11) : un élève absent (visite culturelle) ; trace écrite à distribuer.",
-   "resume": "Larentia II,1 : fin de la traduction + contrôle rituel #3 + débrief du distanciel (Prima Porta)Objectifs : achever la traduction de la leçon 1 du chapitre 2 d Ecce Larentia ; évaluer les automatismes ",
-   "elements": [],
-   "afaire": [],
-   "absents": 0
-  },
-  {
-   "date": "2026-11-20",
-   "time": "08:00",
-   "hours": 1,
-   "titre": "",
-   "statut": "à saisir",
-   "theme": "",
-   "cat": "",
-   "contenu": "",
-   "resume": "",
-   "elements": [],
-   "afaire": [],
-   "absents": 0
-  },
-  {
-   "date": "2026-11-23",
-   "time": "13:00",
-   "hours": 1,
-   "titre": "",
-   "statut": "à saisir",
-   "theme": "",
-   "cat": "",
-   "contenu": "",
-   "resume": "",
-   "elements": [],
-   "afaire": [],
-   "absents": 0
-  },
-  {
-   "date": "2026-11-27",
-   "time": "08:00",
-   "hours": 1,
-   "titre": "",
-   "statut": "à saisir",
-   "theme": "",
-   "cat": "",
-   "contenu": "",
-   "resume": "",
-   "elements": [],
-   "afaire": [],
-   "absents": 0
-  }
- ],
- "programme": [
-  {
-   "bloc": "1. LIRE, COMPRENDRE, TRADUIRE ET INTERPRÉTER",
-   "items": [
-    {
-     "label": "Lire et oraliser un texte latin",
-     "n": 10
-    },
-    {
-     "label": "Repérer des indices et formuler une hypothèse de sens",
-     "n": 3
-    },
-    {
-     "label": "Construire et justifier une traduction",
-     "n": 5
-    },
-    {
-     "label": "Interpréter un texte en mobilisant langue, contexte et culture",
-     "n": 3
-    },
-    {
-     "label": "Analyser les procédés d'écriture et construire une interprétation littéraire",
-     "n": 0
-    }
-   ]
-  },
-  {
-   "bloc": "2. LANGUE ET LEXIQUE",
-   "items": [
-    {
-     "label": "Identifier et analyser formes, fonctions et structures syntaxiques",
-     "n": 10
-    },
-    {
-     "label": "Réinvestir les faits de langue pour construire le sens",
-     "n": 2
-    },
-    {
-     "label": "Acquérir et mobiliser un lexique fréquentiel",
-     "n": 7
-    },
-    {
-     "label": "Étudier étymologie, familles de mots et mots-concepts",
-     "n": 0
-    }
-   ]
-  },
-  {
-   "bloc": "3. CULTURE ANTIQUE ET REPÈRES",
-   "items": [
-    {
-     "label": "Situer textes, auteurs, événements et espaces dans leurs contextes",
-     "n": 7
-    },
-    {
-     "label": "Connaître les grands repères de l'histoire grecque et romaine",
-     "n": 0
-    },
-    {
-     "label": "Connaître et mobiliser œuvres, genres, mythes, figures et notions majeures de la culture antique",
-     "n": 0
-    }
-   ]
-  },
-  {
-   "bloc": "4. CONFRONTER ET METTRE EN PERSPECTIVE",
-   "items": [
-    {
-     "label": "Comparer textes, traductions, images, objets ou représentations",
-     "n": 5
-    },
-    {
-     "label": "Comprendre réception, transmission et transformations de l'Antiquité",
-     "n": 0
-    },
-    {
-     "label": "Mettre en relation mondes anciens et monde moderne/contemporain",
-     "n": 4
-    },
-    {
-     "label": "Construire une synthèse à partir de plusieurs textes ou documents",
-     "n": 0
-    }
-   ]
-  },
-  {
-   "bloc": "5. S'EXPRIMER, ARGUMENTER ET CONSTRUIRE SON AUTONOMIE",
-   "items": [
-    {
-     "label": "Justifier une réponse ou une interprétation par des indices précis",
-     "n": 0
-    },
-    {
-     "label": "Produire un écrit organisé et argumenté",
-     "n": 0
-    },
-    {
-     "label": "Problématiser une question littéraire, politique ou culturelle",
-     "n": 0
-    },
-    {
-     "label": "Construire et développer une réflexion personnelle de type essai",
-     "n": 0
-    },
-    {
-     "label": "Présenter, expliquer et argumenter à l'oral",
-     "n": 0
-    },
-    {
-     "label": "Rechercher, sélectionner et exploiter des ressources de manière autonome",
-     "n": 1
-    },
-    {
-     "label": "Construire un portfolio mettant en résonance Antiquité et modernité",
-     "n": 0
-    }
-   ]
-  },
-  {
-   "bloc": "6. OBJETS D'ÉTUDE (option — 2nde et Tle, 3 sur 4 à traiter par niveau, dont Méditerranée)",
-   "items": [
-    {
-     "label": "L'Homme et l'animal",
-     "n": 0
-    },
-    {
-     "label": "L'Homme et le divin",
-     "n": 0
-    },
-    {
-     "label": "Soi-même et l'autre",
-     "n": 0
-    },
-    {
-     "label": "Méditerranée : voyager, explorer, découvrir",
-     "n": 3
-    },
-    {
-     "label": "Leçons de sagesse antique",
-     "n": 0
-    },
-    {
-     "label": "Comprendre le monde",
-     "n": 6
-    },
-    {
-     "label": "Inventer, créer, fabriquer, produire",
-     "n": 0
-    },
-    {
-     "label": "Méditerranée : présence des mondes antiques",
-     "n": 3
-    }
-   ]
-  },
-  {
-   "bloc": "Notes d'évaluation (31/10/2026)",
-   "items": [
-    {
-     "label": "Blocs 1-5 = compétences LCA transversales (identiques au référentiel spé, qui fait foi pour le libellé).",
-     "n": 0
-    },
-    {
-     "label": "Bloc 6 initial (objets de spé 1ère : cité, justice, amour, Méditerranée conflits) erroné pour ce cours → remplacé par les 8 objets option 2nde + Tle ci-dessus, conformes aux BO 2019 (Annexe 1 seconde / programme option terminale).",
-     "n": 0
-    },
-    {
-     "label": "Le multiniveau se monitorera en cochant l'objet d'étude correspondant au niveau visé par chaque séance.",
-     "n": 0
-    }
-   ]
-  }
- ],
- "journal": [
-  {
-   "date": "2026-11-02",
-   "contexte": "Séance malgré les blocages lycéens (2 élèves présents). Lecture de l’Énéide engagée (4 chants). Travail sur Ecce Larentia III.",
-   "marche": [
-    "La lecture de l’Énéide réellement faite (les 4 chants demandés) par un élève"
-   ],
-   "aAmeliorer": [
-    "Cadrer l’objectif des séances H15-H17",
-    "Choisir la notion de grammaire du prochain contrôle rituel en s’appuyant sur les dossiers H{n}"
-   ],
-   "idees": [
-    "Faire le point sur l’avancement pour cadrer la prochaine séance",
-    "App de révision : vocabulaire + exercices de grammaire classés par sujets (cas, conjugaison, phrases à traduire)",
-    "App de révision pour le contrôle de lecture de l’Énéide"
-   ]
-  },
-  {
-   "date": "2026-11-06",
-   "contexte": "Portrait d’Auguste par Suétone (recueil distribué), bio d’Auguste, correction de la Sphinge express, lien Énéide-Auguste, travail sur le parfait (Eutrope), vidéo Auguste.",
-   "marche": [
-    "L’intérêt pour la Sphinge représentée en tableau et son énigme",
-    "L’intérêt pour l’histoire d’Auguste",
-    "La participation aux travaux sur le parfait"
-   ],
-   "aAmeliorer": [
-    "Le cours était un peu décousu",
-    "Trop de papier à gérer",
-    "Être convaincu par l’intérêt pédagogique de ce que l’on fait pour le faire avancer avec assurance"
-   ],
-   "idees": [
-    "Finir le visionnage de la vidéo Auguste",
-    "Adapter le contenu Auguste (spé) à l’option",
-    "Exploiter l’extrait de l’Énéide vu en spé",
-    "Statuer sur les travaux à l’oral en option",
-    "Partie portfolio : voir ce que fait un autre stagiaire",
-    "Contrôle rituel possible : vocab + grammaire de Larentia I-III (mémorandum du manuel) + app de révision associée"
-   ]
-  },
-  {
-   "date": "2026-11-09",
-   "contexte": "Séance perturbée par le mouvement lycéen (AG + manifestation) ; CR3 repoussé au 16/11. Larentia chap. 2 leçon 1 + prophétie de Jupiter (Énéide).",
-   "marche": [
-    "Le minutage du cours",
-    "L’entrée en langue latine par Larentia",
-    "Faire deviner les enjeux/personnages du texte en élucidant le sens progressivement : à refaire",
-    "S’appuyer sur le texte pour travailler la grammaire : à refaire"
-   ],
-   "aAmeliorer": [
-    "Toujours prévoir une trace écrite (il a manqué celle de la leçon de conjugaison)",
-    "Confirmer l’usage de l’app de révision du vocabulaire"
-   ],
-   "idees": [
-    "Finir la vidéo d’Auguste",
-    "Adapter le contenu d’Auguste (spé) à l’option",
-    "Aller plus vite sur Larentia pour les élèves prêts, avec des textes plus difficiles"
-   ]
-  },
-  {
-   "date": "2026-11-13",
-   "contexte": "Distanciel (classe absente) : travail en autonomie — traduire « Imperium sine fine » avec le Gaffiot, observer la statue de Prima Porta, confronter avec les portraits officiels présidentiels, vidéo Auguste.",
-   "marche": [],
-   "aAmeliorer": [],
-   "idees": [
-    "Débrefer le distanciel (Prima Porta vs portraits présidentiels)",
-    "Finir la vidéo Auguste"
-   ]
-  },
-  {
-   "date": "2026-11-16",
-   "contexte": "Larentia II,1 fin de traduction, CR3, débrief du distanciel (Prima Porta vs portraits présidentiels). Pas de trace écrite distribuée.",
-   "marche": [
-    "Larentia très utile pour se mettre le latin en bouche et revoir la grammaire",
-    "L’analyse d’une œuvre d’art très féconde"
-   ],
-   "aAmeliorer": [
-    "Trace écrite non donnée : la prévoir pour le prochain cours",
-    "Mots-concepts non abordés",
-    "Le futur non traité"
-   ],
-   "idees": [
-    "Réflexion avec l’IA sur les textes eduscol : quel attendu réel de trace écrite en option ? Privilégier lecture, oral, langue, documents à surligner/annoter ?",
-    "Prévoir le programme de révision du CR5 (les élèves veulent plus de temps pour réviser)",
-    "Élaborer le sujet du contrôle de lecture pour le 23/11",
-    "Finaliser la progression annuelle avec le big menu",
-    "Épigraphie : travail sur l’inscription du trophée d’Auguste de la Turbie (doc iconographie Auguste, dossier Drive Auguste)"
-   ]
-  }
- ]
 }
