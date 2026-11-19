@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cockpits pédagogiques — Historique des versions</title>
+<style>
+:root{--line:#e3e6ea;--soft:#5b6470;--c:#7c5cbf}
+*{box-sizing:border-box}body{margin:0;font:15px/1.65 Inter,system-ui,sans-serif;color:#1c2430;background:#fafbfc}
+main{max-width:860px;margin:0 auto;padding:34px 22px 60px}
+a{color:var(--c)}h1{font-size:24px}h2{font-size:19px;margin-top:34px;border-bottom:1px solid var(--line);padding-bottom:6px}
+code{font:13px ui-monospace,monospace;background:#eef0f3;padding:1px 5px;border-radius:4px}
+ul{padding-left:22px}.retour{margin-bottom:26px;font-size:14px}
+footer{margin-top:40px;border-top:1px solid var(--line);padding-top:12px;color:var(--soft);font-size:13px}
+</style>
+</head>
+<body>
+<main>
+<p class="retour"><a href="index.html">← Retour aux cockpits</a></p>
+<div id="md"><p>Chargement…</p></div>
+<footer>Cockpits pédagogiques — historique des versions.</footer>
+</main>
+<script>
+"use strict";
+fetch("CHANGELOG.md",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error();return r.text();}).then(t=>{
+  const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  const inline=s=>esc(s).replace(/`([^`]+)`/g,"<code>$1</code>").replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');
+  let out="",inUL=false;
+  for(const l of t.split(/\r?\n/)){
+    if(/^## /.test(l)){if(inUL){out+="</ul>";inUL=false}out+="<h2>"+inline(l.slice(3))+"</h2>"}
+    else if(/^# /.test(l)){out+="<h1>"+inline(l.slice(2))+"</h1>"}
+    else if(/^- /.test(l)){if(!inUL){out+="<ul>";inUL=true}out+="<li>"+inline(l.slice(2))+"</li>"}
+    else if(l.trim()===""){if(inUL){out+="</ul>";inUL=false}}
+    else{if(inUL){out+="</ul>";inUL=false}out+="<p>"+inline(l)+"</p>"}
+  }
+  if(inUL)out+="</ul>";
+  document.getElementById("md").innerHTML=out;
+}).catch(()=>{document.getElementById("md").innerHTML="<p>Changelog indisponible.</p>"});
+</script>
+</body>
+</html>

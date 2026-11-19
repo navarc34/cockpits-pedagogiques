@@ -12,7 +12,7 @@ fetch("data/release.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("ver
    "Données "+esc(d.revision)+" · arrêtées au "+esc(d.arrete),
    d.lastSuccessfulSync?"Mis à jour le "+esc(new Date(d.lastSuccessfulSync).toLocaleDateString("fr-FR"))+" à "+esc(new Date(d.lastSuccessfulSync).toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"})):"Collecte automatique non activée"];
  if(planning)pieces.push("Progression "+esc(context)+" : "+esc(planning.status));
- pieces.push('<a href="CHANGELOG.md" style="color:inherit">Historique des versions</a>');
+ pieces.push('<a href="changelog.html" target="_blank" rel="noopener" style="color:inherit">Historique des versions</a>');
  footer.innerHTML=pieces.join(" · ");
  document.body.appendChild(footer);
 }).catch(()=>{const status=document.createElement("small");status.textContent="Métadonnées de version indisponibles";status.style.cssText="display:block;padding:10px;color:var(--soft,#666)";document.body.appendChild(status);});
