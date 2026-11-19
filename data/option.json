@@ -38,6 +38,12 @@
         "fait": false
       },
       {
+        "txt": "Corriger et rendre les copies du CR3",
+        "echeance": "23/11",
+        "dateEcheance": "2026-11-23",
+        "fait": false
+      },
+      {
         "txt": "URGENT — élaborer le sujet du contrôle de lecture (prévu le 23/11)",
         "echeance": "23/11",
         "dateEcheance": "2026-11-23",
@@ -46,6 +52,13 @@
       },
       {
         "txt": "URGENT — prévoir le programme de révision du CR5 (base commune avec la spé ; les élèves veulent plus de temps pour réviser)",
+        "echeance": "23/11",
+        "dateEcheance": "2026-11-23",
+        "fait": false,
+        "urgent": true
+      },
+      {
+        "txt": "URGENT — préparer des sujets de portfolios",
         "echeance": "23/11",
         "dateEcheance": "2026-11-23",
         "fait": false,
