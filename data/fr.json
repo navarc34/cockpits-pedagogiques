@@ -21,31 +21,31 @@
       {
         "txt": "Clôturer l'EL2 Graffigny (lettre 34) et annoncer l'EL3 — séance du 13/11 (visio, Q2 tutorat)",
         "echeance": "13/11",
+        "dateEcheance": "2026-11-13",
+        "fait": true
+      },
+      {
+        "txt": "Corriger les copies du DS de contraction (16/11) avant le BB1",
+        "echeance": "avant le 03/12",
+        "dateEcheance": "2026-12-02",
         "fait": false
       },
       {
-        "txt": "Finir le DS de contraction (2e heure, lun. 16/11) puis corriger les copies avant le BB1",
-        "echeance": "16/11",
-        "fait": false
-      },
-      {
-        "txt": "Contrôles de lecture Graffigny + cursive (Ourika / Americanah) — proposition : ven. 20/11",
-        "echeance": "20/11",
-        "fait": false
-      },
-      {
-        "txt": "Saisir Pronote : 4 créneaux passés non publiés (13/11 visio, 16/11 DS, 20/11)",
-        "echeance": "fin nov.",
+        "txt": "Contrôles de lecture Graffigny + cursive (Ourika / Americanah)",
+        "echeance": "23/11",
+        "dateEcheance": "2026-11-23",
         "fait": false
       },
       {
         "txt": "Préparer la séance inspectée IA-IPR (30/11) : grammaire, piste « la négation » + documents à présenter",
         "echeance": "30/11",
+        "dateEcheance": "2026-11-30",
         "fait": false
       },
       {
         "txt": "Bac blanc n°1 : contraction + essai (4 h)",
         "echeance": "03/12",
+        "dateEcheance": "2026-12-03",
         "fait": false
       }
     ],

@@ -19,24 +19,21 @@
   "priorites": {
     "court": [
       {
-        "txt": "Séquence 2 « Didon, reine de Carthage » : séance 1 lancée (09/11) — documents distribués (la colère de Didon, Énée quitte Carthage, périple d'Énée)",
+        "txt": "Séquence 2 « Didon, reine de Carthage » : séance 1 lancée (09/11) — documents distribués",
         "echeance": "en cours",
         "fait": false
       },
       {
         "txt": "Séance visio du 13/11 : Ecce Larentia chap. 2 + fiche Virgile + préparation Didon",
         "echeance": "13/11",
-        "fait": false
+        "dateEcheance": "2026-11-13",
+        "fait": true
       },
       {
-        "txt": "Contrôle rituel #3 : vocabulaire Ecce Larentia chap. 1 (leçons I-III) — app de révision fournie",
+        "txt": "Contrôle rituel #3 : vocabulaire Ecce Larentia chap. 1 (leçons I-III)",
         "echeance": "16/11",
-        "fait": false
-      },
-      {
-        "txt": "Saisir Pronote : 3 créneaux passés non publiés (13, 16, 20/11 en partie)",
-        "echeance": "fin nov.",
-        "fait": false
+        "dateEcheance": "2026-11-16",
+        "fait": true
       }
     ],
     "moyen": [

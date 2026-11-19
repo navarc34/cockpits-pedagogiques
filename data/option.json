@@ -20,23 +20,21 @@
   "priorites": {
     "court": [
       {
-        "txt": "Contrôle rituel #3 : vocabulaire Ecce Larentia chap. 1 (leçons I-III) — app de révision Mistral fournie",
-        "echeance": "16/11",
-        "fait": false
-      },
-      {
-        "txt": "Ecce Larentia chap. 2, leçon 1 : lecture et traduction (Romulus et Rémus)",
-        "echeance": "16/11",
-        "fait": false
-      },
-      {
         "txt": "Séance visio du 13/11 : finir la vidéo Auguste + fiche Énéide",
         "echeance": "13/11",
-        "fait": false
+        "dateEcheance": "2026-11-13",
+        "fait": true
       },
       {
-        "txt": "Saisir Pronote : 3 créneaux passés non publiés (13, 16, 20/11 en partie)",
-        "echeance": "fin nov.",
+        "txt": "Contrôle rituel #3 : vocabulaire Ecce Larentia chap. 1 (leçons I-III)",
+        "echeance": "16/11",
+        "dateEcheance": "2026-11-16",
+        "fait": true
+      },
+      {
+        "txt": "Ecce Larentia chap. 2, leçon 1 : finir les exercices (traduction faite le 16/11)",
+        "echeance": "20/11",
+        "dateEcheance": "2026-11-20",
         "fait": false
       }
     ],

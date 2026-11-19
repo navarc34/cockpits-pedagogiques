@@ -123,7 +123,15 @@ async function main(){
   const li=a=>a.map(j=>`<li><b>${fl(j.date,FD)}</b> — ${esc(j.txt)}</li>`).join('')||'<li>—</li>';
   const J=[...d.jalons].sort((x,y)=>x.date<y.date?-1:1);
   $('#synthese').innerHTML=head('Synthèse','l’année en un coup d’œil')+`<div class="card glass" style="margin-top:16px"><h3>Carte de l’année</h3>${heat(d)}</div><div class="grid"><div class="card glass"><h3>Jalons à venir</h3><ul>${li(J.filter(j=>j.etat==='à venir'))}</ul></div><div class="card glass"><h3>Derniers jalons franchis</h3><ul>${li(J.filter(j=>j.etat!=='à venir').slice(-6))}</ul></div></div>`;
-  const pcol=(t,k)=>`<div class="card glass"><h3>${t}</h3><ul>${d.priorites[k].map(p=>`<li>${p.fait?'✓ ':''}${esc(p.txt)}${p.echeance?` <small style="color:var(--soft)">(${esc(p.echeance)})</small>`:''}</li>`).join('')}</ul></div>`;
+  const pcol=(t,k)=>{
+    let list=d.priorites[k];let alert='';
+    if(k==='court'){
+      const lateSe=d.seances.filter(s=>s.statut==='à saisir'&&s.date<=NOW);
+      alert=lateSe.length?`<li style="margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid var(--line)"><span aria-hidden="true">🔔</span> <b>Saisir Pronote :</b> ${lateSe.length} créneau${lateSe.length>1?'x':''} passé${lateSe.length>1?'s':''} non publié${lateSe.length>1?'s':''} (${lateSe.map(s=>fl(s.date,FD)).join(', ')})</li>`:'';
+      list=d.priorites[k].filter(p=>!p.fait).sort((a,b)=>(a.dateEcheance||'9999').localeCompare(b.dateEcheance||'9999'));
+    }
+    const lip=p=>`<li>${k!=='court'&&p.fait?'✓ ':''}${esc(p.txt)}${p.echeance?` <small style="color:var(--soft)">(${esc(p.echeance)})</small>`:''}${k==='court'&&p.dateEcheance&&p.dateEcheance<NOW&&!p.fait?` <small style="color:var(--red)">· dépassée</small>`:''}</li>`;
+    return `<div class="card glass"><h3>${t}</h3><ul>${alert}${list.map(lip).join('')}</ul></div>`;};
   $('#priorites').innerHTML=head('Priorités','court · moyen · long terme')+`<div class="grid">${pcol('Court terme','court')+pcol('Moyen terme','moyen')+pcol('Long terme','long')}</div>`;
   // Pronote
   let f='tous';const FIL=[['tous','Toutes'],['publié','Publiées'],['distanciel','Distanciel'],['réalisé non publié','Non publiées'],['à saisir','À saisir']];
