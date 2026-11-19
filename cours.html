@@ -123,16 +123,22 @@ async function main(){
   const li=a=>a.map(j=>`<li><b>${fl(j.date,FD)}</b> — ${esc(j.txt)}</li>`).join('')||'<li>—</li>';
   const J=[...d.jalons].sort((x,y)=>x.date<y.date?-1:1);
   $('#synthese').innerHTML=head('Synthèse','l’année en un coup d’œil')+`<div class="card glass" style="margin-top:16px"><h3>Carte de l’année</h3>${heat(d)}</div><div class="grid"><div class="card glass"><h3>Jalons à venir</h3><ul>${li(J.filter(j=>j.etat==='à venir'))}</ul></div><div class="card glass"><h3>Derniers jalons franchis</h3><ul>${li(J.filter(j=>j.etat!=='à venir').slice(-6))}</ul></div></div>`;
-  const pcol=(t,k)=>{
-    let list=d.priorites[k];let alert='';
-    if(k==='court'){
-      const lateSe=d.seances.filter(s=>s.statut==='à saisir'&&s.date<=NOW);
-      alert=lateSe.length?`<li style="margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid var(--line)"><span aria-hidden="true">🔔</span> <b>Saisir Pronote :</b> ${lateSe.length} créneau${lateSe.length>1?'x':''} passé${lateSe.length>1?'s':''} non publié${lateSe.length>1?'s':''} (${lateSe.map(s=>fl(s.date,FD)).join(', ')})</li>`:'';
-      list=d.priorites[k].filter(p=>!p.fait).sort((a,b)=>(a.dateEcheance||'9999').localeCompare(b.dateEcheance||'9999'));
-    }
-    const lip=p=>`<li>${k!=='court'&&p.fait?'✓ ':''}${esc(p.txt)}${p.echeance?` <small style="color:var(--soft)">(${esc(p.echeance)})</small>`:''}${k==='court'&&p.dateEcheance&&p.dateEcheance<NOW&&!p.fait?` <small style="color:var(--red)">· dépassée</small>`:''}</li>`;
-    return `<div class="card glass"><h3>${t}</h3><ul>${alert}${list.map(lip).join('')}</ul></div>`;};
-  $('#priorites').innerHTML=head('Priorités','court · moyen · long terme')+`<div class="grid">${pcol('Court terme','court')+pcol('Moyen terme','moyen')+pcol('Long terme','long')}</div>`;
+  // Priorités : les tâches échues restent visibles, mais dans leur propre liste.
+  const sorted=a=>[...a].sort((x,y)=>(x.dateEcheance||'9999-12-31').localeCompare(y.dateEcheance||'9999-12-31'));
+  const court=d.priorites.court||[];
+  const avenir=sorted(court.filter(p=>!p.fait&&(!p.dateEcheance||p.dateEcheance>=NOW)));
+  const retard=sorted(court.filter(p=>!p.fait&&p.dateEcheance&&p.dateEcheance<NOW));
+  const terminees=sorted(court.filter(p=>p.fait));
+  const lateSe=d.seances.filter(s=>s.statut==='à saisir'&&s.date<=NOW);
+  const item=(p)=>`<li>${esc(p.txt)}${p.echeance?` <small style="color:var(--soft)">(${esc(p.echeance)})</small>`:''}${!p.dateEcheance?` <small style="color:var(--soft)">· date à fixer</small>`:''}</li>`;
+  const group=(titre,items,empty)=>`<div class="card glass"><h3>${titre} <small style="font:600 12px Inter;color:var(--soft)">(${items.length})</small></h3><ul>${items.map(item).join('')||`<li style="color:var(--soft)">${empty}</li>`}</ul></div>`;
+  const alert=lateSe.length?`<li><span aria-hidden="true">🔔</span> <b>Saisir Pronote :</b> ${lateSe.length} créneau${lateSe.length>1?'x':''} passé${lateSe.length>1?'s':''} non publié${lateSe.length>1?'s':''} (${lateSe.map(s=>fl(s.date,FD)).join(', ')})</li>`:'';
+  const overdue=`<div class="card glass"><h3>En retard <small style="font:600 12px Inter;color:var(--soft)">(${retard.length+ (lateSe.length?1:0)})</small></h3><ul>${alert}${retard.map(item).join('')||(!alert?'<li style="color:var(--soft)">Aucune priorité en retard.</li>':'')}</ul></div>`;
+  const done=`<div class="card glass"><details><summary style="cursor:pointer;font:600 20px Fraunces,serif">Terminées (${terminees.length})</summary><ul>${terminees.map(item).join('')||'<li>Aucune priorité terminée.</li>'}</ul></details></div>`;
+  const pcol=(t,k)=>group(t,d.priorites[k]||[],'Aucune priorité.');
+  $('#priorites').innerHTML=head('Priorités','à venir · en retard · terminées · horizons moyen et long')+
+    `<div class="grid">${group('À venir',avenir,'Aucune échéance à venir.')}${overdue}${done}</div>`+
+    `<div class="grid" style="margin-top:18px">${pcol('Moyen terme','moyen')+pcol('Long terme','long')}</div>`;
   // Pronote
   let f='tous';const FIL=[['tous','Toutes'],['publié','Publiées'],['distanciel','Distanciel'],['réalisé non publié','Non publiées'],['à saisir','À saisir']];
   $('#pronote').innerHTML=head('Pronote','cahier de textes complet · cliquer une séance pour la déplier')+`<div class="filters" id="filters">${FIL.map(([k,t])=>`<button data-f="${esc(k)}">${t} <span style="opacity:.55">${k==='tous'?d.seances.length:d.seances.filter(s=>s.statut===k).length}</span></button>`).join('')}</div><div class="seances" id="sl"></div>`;
