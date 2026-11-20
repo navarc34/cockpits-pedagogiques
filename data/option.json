@@ -168,13 +168,13 @@
       "date": "2026-11-20",
       "type": "jalon",
       "txt": "Larentia chap. 2 leçon 1 : traduction",
-      "etat": "à venir"
+      "etat": "fait"
     },
     {
       "date": "2026-11-20",
       "type": "tutorat",
       "txt": "Visite de la tutrice pendant le créneau (8h-9h)",
-      "etat": "à venir"
+      "etat": "fait"
     },
     {
       "date": "2026-11-23",
@@ -776,11 +776,11 @@
       "date": "2026-11-20",
       "time": "08:00",
       "hours": 1,
-      "titre": "",
-      "statut": "à saisir",
+      "titre": "Séq. 2 « Imperium sine fine » — séance 2 : le nom d'Auguste (princeps)",
+      "statut": "réalisé non publié",
       "theme": "",
       "cat": "",
-      "contenu": "",
+      "contenu": "Suite Auguste (le nom d'Auguste) ; visite de la tutrice pendant le créneau.",
       "resume": "",
       "elements": [],
       "afaire": [],

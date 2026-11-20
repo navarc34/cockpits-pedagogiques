@@ -7,7 +7,7 @@
       "pronote": "Exports Pronote du 17/11/2026 (français, option latin, spé LLCA)",
       "budget": "Créneaux de cours comptés dans l'agenda Google (année scolaire 2026-27)",
       "progressions": "Progressions annuelles validées / cadres de travail (Drive + Knowledge)",
-      "agenda": "Agenda Google vérifié le 20/11/2026 (fenêtre 20/11-05/12 : créneaux des 3 cours confirmés sans annulation ; tutrice présente le 20/11 pendant le créneau d'option ; inspection IA-IPR le 30/11 ; bac blanc n°1 le 03/12 ; formation « Didactique des LCA » à Lyon 3 le 02/12 et le 16/12)"
+      "agenda": "Agenda Google vérifié le 20/11 au soir (fenêtre 21-27/11 : créneaux des 3 cours confirmés sans annulation ; fin du 1er trimestre le 21/11 ; inspection IA-IPR le 30/11 ; bac blanc n°1 le 03/12 ; formation « Didactique des LCA » à Lyon 3 les 02/12 et 16/12)"
     },
     "arrete": "2026-11-17"
   },
@@ -24,7 +24,7 @@
         "unite": "h"
       },
       "progressionStatut": "établie",
-      "resume": "S1 Graffigny à clôturer (EL2/EL3) → contrôles de lecture le 23/11 puis S2 Rimbaud. DS contraction 2/2 passé le 16/11. BB1 le 03/12, inspection le 30/11.",
+      "resume": "S1 Graffigny en clôture : EL3 Montesquieu lancée le 20/11. DS contraction 2/2 passé le 16/11 ; contrôles de lecture le 23/11 puis S2 Rimbaud. BB1 le 03/12, inspection le 30/11.",
       "prochainJalon": {
         "date": "2026-11-23",
         "txt": "Contrôles de lecture Graffigny + cursive (pour le 23/11)"
@@ -43,10 +43,10 @@
         "unite": "h"
       },
       "progressionStatut": "en chantier",
-      "resume": "S1 « Observer le vivant » close le 06/11 → S2 « Imperium sine fine » (Énéide I, 274-295 + Auguste). CR#3 passé le 16/11 ; Larentia II,1 traduite.",
+      "resume": "S2 « Imperium sine fine » en cours : séance 2 « le nom d'Auguste » le 20/11 (tutrice présente). CR#3 passé le 16/11 ; contrôle de lecture Énéide le 23/11 puis restitution CR3.",
       "prochainJalon": {
-        "date": "2026-11-20",
-        "txt": "Séance du 20/11 : trace écrite à distribuer + suite Auguste (tutrice présente)"
+        "date": "2026-11-23",
+        "txt": "Contrôle de lecture Énéide I-IV + restitution des copies CR3"
       },
       "dernierExportPronote": "2026-11-17"
     },
@@ -62,10 +62,10 @@
         "unite": "h"
       },
       "progressionStatut": "en chantier (cadre non figé)",
-      "resume": "OE1 « Gouverner » bouclée par l essai du 06/11 → séquence Didon (Énéide IV) lancée le 09/11. CR#3 passé le 16/11 ; Didon fondatrice (I, 360-368) au 20/11.",
+      "resume": "Séquence Didon (Énéide IV) : séance 2 « Didon fondatrice » le 20/11 (point portfolio, grammaire cas-fonctions). CR#3 passé le 16/11 ; contrôle de lecture Énéide le 23/11, DS Séq. 1 le 27/11.",
       "prochainJalon": {
-        "date": "2026-11-20",
-        "txt": "Poursuite Larentia II,1 + Didon fondatrice (I, 360-368)"
+        "date": "2026-11-23",
+        "txt": "Contrôle de lecture Énéide I-IV (Pronote : pour le 23/11)"
       },
       "dernierExportPronote": "2026-11-17"
     }

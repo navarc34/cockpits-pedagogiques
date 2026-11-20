@@ -818,11 +818,11 @@
       "date": "2026-11-20",
       "time": "15:00",
       "hours": 2,
-      "titre": "",
-      "statut": "à saisir",
+      "titre": "Séquence 2 — Didon, reine de Carthage : séance 2, « Didon fondatrice, de l'exil à la cité »",
+      "statut": "réalisé non publié",
       "theme": "",
       "cat": "",
-      "contenu": "",
+      "contenu": "Point contrôle de lecture / DS séquence 1 / portfolio ; oralisation (Ecce Larentia 2.1) ; grammaire : révision cas et fonctions (Hatier p.189 ex.5 et 7 ; p.193 ex.1-3, manipulation ex.4-5) ; séance 2 de la séquence Didon.",
       "resume": "",
       "elements": [],
       "afaire": [],
@@ -1108,6 +1108,15 @@
         "Enrichir la séquence Didon : manuels (Hatier 1re ?), autres ressources, big menu",
         "Exploiter la lecture cursive de l’Énéide : contrôle de lecture + lien avec l’objet d’étude « prince idéal »",
         "Fiche sur l’hexamètre dactylique"
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "contexte": "Séq. 2 séance 2 « Didon fondatrice, de l'exil à la cité » ; point contrôle de lecture / DS séq. 1 / portfolio ; oralisation Larentia 2.1 ; grammaire cas et fonctions (Hatier p.189 et p.193).",
+      "marche": [],
+      "aAmeliorer": [],
+      "idees": [
+        "Séquence 2 déclinée en 4 séances : 1. l'amour à l'épreuve du destin, 2. Didon fondatrice, 3. deux récits deux héroïnes, 4. la mort de Didon : une tragédie dans l'épopée"
       ]
     }
   ]
