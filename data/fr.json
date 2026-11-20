@@ -54,6 +54,32 @@
         "dateEcheance": "2026-12-11",
         "fait": false,
         "urgent": true
+      },
+      {
+        "txt": "URGENT — publier la fiche grammaire (négation) sur Pronote + préparer une question de rituel à projeter (test classe inversée / APP : « phrase du jour » en début d’heure, désigation aléatoire d’élèves)",
+        "echeance": "20/11",
+        "dateEcheance": "2026-11-20",
+        "fait": false,
+        "urgent": true
+      },
+      {
+        "txt": "URGENT — rédiger l’EL2 complète et la mettre sur Pronote + Digipad (EL2 à trous, intro sur la lettre XXXIV ajoutée à la 2e édition)",
+        "echeance": "20/11",
+        "dateEcheance": "2026-11-20",
+        "fait": false,
+        "urgent": true
+      },
+      {
+        "txt": "Distribuer l’EL3 (Montesquieu, Lettres persanes) + annoncer le contenu des contrôles de lecture et lancer Rimbaud — séance du 20/11",
+        "echeance": "20/11",
+        "dateEcheance": "2026-11-20",
+        "fait": false
+      },
+      {
+        "txt": "Rendre les devoirs corrigés papier les plus anciens (EL, essai, DS commencés le 9/11) — séance du 20/11",
+        "echeance": "20/11",
+        "dateEcheance": "2026-11-20",
+        "fait": false
       }
     ],
     "moyen": [
@@ -96,6 +122,23 @@
       {
         "txt": "Carnet de lexique des parcours + app de grammaire couvrant l’inventaire des questions possibles sur les 12 textes d’EL",
         "echeance": "T2 (idées du bilan du 13/11)"
+      },
+      {
+        "txt": "Étudier le budget disponible pour une séance Graffigny complémentaire (suggestions eduscol littérature d’idées : l’essai et la contraction de l’EAF seront liés à cet objet d’étude)",
+        "echeance": "T2 (question du bilan du 16/11)",
+        "urgent": true
+      },
+      {
+        "txt": "Déposer dans l’espace élève les exercices de méthodo sur les registres (séance prête Drive)",
+        "echeance": "T2 (idée du bilan du 16/11)"
+      },
+      {
+        "txt": "Explorer les sujets possibles de l’essai et de la contraction (préparation EAF)",
+        "echeance": "T2 (idée du bilan du 16/11)"
+      },
+      {
+        "txt": "Fiche « spécificités du genre littéraire par objet d’étude » + exploitation du manuel Objectif Bac 1re techno (fiches, exemples, lexique pour questions rituelles et app de révision)",
+        "echeance": "T2 (idée du bilan du 16/11)"
       }
     ],
     "long": [
@@ -1300,23 +1343,27 @@
       "date": "2026-11-16",
       "contexte": "H25 : fin du DS de contraction + restitution des copies. H26 : travail en îlots de 5 pour terminer l’EL2 à trous, avec match initial sur app projetée (choix des mouvements) puis interrogations de groupes « on joue au bac ».",
       "marche": [
-        "Les élèves ont pu reprendre le travail malgré la semaine d’intervalle",
-        "Le travail de groupe en îlots : élèves investis, à garder dans les idées de séances",
+        "Reprise du travail malgré la semaine d’intervalle : fin du DS de contraction, rappel des règles méthodologiques et des principales erreurs des copies",
+        "Restitution des copies du DS d’entraînement",
+        "Travail de groupe en îlots de 5 pour terminer l’EL2 à trous : élèves investis, format globalement réussi",
         "La composition des groupes par les élèves puis recomposition par le professeur fonctionne",
-        "L’EL2 à trous + match d’équipes : exercice globalement réussi, à réutiliser"
+        "La désignation d’un orateur par groupe et la perspective d’une note bonus ajoutent de l’engagement",
+        "Le quizz sur app projetée permet de se remettre dans le bain de l’œuvre et de faire discuter les groupes"
       ],
       "aAmeliorer": [
-        "Les copies ont pris beaucoup de temps à être distribuées",
-        "La gestion des élèves qui ont terminé le travail",
+        "Les copies ont pris beaucoup de temps à être distribuées ; gestion des élèves ayant terminé à structurer",
         "Faire l’appel avec soin (erreur d’absence à éviter)",
-        "Le quizz initial un peu long (≈25 min)",
-        "La mise au travail lente tant que la note bonus n’est pas annoncée",
-        "Certains élèves se sentent en échec devant l’EL2 « mâchée » : remotivation par le rappel que le français n’est pas une science exacte"
+        "Quizz initial trop long (≈25 min) → EL2 non terminée dans le temps imparti",
+        "Mise au travail lente tant que la note bonus n’est pas annoncée",
+        "Bien marquer les noms des élèves sur les feuilles de groupe",
+        "Le but du match (choisir un mouvement) jugé peu pertinent par certains élèves : à repenser",
+        "Des élèves se sentent en échec face à l’EL « mâchée » : pas de réelle différenciation, remotivation nécessaire (le français n’est pas une science exacte)",
+        "Méthodo du brouillon à retravailler (comptage des mots, reformulation)"
       ],
       "idees": [
-        "Enregistrer ce format îlots + EL à trous dans la boîte à idées",
+        "Enregistrer le format îlots + EL à trous + orateur + note bonus dans le big menu FR des idées de séances",
         "Étendre le format match / app projetée en début de séance de réactivation",
-        "Concevoir un big menu FR d’idées de séances et de pratiques pédagogiques (équivalent du big menu latin)"
+        "Interrogations finales « on joue au bac » (citation → procédé → interprétation) : format à réutiliser"
       ]
     }
   ]
