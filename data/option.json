@@ -33,8 +33,8 @@
       },
       {
         "txt": "Ecce Larentia chap. 2, leçon 1 : finir les exercices (traduction faite le 16/11)",
-        "echeance": "20/11",
-        "dateEcheance": "2026-11-20",
+        "echeance": "23/11",
+        "dateEcheance": "2026-11-23",
         "fait": false
       },
       {
@@ -1109,6 +1109,16 @@
         "Élaborer le sujet du contrôle de lecture pour le 23/11",
         "Finaliser la progression annuelle avec le big menu",
         "Épigraphie : travail sur l’inscription du trophée d’Auguste de la Turbie (doc iconographie Auguste, dossier Drive Auguste)"
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "contexte": "Séq. 2 « Imperium sine fine » — séance 2 : le nom d'Auguste (Via Latina, princeps) ; bilan non renseigné, liste de tâches pour le 23/11.",
+      "marche": [],
+      "aAmeliorer": [],
+      "idees": [
+        "Travail d'épigraphie possible sur l'inscription du trophée d'Auguste de la Turbie",
+        "Réflexion assistants IA sur les attendus eduscol en trace écrite pour l'option : vu le faible nombre d'heures, privilégier lecture, oral, langue et documents à surligner ?"
       ]
     }
   ]

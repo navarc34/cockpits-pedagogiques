@@ -57,7 +57,7 @@
         "txt": "Faire un point portfolio (attendu par les élèves)",
         "echeance": "20/11",
         "dateEcheance": "2026-11-20",
-        "fait": false,
+        "fait": true,
         "urgent": true
       },
       {
@@ -69,14 +69,14 @@
       },
       {
         "txt": "Prévoir une courte explication sur Janus (demande d'une élève)",
-        "echeance": "20/11",
-        "dateEcheance": "2026-11-20",
+        "echeance": "27/11",
+        "dateEcheance": "2026-11-27",
         "fait": false
       },
       {
         "txt": "Prévoir un petit temps de méthodo sur l'essai au prochain cours",
-        "echeance": "20/11",
-        "dateEcheance": "2026-11-20",
+        "echeance": "27/11",
+        "dateEcheance": "2026-11-27",
         "fait": false
       }
     ],

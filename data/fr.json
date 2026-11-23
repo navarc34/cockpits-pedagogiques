@@ -56,16 +56,16 @@
         "urgent": true
       },
       {
-        "txt": "URGENT — publier la fiche grammaire (négation) sur Pronote + préparer une question de rituel à projeter (test classe inversée / APP : « phrase du jour » en début d’heure, désigation aléatoire d’élèves)",
-        "echeance": "20/11",
-        "dateEcheance": "2026-11-20",
+        "txt": "URGENT — publier la fiche grammaire (négation) sur Pronote + rituel « phrase du jour » en classe inversée (prévu séance du 23/11)",
+        "echeance": "23/11",
+        "dateEcheance": "2026-11-23",
         "fait": false,
         "urgent": true
       },
       {
-        "txt": "URGENT — rédiger l’EL2 complète et la mettre sur Pronote + Digipad (EL2 à trous, intro sur la lettre XXXIV ajoutée à la 2e édition)",
-        "echeance": "20/11",
-        "dateEcheance": "2026-11-20",
+        "txt": "URGENT — rédiger l’EL2 complète et la mettre sur Pronote + Digipad (EL2 à trous, intro lettre XXXIV)",
+        "echeance": "23/11",
+        "dateEcheance": "2026-11-23",
         "fait": false,
         "urgent": true
       },
@@ -73,12 +73,12 @@
         "txt": "Distribuer l’EL3 (Montesquieu, Lettres persanes) + annoncer le contenu des contrôles de lecture et lancer Rimbaud — séance du 20/11",
         "echeance": "20/11",
         "dateEcheance": "2026-11-20",
-        "fait": false
+        "fait": true
       },
       {
-        "txt": "Rendre les devoirs corrigés papier les plus anciens (EL, essai, DS commencés le 9/11) — séance du 20/11",
-        "echeance": "20/11",
-        "dateEcheance": "2026-11-20",
+        "txt": "Rendre les devoirs corrigés papier restants (prévu séance du 23/11)",
+        "echeance": "23/11",
+        "dateEcheance": "2026-11-23",
         "fait": false
       }
     ],
@@ -139,6 +139,10 @@
       {
         "txt": "Fiche « spécificités du genre littéraire par objet d’étude » + exploitation du manuel Objectif Bac 1re techno (fiches, exemples, lexique pour questions rituelles et app de révision)",
         "echeance": "T2 (idée du bilan du 16/11)"
+      },
+      {
+        "txt": "Revue app-isée des groupements de textes pour mobiliser des exemples pour l'essai (séance de révision du 30/11 avant le BB1)",
+        "echeance": "30/11 (idée du bilan du 20/11)"
       }
     ],
     "long": [
@@ -1406,6 +1410,16 @@
         "Enregistrer le format îlots + EL à trous + orateur + note bonus dans le big menu FR des idées de séances",
         "Étendre le format match / app projetée en début de séance de réactivation",
         "Interrogations finales « on joue au bac » (citation → procédé → interprétation) : format à réutiliser"
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "contexte": "Séance EL3 Montesquieu (Lettres persanes, lettre 30) ; bilan du 20/11 à dominante idées, déroulé non consigné.",
+      "marche": [],
+      "aAmeliorer": [],
+      "idees": [
+        "Séance de révision du 30/11 avant le BB : s'entraîner à mobiliser des exemples pour le sujet de l'essai via une revue app-isée des groupements de textes vus (à quel texte faire penser telle idée ?)",
+        "Contrôle de lecture : privilégier des questions courtes plus une question de réflexion ouverte sur l'œuvre et le parcours (elle évalue mieux si le livre a réellement été lu)"
       ]
     }
   ]
