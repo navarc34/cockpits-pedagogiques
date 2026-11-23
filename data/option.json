@@ -188,6 +188,13 @@
       "txt": "Contrôle de lecture : Énéide I-IV (Pronote : pour le 27/11)",
       "etat": "à venir",
       "id": "opt-jalon-controle-lecture-eneide"
+    },
+    {
+      "date": "2026-11-23",
+      "type": "controle",
+      "txt": "Contrôle rituel #4 (dossier H20 du 23/11, sujet prêt)",
+      "etat": "à venir",
+      "id": "opt-jalon-cr4"
     }
   ],
   "vacances": [
@@ -790,7 +797,7 @@
       "date": "2026-11-23",
       "time": "13:00",
       "hours": 1,
-      "titre": "",
+      "titre": "Contrôle rituel #4 + Ecce Larentia chap. 2 (Via Latina) + grammaire",
       "statut": "à saisir",
       "theme": "",
       "cat": "",

@@ -38,7 +38,7 @@
       {
         "txt": "Élaborer le programme de révision du CR4 (intégrer les coordonnants vus sur Didon, tableau des principaux coordonnants) — les élèves demandent plus de temps pour réviser",
         "echeance": "avant le CR4",
-        "fait": false,
+        "fait": true,
         "urgent": true
       },
       {
@@ -208,7 +208,7 @@
     {
       "date": "2026-11-23",
       "type": "controle",
-      "txt": "Contrôle de lecture : Énéide I-IV (Pronote : pour le 23/11)",
+      "txt": "Contrôle de lecture Énéide I-IV + contrôle rituel #4 (sujets prêts le 22/11)",
       "etat": "à venir",
       "id": "spe-jalon-controle-lecture-eneide"
     },
@@ -832,7 +832,7 @@
       "date": "2026-11-23",
       "time": "16:00",
       "hours": 2,
-      "titre": "",
+      "titre": "Contrôle rituel #4 + contrôle de lecture Énéide (chants I-IV) + Séquence 2 Didon",
       "statut": "à saisir",
       "theme": "",
       "cat": "",
