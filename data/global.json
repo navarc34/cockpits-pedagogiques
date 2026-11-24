@@ -2,12 +2,12 @@
   "meta": {
     "annee": "2026-2027",
     "lycee": "Lycée",
-    "maj": "23/11/2026",
+    "maj": "24/11/2026",
     "sources": {
       "pronote": "Exports Pronote du 17/11/2026 (français, option latin, spé LLCA)",
       "budget": "Créneaux de cours comptés dans l'agenda Google (année scolaire 2026-27)",
       "progressions": "Progressions annuelles validées / cadres de travail (Drive + Knowledge)",
-      "agenda": "Agenda Google vérifié le 23/11 au matin (fenêtre 23/11-08/12 : créneaux des 3 cours confirmés, aucune annulation ; visite IA-IPR le 30/11, BB1 le 03/12, conseils de classe 07-12/12, visio Ulysse le 23/11 soir)"
+      "agenda": "Agenda Google vérifié le 24/11 au matin (fenêtre 24/11-08/12 : créneaux des 3 cours confirmés (27/11, 30/11, 04/12, 07/12), aucune annulation ; aucun créneau des 3 matières du 24 au 26/11 ni le 08/12 ; visite IA-IPR le 30/11 (11h-13h), BB1 de français le 03/12 (8h-12h), conseils de classe 07-12/12)"
     },
     "arrete": "2026-11-17"
   },
